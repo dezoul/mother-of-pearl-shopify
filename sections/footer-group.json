@@ -1,0 +1,55 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "theme_footer": {
+      "type": "theme__footer",
+      "blocks": {
+        "d23af186-9cd8-42ac-a697-ea3ad5479248": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Remind customers of offers like free shipping and lifetime warranty<\/p>",
+            "button_label": "Button",
+            "button_url": "shopify:\/\/collections\/all"
+          }
+        },
+        "78204a1a-1009-4f50-a9c8-4a9f0b2af321": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Newsletter",
+            "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
+            "button": "Subscribe",
+            "disclaimer": "<p>Include an additional disclaimer to clarify how you will use a subscribers email.<\/p>",
+            "success": "<p>Success! You’ve been subscribed.<\/p>"
+          }
+        },
+        "6ad6b950-210d-4cf8-b231-62c67db4980e": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "d23af186-9cd8-42ac-a697-ea3ad5479248",
+        "78204a1a-1009-4f50-a9c8-4a9f0b2af321",
+        "6ad6b950-210d-4cf8-b231-62c67db4980e"
+      ],
+      "settings": {
+        "main_color_scheme": "color__bg-overlay-1 color__text",
+        "main_color_border": "color__border-divider-1",
+        "main_color_button": "btn btn--secondary",
+        "sub_color_scheme": "color__bg-primary color__primary",
+        "sub_color_border": "color__border-divider-1",
+        "sub_color_button": "btn btn--secondary",
+        "sub_links": "footer",
+        "sub_enable_payment_icons": true,
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "theme_footer"
+  ]
+}
