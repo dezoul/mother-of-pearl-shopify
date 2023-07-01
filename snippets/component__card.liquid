@@ -36,7 +36,7 @@
       {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full border--radius' }}
     </div>
   {%- else -%}
-    {{ image | image_url: width: 600 | image_tag: style: 'object-fit:cover', class: 'w-full mb-2 border--radius', loading: 'lazy', alt: image.alt }}
+    {{ image | image_url: width: 600 | image_tag: class: 'object-cover w-full mb-2 border--radius', loading: 'lazy', alt: image.alt }}
   {%- endif -%}
 
   <h3 class="type__heading type__heading--bold-5 mb-2">

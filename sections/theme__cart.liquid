@@ -20,7 +20,7 @@
       {{ section.settings.sidebar_color_scheme }}">
       {%- unless block.settings.image_featured == blank -%}
         <div class="relative mb-2">
-          {{ block.settings.image_featured | image_url: height: 32 | image_tag: style: 'object-fit:cover', class: '', loading: 'lazy', alt: block.settings.heading }}
+          {{ block.settings.image_featured | image_url: height: 32 | image_tag: class: 'object-cover', loading: 'lazy', alt: block.settings.heading }}
         </div>
       {%- endunless -%}
       <h3 class="type__heading type--base mb-2">
@@ -121,7 +121,7 @@
             </section>
             
             {%- comment -%}cart{%- endcomment -%}
-            <section class="flex flex-col flex-grow overflow-x-hidden overflow-y-auto" 
+            <section class="{{ section.settings.main_color_scheme_first }} flex flex-col flex-grow overflow-x-hidden overflow-y-auto" 
               x-data="{ 
                 scroll: false,
                 animate_index: 0,
@@ -172,7 +172,7 @@
                     {{ section.settings.main_color_scheme_first }}
                     {{ section.settings.main_color_border }}">
 
-                    <a class="w-[20%] h-full"
+                    <a class="w-[20%] h-full flex-none"
                       :href="item.url">
                       <div class="border--radius object-cover max-w-full overflow-hidden
                         {{ settings.thumbnails_ratio }}
@@ -494,7 +494,7 @@
                         </div>
                       </div>
                       
-                      <div class="whitespace-nowrap snap-x md:gap-4 hidescrollbar inline-flex w-full gap-2 px-4 overflow-x-auto" x-ref="slider">
+                      <div class="whitespace-nowrap md:snap-x md:gap-4 hidescrollbar inline-flex w-full gap-2 px-4 overflow-x-auto" x-ref="slider">
                         {% for product in collections[section.settings.cart_upsell_products].products limit: 5 %}
                           {% render 'component__upsell-slider-item', 
                             product: product, 
@@ -539,8 +539,7 @@
                       <a href="{{ routes.cart_url }}" 
                         @click.prevent="cart_drawer = false;"
                         class="!w-full mt-2 btn btn--secondary btn--load block">
-                        Continue shopping
-                        {% comment %} {{ 'cart.general.continue_shopping' | t }} {% endcomment %}
+                        {{ 'cart.general.continue_shopping' | t }}
                       </a>
                     {% endif %}
                    

@@ -115,7 +115,7 @@
     {% endif %}
     
     {%- comment -%}slides{%- endcomment -%}
-    <div class="whitespace-nowrap snap-x hidescrollbar padding--l-gap padding--r-gap md:px-0 md:margin--r-gap inline-flex w-full overflow-x-auto overflow-y-hidden text-center"
+    <div class="whitespace-nowrap md:snap-x hidescrollbar padding--l-gap padding--r-gap md:px-0 md:margin--r-gap inline-flex w-full overflow-x-auto overflow-y-hidden text-center"
       style="
         gap: {{ settings.layout_gap_size }}px;"
       x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600)" 
@@ -124,7 +124,7 @@
       {% for media in product.media %}
         {% case media.media_type %}
           {% when 'image' %}
-            <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+            <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
               {{ section.settings.image_border }}
               {{ media | handle }} 
               {% if section.settings.enable_zoom %}cursor-zoom-in{% endif %}  
@@ -158,7 +158,7 @@
             </div>
             
           {% when 'external_video' %}
-            <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+            <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
               {{ section.settings.image_border }}
               {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}"
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
@@ -189,7 +189,7 @@
             </div>
 
           {% when 'video' %}
-            <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+            <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
               {{ section.settings.image_border }}
               {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}"
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
@@ -214,7 +214,7 @@
             </div>
             
           {% when 'model' %}
-            <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+            <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
               {{ section.settings.image_border }}
               {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}" 
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"

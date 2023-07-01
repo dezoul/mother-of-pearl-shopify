@@ -65,7 +65,7 @@
                 title="{{ shop.name }}">
                 {{ block.settings.logo_light 
                   | image_url: width: 400 
-                  | image_tag: style: 'object-fit:cover', class: 'w-full h-full !bg-transparent object-contain', alt: block.settings.logo_light.alt }}
+                  | image_tag: class: 'w-full h-full !bg-transparent object-contain', alt: block.settings.logo_light.alt }}
               </a>
             {% endif %}
             
@@ -235,7 +235,7 @@
                         title="{{ shop.name }}">
                         {{ block.settings.logo_light 
                           | image_url: width: 400 
-                          | image_tag: style: 'object-fit:cover', class: 'w-full h-full !bg-transparent object-contain', alt: block.settings.logo_light.alt }}
+                          | image_tag: class: 'w-full h-full !bg-transparent object-contain', alt: block.settings.logo_light.alt }}
                       </a>
                     {% endif %}
                   </div>

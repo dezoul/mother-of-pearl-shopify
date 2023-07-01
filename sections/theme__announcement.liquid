@@ -22,23 +22,25 @@
   <div class="py-2 flex flex-wrap justify-center
     {{ settings.layout_horizontal }}">
       
-    {%- comment -%}localization button if showing announcement in center{%- endcomment -%}
+    {% comment %} localization button if showing announcement in center {% endcomment %}
     <div class="items-center justify-start flex-shrink hidden lg:flex lg:w-1/4
       {% if section.settings.layout_alignment == "left" %}!hidden{% endif %}">
 
-      {% if settings.enable_region or settings.enable_language %}
-        <button  
-          class="flex items-center"
-          @click="localization_popup = true;">
-          <span class="fi type--smaller" style="background-image: url(https://flagicons.lipis.dev/flags/4x3/{{ localization.country.iso_code | downcase }}.svg)"></span>
-          <span class="type--smaller ml-1">{{ localization.country.currency.symbol }} {{ localization.country.currency.iso_code }} 
-          {% if settings.type_seperator == 'dot' %}·{% else %}|{% endif %} {{ localization.language.iso_code | upcase }}</span> 
-          {% render 'component__icon', icon: 'chevron-down', size: '16' %}
-        </button>
+      {% if section.settings.show_localization %}
+        {% if settings.enable_region or settings.enable_language %}
+          <button class="flex items-center"
+            @click="localization_popup = true;">
+            <span class="type--smaller">
+              {{ localization.country.currency.symbol }} {{ localization.country.currency.iso_code }}
+              {% if settings.type_seperator == 'dot' %}·{% else %}|{% endif %}
+              {{ localization.language.iso_code | upcase }}
+            </span> 
+          </button>
+        {% endif %}
       {% endif %}
     </div>
 
-    {%- comment -%}announcement shown in center or left aligned{%- endcomment -%}
+    {% comment %} announcement shown in center or left aligned {% endcomment %}
     <div class="flex items-center flex-grow w-full lg:text-left lg:w-1/2
       {% if section.settings.layout_alignment == "left" %}justify-start{% endif %}
       {% if section.settings.layout_alignment == "center" %}justify-center{% endif %}">
@@ -53,9 +55,13 @@
             else {
               this.index++;
             }
+          },
+          autoIncrement() {
+            setInterval(() => this.incrementFlash(), {{ section.settings.announcement_delay }}000);
           }
-        }">
-        
+        }"
+        {% if section.settings.announcement_delay > 0 %}x-init="autoIncrement()"{% endif %}>
+
         <div class="relative flex w-full min-h-[16px] overflow-hidden">
           {% for block in section.blocks %}
             <div class="flex items-center flex-none w-full opacity-0
@@ -101,19 +107,20 @@
       </div>
     </div>
 
-    {%- comment -%}account and localization button right algined{%- endcomment -%}
+    {% comment %} account and localization button right algined {% endcomment %}
     <div class="lg:flex lg:w-1/4 items-center justify-end hidden">
       {% if section.settings.layout_alignment == "left" %}
-        {% if settings.enable_region or settings.enable_language %}
-          <button  
-            class="flex items-center"
-            @click="localization_popup = true;">
-            <span class="fi type--smaller" style="background-image: url(https://flagicons.lipis.dev/flags/4x3/{{ localization.country.iso_code | downcase }}.svg)"></span>
-            <span class="type--smaller ml-1">{{ localization.country.currency.symbol }} {{ localization.country.currency.iso_code }}
-            {% if settings.type_seperator == 'dot' %}·{% else %}|{% endif %}
-            {{ localization.language.iso_code | upcase }}</span> 
-            {% render 'component__icon', icon: 'chevron-down', size: '16' %}
-          </button>
+        {% if section.settings.show_localization %}
+          {% if settings.enable_region or settings.enable_language %}
+            <button class="flex items-center"
+              @click="localization_popup = true;">
+              <span class="type--smaller">
+                {{ localization.country.currency.symbol }} {{ localization.country.currency.iso_code }}
+                {% if settings.type_seperator == 'dot' %}·{% else %}|{% endif %}
+                {{ localization.language.iso_code | upcase }}
+              </span> 
+            </button>
+          {% endif %}
         {% endif %}
       {% endif %}
 
@@ -135,6 +142,7 @@
 {% schema %}
 {
   "name":"t:sections.theme_announcement.name",
+  "class": "theme__announcement",
   "settings":[
     {
       "type":"header",
@@ -225,10 +233,27 @@
       "default":""
     },
     {
+      "type": "range",
+      "id": "announcement_delay",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "label": "t:sections.theme_announcement.settings.announcement_delay.label",
+      "default": 0,
+      "info": "t:sections.theme_announcement.settings.announcement_delay.info"
+    },
+    {
       "type":"checkbox",
       "id":"show_account_link",
       "label":"t:sections.theme_announcement.settings.show_account_link.label",
-      "default": true
+      "default": false
+    },
+    {
+      "type":"checkbox",
+      "id":"show_localization",
+      "label":"t:sections.theme_announcement.settings.show_localization.label",
+      "default": false
     }
   ],
   "blocks":[

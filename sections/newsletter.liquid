@@ -103,7 +103,7 @@
             {%- else -%}
               <div class="border--radius relative w-full overflow-hidden
                 {{ settings.thumbmails_color_scheme }}">
-                {{ block.settings.image_featured | image_url: width: 1400 | image_tag: style: 'object-fit:cover', class: 'w-full', loading: 'lazy', alt: block.settings.image_featured.alt }}
+                {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'object-cover w-full', loading: 'lazy', alt: block.settings.image_featured.alt }}
               </div>
             {%- endif -%}
           </div>

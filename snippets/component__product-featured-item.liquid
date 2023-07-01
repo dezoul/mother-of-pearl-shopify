@@ -50,7 +50,7 @@
           {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
           {{ product.featured_image 
             | image_url: width: 900 
-            | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: product.featured_image.alt }}
+            | image_tag: class: image_class, loading: 'lazy', alt: product.featured_image.alt }}
         {%- endunless -%}
       </div>
     </div>
@@ -70,7 +70,7 @@
         {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
         {{ image1 
           | image_url: width: 200 
-          | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: image1.alt }}
+          | image_tag: class: image_class, loading: 'lazy', alt: image1.alt }}
       </div>
       
       {%- if product.images[2] == blank %}
@@ -84,7 +84,7 @@
         {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
         {{ image2 
           | image_url: width: 200 
-          | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: image2.alt }}
+          | image_tag: class: image_class, loading: 'lazy', alt: image2.alt }}
       </div>
 
       {%- if product.images[3] == blank %}
@@ -98,7 +98,7 @@
         {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
         {{ image3 
           | image_url: width: 200 
-          | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: image3.alt }}
+          | image_tag: class: image_class, loading: 'lazy', alt: image3.alt }}
       </div>
       
     </div>

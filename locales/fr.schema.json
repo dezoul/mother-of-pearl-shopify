@@ -2155,6 +2155,13 @@
           "options__2": {
             "label": "Centre"
           }
+        },
+        "show_localization": {
+          "label": "Afficher l’emplacement et la langue"
+        },
+        "announcement_delay": {
+          "label": "Délai d’annonce automatique",
+          "info": "Définissez cette valeur sur 0 pour désactiver le défilement automatique."
         }
       },
       "blocks": {

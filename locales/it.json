@@ -140,7 +140,8 @@
       "empty": "Il tuo carrello è vuoto",
       "updated": "Carrello aggiornato",
       "view_cart": "Visualizza carrello",
-      "upsell_title": "Componenti aggiuntivi popolari"
+      "upsell_title": "Componenti aggiuntivi popolari",
+      "continue_shopping": "Continua lo shopping"
     },
     "progress_bar": {
       "pre_text": "Sei",
@@ -284,5 +285,14 @@
     "hours": "Orario",
     "minutes": "Minuti",
     "seconds": "Secondi"
+  },
+  "theme_editor": {
+    "help_and_documentation": "Aiuto e documentazione",
+    "message_support": "Supporto messaggi",
+    "suggest_a_feature": "Suggerisci una funzionalità",
+    "report_an_issue": "Segnala un problema",
+    "changelog": "Registro delle modifiche",
+    "by": "da",
+    "visibility_note": "Questo widget non sarà visibile ai clienti che visitano il tuo negozio online."
   }
 }

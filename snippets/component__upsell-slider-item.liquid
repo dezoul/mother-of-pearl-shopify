@@ -23,7 +23,7 @@
     - Use cart upsells to increase AOV. Highlight products that are an easy upsell.
 {% endcomment %}
 
-<div class="relative snap-center flex justify-center flex-none w-4/5 whitespace-normal border--width border--radius overflow-hidden
+<div class="relative md:snap-center flex justify-center flex-none w-4/5 whitespace-normal border--width border--radius overflow-hidden
   color__border-divider-1 upsell upsell--{{ product.id }}" 
   x-data="{ 
     button_loading: false
@@ -41,7 +41,7 @@
           {% capture image_class %}w-full h-full object-cover aspect-[1/1] {{ settings.thumbmails_color_scheme }}{% endcapture %}
           {{ product.featured_image 
             | image_url: width: 200 
-            | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: product.title }}
+            | image_tag: class: image_class, loading: 'lazy', alt: product.title }}
         {%- endunless -%}
       </div>
     </div>

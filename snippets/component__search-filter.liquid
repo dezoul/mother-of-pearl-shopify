@@ -64,11 +64,11 @@
             index_scroll: 0,
             index_size: {{ search.filters.size }}
           }">
-          <div class="whitespace-nowrap snap-x inline-flex flex-wrap w-full gap-2" 
+          <div class="whitespace-nowrap md:snap-x inline-flex flex-wrap w-full gap-2" 
             x-ref="slider">
             
             {%- if active_filter_count > 0 -%}
-              <div class="snap-center flex justify-center flex-none" 
+              <div class="md:snap-center flex justify-center flex-none" 
                 x-intersect:enter.full="index = 0;"
                 x-bind:data-slide="0">
                 <a href="{{ search.url }}?sort_by={{ search.sort_by }}" 
@@ -80,7 +80,7 @@
             {%- endif -%}
             
             {% if section.settings.enable_sort %}
-              <div class="snap-center flex justify-center flex-none">
+              <div class="md:snap-center flex justify-center flex-none">
                 {% capture dropdown_content %}
                   {% for option in search.sort_options %}
                     <label class="type__nav color__text hover:color__bg-overlay-1 flex items-center w-full px-4 py-2">
@@ -119,7 +119,7 @@
                   {% assign has_values = true %}
                 {%- endif -%}
                 {%- if has_values -%}
-                  <div class="snap-center flex justify-center flex-none">
+                  <div class="md:snap-center flex justify-center flex-none">
 
                     {% capture popup_class %}
                       btn btn--small btn--plain 
@@ -446,11 +446,11 @@
                 index_scroll: 0,
                 index_size: {{ search.filters.size }}
               }">
-              <div class="whitespace-nowrap snap-x inline-flex w-full overflow-x-auto" 
+              <div class="whitespace-nowrap md:snap-x inline-flex w-full overflow-x-auto" 
                 x-ref="slider">
 
                 {%- if active_filter_count > 0 -%}
-                  <div class="snap-center flex justify-center flex-none mr-2" 
+                  <div class="md:snap-center flex justify-center flex-none mr-2" 
                     x-intersect:enter.full="index = 0;"
                     x-bind:data-slide="0">
                     <a href="{{ search.url }}?sort_by={{ search.sort_by }}" 
@@ -464,7 +464,7 @@
                 {%- for filter in search.filters -%}
                   {%- if filter.type == "price_range" -%}
                     {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-                      <div class="snap-center flex justify-center flex-none mr-2" 
+                      <div class="md:snap-center flex justify-center flex-none mr-2" 
                         x-intersect:enter.full="index = {{ forloop.index0 }};"
                         x-bind:data-slide="{{ forloop.index0 }}">
                         <a href="{{ filter.url_to_remove }}"
@@ -479,7 +479,7 @@
                     {%- endif -%}
                   {%- else -%}
                     {%- for filter_value in filter.active_values -%}
-                      <div class="snap-center flex justify-center flex-none mr-2" 
+                      <div class="md:snap-center flex justify-center flex-none mr-2" 
                         x-intersect:enter.full="index = {{ forloop.index0 }};"
                         x-bind:data-slide="{{ forloop.index0 }}">
                         <a href="{{ filter_value.url_to_remove }}"
@@ -529,13 +529,13 @@
           index_scroll: 0,
           index_size: {{ search.filters.size }}
         }">
-        <div class="whitespace-nowrap snap-x inline-flex w-full gap-2 overflow-x-auto" 
+        <div class="whitespace-nowrap md:snap-x inline-flex w-full gap-2 overflow-x-auto" 
           x-ref="slider">
 
           {%- for filter in search.filters -%}
             {%- if filter.type == "price_range" -%}
               {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-                <div class="snap-center flex justify-center flex-none mr-2" 
+                <div class="md:snap-center flex justify-center flex-none mr-2" 
                   x-intersect:enter.full="index = {{ forloop.index0 }};"
                   x-bind:data-slide="{{ forloop.index0 }}">
                   <a href="{{ filter.url_to_remove }}"
@@ -550,7 +550,7 @@
               {%- endif -%}
             {%- else -%}
               {%- for filter_value in filter.active_values -%}
-                <div class="snap-center flex justify-center flex-none mr-2" 
+                <div class="md:snap-center flex justify-center flex-none mr-2" 
                   x-intersect:enter.full="index = {{ forloop.index0 }};"
                   x-bind:data-slide="{{ forloop.index0 }}">
                   <a href="{{ filter_value.url_to_remove }}"

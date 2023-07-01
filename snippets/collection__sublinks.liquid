@@ -32,10 +32,10 @@
         }
       }">
 
-      <div class="whitespace-nowrap snap-x inline-flex w-full gap-2 overflow-x-auto" 
+      <div class="whitespace-nowrap md:snap-x inline-flex w-full gap-2 overflow-x-auto" 
         x-ref="slider">
         {%- for collection in sub_collections -%}
-          <div class="snap-center flex justify-center flex-none
+          <div class="md:snap-center flex justify-center flex-none
             {% if forloop.index0 == 0 %}ml-0{% endif %}
             {% if forloop.last == true %}mr-4 md:mr-0{% endif %}" 
             x-intersect:enter.full="index = {{ forloop.index0 }};"

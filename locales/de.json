@@ -68,6 +68,9 @@
     },
     "footer": {
       "copyright": "Copyright {{ y }} ©. Alle Rechte vorbehalten."
+    },
+    "errors": {
+      "general": "Irgendetwas ist schief gelaufen..."
     }
   },
   "collections": {
@@ -81,9 +84,6 @@
       "filter_and_sort": "Filtern und Sortieren",
       "remove_filter": "Klar",
       "remove_all_filters": "Alle löschen"
-    },
-    "errors": {
-      "general": "Irgendetwas ist schief gelaufen..."
     }
   },
   "products": {
@@ -140,7 +140,8 @@
       "empty": "Ihr Warenkorb ist leer",
       "updated": "Warenkorb aktualisiert",
       "view_cart": "Warenkorb anzeigen",
-      "upsell_title": "Beliebte Add-ons"
+      "upsell_title": "Beliebte Add-ons",
+      "continue_shopping": "Weiter einkaufen"
     },
     "progress_bar": {
       "pre_text": "Biste",
@@ -284,5 +285,14 @@
     "hours": "Stunden",
     "minutes": "Minuten",
     "seconds": "Secunden"
+  },
+  "theme_editor": {
+    "help_and_documentation": "Hilfe und Dokumentation",
+    "message_support": "Nachrichtenunterstützung",
+    "suggest_a_feature": "Funktion vorschlagen",
+    "report_an_issue": "Ein Problem melden",
+    "changelog": "Änderungsprotokoll",
+    "by": "von",
+    "visibility_note": "Dieses Widget ist für Kunden, die Ihren Online-Shop besuchen, nicht sichtbar."
   }
 }

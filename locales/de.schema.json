@@ -2155,6 +2155,13 @@
           "options__2": {
             "label": "Mitte"
           }
+        },
+        "show_localization": {
+          "label": "Standort und Sprache anzeigen"
+        },
+        "announcement_delay": {
+          "label": "Automatische Ansageverzögerung",
+          "info": "Setzen Sie diesen Wert auf 0, um das automatische Scrollen zu deaktivieren."
         }
       },
       "blocks": {

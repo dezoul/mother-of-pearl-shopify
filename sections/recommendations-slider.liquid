@@ -72,14 +72,14 @@
 
     {%- comment -%}skeleton loader{%- endcomment -%}
     <div x-show="!loadingRecomendations">
-      <div class="whitespace-nowrap snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
+      <div class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
         style="
           column-gap: {{ settings.layout_gap_size }}px;
           row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;">
-        <div class="snap-center md:w-[26%] flex justify-center flex-none w-8/12">
+        <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
           {% render 'component__skeleton-grid-item' %}
         </div>
-        <div class="snap-center md:w-[26%] flex justify-center flex-none w-8/12">
+        <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
           {% render 'component__skeleton-grid-item' %}
         </div>
       </div>
@@ -118,14 +118,14 @@
       }">
       
       {%- comment -%}slides{%- endcomment -%}
-      <div class="whitespace-nowrap snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden" 
+      <div class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden" 
         style="
           column-gap: {{ settings.layout_gap_size }}px;
           row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
         x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 2000)"
         x-ref="slider">
         <template x-for="(item, index) in recomended_products">
-          <div class="snap-center md:w-[26%] flex justify-center flex-none w-8/12"
+          <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12"
             x-intersect:enter.full="index_slide = index;"
             x-bind:data-slide="index_slide">
 

@@ -2155,6 +2155,13 @@
           "options__2": {
             "label": "Center"
           }
+        },
+        "show_localization": {
+          "label": "Show location and language"
+        },
+        "announcement_delay": {
+          "label": "Automatic announcement delay",
+          "info": "Set this to 0 to disable automatic scrolling."
         }
       },
       "blocks": {

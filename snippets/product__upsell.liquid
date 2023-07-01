@@ -74,7 +74,7 @@
     {% capture content %}
       <div class="flex flex-col pb-2">
         <template x-for="(item, index) in complementary_products">
-          <div :class="'md:h-[4rem] lg:h-full relative snap-center mb-2 flex justify-center flex-none whitespace-normal border--width border--radius overflow-hidden color__border-divider-1 upsell upsell--' + item.id"
+          <div :class="'md:h-[4rem] lg:h-full relative md:snap-center mb-2 flex justify-center flex-none whitespace-normal border--width border--radius overflow-hidden color__border-divider-1 upsell upsell--' + item.id"
             x-show="item.available">
 
             <div class="color__bg-body color__text flex items-center w-full">

@@ -45,7 +45,7 @@
               <div class="w-[40px]">
                 <div class="border__button--radius overflow-hidden object-cover aspect-[1/1] aspect-w-1 aspect-h-1
                   {{ settings.thumbmails_color_scheme }}">
-                  {{ block.settings.avatar | image_url: width: 80 | image_tag: style: 'object-fit:cover', class: 'h-full w-full object-cover aspect-[1/1]', loading: 'lazy', alt: block.settings.avatar.alt }}
+                  {{ block.settings.avatar | image_url: width: 80 | image_tag: class: 'h-full w-full object-cover aspect-[1/1]', loading: 'lazy', alt: block.settings.avatar.alt }}
                 </div>
               </div>
             {% endif %}

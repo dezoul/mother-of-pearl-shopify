@@ -35,7 +35,7 @@
       x-ref="thumbnail_slider">
       {% for media in product.media %}
         <div 
-          class="relative snap-center flex-none hover:cursor-pointer w-full opacity-50 border--width border--radius overflow-hidden animation-300
+          class="relative md:snap-center flex-none hover:cursor-pointer w-full opacity-50 border--width border--radius overflow-hidden animation-300
           {{ media | handle }}"
           :class="{ '!opacity-100 color__border-selected-1': gallery_index === {{ forloop.index0 }} }"
           {% if section.settings.enable_variant_images %}
@@ -48,7 +48,7 @@
             {% capture image_class %}w-full h-full object-cover !bg-transparent {{ settings.thumbmails_color_scheme }}{% endcapture %}
             {{ media
               | image_url: width: 192, height: 192
-              | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: media.alt }}
+              | image_tag: class: image_class, loading: 'lazy', alt: media.alt }}
           </div>
         </div>
       {% endfor %}
@@ -145,7 +145,7 @@
       {% endif %}
 
       {%- comment -%}slides{%- endcomment -%}
-      <div class="whitespace-nowrap snap-x hidescrollbar padding--l-gap padding--r-gap md:px-0 md:margin--r-gap md:margin--l-gap inline-flex w-full overflow-x-auto overflow-y-hidden text-center"
+      <div class="whitespace-nowrap md:snap-x hidescrollbar padding--l-gap padding--r-gap md:px-0 md:margin--r-gap md:margin--l-gap inline-flex w-full overflow-x-auto overflow-y-hidden text-center"
         style="
           gap: {{ settings.layout_gap_size }}px;"
         x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600)" 
@@ -154,7 +154,7 @@
         {% for media in product.media %}
           {% case media.media_type %}
             {% when 'image' %}
-              <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+              <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
                 {{ section.settings.image_border }}
                 {{ media | handle }} 
                 {% if section.settings.enable_zoom %}cursor-zoom-in{% endif %}  
@@ -188,7 +188,7 @@
               </div>
               
             {% when 'external_video' %}
-              <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+              <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
                 {{ section.settings.image_border }}
                 {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}"
                 x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
@@ -219,7 +219,7 @@
               </div>
   
             {% when 'video' %}
-              <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+              <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
                 {{ section.settings.image_border }}
                 {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}"
                 x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
@@ -244,7 +244,7 @@
               </div>
               
             {% when 'model' %}
-              <div class="relative snap-center flex-none border--width border--radius overflow-hidden
+              <div class="relative md:snap-center flex-none border--width border--radius overflow-hidden
                 {{ section.settings.image_border }}
                 {% if product.media.size > 1 %}w-4/5 {% else %} w-full{% endif %}" 
                 x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
@@ -286,7 +286,7 @@
       {% if product.media.size > 1 and section.settings.enable_variant_images == false %}
         <div class="bottom-4 absolute left-0 right-0 flex flex-wrap items-center justify-center gap-2 px-4 text-center">
           {% for media in product.media %}
-            <button class="color__bg-text animation-100 border--radius w-3 h-1 opacity-25" 
+            <button aria-label="gallery_grid_button_{{ forloop.index0 }}" class="color__bg-text animation-100 border--radius w-3 h-1 opacity-25" 
               :class="{ '!opacity-100': gallery_index === {{ forloop.index0 }} }"
               @click="gallery_index_scroll = {{ forloop.index0 }}; scrollToIndex(gallery_index_scroll);"></button>
           {% endfor %}
@@ -301,7 +301,7 @@
         gap: {{ settings.layout_gap_size }}px;">
       {% for media in product.media %}
         <div 
-          class="relative snap-center flex-none w-16 border--width border--radius overflow-hidden
+          class="relative md:snap-center flex-none w-16 border--width border--radius overflow-hidden
           {{ media | handle }}"
           {% if section.settings.enable_variant_images %}
             x-show="'{{ media.alt | handle }}'.includes(variantHandle)"
@@ -314,7 +314,7 @@
             {% capture image_class %}w-full h-full object-cover !bg-transparent {{ settings.thumbmails_color_scheme }}{% endcapture %}
             {{ media
               | image_url: width: 192, height: 192
-              | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: media.alt }}
+              | image_tag: class: image_class, loading: 'lazy', alt: media.alt }}
           </div>
         </div>
       {% endfor %}

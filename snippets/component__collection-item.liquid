@@ -45,7 +45,7 @@
           {% endif %}
           {{ collection.featured_image 
             | image_url: width: 900 
-            | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: collection.featured_image.alt }}
+            | image_tag: class: image_class, loading: 'lazy', alt: collection.featured_image.alt }}
         {%- endunless -%}
       </div>
     </div>

@@ -55,7 +55,7 @@
         {% endif %}
         {{ article.image 
           | image_url: width: 900 
-          | image_tag: style: 'object-fit:cover', class: image_class, loading: 'lazy', alt: article.image.alt }}
+          | image_tag: class: image_class, loading: 'lazy', alt: article.image.alt }}
       {%- endunless -%}
     </div>
   </div>

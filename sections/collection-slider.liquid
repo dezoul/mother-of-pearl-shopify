@@ -36,13 +36,13 @@
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'collection' -%}
-            <div class="snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" 
+            <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" 
               x-bind:data-slide="{{ forloop.index0 }}">
               {% render 'component__collection-item', 
                 collection: block.settings.collection %}
             </div>
           {%- when 'card' -%}
-            <div class="snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" 
+            <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" 
               x-bind:data-slide="{{ forloop.index0 }}">
               {% render 'component__content-item',
                 background_color: settings.thumbmails_color_scheme,

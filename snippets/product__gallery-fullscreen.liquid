@@ -21,7 +21,7 @@
     {% for media in product.media %}
       {% case media.media_type %}
         {% when 'image' %}
-          <div class="snap-center flex justify-center flex-none w-full h-full items-center whitespace-normal relative
+          <div class="md:snap-center flex justify-center flex-none w-full h-full items-center whitespace-normal relative
             {{ settings.thumbmails_color_scheme }}" 
             :class="{ 'z-10' : gallery_index == {{ forloop.index0 }}}"
             x-intersect:enter.full="gallery_index = {{ forloop.index0 }};"
@@ -148,7 +148,7 @@
         mouse_y = $event.offsetY;">
 
       {%- comment -%} slides {%- endcomment -%}
-      <div class="whitespace-nowrap snap-x md:gap-4 scroll-smooth hidescrollbar inline-flex w-full gap-2 overflow-x-auto overflow-y-hidden"
+      <div class="whitespace-nowrap md:snap-x md:gap-4 scroll-smooth hidescrollbar inline-flex w-full gap-2 overflow-x-auto overflow-y-hidden"
         x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600);"  
         x-ref="slider">
         {{ slides }}

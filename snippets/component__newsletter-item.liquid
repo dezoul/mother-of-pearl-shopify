@@ -44,7 +44,7 @@
   {{ settings.thumbnails_color_border }}">
   
   {%- unless background_image == blank -%}
-    {{ background_image | image_url: width: 1000 | image_tag: style: 'object-fit:cover', class: 'w-full object-cover grow h-0', loading: 'lazy', alt: background_image.alt }}
+    {{ background_image | image_url: width: 1000 | image_tag: class: 'w-full object-cover grow h-0', loading: 'lazy', alt: background_image.alt }}
   {%- endunless -%}
 
   {% form 'customer', class: "w-full" %}

@@ -59,7 +59,7 @@
 
     {%- comment -%}skeleton loader{%- endcomment -%}
     <div x-show="!loadingRecent">
-      <div class="whitespace-nowrap snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
+      <div class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
         style="
           column-gap: {{ settings.layout_gap_size }}px;
           row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;">
@@ -104,7 +104,7 @@
       }">
 
       {%- comment -%}slides{%- endcomment -%}
-      <div class="whitespace-nowrap snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden" 
+      <div class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden" 
         style="
           column-gap: {{ settings.layout_gap_size }}px;
           row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
@@ -252,13 +252,9 @@
 
                 <div class="flex flex-wrap items-center gap-1 mb-0.5
                   {{ settings.thumbnail_alignment }}">
-                  <span class="type--small" x-text="Shopify.formatMoney(item.price,'{{ cart.currency.symbol }}')">{{ product.price_min | money }}</span>
-                  {% if product.price_varies %}
-                    <span class="type--small">- {{ product.price_max | money }}</span>
-                  {% endif %}
-                  {% if product.compare_at_price_max > 0 %}
-                    <span class="type--small"><s>{{ product.compare_at_price_max | money }}</s></span>
-                  {% endif %}
+                  <span class="type--small" x-text="Shopify.formatMoney(item.price,'{{ cart.currency.symbol }}')"></span>
+                    <span x-show="item.price_varies" class="type--small" x-text="'- ' + Shopify.formatMoney(item.price_max,'{{ cart.currency.symbol }}')"></span>
+                    <span x-show="item.compare_at_price_max > 0" class="type--small"><s x-text="Shopify.formatMoney(item.compare_at_price_max,'{{ cart.currency.symbol }}')"></s></span>
                 </div>
               </a>
 

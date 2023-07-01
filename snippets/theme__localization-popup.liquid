@@ -23,8 +23,8 @@
             {% for country in localization.available_countries %}
               <label class="type__nav color__text hover:color__bg-overlay-1 flex items-center w-full p-2">
                 <label class="sr-only"
-                  for="country_selection">{{ 'general.localization.country' | t }}</label>
-                <input id="country_selection"
+                  for="country_selection_{{ country.currency.iso_code }}">{{ 'general.localization.country' | t }}</label>
+                <input id="country_selection_{{ country.currency.iso_code }}"
                   class="form-radio"
                   type="radio" 
                   value="{{ country.currency.iso_code }}" 
@@ -60,8 +60,8 @@
             {% for language in localization.available_languages %}
               <label class="type__nav color__text hover:color__bg-overlay-1 flex items-center w-full p-2">
                 <label class="sr-only"
-                  for="language_selection">{{ 'general.localization.language' | t }}</label>
-                <input id="language_selection"
+                  for="language_selection_{{ language.iso_code }}">{{ 'general.localization.language' | t }}</label>
+                <input id="language_selection_{{ language.iso_code }}"
                   class="form-radio"
                   type="radio"
                   value="{{ language.iso_code }}"

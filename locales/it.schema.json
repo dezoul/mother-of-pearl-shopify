@@ -2155,6 +2155,13 @@
           "options__2": {
             "label": "Centro"
           }
+        },
+        "show_localization": {
+          "label": "Mostra luogo e lingua"
+        },
+        "announcement_delay": {
+          "label": "Ritardo automatico dell'annuncio",
+          "info": "Impostate questo valore su 0 per disattivare lo scorrimento automatico."
         }
       },
       "blocks": {

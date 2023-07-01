@@ -68,6 +68,9 @@
     },
     "footer": {
       "copyright": "Copyright {{ y }} ©. Tous droits réservés."
+    },
+    "errors": {
+      "general": "Quelque chose s’est mal passé..."
     }
   },
   "collections": {
@@ -81,9 +84,6 @@
       "filter_and_sort": "Filtrer et trier",
       "remove_filter": "Clair",
       "remove_all_filters": "Effacer tout"
-    },
-    "errors": {
-      "general": "Quelque chose s’est mal passé..."
     }
   },
   "products": {
@@ -140,7 +140,8 @@
       "empty": "Votre panier est vide",
       "updated": "Panier mis à jour",
       "view_cart": "Voir le panier",
-      "upsell_title": "Add-ons populaires"
+      "upsell_title": "Add-ons populaires",
+      "continue_shopping": "Continuer mes achats"
     },
     "progress_bar": {
       "pre_text": "Vous êtes",
@@ -284,5 +285,14 @@
     "hours": "Heures",
     "minutes": "Minutes",
     "seconds": "Secondes"
+  },
+  "theme_editor": {
+    "help_and_documentation": "Aide et documentation",
+    "message_support": "Support de messagerie",
+    "suggest_a_feature": "Suggérer une fonctionnalité",
+    "report_an_issue": "Signaler un problème",
+    "changelog": "Journal des modifications",
+    "by": "par",
+    "visibility_note": "Ce widget ne sera pas visible par les clients visitant votre boutique en ligne."
   }
 }

@@ -307,9 +307,12 @@
       }
     {% endif %}
    
-
     // update url with variant parameter
-    history.replaceState(null,null,window.location.pathname + '?variant=' + this.defaultVariantId);
+    let searchParams = new URLSearchParams(window.location.search)
+    searchParams.set('?variant=', this.defaultVariantId);
+    let newRelativePathQuery = window.location.pathname + '?' + searchParams.toString();
+    history.pushState(null, '', newRelativePathQuery);
+
 
     // update local pickup block
     let pickupContainer = formContainer.querySelector('.js\\:pickup');

@@ -99,7 +99,7 @@ assign variants_option3_arr = product.variants | map: 'option3'
                   {%- unless product.featured_image == blank %}
                     {{ product.featured_image 
                       | image_url: width: 900 
-                      | image_tag: style: 'object-fit:cover', class: 'w-full h-full object-cover md:max-h-full max-h-[50vh]', loading: 'lazy', alt: product.title }}
+                      | image_tag: class: 'w-full h-full object-cover md:max-h-full max-h-[50vh]', loading: 'lazy', alt: product.title }}
                   {%- endunless -%}
                 </div>
                 <div class="md:hidden bottom-4 absolute left-0 right-0 text-center">

@@ -140,7 +140,8 @@
       "empty": "Your cart is empty",
       "updated": "Cart updated",
       "view_cart": "View cart",
-      "upsell_title": "Popular add-ons"
+      "upsell_title": "Popular add-ons",
+      "continue_shopping": "Continue shopping"
     },
     "progress_bar": {
       "pre_text": "You're",
@@ -284,5 +285,14 @@
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
+  },
+  "theme_editor": {
+    "help_and_documentation": "Help and documentation",
+    "message_support": "Message support",
+    "suggest_a_feature": "Suggest a feature",
+    "report_an_issue": "Report an issue",
+    "changelog": "Changelog",
+    "by": "by",
+    "visibility_note": "This widget will not be visible to customers visiting your online store."
   }
 }

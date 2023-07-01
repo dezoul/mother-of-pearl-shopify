@@ -140,7 +140,7 @@
 
               {%- capture swatch_image_filename -%}swatch-{{ value | handle }}.jpg{%- endcapture -%}
               {% assign swatch_image = images[swatch_image_filename] %}
-              <button type="button" 
+              <button aria-label="{{ value }}" type="button" 
                 class="btn btn--plain btn--small bg-center !w-8 !h-8 !min-w-0 !min-h-0"
                 :class="{ 
                   {% if settings.enable_unavailable_options %} 'strikethrough': {{ option_disabled }}, {% endif %}
