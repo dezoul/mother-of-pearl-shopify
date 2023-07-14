@@ -8,23 +8,35 @@
         "d23af186-9cd8-42ac-a697-ea3ad5479248": {
           "type": "content",
           "settings": {
-            "heading": "Block heading",
-            "content": "<p>Remind customers of offers like free shipping and lifetime warranty<\/p>",
-            "button_label": "Button",
-            "button_url": "shopify:\/\/collections\/all"
+            "heading": "Mother of Pearl & Sons",
+            "content": "<p>Our people are experts in their field. Your problems are our challenges and the chances are, we have a better answer to give you a better result on your project.<\/p>",
+            "button_label": "",
+            "button_url": ""
           }
         },
         "78204a1a-1009-4f50-a9c8-4a9f0b2af321": {
           "type": "newsletter",
           "settings": {
-            "heading": "Newsletter",
-            "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
-            "button": "Subscribe",
-            "disclaimer": "<p>Include an additional disclaimer to clarify how you will use a subscribers email.<\/p>",
+            "heading": "Arrange a consultation",
+            "content": "<p>Bring your plans and match product to your vision. Discuss your concerns, budget and ideas with us.<\/p>",
+            "button": "Submit",
+            "disclaimer": "<p>By submitting your email, you'll also be subscribing to our mailing list. We never send spam.<\/p>",
             "success": "<p>Success! You’ve been subscribed.<\/p>"
           }
         },
         "6ad6b950-210d-4cf8-b231-62c67db4980e": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer"
+          }
+        },
+        "3dfc908d-18bd-4081-8a98-2811d2604066": {
+          "type": "menu",
+          "settings": {
+            "menu": "main-menu"
+          }
+        },
+        "ab195420-a5f2-41f4-afc9-5c3a461cccfb": {
           "type": "menu",
           "settings": {
             "menu": "footer"
@@ -34,16 +46,18 @@
       "block_order": [
         "d23af186-9cd8-42ac-a697-ea3ad5479248",
         "78204a1a-1009-4f50-a9c8-4a9f0b2af321",
-        "6ad6b950-210d-4cf8-b231-62c67db4980e"
+        "6ad6b950-210d-4cf8-b231-62c67db4980e",
+        "3dfc908d-18bd-4081-8a98-2811d2604066",
+        "ab195420-a5f2-41f4-afc9-5c3a461cccfb"
       ],
       "settings": {
-        "main_color_scheme": "color__bg-overlay-1 color__text",
+        "main_color_scheme": "color__bg-tertiary color__tertiary",
         "main_color_border": "color__border-divider-1",
         "main_color_button": "btn btn--secondary",
-        "sub_color_scheme": "color__bg-primary color__primary",
+        "sub_color_scheme": "color__bg-tertiary color__tertiary",
         "sub_color_border": "color__border-divider-1",
         "sub_color_button": "btn btn--secondary",
-        "sub_links": "footer",
+        "sub_links": "",
         "sub_enable_payment_icons": true,
         "visibility": ""
       }

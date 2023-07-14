@@ -1,0 +1,279 @@
+<!-- sections/text.liquid -->
+{% comment %} 
+Richtext section with options to display buttons and headings.
+
+Globals:
+- settings.layout_horizontal: horizontaly margin
+{% endcomment %}<section class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+
+    <div class="flex flex-row flex-wrap items-end px-[5%] {{ section.settings.layout_x_alignment }}">
+      <div class="
+        {% comment %}max-w-prose{% endcomment %}
+        md:w-auto w-full">
+        {%- unless section.settings.heading == blank -%}
+          <h3 class="heading-caps">{{ section.settings.heading }}</h3>
+        {%- endunless -%}
+        {%- unless section.settings.content == blank -%}
+          <div class="md:coloumns-2">
+            {{ section.settings.content }}
+          </div>
+        {%- endunless -%}
+
+        <div>
+
+          {% for block in section.blocks %}
+            {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+          {% endfor %}
+        </div>
+
+
+        {%- unless section.settings.button_url == blank -%}
+          <div>
+
+            <a href="{{ section.settings.button_url }}" class="mt-2 arrow-link !inline-flex">
+              {%- unless section.settings.button_label == blank -%}
+                <span class="">{{ section.settings.button_label }}</span>
+              {% endunless %}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="8"
+                viewBox="127 0 40 8"
+                fill="none">
+                <path
+                  id="Arrow 1"
+                  d="M166.354 4.35355C166.549 4.15829 166.549 3.84171 166.354 3.64645L163.172 0.464466C162.976 0.269204 162.66 0.269204 162.464 0.464466C162.269 0.659728 162.269 0.976311 162.464 1.17157L165.293 4L162.464 6.82843C162.269 7.02369 162.269 7.34027 162.464 7.53553C162.66 7.7308 162.976 7.7308 163.172 7.53553L166.354 4.35355ZM0 4.5H166V3.5H0V4.5Z"
+                  fill="black" />
+              </svg>
+            </a>
+          </div>
+        {%- endunless -%}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Mini gallery",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.headers.header__4.content"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "t:sections.all.content.settings.heading.label"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "t:sections.all.content.settings.content.label"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:sections.all.content.settings.button_label.label"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:sections.all.content.settings.button_url.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__22.content"
+      }, {
+        "type": "range",
+        "id": "spacing_top",
+        "min": 0,
+        "max": 300,
+        "step": 20,
+        "unit": "px",
+        "label": "t:sections.all.layout.settings.spacing.label_top",
+        "default": 100
+      }, {
+        "type": "range",
+        "id": "spacing_bottom",
+        "min": 0,
+        "max": 300,
+        "step": 20,
+        "unit": "px",
+        "label": "t:sections.all.layout.settings.spacing.label_bottom",
+        "default": 100
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__1.content"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.settings.color_scheme.label",
+        "options": [
+          {
+            "value": "color__bg-body color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__1.label"
+          },
+          {
+            "value": "color__bg-neutral color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__2.label"
+          },
+          {
+            "value": "color__bg-overlay-1 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__3.label"
+          },
+          {
+            "value": "color__bg-overlay-2 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__4.label"
+          }, {
+            "value": "color__bg-overlay-3 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__5.label"
+          }, {
+            "value": "color__bg-primary color__primary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__6.label"
+          }, {
+            "value": "color__bg-secondary color__secondary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__7.label"
+          }, {
+            "value": "color__bg-tertiary color__tertiary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__8.label"
+          }
+        ],
+        "default": "color__bg-body color__text"
+      }, {
+        "type": "select",
+        "id": "color_border",
+        "label": "t:sections.all.colors.settings.color_border.label",
+        "options": [
+          {
+            "value": "color__border-divider-1",
+            "label": "t:sections.all.colors.settings.color_border.options__1.label"
+          }, {
+            "value": "color__border-selected-1",
+            "label": "t:sections.all.colors.settings.color_border.options__2.label"
+          }
+        ],
+        "default": "color__border-divider-1"
+      }, {
+        "type": "select",
+        "id": "color_button",
+        "label": "t:sections.all.colors.settings.color_button.label",
+        "options": [
+          {
+            "value": "btn",
+            "label": "t:sections.all.colors.settings.color_button.options__1.label"
+          },
+          {
+            "value": "btn btn--secondary",
+            "label": "t:sections.all.colors.settings.color_button.options__2.label"
+          },
+          {
+            "value": "btn btn--tertiary",
+            "label": "t:sections.all.colors.settings.color_button.options__5.label"
+          },
+          {
+            "value": "btn btn--neutral",
+            "label": "t:sections.all.colors.settings.color_button.options__3.label"
+          }, {
+            "value": "btn btn--plain",
+            "label": "t:sections.all.colors.settings.color_button.options__4.label"
+          }
+        ],
+        "default": "btn btn--secondary"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__2.content"
+      }, {
+        "type": "select",
+        "id": "style_border",
+        "label": "t:sections.all.styles.settings.style_border.label",
+        "options": [
+          {
+            "value": "",
+            "label": "t:sections.all.styles.settings.style_border.options__1.label"
+          }, {
+            "value": "border--t-width",
+            "label": "t:sections.all.styles.settings.style_border.options__2.label"
+          }, {
+            "value": "border--b-width",
+            "label": "t:sections.all.styles.settings.style_border.options__3.label"
+          }, {
+            "value": "border--b-width border--t-width",
+            "label": "t:sections.all.styles.settings.style_border.options__4.label"
+          }
+        ],
+        "default": "border--b-width"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__3.content"
+      }, {
+        "type": "select",
+        "id": "layout_x_alignment",
+        "label": "t:sections.all.layout.settings.layout_x_alignment.label",
+        "options": [
+          {
+            "value": "",
+            "label": "t:sections.all.layout.settings.layout_x_alignment.options__1.label"
+          }, {
+            "value": "text-center justify-center",
+            "label": "t:sections.all.layout.settings.layout_x_alignment.options__2.label"
+          }, {
+            "value": "text-right justify-end",
+            "label": "t:sections.all.layout.settings.layout_x_alignment.options__3.label"
+          }
+        ],
+        "default": ""
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__8.content"
+      }, {
+        "type": "select",
+        "id": "visibility",
+        "label": "t:sections.all.visibility.label",
+        "options": [
+          {
+            "value": "",
+            "label": "t:sections.all.visibility.options__1.label"
+          }, {
+            "value": "md:hidden",
+            "label": "t:sections.all.visibility.options__2.label"
+          }, {
+            "value": "hidden md:block",
+            "label": "t:sections.all.visibility.options__3.label"
+          }
+        ],
+        "default": ""
+      }
+    ],
+    "blocks": [
+      {
+        "name": "image",
+        "type": "images",
+        "settings": [
+          {
+            "id": "image_featured",
+            "type": "image_picker",
+            "label": "gallery image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.text.name",
+        "settings": {
+          "color_scheme": "color__bg-body color__text",
+          "color_border": "color__border-divider-1",
+          "color_button": "btn btn--secondary",
+          "style_border": "border--b-width",
+          "heading": "Rich text",
+          "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
+          "button_label": "Button",
+          "button_url": "/"
+        }
+      }
+    ],
+    "disabled_on": {
+      "groups": ["custom.overlay"]
+    }
+  }
+{% endschema %}

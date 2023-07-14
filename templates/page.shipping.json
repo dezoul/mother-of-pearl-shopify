@@ -1,0 +1,174 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "disabled": true,
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "8b025f09-7a44-405e-b292-4c376dd18d7c": {
+      "type": "banner",
+      "blocks": {
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-0": {
+          "type": "heading",
+          "settings": {
+            "content": "Terms and Conditions"
+          }
+        },
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-0",
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-1",
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-2"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/banner-fishers-weave.png",
+        "show_entire_image": false,
+        "enable_lazy_loading": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-end text-right",
+        "content-width": 21,
+        "visibility": ""
+      }
+    },
+    "6ffbf5a6-231d-40c1-8582-219370420d0b": {
+      "type": "accordions",
+      "blocks": {
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-0": {
+          "type": "content",
+          "settings": {
+            "title": "Shipping Australia Wide:",
+            "content": "<p>$10 Standard Shipping<\/p><p>$15 Express Shipping<\/p><p>$25 for Pet Beds<\/p><p> <\/p><p>For orders within metro areas, please allow 1-3 business days for delivery.<\/p><p>For non-metro orders, allow up to 6 business days (10 business days for rural areas).<\/p>"
+          }
+        },
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-1": {
+          "type": "content",
+          "settings": {
+            "title": "International Shipping:",
+            "content": "<p>$20 for shipping to New Zealand<\/p><p>$25 shipping for the rest of the world<\/p><p>All packages will be shipped from our Botany warehouse in NSW. Items <br\/>are sent in eco-friendly cardboard packaging and come with a luxe canvas<br\/> dust bag.<\/p><p>Orders are generally dispatched within 24 hours of order placed. <\/p><p>Our primary postage service is Australia Post Express. All orders <br\/>placed to PO Boxes or Parcel collect lockers will be sent with AusPost <br\/>Standard Service. All couriers are impacted by COVID-19 and may take <br\/>slightly longer than usual.<\/p><p>Some countries may have duties, customs fees or taxes which are unfortunately out of our control. <\/p>"
+          }
+        },
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-2": {
+          "type": "content",
+          "settings": {
+            "title": "Returns\/Credits",
+            "content": "<p>We offer refunds\/credits on all full priced purchases up to 14 days <br\/>after receipt of goods. Items must be returned new, unused and with all <br\/>Juju & Co tags attached. <\/p><p>We do not offer free returns at this time.<\/p><p>Please send us an email at <em>contactus@jujuandco.com.au <\/em>to <br\/>notify us of your return. We will process refunds within 3 days of <br\/>receipt of package. We recommend posting with a trackable service as <br\/>Juju & Co does not take responsibility for lost packages being <br\/>returned. <\/p><p>Please post item(s) to:<\/p><p>Juju & Co <\/p><p>PO BOX 854 <\/p><p>Strawberry Hills <\/p><p>NSW 2012<\/p><p>Australia<\/p>"
+          }
+        },
+        "5628bf60-d06e-46d5-a404-b0ee730dec3c": {
+          "type": "content",
+          "settings": {
+            "title": "Faulty items",
+            "content": "<p>Please email an image of the fault, along with your Proof of Purchase to <em>contactus@jujuandco.com.au<\/em> for<br\/> further review. We have a 6-week faulty claims period (please note: <br\/>this excludes general wear and tear), in which case we may offer repair,<br\/> replacement or refund options. <\/p><p>Please leave all tags and accessories on items until you are happy <br\/>with your purchase. if you have any further queries please do not <br\/>hesitate to contact us at <em>contactus@jujuandco.com.au<\/em> or +61 414 356 936 <\/p><p>Monday-Friday 10am - 5pm.<\/p>"
+          }
+        },
+        "7d6ef109-7a77-4ad0-a3b9-83135e9cea13": {
+          "type": "content",
+          "settings": {
+            "title": "GST\/Taxes",
+            "content": "<p>A 10% GST charge is included in the retail price shown for orders shipping within Australia. <\/p><p>There may be international taxes or customs fees which are not covered by Juju & Co. <\/p>"
+          }
+        },
+        "167a2c88-0469-4c01-8691-8a55917dab9c": {
+          "type": "content",
+          "settings": {
+            "title": "Currency",
+            "content": "<p>Prices are shown in Australian dollars. There is a currency conversion <br\/>option on the menu page, however all purchases are processed in AUD.<\/p>"
+          }
+        },
+        "d84abef0-5b14-45dd-9799-46e40f955d23": {
+          "type": "content",
+          "settings": {
+            "title": "Products\/Colours",
+            "content": "<p>Due to leather being a natural product there may be slight variations<br\/> or imperfections in the grain or finish of the leather. These slight <br\/>imperfections occur in the tanning process add uniqueness and character.<br\/> Please be aware prior to purchase as no refund will be given as these <br\/>are not product faults.<\/p><p>Goods may vary in colour from batch to batch as well as from item to <br\/>item. We have done our best to display as accurately as possible the <br\/>colours of our products shown on this website. We cannot however <br\/>guarantee that your monitors display of the colour will be accurate.<\/p>"
+          }
+        },
+        "df48197b-c210-45fb-a11b-e6468b3c13c6": {
+          "type": "content",
+          "settings": {
+            "title": "Lost or Damaged Goods",
+            "content": "<p>If goods are lost or damaged during delivery, please contact us at <em>contactus@jujuandco.com.au<\/em> within 7 working days of placing your order so that we can investigate the surrounding circumstances. <\/p>"
+          }
+        },
+        "865de684-4fe7-453f-b2b5-5358f5f5dd9c": {
+          "type": "content",
+          "settings": {
+            "title": "Warranty",
+            "content": "<p>Juju & Co goods are made to last. In the unlikely event you<br\/> have an issue with a defect in the material or workmanship within 12 <br\/>months of purchase, please get in touch and we will assess for repair or<br\/> replacement.<\/p><p>The warranty applies to products used under normal conditions <br\/>and for the purpose intended and doesn’t apply to damage caused by <br\/>normal wear and tear, or neglect. <\/p>"
+          }
+        },
+        "d7932e5d-ddb7-4331-80fd-78be670d0b4c": {
+          "type": "content",
+          "settings": {
+            "title": "Sales",
+            "content": "<p>Sales exclude our Fishers Weave Collection, gift cards, belts pet <br\/>accessories. Not to be used in conjunction with any other discount. <br\/>Prices as marked. Please see return policy for details. <\/p>"
+          }
+        },
+        "f66c2e9c-cd0b-4c51-aee7-2996ba3706cf": {
+          "type": "content",
+          "settings": {
+            "title": "Disclaimer",
+            "content": "<p>By accessing and using juju & Co website, you are consenting to the <br\/>terms and conditions of this site and the collection of information. <br\/>Juju & Co endeavours to keep information on the Juju & Co <br\/>website as accurate as possible. In the unlikely event that a price <br\/>shown on our website appears incorrect, we reserve the right to correct <br\/>the error which may result in an increase or decrease in price without <br\/>prior notice.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-0",
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-1",
+        "template--16244898562216__6ffbf5a6-231d-40c1-8582-219370420d0b-168912761019e17ae6-2",
+        "5628bf60-d06e-46d5-a404-b0ee730dec3c",
+        "7d6ef109-7a77-4ad0-a3b9-83135e9cea13",
+        "167a2c88-0469-4c01-8691-8a55917dab9c",
+        "d84abef0-5b14-45dd-9799-46e40f955d23",
+        "df48197b-c210-45fb-a11b-e6468b3c13c6",
+        "865de684-4fe7-453f-b2b5-5358f5f5dd9c",
+        "d7932e5d-ddb7-4331-80fd-78be670d0b4c",
+        "f66c2e9c-cd0b-4c51-aee7-2996ba3706cf"
+      ],
+      "settings": {
+        "heading": "",
+        "content": "",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8b025f09-7a44-405e-b292-4c376dd18d7c",
+    "6ffbf5a6-231d-40c1-8582-219370420d0b"
+  ]
+}

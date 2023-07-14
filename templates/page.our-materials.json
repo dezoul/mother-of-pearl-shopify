@@ -1,0 +1,269 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "disabled": true,
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "8b025f09-7a44-405e-b292-4c376dd18d7c": {
+      "type": "banner",
+      "blocks": {
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-0": {
+          "type": "heading",
+          "settings": {
+            "content": "Sustainably made leather & jute bags"
+          }
+        },
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-0",
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-1",
+        "template--16236364693672__8b025f09-7a44-405e-b292-4c376dd18d7c-16880270978fcce277-2"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/banner-fishers-weave.png",
+        "show_entire_image": false,
+        "enable_lazy_loading": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-end text-right",
+        "content-width": 21,
+        "visibility": ""
+      }
+    },
+    "177e6b58-2ce1-4249-a688-aceb07d8b14e": {
+      "type": "accordions-with-images",
+      "blocks": {
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-0": {
+          "type": "content",
+          "settings": {
+            "title": "leather",
+            "content": "<p>The first historical report of leather being used was over 400,000 years ago in England. It has has been a staple material from the stone age until now.The oldest surviving leather shoe (with leather laces) dates back to 3,500 BC coming from Armenia. Leather was used to make many practical items throughout history, and leather tools and techniques have remained largely similar to what is still used today.<\/p><p><\/p><p>With the rise of the plant-based movement, the perception of leather has shifted.In an ideal world we wouldn’t have to eat meat. Until then, leather will continue to exist as a by-product, so giving purpose to this textile through sustainable manufacturing techniques is preferable to vegan leather alternatives that almost always contain plastic. Vegan leathers like cactus & pinapple, and PU leathers all contain more than 50% plastic. Thus it will continue to end up in landfill where it cannot biodegrade. Organisations such as the Leather Working Group ensure that leather tanning and manufacturing is done with utmost care towards people, animals and the planet.<\/p>",
+            "img": "shopify:\/\/shop_images\/leatherCloseUp.jpg"
+          }
+        },
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-1": {
+          "type": "content",
+          "settings": {
+            "title": "leather working Group",
+            "content": "<p>Leather Working Group (LWG) is a non-profit organisation responsible for auditing tanneries and manufacturers to certify ethical and sustainable practices across all areas of the supply chain. <br\/><br\/>JUJU & CO is proud to only work with factories who have gold standard certification from LWG. This certification guarantees the highest standard of practice across many areas of leather manufacturing <br\/>including environmental management, traceability, chemical management, social responsibility, and governance. This is the highest accreditation a leather manufacturer can receive, and demonstrates all care is taken in respect to people and the environment.<\/p>"
+          }
+        },
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-2": {
+          "type": "content",
+          "settings": {
+            "title": "Jute",
+            "content": "<p>Jute is a sustainable fibre, used for centuries due to it's high tensile strength and ability to grow with rain water alone. <\/p><p><\/p><p>Jute plants thrive in monsoon season,  and don't require pesticides or insecticides unlike cotton.<\/p><p>It is 100% biodegradable, and thrives with very little human intervention. The jute industry provides employment to an estimated 5 million people, in some of the worlds poorest areas. <\/p><p>Our Jute products are all dyed with organic vegetable dyes, and are 100% chemical free. <\/p>",
+            "img": "shopify:\/\/shop_images\/B_W_JUTE.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-0",
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-1",
+        "template--16236364693672__177e6b58-2ce1-4249-a688-aceb07d8b14e-16880888518813f719-2"
+      ],
+      "settings": {
+        "heading": "Our Materials",
+        "content": "",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "8d1e7a5c-3625-4578-a040-afd93d6f8205": {
+      "type": "accordions-with-images",
+      "blocks": {
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-0": {
+          "type": "content",
+          "settings": {
+            "title": "Washed Range",
+            "content": "<p>Our washed leather range has gold certification from the Leather Working Group. Our hides are hand selected from the USA, NZ, Turkey, Germany and the Netherlands. The leather is tanned using organic vegetable dyes. Once processed, the leather is cut using advanced laser cutting machines that analyses the surface area and minimises offcuts. From there, the products are handmade into bags, and washed several times in large drums. This process creates the soft feel, almost as if the bag has been worn in before purchase.<\/p>",
+            "img": "shopify:\/\/shop_images\/washedBag.png"
+          }
+        },
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-1": {
+          "type": "content",
+          "settings": {
+            "title": "Jute",
+            "content": "<p>Our signature Jute Slouchies are vegetable tanned with organic dyes, and then made by hand into their final product. <\/p><p>The leather strap attached is certified by the LWG, meeting the same standards as our washed range. <\/p>",
+            "img": "shopify:\/\/shop_images\/beach_jute_for_web.jpg"
+          }
+        },
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-2": {
+          "type": "content",
+          "settings": {
+            "title": "Fishers Weave",
+            "content": "<p>All bags in the Fishers Weave Collection are made from Buffalo leather. The baskets are woven <br\/>by women in villages of South India from their homes. These women once weaved fishing nets and have been trained in the art of weaving bags from bamboo sized strips of leather. <\/p><p>Bags in this collection are 100% handmade, from the organic vegetable dyeing process, through to hand weaving without threads. <\/p><p>Each bag takes up to 3 weeks to weave.<\/p>",
+            "img": "shopify:\/\/shop_images\/bay_basket.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-0",
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-1",
+        "template--16236364693672__8d1e7a5c-3625-4578-a040-afd93d6f8205-16880888518813f719-2"
+      ],
+      "settings": {
+        "heading": "Our Ranges",
+        "content": "",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 0,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "2601b095-9f73-479a-a83e-f4c5b443a44d": {
+      "type": "content-grid",
+      "blocks": {
+        "template--16236364693672__2601b095-9f73-479a-a83e-f4c5b443a44d-1688090002f97a94e3-0": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "Shipping & Returns",
+            "content": "",
+            "button_label": "read more",
+            "button_url": "shopify:\/\/pages\/terms-conditions",
+            "image_featured": "shopify:\/\/shop_images\/leatherCloseUp.jpg",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "d280ae5a-6a52-4dea-86fd-b5177daff36a": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "About Juju",
+            "content": "",
+            "button_label": "read more",
+            "button_url": "shopify:\/\/pages\/about-us",
+            "image_featured": "shopify:\/\/shop_images\/Rectangle_1_2.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "71b72d0c-f846-408e-875e-4754ce6b4442": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "Store Locator",
+            "content": "",
+            "button_label": "read more",
+            "button_url": "shopify:\/\/pages\/store-locator",
+            "image_featured": "shopify:\/\/shop_images\/clouds.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16236364693672__2601b095-9f73-479a-a83e-f4c5b443a44d-1688090002f97a94e3-0",
+        "d280ae5a-6a52-4dea-86fd-b5177daff36a",
+        "71b72d0c-f846-408e-875e-4754ce6b4442"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "",
+        "content": "",
+        "button_label": "Button label",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-3",
+        "row_size_mobile": "grid-cols-1",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8b025f09-7a44-405e-b292-4c376dd18d7c",
+    "177e6b58-2ce1-4249-a688-aceb07d8b14e",
+    "8d1e7a5c-3625-4578-a040-afd93d6f8205",
+    "2601b095-9f73-479a-a83e-f4c5b443a44d"
+  ]
+}

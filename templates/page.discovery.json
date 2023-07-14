@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "disabled": true,
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "29a1fa2e-7fd8-412d-a45c-05899ef30647": {
+      "type": "banner",
+      "blocks": {
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-0": {
+          "type": "heading",
+          "settings": {
+            "content": "Discover"
+          }
+        },
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-0",
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-1",
+        "template--16238456012968__29a1fa2e-7fd8-412d-a45c-05899ef30647-16880907998fd1d391-2"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/Rectangle_1_3_e4649278-9825-4320-9570-f2a616828179.png",
+        "image_background_mobile": "shopify:\/\/shop_images\/Rectangle_1_3_e4649278-9825-4320-9570-f2a616828179.png",
+        "show_entire_image": false,
+        "enable_lazy_loading": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-center text-center",
+        "content-width": 45,
+        "visibility": ""
+      }
+    },
+    "5498f409-eb5e-41e2-9c3f-339949fae145": {
+      "type": "content-grid",
+      "blocks": {
+        "template--16238456012968__5498f409-eb5e-41e2-9c3f-339949fae145-1688090002f97a94e3-2": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "Our Materials",
+            "content": "<p>Learn more about the materials we use to make our bags<\/p>",
+            "button_label": "learn more",
+            "button_url": "shopify:\/\/pages\/our-materials",
+            "image_featured": "shopify:\/\/shop_images\/leatherCloseUp.jpg",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "855e2a98-5fe3-4665-99eb-a550ff9a1f40": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "About JUJU",
+            "content": "<p>Learn more about us and the wonderful journey we have been on.<\/p>",
+            "button_label": "read more",
+            "button_url": "shopify:\/\/pages\/about-us-1",
+            "image_featured": "shopify:\/\/shop_images\/Rectangle_1_2.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "9c3c53d5-e32c-49e8-a508-2232da83c3ea": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "Shipping & Returns",
+            "content": "<p>Learn more about our shipping and return policies.<\/p>",
+            "button_label": "learn more",
+            "button_url": "shopify:\/\/pages\/terms-conditions",
+            "image_featured": "shopify:\/\/shop_images\/clouds.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "737c8918-13fa-41f0-a9f5-5247dfedc0ac": {
+          "type": "content",
+          "settings": {
+            "heading-position": "top",
+            "heading": "Store Locator",
+            "content": "<p>Learn more about all the places you can grab a JUJU & CO bag.<\/p>",
+            "button_label": "learn more",
+            "button_url": "shopify:\/\/pages\/store-locator",
+            "image_featured": "shopify:\/\/shop_images\/doors-and-stairs.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16238456012968__5498f409-eb5e-41e2-9c3f-339949fae145-1688090002f97a94e3-2",
+        "855e2a98-5fe3-4665-99eb-a550ff9a1f40",
+        "9c3c53d5-e32c-49e8-a508-2232da83c3ea",
+        "737c8918-13fa-41f0-a9f5-5247dfedc0ac"
+      ],
+      "settings": {
+        "heading": "",
+        "content": "",
+        "button_label": "Button label",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-2",
+        "row_size_mobile": "grid-cols-1",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "29a1fa2e-7fd8-412d-a45c-05899ef30647",
+    "5498f409-eb5e-41e2-9c3f-339949fae145"
+  ]
+}

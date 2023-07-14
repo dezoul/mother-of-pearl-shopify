@@ -6,49 +6,392 @@
         "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-0": {
           "type": "heading",
           "settings": {
-            "content": "Heading"
-          }
-        },
-        "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-2": {
-          "type": "buttons",
-          "settings": {
-            "button_color": "btn",
-            "button_label": "Button label",
-            "button_url": "\/collections\/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": "\/collections\/all"
+            "content": "This is a heading"
           }
         },
         "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "content": "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        },
+        "be184ad9-6c4e-499b-b160-5001805f775c": {
+          "type": "buttons",
+          "settings": {
+            "button_color": "btn btn--secondary",
+            "button_label": "Shop All",
+            "button_url": "shopify:\/\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": ""
           }
         }
       },
       "block_order": [
         "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-0",
-        "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-2",
-        "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-1"
+        "template--18730720428336__f96b8e1b-0fd4-4c65-856c-cdd01fe228cc-1681420271694828b0-1",
+        "be184ad9-6c4e-499b-b160-5001805f775c"
       ],
       "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/motherofpearl-hero-image-2.jpg",
         "show_entire_image": false,
         "enable_lazy_loading": false,
         "show_video_background_mobile": true,
-        "color_scheme": "color__bg-overlay-1 color__text",
-        "color_text": "",
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "color__light",
         "color_border": "color__border-divider-1",
-        "enable_gradient": false,
-        "style_border": "border--b-width",
+        "enable_gradient": true,
+        "style_border": "",
         "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-center text-center",
         "visibility": ""
       }
     },
+    "4e310789-ff23-48f7-84b1-66438855531c": {
+      "type": "text",
+      "settings": {
+        "heading": "Bringing upscale world hardware to Sydney and beyond.",
+        "content": "<p>Experience a world of diverse hardware where every detail punctuates your design theme. Enhance your architectural approach with seamlessly blended metal tones that harmonise with organic materials while emphasising sumptuousness.<\/p>",
+        "button_label": "",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 80,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
+      }
+    },
+    "7f4e03e9-515b-46ff-a57d-80f6b4ab1956": {
+      "type": "product-grid",
+      "blocks": {
+        "fe3a1808-ab63-43bd-971b-b694aa7fdcd0": {
+          "type": "card",
+          "settings": {
+            "heading": "10% off for your first $1,000 purchase",
+            "content": "",
+            "button_label": "Shop Now",
+            "button_url": "shopify:\/\/collections\/doorknobs"
+          }
+        }
+      },
+      "block_order": [
+        "fe3a1808-ab63-43bd-971b-b694aa7fdcd0"
+      ],
+      "settings": {
+        "collection": "doorknobs",
+        "products_count": 7,
+        "heading": "Door knobs",
+        "content": "<p>Handcrafted for high value architecture, effortlessly distinguishing themselves from commercial versions.<\/p>",
+        "button_label": "View all door knobs",
+        "button_url": "\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--neutral",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "c8dffdc6-6a42-4d8d-b965-414ccf7a31fd": {
+      "type": "logo-list",
+      "blocks": {
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Motherofpearlsons_Trading.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-0": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/B_M_Hardware.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": false,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Finesse.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-3": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Lockwood_Assa_Abloy.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "d163e05a-5bfb-463e-acd7-6d86029e26df": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Brionne.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "69b57b20-0c91-49c1-a23b-8b5940aecc47": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Brehat_France.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "75559a4e-6943-4567-a0e6-e5c522f59ce7": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Fersa.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "c060b171-3095-40d8-ad84-8c640364c013": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Tasman_Forge.jpg",
+            "logo_height": "max-h-[128px]",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "color__border-divider-1",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-1",
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-0",
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-2",
+        "template--19346674352432__c8dffdc6-6a42-4d8d-b965-414ccf7a31fd-168629432768311ed9-3",
+        "d163e05a-5bfb-463e-acd7-6d86029e26df",
+        "69b57b20-0c91-49c1-a23b-8b5940aecc47",
+        "75559a4e-6943-4567-a0e6-e5c522f59ce7",
+        "c060b171-3095-40d8-ad84-8c640364c013"
+      ],
+      "settings": {
+        "heading": "Our brands",
+        "content": "<p>Stocking the best international hardware brands<\/p>",
+        "button_label": "View all brands",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-tertiary color__tertiary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "41c8074e-685c-410b-8046-73e05218bd41": {
+      "type": "newsletter",
+      "blocks": {
+        "template--19346674352432__41c8074e-685c-410b-8046-73e05218bd41-1686295689cdbd6080-0": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Get one-on-one advice from our expert",
+            "content": "<p>Ready to bring your project to life? Share the details with us and unlock a world of expert guidance tailored specifically to your needs. Connect with our team of specialists for personalised, one-on-one advice that will elevate your architecture vision to new heights.<\/p>",
+            "button_label": "Get in touch",
+            "disclaimer": "<p>By submitting your email, you'll also be subscribing to our mailing list. We never send spam.<\/p>",
+            "success": "<p>Success! You’ve been subscribed.<\/p>",
+            "layout_desktop_width": 7,
+            "layout_mobile_width": 12,
+            "layout_x_alignment": "justify-between"
+          }
+        },
+        "template--19346674352432__41c8074e-685c-410b-8046-73e05218bd41-1686295689cdbd6080-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "layout_desktop_width": 6,
+            "layout_mobile_width": 12
+          }
+        }
+      },
+      "block_order": [
+        "template--19346674352432__41c8074e-685c-410b-8046-73e05218bd41-1686295689cdbd6080-0",
+        "template--19346674352432__41c8074e-685c-410b-8046-73e05218bd41-1686295689cdbd6080-1"
+      ],
+      "custom_css": [
+        ".mb-2 {margin-bottom: 1.25rem;}"
+      ],
+      "settings": {
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--tertiary",
+        "style_border": "border--b-width",
+        "layout_alignment": "items-center",
+        "visibility": ""
+      }
+    },
+    "ab749215-ce5f-402f-9a66-3f94289f38d9": {
+      "type": "collection-grid",
+      "blocks": {
+        "template--19346674352432__ab749215-ce5f-402f-9a66-3f94289f38d9-1686296131d1a8b281-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "doorknobs"
+          }
+        },
+        "0f45fe15-4d1c-40f7-8fdb-6f897ed1645f": {
+          "type": "collection",
+          "settings": {
+            "collection": "cabinet-knobs-handles"
+          }
+        },
+        "7a2d2633-1cb5-442c-bbe0-ef1d3affb88d": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-hardware"
+          }
+        },
+        "d2791435-ef7f-417e-ac4b-1255274b0fbe": {
+          "type": "collection",
+          "settings": {
+            "collection": "entrance-door-hardware"
+          }
+        },
+        "9fad6102-b2cb-4e47-8d3f-7afd67acb027": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "other-hardware"
+          }
+        },
+        "template--19346674352432__ab749215-ce5f-402f-9a66-3f94289f38d9-1686296131d1a8b281-1": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
+            "button_label": "Button",
+            "button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--19346674352432__ab749215-ce5f-402f-9a66-3f94289f38d9-1686296131d1a8b281-0",
+        "0f45fe15-4d1c-40f7-8fdb-6f897ed1645f",
+        "7a2d2633-1cb5-442c-bbe0-ef1d3affb88d",
+        "d2791435-ef7f-417e-ac4b-1255274b0fbe",
+        "9fad6102-b2cb-4e47-8d3f-7afd67acb027",
+        "template--19346674352432__ab749215-ce5f-402f-9a66-3f94289f38d9-1686296131d1a8b281-1"
+      ],
+      "settings": {
+        "heading": "Browse our collections",
+        "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "View all collections",
+        "button_url": "\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": "",
+        "enable_collection_size_count": true
+      }
+    },
+    "864502a7-5b95-4bdd-94a7-f6867b31dd70": {
+      "type": "testimonials",
+      "blocks": {
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-0": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>I highly recommend these upscale door knobs to fellow tradesmen who strive for excellence. They are a testament to exquisite craftsmanship and have become an essential element in my projects.<\/p>",
+            "title": "<p>Tony Gouverneur - The Tidy Tradie<\/p>",
+            "avatar": "shopify:\/\/shop_images\/Tony_Gouverneur_The_Tidy_Tradie.jpg"
+          }
+        },
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-1": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>Whenever I had questions or needed guidance in selecting the perfect door knobs for a specific design, Carl's team were always available to provide one-on-one advice and assistance. Their commitment to customer satisfaction truly sets them apart.<\/p>",
+            "title": "<p>Sheree Bounassif - Kitchens by Emanuel<\/p>",
+            "avatar": "shopify:\/\/shop_images\/sheree-bounassif-kitchens-by-emanuel.jpg"
+          }
+        },
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-2": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>I had so much joy helping our client bring their dream kitchen to reality. The intricate details and luxurious finishes from Mother of Pearl's hardware effortlessly elevated the overall aesthetics of the kitchen.<\/p>",
+            "title": "<p>Cara Stepin - Impala Kitchens & Bathrooms<\/p>",
+            "avatar": "shopify:\/\/shop_images\/Cara-Stepin-Impala-Kitchens.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-0",
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-1",
+        "template--19346674352432__864502a7-5b95-4bdd-94a7-f6867b31dd70-168629857755d7d67e-2"
+      ],
+      "settings": {
+        "heading": "This is why we do what we do.",
+        "content": "<p>Tradies, architects, interior designers... they all love us.<\/p>",
+        "button_label": "",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
     "ca2883b6-efd0-48c1-8f9e-520a6b9a64bc": {
       "type": "content-grid",
+      "disabled": true,
       "blocks": {
         "template--18730720428336__ca2883b6-efd0-48c1-8f9e-520a6b9a64bc-1681420297b465165a-0": {
           "type": "content",
@@ -57,6 +400,7 @@
             "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "button_label": "Button",
             "button_url": "\/",
+            "image_background": "shopify:\/\/shop_images\/motherofpearl-hero-image-1.jpg",
             "enable_autoplay": true,
             "enable_mute_toggle": true,
             "enable_loop": true,
@@ -65,9 +409,9 @@
             "enable_padding": true,
             "color_scheme": "color__bg-body color__text",
             "color_border": "color__border-selected-1",
-            "color_text": "color__text",
+            "color_text": "color__light",
             "color_button": "btn",
-            "enable_gradient": false,
+            "enable_gradient": true,
             "layout_y_alignment": "items-end",
             "layout_x_alignment": "",
             "layout_row_span": "row-span-2",
@@ -220,64 +564,30 @@
         "visibility": ""
       }
     },
-    "7f4e03e9-515b-46ff-a57d-80f6b4ab1956": {
-      "type": "product-grid",
-      "blocks": {
-        "fe3a1808-ab63-43bd-971b-b694aa7fdcd0": {
-          "type": "card",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
-            "button_label": "Button",
-            "button_url": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "fe3a1808-ab63-43bd-971b-b694aa7fdcd0"
-      ],
-      "settings": {
-        "collection": "frontpage",
-        "products_count": 7,
-        "heading": "Product grid",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
-        "button_label": "Button",
-        "button_url": "\/collections\/all",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "row_size_desktop": "md:grid-cols-4",
-        "row_size_mobile": "grid grid-cols-2",
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
-      }
-    },
-    "fa45b532-e64f-489b-9403-7046250c0e16": {
+    "78add441-7432-4508-a526-ae48de7ae891": {
       "type": "product-slider",
+      "disabled": true,
       "blocks": {
-        "template--18730720428336__fa45b532-e64f-489b-9403-7046250c0e16-1681420382a4ee4d2a-0": {
+        "template--19346674352432__78add441-7432-4508-a526-ae48de7ae891-1686287500ec743751-0": {
           "type": "card",
           "settings": {
-            "heading": "Block heading",
+            "heading": "This is a heading",
             "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "button_label": "Button",
+            "button_label": "View All",
             "button_url": "\/"
           }
         }
       },
       "block_order": [
-        "template--18730720428336__fa45b532-e64f-489b-9403-7046250c0e16-1681420382a4ee4d2a-0"
+        "template--19346674352432__78add441-7432-4508-a526-ae48de7ae891-1686287500ec743751-0"
       ],
       "settings": {
-        "collection": "frontpage",
-        "products_count": 7,
-        "heading": "Product slider",
+        "collection": "doorknobs",
+        "products_count": 3,
+        "heading": "Door knobs",
         "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
-        "button_label": "Button",
-        "button_url": "\/collections\/all",
+        "button_label": "",
+        "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-body color__text",
@@ -290,15 +600,17 @@
     },
     "f3fd7d15-8af4-4a33-810d-e1dbd27ed532": {
       "type": "content-slider",
+      "disabled": true,
       "blocks": {
         "template--18730720428336__f3fd7d15-8af4-4a33-810d-e1dbd27ed532-1681420304ca579e70-0": {
           "type": "content",
           "settings": {
             "heading": "Block heading",
             "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "image_featured": "shopify:\/\/shop_images\/motherofpearl-hero-image-1.jpg",
             "button_label": "Button",
             "button_url": "\/",
-            "spacing_top": 80,
+            "spacing_top": 0,
             "spacing_bottom": 0,
             "enable_padding": true,
             "color_scheme": "color__bg-body color__text",
@@ -399,6 +711,7 @@
     },
     "2cf37121-3db2-489b-9610-3dcaac7dca12": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "auto_play": true,
         "heading": "Video",
@@ -417,6 +730,7 @@
     },
     "53c4f92c-e30b-4dbc-a2e1-931a795928d6": {
       "type": "accordions",
+      "disabled": true,
       "blocks": {
         "template--18730720428336__53c4f92c-e30b-4dbc-a2e1-931a795928d6-168142034345dd2334-0": {
           "type": "content",
@@ -460,111 +774,103 @@
         "visibility": ""
       }
     },
-    "bc320ead-ef72-42f6-85c2-3aec546c7aa3": {
-      "type": "store-locator",
+    "bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b": {
+      "type": "featured-product",
+      "disabled": true,
       "blocks": {
-        "template--19278980776240__bc320ead-ef72-42f6-85c2-3aec546c7aa3-168499308817d1718c-0": {
-          "type": "store",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-0": {
+          "type": "title",
           "settings": {
-            "store_name": "Store name",
-            "store_details": "<p>Share store hours, address and direction details<\/p>",
-            "latitude": "43.651070",
-            "longitude": "-79.347015"
+            "spacing_top": 20,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "",
+            "enable_thumbnails_product_type": false,
+            "enable_thumbnails_vendor": false,
+            "content": ""
           }
         },
-        "template--19278980776240__bc320ead-ef72-42f6-85c2-3aec546c7aa3-168499308817d1718c-1": {
-          "type": "store",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-1": {
+          "type": "price",
           "settings": {
-            "store_name": "Store name",
-            "store_details": "<p>Share store hours, address and direction details<\/p>",
-            "latitude": "44.651070",
-            "longitude": "-79.347015"
+            "spacing_top": 0,
+            "spacing_bottom": 20,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "border--b-width"
+          }
+        },
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-2": {
+          "type": "options",
+          "settings": {
+            "spacing_top": 10,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": ""
+          }
+        },
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-3": {
+          "type": "add",
+          "settings": {
+            "spacing_top": 20,
+            "spacing_bottom": 20,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "border--b-width",
+            "enable_quantity": false,
+            "enable_dynamic_checkout": false,
+            "content": "<p>Remind customers of offers like free shipping and lifetime warranty<\/p>"
+          }
+        },
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-4": {
+          "type": "description",
+          "settings": {
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "border--b-width",
+            "enable_open": true
           }
         }
       },
       "block_order": [
-        "template--19278980776240__bc320ead-ef72-42f6-85c2-3aec546c7aa3-168499308817d1718c-0",
-        "template--19278980776240__bc320ead-ef72-42f6-85c2-3aec546c7aa3-168499308817d1718c-1"
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-0",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-1",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-2",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-3",
+        "template--19346674352432__bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b-16862906204f0930c8-4"
       ],
       "settings": {
-        "enable_dynamic_map": true,
-        "heading": "Store locator",
-        "content": "<p>Showcase your retail location so customers can find you in-person<\/p>",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
+        "product": "maldon-pewter-cabinet-knob",
+        "enable_default_variant": true,
+        "media_gallery_style": "grid",
+        "enable_zoom": true,
+        "enable_alt": false,
+        "enable_variant_images": false,
+        "media_color_scheme": "color__bg-body color__text",
+        "media_ratio": "aspect-[1\/1] aspect-w-1 aspect-h-1",
+        "media_object-sizing": "cover",
+        "enable_ratio": true,
+        "show_product_badges": true,
+        "spacing_top": 40,
+        "spacing_bottom": 40,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
-        "style_border": "border--b-width",
-        "map_style": "silver",
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
-      }
-    },
-    "53dc99b1-ba12-4617-b1c3-e132a10549b1": {
-      "type": "navigation-slider",
-      "blocks": {
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-0": {
-          "type": "slide",
-          "settings": {
-            "heading": "Heading",
-            "url": ""
-          }
-        },
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Heading",
-            "url": ""
-          }
-        },
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-2": {
-          "type": "slide",
-          "settings": {
-            "heading": "Heading",
-            "url": ""
-          }
-        },
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-3": {
-          "type": "slide",
-          "settings": {
-            "heading": "Heading",
-            "url": ""
-          }
-        },
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-4": {
-          "type": "slide",
-          "settings": {
-            "heading": "Heading",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-0",
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-1",
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-2",
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-3",
-        "template--19278980776240__53dc99b1-ba12-4617-b1c3-e132a10549b1-16849931589acf3fdc-4"
-      ],
-      "settings": {
-        "spacing_top": 0,
-        "spacing_bottom": 0,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "style_border": "border--b-width",
+        "style_border": "",
+        "layout_gallery_size": "w-full md:w-1\/3",
         "visibility": ""
       }
     }
   },
   "order": [
     "f96b8e1b-0fd4-4c65-856c-cdd01fe228cc",
-    "ca2883b6-efd0-48c1-8f9e-520a6b9a64bc",
+    "4e310789-ff23-48f7-84b1-66438855531c",
     "7f4e03e9-515b-46ff-a57d-80f6b4ab1956",
-    "fa45b532-e64f-489b-9403-7046250c0e16",
+    "c8dffdc6-6a42-4d8d-b965-414ccf7a31fd",
+    "41c8074e-685c-410b-8046-73e05218bd41",
+    "ab749215-ce5f-402f-9a66-3f94289f38d9",
+    "864502a7-5b95-4bdd-94a7-f6867b31dd70",
+    "ca2883b6-efd0-48c1-8f9e-520a6b9a64bc",
+    "78add441-7432-4508-a526-ae48de7ae891",
     "f3fd7d15-8af4-4a33-810d-e1dbd27ed532",
     "2cf37121-3db2-489b-9610-3dcaac7dca12",
     "53c4f92c-e30b-4dbc-a2e1-931a795928d6",
-    "bc320ead-ef72-42f6-85c2-3aec546c7aa3",
-    "53dc99b1-ba12-4617-b1c3-e132a10549b1"
+    "bbe044d0-7ea5-4fe9-9a0d-e1b9566ebb1b"
   ]
 }

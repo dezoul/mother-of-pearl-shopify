@@ -8,7 +8,7 @@
         "f2232503-8685-46db-aaf1-b796c5ea14f9": {
           "type": "text",
           "settings": {
-            "content": "<p>Make announcements or share a promotion.<\/p>"
+            "content": "<p>New website coming soon - contact us for the full updated catalogue<\/p>"
           }
         }
       },
@@ -16,10 +16,12 @@
         "f2232503-8685-46db-aaf1-b796c5ea14f9"
       ],
       "settings": {
-        "color_scheme": "color__bg-secondary color__secondary",
+        "color_scheme": "color__bg-tertiary color__tertiary",
         "layout_alignment": "left",
         "visibility": "",
-        "show_account_link": true
+        "announcement_delay": 0,
+        "show_account_link": true,
+        "show_localization": false
       }
     },
     "theme_header": {
@@ -41,9 +43,9 @@
       "settings": {
         "dropdown_links": "main-menu",
         "search_links": "",
-        "logo_desktop_height": 22,
+        "logo_desktop_height": 30,
         "logo_mobile_height": 16,
-        "bar_color_scheme": "color__bg-body color__text",
+        "bar_color_scheme": "color__bg-tertiary color__tertiary",
         "bar_color_border": "color__border-divider-1",
         "bar_layout_desktop": "left-below",
         "bar_button_cart_type": "icon",
@@ -53,7 +55,7 @@
         "enable_search": true,
         "dropdown_color_scheme": "color__bg-body color__text",
         "dropdown_color_border": "color__border-divider-1",
-        "search_color_scheme": "color__bg-body color__text",
+        "search_color_scheme": "color__bg-tertiary color__tertiary",
         "search_color_border": "color__border-divider-1",
         "visibility": ""
       }

@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "3fbc6d8d-a96a-40fe-9f33-fd35c5f5374c": {
+      "type": "product-grid",
+      "blocks": {
+        "template--19551633703216__3fbc6d8d-a96a-40fe-9f33-fd35c5f5374c-1686622244c43fd603-0": {
+          "type": "card",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
+            "button_label": "Button",
+            "button_url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--19551633703216__3fbc6d8d-a96a-40fe-9f33-fd35c5f5374c-1686622244c43fd603-0"
+      ],
+      "settings": {
+        "collection": "doorknobs",
+        "products_count": 20,
+        "heading": "Product grid",
+        "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3fbc6d8d-a96a-40fe-9f33-fd35c5f5374c"
+  ]
+}
