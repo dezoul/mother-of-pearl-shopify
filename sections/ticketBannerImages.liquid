@@ -4,56 +4,31 @@ Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}<section class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+{% endcomment %}<section class="
+                                                  {{ section.settings.visibility }}
+                                                  {{ section.settings.color_scheme }} 
+                                                  {{ section.settings.color_border }}
+                                                  {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}"style="
+                                                                              padding-top:{{ section.settings.spacing_top }}px;
+                                                                              padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div class="flex flex-row flex-wrap items-end px-[5%] gap-8 {{ section.settings.layout_x_alignment }}">
-      <div class="
-        {% comment %}max-w-prose{% endcomment %}
-        md:w-auto w-full">
+    <div class="flex flex-row flex-wrap items-end
+                                                                                                      {{ section.settings.layout_x_alignment }}">
+      <div class="max-w-prose md:w-auto w-full">
         {%- unless section.settings.heading == blank -%}
-          <h3 class="heading-caps">{{ section.settings.heading }}</h3>
+          <h3>{{ section.settings.heading }}</h3>
         {%- endunless -%}
-        {%- unless section.settings.content == blank -%}
-          <div class="md:columns-2">
-            {{ section.settings.content }}
-          </div>
-        {%- endunless -%}
-
-        <div
-          class="flex my-8">
-
+        <div class="flex flex-nowrap gap-40">
           {% for block in section.blocks %}
-            <div class="aspect-[4/5] relative w-full">
-              {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
-            </div>
-          {% endfor %}
-        </div>
-
-
-        {%- unless section.settings.button_url == blank -%}
-          <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
-            <a href="{{ section.settings.button_url }}" class="flex justify-end no-underline">
-              <span class="leading-none text-[1.25rem]">
-                {{ section.settings.button_label }}
-              </span>
-              <svg
-                class="-rotate-45"
-                xmlns="http://www.w3.org/2000/svg"
-                width="23"
-                height="23"
-                viewBox="0 0 39 39"
-                fill="none">
-                <path
-                  d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125"
-                  stroke="#FAF7F1"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
-                  shape-rendering="crispEdges" />
-              </svg>
+            <a href="{{block.settings.url}}" class="w-32 flex-shrink-0">
+              <div class="aspect-[4/5] relative">
+                {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-contain object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+              </div>
             </a>
-          </div>
-        {%- endunless -%}
+
+          {% endfor %}
+
+        </div>
       </div>
     </div>
 
@@ -62,7 +37,7 @@ Globals:
 
 {% schema %}
   {
-    "name": "Mini gallery",
+    "name": "Image Ticket Banner",
     "settings": [
       {
         "type": "header",
@@ -74,22 +49,10 @@ Globals:
         "label": "t:sections.all.content.settings.heading.label"
       },
       {
-        "type": "richtext",
-        "id": "content",
-        "label": "t:sections.all.content.settings.content.label"
-      },
-      {
-        "type": "text",
-        "id": "button_label",
-        "label": "t:sections.all.content.settings.button_label.label"
-      }, {
-        "type": "url",
-        "id": "button_url",
-        "label": "t:sections.all.content.settings.button_url.label"
-      }, {
         "type": "header",
         "content": "t:sections.all.headers.header__22.content"
-      }, {
+      },
+      {
         "type": "range",
         "id": "spacing_top",
         "min": 0,
@@ -258,23 +221,24 @@ Globals:
           {
             "id": "image_featured",
             "type": "image_picker",
-            "label": "gallery image"
+            "label": "Ticket Banner image"
+          }, {
+            "id": "url",
+            "type": "url",
+            "label": "Logo URL"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "Mini gallery",
+        "name": "Ticket banner with images",
         "settings": {
           "color_scheme": "color__bg-body color__text",
           "color_border": "color__border-divider-1",
           "color_button": "btn btn--secondary",
           "style_border": "border--b-width",
-          "heading": "Rich text",
-          "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-          "button_label": "Button",
-          "button_url": "/"
+          "heading": "Rich text"
         }
       }
     ],
