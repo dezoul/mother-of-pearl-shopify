@@ -37,7 +37,7 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-2": {
           "type": "buttons",
           "settings": {
-            "button_width": 8,
+            "button_width": 9,
             "button_label": "TELL US ABOUT YOUR PROJECT",
             "button_url": "\/collections\/all",
             "secondary_button_color": "btn btn--neutral",
@@ -53,6 +53,7 @@
       ],
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-overlay-1 color__text",
         "color_text": "",
@@ -60,7 +61,311 @@
         "style_border": "border--b-width",
         "content_width": 40,
         "image_position": "left",
-        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "0f5c7be2-6398-41d5-8ac3-624b71690e0b": {
+      "type": "mini-gallery",
+      "blocks": {
+        "885b984c-02a9-48fe-9179-f19302f76661": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
+        },
+        "416cad5c-e43c-468e-b8ab-477c6deaa304": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
+        },
+        "871e2efc-5bc6-4153-821f-1e85437e124e": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
+        },
+        "101913ea-9f39-4a12-a265-f1c7e742e80f": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
+        },
+        "ddb4bace-0725-4749-8222-b2a4537c8d1d": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
+        }
+      },
+      "block_order": [
+        "885b984c-02a9-48fe-9179-f19302f76661",
+        "416cad5c-e43c-468e-b8ab-477c6deaa304",
+        "871e2efc-5bc6-4153-821f-1e85437e124e",
+        "101913ea-9f39-4a12-a265-f1c7e742e80f",
+        "ddb4bace-0725-4749-8222-b2a4537c8d1d"
+      ],
+      "settings": {
+        "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
+        "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu. <\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "9e35023e-6eba-4666-8c91-0f7ad6050287": {
+      "type": "ticketBannerImages",
+      "blocks": {
+        "8d81d074-3400-42f9-b9ef-a6112f003017": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/Tasman_Forge.jpg",
+            "url": ""
+          }
+        },
+        "49caaf98-241b-429c-923a-fe1c519d86cb": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/Finesse.jpg",
+            "url": ""
+          }
+        },
+        "415affe9-e7ec-469f-8804-072dba61ac19": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/B_M_Hardware.jpg",
+            "url": ""
+          }
+        },
+        "78ba0da2-e522-45a8-ae6d-739a98136b56": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/Lockwood_Assa_Abloy.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8d81d074-3400-42f9-b9ef-a6112f003017",
+        "49caaf98-241b-429c-923a-fe1c519d86cb",
+        "415affe9-e7ec-469f-8804-072dba61ac19",
+        "78ba0da2-e522-45a8-ae6d-739a98136b56"
+      ],
+      "settings": {
+        "heading": "BRANDS WE STOCK",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
+      }
+    },
+    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f": {
+      "type": "linked-gallery",
+      "blocks": {
+        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0": {
+          "type": "images",
+          "settings": {
+            "heading": "ENTRANCE DOOR HARDWARE",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "url": ""
+          }
+        },
+        "d9093ab7-8250-4b87-a503-8ef275d8e470": {
+          "type": "images",
+          "settings": {
+            "heading": "LEVER HANDLE SETS",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "url": ""
+          }
+        },
+        "05d2694f-f3d6-401d-a197-883b7167fa28": {
+          "type": "images",
+          "settings": {
+            "heading": "ACCESSORIES",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0",
+        "d9093ab7-8250-4b87-a503-8ef275d8e470",
+        "05d2694f-f3d6-401d-a197-883b7167fa28"
+      ],
+      "settings": {
+        "heading": "ARCHITECTURAL HARDWARE",
+        "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>",
+        "button_label": "SEE ALL",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "247bdb45-51ad-4b49-8988-da1256ed393d": {
+      "type": "banner-alternativev2",
+      "blocks": {
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0": {
+          "type": "heading",
+          "settings": {
+            "content": "Signature collection"
+          }
+        },
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>We have designed and made a substantial selection of ranges incorporating copper, ebony and other fine timbers, shell and brass. We have ranges under development and of course we can realise your unique vision for a product.<\/p><h6><\/h6><p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>"
+          }
+        },
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 11,
+            "button_label": "FIND THE PERFECT  SOLUTION",
+            "button_url": "\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0",
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1",
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "minHeight": 50,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "right",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "da3aad33-1739-4ae0-b1d4-6584bfabdb97": {
+      "type": "collection-slider",
+      "blocks": {
+        "template--20007614153008__da3aad33-1739-4ae0-b1d4-6584bfabdb97-16894950260a135efe-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "cabinet-knobs-handles"
+          }
+        },
+        "633204c8-8483-4409-be05-f62ac1bcff6c": {
+          "type": "collection",
+          "settings": {
+            "collection": "door-hinges"
+          }
+        },
+        "69964a42-9df3-4567-a672-b8fab403e626": {
+          "type": "collection",
+          "settings": {
+            "collection": "doorknobs"
+          }
+        },
+        "6332814a-1e7b-4ed7-8a9e-9f10034cdb22": {
+          "type": "collection",
+          "settings": {
+            "collection": "entrance-door-hardware"
+          }
+        },
+        "d5868646-1487-48ae-ae88-e6cd8384a274": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-hardware"
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614153008__da3aad33-1739-4ae0-b1d4-6584bfabdb97-16894950260a135efe-0",
+        "633204c8-8483-4409-be05-f62ac1bcff6c",
+        "69964a42-9df3-4567-a672-b8fab403e626",
+        "6332814a-1e7b-4ed7-8a9e-9f10034cdb22",
+        "d5868646-1487-48ae-ae88-e6cd8384a274"
+      ],
+      "settings": {
+        "heading": "Kitchen & Joinery  HARDWARE",
+        "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "visibility": "",
+        "enable_collection_size_count": false
+      }
+    },
+    "44431261-719a-47dc-aa00-d04b36a66e3b": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0": {
+          "type": "heading",
+          "settings": {
+            "content": "TELL US ABOUT YOUR PROJECT"
+          }
+        },
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>At Mother of Pearl, we're more than just purveyors of architectural hardware - we're your trusted partners in design. Our team, with decades of experience in the industry, offers a full-service approach tailored to your unique needs. Whether you're an architect, interior designer, or a passionate homeowner, we’re here to provide one-on-one guidance to help you discover the perfect products to complement your aesthetic. We'll help navigate not only style and finish but also the ideal size and specifications for your project.<\/p>"
+          }
+        },
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 5,
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0",
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1",
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "minHeight": 11,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "border--b-width",
+        "content_width": 40,
+        "image_position": "left",
         "layout_y_alignment": "items-end",
         "layout_x_alignment": "justify-start",
         "visibility": ""
@@ -69,6 +374,12 @@
   },
   "order": [
     "2cf37121-3db2-489b-9610-3dcaac7dca12",
-    "8db3e6a7-e218-40b4-950c-2693c4b4e2e3"
+    "8db3e6a7-e218-40b4-950c-2693c4b4e2e3",
+    "0f5c7be2-6398-41d5-8ac3-624b71690e0b",
+    "9e35023e-6eba-4666-8c91-0f7ad6050287",
+    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
+    "247bdb45-51ad-4b49-8988-da1256ed393d",
+    "da3aad33-1739-4ae0-b1d4-6584bfabdb97",
+    "44431261-719a-47dc-aa00-d04b36a66e3b"
   ]
 }

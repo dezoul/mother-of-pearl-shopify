@@ -29,3 +29,35 @@
   }
   
 }
+
+
+/* ticketbanner  */
+
+:root {
+  --bannerBlockLength: 280px;
+  --bannerBlockTime: 2s;
+}
+
+
+.ticket-container{
+overflow-X: hidden;
+display: flex;
+flex-direction: row-reverse;
+}
+.tickerBanner{
+display: flex;
+flex-direction: row-reverse;
+text-align: center;
+position: relative;
+animation: ticker 2s infinite linear;
+animation-duration: var(--bannerBlockTime), 2s;
+}
+.tickerBanner:hover{
+animation-play-state: paused;
+}
+
+
+@keyframes ticker {
+  from {left:0}
+  to   {left:var(--bannerBlockLength)}
+}

@@ -4,90 +4,71 @@ Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}<section class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px; padding-bottom:{{ section.settings.spacing_bottom }}px;">
+{% endcomment %}<section class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div class="flex flex-row flex-wrap items-end {{ section.settings.layout_x_alignment }}">
-      <div
-        class="w-full px-[5%]">
+    <div class="flex flex-row flex-wrap items-end px-[5%] gap-8 {{ section.settings.layout_x_alignment }}">
+      <div class="
+        {% comment %}max-w-prose{% endcomment %}
+        md:w-auto w-full">
         {%- unless section.settings.heading == blank -%}
-          <h3>{{ section.settings.heading }}</h3>
+          <h3 class="heading-caps">{{ section.settings.heading }}</h3>
         {%- endunless -%}
-        <div class="ticket-container overflow-hidden">
-          <div class=" tickerBanner flex flex-nowrap">
-
-            {% for block in section.blocks %}
-              <a href="{{block.settings.url}}" class="w-40 flex-shrink-0 inline-block text-block px-8">
-                <div class="aspect-[4/5] relative">
-                  {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-contain object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
-                </div>
-              </a>
-            {% endfor %}
-
+        {%- unless section.settings.content == blank -%}
+          <div>
+            {{ section.settings.content }}
           </div>
+        {%- endunless -%}
+
+        <div class="md:flex my-8 gap-4">
+
+          {% for block in section.blocks %}
+            <a href="{{block.settings.url}}" class="no-underline w-full flex justify-between flex-col">
+              {% if block.settings.heading != null %}
+                <h4 class="!text-lg">
+                  {{ block.settings.heading }}
+                </h4>
+              {% endif %}
+              <div class="aspect-[4/5] relative w-full">
+                {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+              </div>
+            </a>
+          {% endfor %}
         </div>
 
+
+        {%- unless section.settings.button_url == blank -%}
+          <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
+            <a href="{{ section.settings.button_url }}" class="flex justify-end no-underline">
+              <span class="leading-none text-[1.25rem]">
+                {{ section.settings.button_label }}
+              </span>
+              <svg
+                class="-rotate-45"
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="23"
+                viewBox="0 0 39 39"
+                fill="none">
+                <path
+                  d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125"
+                  stroke="var(--svg-fill)"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                  shape-rendering="crispEdges" />
+              </svg>
+            </a>
+          </div>
+        {%- endunless -%}
       </div>
     </div>
 
   </div>
 </section>
 
-<script>
-  const banner = document.querySelector('.tickerBanner');
-  const textBlock = banner.querySelectorAll('.text-block');
-
-  console.log(textBlock[1].offsetWidth)
-
-  let bannerBlock = 0;
-  textBlock.forEach(block => {
-    bannerBlock += block.offsetWidth
-  });
-
-  let bannerLength = bannerBlock
-  console
-    .log(bannerBlock)
-    console
-    .log(bannerLength)
-
-
-    document
-    .documentElement
-    .style
-    .setProperty('--bannerBlockLength', `${bannerBlock}px`);
-  document.documentElement.style.setProperty('--bannerBlockTime', `${
-    (bannerBlock / 50)
-  }s`);
-
-
-  function extendBanner() {
-    if (bannerLength < (screen.width + bannerBlock)) {
-      textBlock.forEach(block => {
-        console.log(block.innerHTML)
-
-// add the newly created element and its content into the DOM
-        banner.appendChild(block.cloneNode(true));
-
-// banner.querySelector('a:last-child').innerHTML = block.innerHTML
-// banner.querySelector('a:last-child').href = block.href
-
-      });
-      bannerLength += bannerBlock;
-      console.log(bannerLength)
-      extendBanner()
-    }
-  }
-
-
-
-  extendBanner()
-
-  console.log(bannerLength)
-</script>
-
-
 {% schema %}
   {
-    "name": "Image Ticket Banner",
+    "name": "linked gallery",
     "settings": [
       {
         "type": "header",
@@ -99,10 +80,22 @@ Globals:
         "label": "t:sections.all.content.settings.heading.label"
       },
       {
-        "type": "header",
-        "content": "t:sections.all.headers.header__22.content"
+        "type": "richtext",
+        "id": "content",
+        "label": "t:sections.all.content.settings.content.label"
       },
       {
+        "type": "text",
+        "id": "button_label",
+        "label": "t:sections.all.content.settings.button_label.label"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "t:sections.all.content.settings.button_url.label"
+      }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__22.content"
+      }, {
         "type": "range",
         "id": "spacing_top",
         "min": 0,
@@ -265,30 +258,37 @@ Globals:
     ],
     "blocks": [
       {
-        "name": "image",
+        "name": "column",
         "type": "images",
         "settings": [
           {
+            "id": "heading",
+            "type": "text",
+            "label": "Column Heading"
+          }, {
             "id": "image_featured",
             "type": "image_picker",
-            "label": "Ticket Banner image"
+            "label": "gallery image"
           }, {
             "id": "url",
             "type": "url",
-            "label": "Logo URL"
+            "label": "link"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "Ticket banner with images",
+        "name": "linked gallery",
         "settings": {
           "color_scheme": "color__bg-body color__text",
           "color_border": "color__border-divider-1",
           "color_button": "btn btn--secondary",
           "style_border": "border--b-width",
-          "heading": "Rich text"
+          "heading": "Rich text",
+          "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
+          "button_label": "Button",
+          "button_url": "/"
         }
       }
     ],

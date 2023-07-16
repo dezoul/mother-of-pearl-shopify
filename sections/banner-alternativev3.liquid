@@ -12,7 +12,9 @@ Possible enhancements:
 
 Pro tips:
 - Use images that have a high contrast with text.
-{% endcomment %}<section class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="window--wide  flex md:items-center items-stretch justify-center py-[5%] md:py-32" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh"{% endif %}>
+{% endcomment %}<section
+  class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
+  <div class="window--wide  flex md:items-center items-stretch justify-center" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh"{% endif %}>
 
 
     {% assign lazy_loading = 'eager' %}
@@ -23,13 +25,13 @@ Pro tips:
     {% endif %}
 
     {%- comment -%} desktop {%- endcomment -%}
-    <div class="md:block hidden w-full ">
-      <div class="z-10 flex gap-8 {% if section.settings.image_position == "left" %} flex-row-reverse {% endif %}">
+    <div class="md:block hidden w-full">
+      <div class="z-10 flex gap-8  py-16 {% if section.settings.image_position == "left" %} flex-row-reverse {% endif %}">
 
         {% comment %} content {% endcomment %}
         <div class="flex flex-grow" style="width: {{ section.settings.content_width }}%">
           <div class="flex w-full h-full">
-            <div class="flex justify-center w-full overflow-hidden  {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
+            <div class="flex justify-center w-full overflow-hidden {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
               <div
                 class='max-w-prose flex flex-col gap-4 py-4 px-8
                 {% if section.settings.image_position == 'right' %}pl-4{% endif %}
@@ -47,30 +49,11 @@ Pro tips:
                     {%- when 'buttons' -%}
                     <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
                       {%- unless block.settings.button_url == blank -%}
-                        <a href="{{ block.settings.button_url }}" class="flex justify-end items-center no-underline">
-                          <span class="leading-none" style="width: {{ block.settings.button_width }}rem">
+                        <a href="{{ block.settings.button_url }}" class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8">
+                          <span class="leading-none text-right">
                             {{ block.settings.button_label }}
                           </span>
-                          <svg
-                            class="-rotate-45"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="42"
-                            height="42"
-                            viewBox="0 0 39 39"
-                            fill="none">
-                            <path
-                              d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125"
-                              stroke="var(--svg-fill)"
-                              stroke-width="2"
-                              stroke-linecap="square"
-                              stroke-linejoin="round"
-                              shape-rendering="crispEdges" />
-                          </svg>
-                        </a>
-                      {%- endunless -%}
-                      {%- unless block.settings.secondary_button_url == blank -%}
-                        <a href="{{ block.settings.secondary_button_url }}" class="{{ block.settings.secondary_button_color }}">
-                          {{ block.settings.secondary_button_label }}
+
                         </a>
                       {%- endunless -%}
                     </div>
@@ -84,12 +67,13 @@ Pro tips:
         </div>
 
         {% comment %} image {% endcomment %}
-        <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
-          <div class="relative w-full overflow-hidden">
+        <div class="flex w-1/2 flex-shrink pt-36" style="width: calc(100% - {{ section.settings.content_width }}%)">
+          <div class="relative w-full overflow-hidden
+                                                                                                                                                                                                                                                                                                                                                                                    ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}
-              {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full absolute object-cover bg-white z-10' }}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full object-cover bg-white z-10' }}
             {%- endif -%}
           </div>
         </div>
@@ -98,14 +82,14 @@ Pro tips:
     </div>
 
     {%- comment -%} mobile {%- endcomment -%}
-    <div class="md:hidden relative z-10 w-full gap-8 flex-wrap flex-col justify-end ">
+    <div class="md:hidden relative z-10 w-full gap-8 flex flex-wrap flex-col justify-end ">
 
       {% comment %} image {% endcomment %}
       <div class="relative flex-grow">
         {%- if section.settings.image_background_desktop %}
           {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'w-full h-full object-cover z-10', loading: lazy_loading }}
         {% else %}
-          {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full absolute object-cover bg-white z-10' }}
+          {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full object-cover bg-white z-10' }}
         {%- endif -%}
       </div>
 
@@ -126,39 +110,19 @@ Pro tips:
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when 'heading' -%}
-                <h1 class="m-0 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
+                <h1 class="m-0 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
                 {%- when 'content' -%}
                 <div class="m-0--clear {{ section.settings.color_text }}" style="  padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {{ block.settings.content }}
                 </div>
                 {%- when 'buttons' -%}
-                <div style="  padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                <div style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {%- unless block.settings.button_url == blank -%}
-                    <a href="{{ block.settings.button_url }}" class="flex justify-end items-center no-underline">
-                      <span style="width: {{ block.settings.button_width }}rem">
+                    <a href="{{ block.settings.button_url }}" class="justify-end no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6]">
+                      <span class="text-right" style="width: {{ block.settings.button_width }}rem">
                         {{ block.settings.button_label }}
                       </span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="-rotate-45"
-                        width="42"
-                        height="42"
-                        viewBox="0 0 39 39"
-                        fill="none">
-                        <path
-                          d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125"
-                          stroke="#FAF7F1"
-                          stroke-width="2"
-                          stroke-linecap="square"
-                          stroke-linejoin="round"
-                          shape-rendering="crispEdges" />
-                      </svg>
-                    </a>
-                  {%- endunless -%}
-                  {%- unless block.settings.secondary_button_url == blank -%}
-                    <a href="{{ block.settings.secondary_button_url }}" class="{{ block.settings.secondary_button_color }}">
-                      {{ block.settings.secondary_button_label }}
+
                     </a>
                   {%- endunless -%}
                 </div>
@@ -176,7 +140,7 @@ Pro tips:
 
 {% schema %}
   {
-    "name": "t:sections.banner_alternative.name",
+    "name": "Alt banner v3",
     "settings": [
       {
         "type": "header",
@@ -488,7 +452,7 @@ Pro tips:
     ],
     "presets": [
       {
-        "name": "t:sections.banner_alternative.name",
+        "name": "Alt banner v3",
         "settings": {
           "enable_lazy_loading": false,
           "color_scheme": "color__bg-overlay-1 color__text",

@@ -8,11 +8,13 @@
   /* - body */
   .color__bg-body {
     background-color: var(--color__bg-body-light);
-  }
 
+  }
+  
   /* - text */
   .color__bg-text {
     background-color: var(--color__text-light);
+    --svg-fill:var(--color__text-light);
   }
   
   /* - overlay 1 */
@@ -71,30 +73,40 @@
   /* - text */
   .color__text {
     color: var(--color__text-light);
+    --svg-fill:var(--color__text-light);
   }
 
   /* - link */
   .color__link {
     color: var(--color__link-light);
+    --svg-fill:var(--color__link-light);
+
   }
   /* - primary */
   .color__primary {
     color: var(--color-primary-button-text-light);
+    --svg-fill:var(--color-primary-button-text-light);
+
   }
 
   /* - secondary */
   .color__secondary {
     color: var(--color-secondary-button-text-light);
-  }
+    --svg-fill:var(--color-secondary-button-text-light);
+    }
 
   /* - tertiary */
   .color__tertiary {
     color: var(--color-tertiary-button-text-light);
+    --svg-fill:var(--color-tertiary-button-text-light);
+    
   }
   
   /* - neutral */
   .color__neutral {
     color: var(--color-neutral-button-text-light);
+    --svg-fill:var(--color-neutral-button-text-light);
+
   }
 
   /* ======= */
