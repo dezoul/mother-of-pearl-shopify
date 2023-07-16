@@ -4,6 +4,7 @@
   "sections": {
     "theme_announcement": {
       "type": "theme__announcement",
+      "disabled": true,
       "blocks": {
         "f2232503-8685-46db-aaf1-b796c5ea14f9": {
           "type": "text",
@@ -29,6 +30,7 @@
       "blocks": {
         "e561cffb-e23b-4a10-8382-4959a1b99bf2": {
           "type": "Content",
+          "disabled": true,
           "settings": {
             "menu": "shop",
             "url": "shopify:\/\/collections\/all",
@@ -43,16 +45,17 @@
       "settings": {
         "dropdown_links": "main-menu",
         "search_links": "",
+        "logo_light": "shopify:\/\/shop_images\/MOP-logo-sand.svg",
         "logo_desktop_height": 30,
         "logo_mobile_height": 16,
         "bar_color_scheme": "color__bg-tertiary color__tertiary",
         "bar_color_border": "color__border-divider-1",
-        "bar_layout_desktop": "left-below",
+        "bar_layout_desktop": "center-below",
         "bar_button_cart_type": "icon",
         "bar_button_search_type": "icon",
-        "bar_button_login_type": "icon",
+        "bar_button_login_type": "none",
         "bar_button_menu_type": "icon",
-        "enable_search": true,
+        "enable_search": false,
         "dropdown_color_scheme": "color__bg-body color__text",
         "dropdown_color_border": "color__border-divider-1",
         "search_color_scheme": "color__bg-tertiary color__tertiary",

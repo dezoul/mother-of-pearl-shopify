@@ -13,8 +13,9 @@
     },
     "theme_age-verification": {
       "type": "theme__age-verification",
+      "disabled": true,
       "settings": {
-        "enable_age_verification": true,
+        "enable_age_verification": false,
         "age_verification_style": "full_date",
         "age_limit": 18,
         "heading": "Verify your age",

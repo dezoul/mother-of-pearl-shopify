@@ -128,3 +128,12 @@
     font-weight: bold;
   }
 }
+
+
+/* custom */
+
+
+body .heading-emphasis{
+  text-transform: uppercase;
+  font-style: italic;  
+}

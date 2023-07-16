@@ -1,7 +1,7 @@
 {
   "current": {
-    "background_body_light": "#fffbf7",
-    "foreground_body_light": "#143e52",
+    "background_body_light": "#232528",
+    "foreground_body_light": "#fcfaf6",
     "foreground_body_dark": "#fdfdfd",
     "border_light": "#f9ebc9",
     "background_primary_light": "#c79f67",
@@ -25,9 +25,9 @@
     "type_thumbnail_capitilization": "",
     "type_button_capitilization": "",
     "type_seperator": "dot",
-    "header_position": "dynamic",
+    "header_position": "relative",
     "layout_alignment": "",
-    "layout_horizontal": "window--wide",
+    "layout_horizontal": "window",
     "layout_gap_size": 10,
     "enable_audio": false,
     "enable_animations": true,
