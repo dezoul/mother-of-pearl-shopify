@@ -52,7 +52,6 @@
         "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-end text-right",
-        "content-width": 21,
         "visibility": ""
       }
     },
@@ -157,7 +156,6 @@
         "template--16236364693672__2601b095-9f73-479a-a83e-f4c5b443a44d-1688090002f97a94e3-0": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Shipping & Returns",
             "content": "",
             "button_label": "read more",
@@ -183,7 +181,6 @@
         "d280ae5a-6a52-4dea-86fd-b5177daff36a": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "About Juju",
             "content": "",
             "button_label": "read more",
@@ -209,7 +206,6 @@
         "71b72d0c-f846-408e-875e-4754ce6b4442": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Store Locator",
             "content": "",
             "button_label": "read more",

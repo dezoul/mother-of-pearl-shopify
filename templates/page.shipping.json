@@ -52,7 +52,6 @@
         "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-end text-right",
-        "content-width": 21,
         "visibility": ""
       }
     },

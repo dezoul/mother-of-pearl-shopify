@@ -53,7 +53,6 @@
         "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-center text-center",
-        "content-width": 45,
         "visibility": ""
       }
     },
@@ -81,8 +80,7 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "content": "",
-            "heading-width": 31
+            "content": ""
           }
         },
         "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-1": {
@@ -130,7 +128,6 @@
         "template--16238486061224__be1e7e7a-cffe-47af-90ce-37b15efbfe72-1688090002f97a94e3-2": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Our Materials",
             "content": "",
             "button_label": "READ MORE",
@@ -156,7 +153,6 @@
         "32c2588d-4a36-4d2b-94e1-90b693a0d4b8": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Shipping & Returns",
             "content": "",
             "button_label": "READ MORE",
@@ -182,7 +178,6 @@
         "848b4780-1340-4348-943c-32efca1932b3": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "About JUJU",
             "content": "",
             "button_label": "READ MORE",

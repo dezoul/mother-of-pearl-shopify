@@ -50,7 +50,7 @@
       "loading": "Loading...",
       "pages": "Pages",
       "articles": "Articles",
-      "collections": "",
+      "collections": "Collections",
       "products": "Products",
       "result": "Result"
     },
@@ -67,7 +67,7 @@
       "change_country": "Change Country"
     },
     "footer": {
-      "copyright": "Copyright {{ y }} © Mother of Pearl & Sons. All rights reserved."
+      "copyright": "Copyright {{ y }} ©. All rights reserved."
     },
     "errors": {
       "general": "Something went wrong..."
@@ -294,10 +294,5 @@
     "changelog": "Changelog",
     "by": "by",
     "visibility_note": "This widget will not be visible to customers visiting your online store."
-  },
-  "shopify": {
-    "page_titles": {
-      "products": "Explore Products"
-    }
   }
 }

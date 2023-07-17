@@ -53,7 +53,6 @@
         "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-center text-center",
-        "content-width": 45,
         "visibility": ""
       }
     },
@@ -63,7 +62,6 @@
         "template--16238456012968__5498f409-eb5e-41e2-9c3f-339949fae145-1688090002f97a94e3-2": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Our Materials",
             "content": "<p>Learn more about the materials we use to make our bags<\/p>",
             "button_label": "learn more",
@@ -89,7 +87,6 @@
         "855e2a98-5fe3-4665-99eb-a550ff9a1f40": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "About JUJU",
             "content": "<p>Learn more about us and the wonderful journey we have been on.<\/p>",
             "button_label": "read more",
@@ -115,7 +112,6 @@
         "9c3c53d5-e32c-49e8-a508-2232da83c3ea": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Shipping & Returns",
             "content": "<p>Learn more about our shipping and return policies.<\/p>",
             "button_label": "learn more",
@@ -141,7 +137,6 @@
         "737c8918-13fa-41f0-a9f5-5247dfedc0ac": {
           "type": "content",
           "settings": {
-            "heading-position": "top",
             "heading": "Store Locator",
             "content": "<p>Learn more about all the places you can grab a JUJU & CO bag.<\/p>",
             "button_label": "learn more",
