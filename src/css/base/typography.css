@@ -109,7 +109,6 @@
     @apply md:mb-4 mb-2;
   }
 
-  
   ul {
     @apply pl-4 list-disc;
   }
@@ -122,6 +121,7 @@
   strong {
     font-weight: bold;
   }
+  
 
   /* mark tag for search query highlight */
   mark {
@@ -129,7 +129,6 @@
     font-weight: bold;
   }
 }
-
 
 /* custom */
 
