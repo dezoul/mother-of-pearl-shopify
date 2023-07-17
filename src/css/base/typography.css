@@ -138,7 +138,7 @@ body .heading-emphasis{
   font-style: italic;  
 }
 
-button:focus {
+*:focus {
   box-shadow: none !important;
   outline: 0px solid transparent !important;
   outline-offset: 2px;

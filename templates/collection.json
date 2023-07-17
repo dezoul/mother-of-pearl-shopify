@@ -21,6 +21,7 @@
       "blocks": {
         "e697d97e-8310-4ca0-adeb-54d7222e15c1": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "heading": "",
             "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
@@ -34,6 +35,7 @@
         },
         "0f716542-eff1-4b59-a9c9-c47955447221": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "url": "",
             "heading": "",
@@ -58,7 +60,7 @@
         "row_size_mobile": "grid-cols-2",
         "enable_sort": false,
         "enable_filter": true,
-        "products_per_page": 12
+        "products_per_page": 5
       }
     },
     "5a29046a-f810-42aa-98fc-72dc0ded9629": {

@@ -36,20 +36,20 @@ Pro tips:
 {% endfor %}
 
   <section class="sticky top-0 z-20
-              {{ section.settings.color_border }}
-              {{ section.settings.color_scheme }}"x-ref="destop_filter"x-data="{ 
-                sort_by : ['{{ sort_by }}'],
-                height: 0
-              }"{% if settings.header_position == 'sticky' %}x-init="
-                  height = $refs.header.offsetHeight;
-                  $refs.destop_filter.style.top = height + 'px';
-                "{% endif %}>{%- comment -%}desktop filterbar{%- endcomment -%}
+                  {{ section.settings.color_border }}
+                  {{ section.settings.color_scheme }}"x-ref="destop_filter"x-data="{ 
+                    sort_by : ['{{ sort_by }}'],
+                    height: 0
+                  }"{% if settings.header_position == 'sticky' %}x-init="
+                      height = $refs.header.offsetHeight;
+                      $refs.destop_filter.style.top = height + 'px';
+                    "{% endif %}>{%- comment -%}desktop filterbar{%- endcomment -%}
   {% if section.settings.enable_sort or section.settings.enable_filter %}
     <form
       id="js:desktopFilter"
       class="md:block sticky top-0 hidden border--b-width color__border-divider-1
-                              {{ section.settings.color_scheme }}
-                              {{ settings.layout_horizontal }}"
+                                      {{ section.settings.color_scheme }}
+                                      {{ settings.layout_horizontal }}"
       @change.prevent="handleFilterChange('js:desktopFilter');">
       <div
         class="flex flex-row flex-wrap items-center justify-end gap-2 py-4">
@@ -57,10 +57,10 @@ Pro tips:
         <div
           class="max-w-full"
           x-data="{
-                                                index: 0,
-                                                index_scroll: 0,
-                                                index_size: {{ collection.filters.size }}
-                                              }">
+                                                            index: 0,
+                                                            index_scroll: 0,
+                                                            index_size: {{ collection.filters.size }}
+                                                          }">
 
           <div
             class="whitespace-nowrap md:snap-x inline-flex flex-wrap w-full gap-2"
@@ -279,11 +279,11 @@ Pro tips:
     <form
       id="js:mobileFilter"
       class="md:hidden bottom-0 z-10 left-0 right-0 border--b-width color__border-divider-1
-                              {{ section.settings.color_scheme }} 
-                              {{ settings.layout_horizontal }}"
+                                      {{ section.settings.color_scheme }} 
+                                      {{ settings.layout_horizontal }}"
       @change.prevent="handleFilterChange('js:mobileFilter');">
       <div
-        class="md:hidden flex-nowrap flex flex-row items-center justify-end py-4">
+        class="md:hidden flex-nowrap flex flex-row items-center justify-between py-4">
 
         {% capture popup_content %}
 
@@ -493,10 +493,10 @@ Pro tips:
             <div
               class="relative w-full"
               x-data="{
-                                                                index: 0,
-                                                                index_scroll: 0,
-                                                                index_size: {{ collection.filters.size }}
-                                                              }">
+                                                                                index: 0,
+                                                                                index_scroll: 0,
+                                                                                index_size: {{ collection.filters.size }}
+                                                                              }">
               <div
                 class="whitespace-nowrap md:snap-x inline-flex w-full overflow-x-auto"
                 x-ref="slider">
@@ -585,15 +585,15 @@ Pro tips:
   {%- if active_filter_count > 0 -%}
     <section
       class="relative -z-10 hidden md:flex flex-wrap py-2
-                              {{ section.settings.color_scheme }} 
-                              {{ settings.layout_horizontal }}">
+                                      {{ section.settings.color_scheme }} 
+                                      {{ settings.layout_horizontal }}">
       <div
         class="relative flex w-full"
         x-data="{
-                                        index: 0,
-                                        index_scroll: 0,
-                                        index_size: {{ collection.filters.size }}
-                                      }">
+                                                  index: 0,
+                                                  index_scroll: 0,
+                                                  index_size: {{ collection.filters.size }}
+                                                }">
         <div
           class="whitespace-nowrap md:snap-x inline-flex w-full gap-2 overflow-x-auto"
           x-ref="slider">
