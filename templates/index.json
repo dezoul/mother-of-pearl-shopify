@@ -98,6 +98,12 @@
           "settings": {
             "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
           }
+        },
+        "c59b8a55-d0d8-4598-b777-9faa26054cb6": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "416cad5c-e43c-468e-b8ab-477c6deaa304",
         "871e2efc-5bc6-4153-821f-1e85437e124e",
         "101913ea-9f39-4a12-a265-f1c7e742e80f",
-        "ddb4bace-0725-4749-8222-b2a4537c8d1d"
+        "ddb4bace-0725-4749-8222-b2a4537c8d1d",
+        "c59b8a55-d0d8-4598-b777-9faa26054cb6"
       ],
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
