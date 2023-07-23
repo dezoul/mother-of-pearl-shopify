@@ -1,66 +1,99 @@
-<!-- sections/collection-slider.liquid -->
+<!-- sections/text.liquid -->
 {% comment %} 
-Slider of cards showcasing different collections.
+Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
+{% endcomment %}<section
+  class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} selection:{{ section.settings.style_border }}">
+  <div class="{{ settings.layout_horizontal }}"style=" padding-top:{{ section.settings.spacing_top }}px; padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-Possible enhancements:
-- Move arrow placement to avoid content overlap.
+    <div class="{{ section.settings.layout_x_alignment }}">
+      <div class="max-w-lg mb-10p">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="italic uppercase text-3xl">
+            {{ section.settings.heading }}</h2>
+        {%- endunless -%}
+        {%- unless section.settings.content == blank -%}
+          <div class="pl-8 mb-4">{{ section.settings.content }}</div>
+        {%- endunless -%}
+        {%- unless section.settings.button_url == blank -%}
+          <a href="{{ section.settings.button_url }}" class="mt-2 {{ section.settings.color_button }}">
+            {{ section.settings.button_label }}
+          </a>
+        {%- endunless -%}
+        </div>
 
-Pro tips:
-- Use this section to highlight different product categories.
-{% endcomment %}<section class="
-                      {{ section.settings.visibility }}
-                      {{ section.settings.color_scheme }} 
-                      {{ section.settings.color_border }}
-                      {{ section.settings.style_border }}"> <div class="!px-0 
-                                    {{ settings.layout_horizontal }}"style="
-                                    padding-top:{{ section.settings.spacing_top }}px;
-                                    padding-bottom:{{ section.settings.spacing_bottom }}px;">
+        <div class="sm:columns-2 gap-36 brand-grid">
 
-    {% render 'component__section-header' 
-     , container_class: 'px-4' %}
+          {% for block in section.blocks %}
+            <figure class="group break-inside-avoid mb-16 sm:mb-36">
+              <h4 class="text-base font-medium font-wide uppercase">
+                {{ block.settings.heading }}
+              </h4>
+              {{ block.settings.image_featured | image_url: width: 700 | image_tag: class: 'w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+              <figcaption class="py-4 text-sm">
+                {{ block.settings.image_featured.alt }}</figcaption>
 
-    {% if section.settings.promo_enable %}
-      {% assign slider_size = section.blocks.size %}
-    {% else %}
-      {% assign slider_size = section.blocks.size | minus: 1 %}
-    {% endif %}
+              <a class="flex items-center justify-between font-wide text-xs uppercase no-underline">
+                <span>Request a catalog</span>
+                <!-- Arrow up right -->
+                <svg
+                  class="h-full ml-2 -mt-1"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.0542 10.6525L10.6717 0.544087M10.6717 0.544087L1.07588 0.508765M10.6717 0.544087L11.1843 10.1262"
+                    stroke="#fdfbf8"
+                    stroke-linecap="square"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
 
-    {%- capture slides -%}
-      {% for block in section.blocks %}
-        {%- case block.type -%}
-          {%- when 'collection' -%}
-          <div class="md:snap-center md:w-[25%] p-1 flex justify-center flex-none w-9/12 whitespace-normal" x-bind:data-slide="{{ forloop.index0 }}">
-            {% render 'component__collection-item' 
-             , collection: block.settings.collection %}
-          </div>
-          {%- when 'card' -%}
-          <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" x-bind:data-slide="{{ forloop.index0 }}">
-            {% render 'component__content-item' 
-             , background_color: settings.thumbmails_color_scheme,
-             title: block.settings.heading,
-             content: block.settings.content,
-             button_label: block.settings.button_label,
-             url: block.settings.button_url %}
-          </div>
-        {%- endcase -%}
-      {% endfor %}
-    {%- endcapture -%}
-
-    {% render 'component__slider' 
-     , container_class: 'px-4',
-     slider_size: slider_size,
-     slides: slides %}
-
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
 
+<style>
+  .top-of-column:not(:first-child) {
+    position: relative;
+    top: 9rem;
+    margin-bottom: 18rem;
+  }
+</style>
+
+<script>
+  // Get the column container element
+  const columnContainer = document.querySelector('.brand-grid');
+
+// Calculate the threshold position (parent container's Y-position + threshold)
+  const threshold = columnContainer.offsetTop + 5;
+
+// Get all the elements within the column container
+  const elements = Array.from(columnContainer.children);
+
+// Find the elements at the top of each column
+  const topColumnElements = elements.filter((element) => {
+    return element.offsetTop <= threshold;
+  });
+
+// Add a class to the elements at the top of each column
+  topColumnElements.forEach((element) => {
+    element.classList.add('top-of-column');
+  });
+</script>
+
 {% schema %}
   {
-    "name": "t:sections.collection_slider.name",
+    "name": "brand gallery",
     "settings": [
       {
         "type": "header",
@@ -215,17 +248,17 @@ Pro tips:
         "label": "t:sections.all.layout.settings.layout_x_alignment.label",
         "options": [
           {
-            "value": "justify-between",
+            "value": "",
             "label": "t:sections.all.layout.settings.layout_x_alignment.options__1.label"
           }, {
-            "value": "text-center justify-center flex-col items-center",
+            "value": "text-center justify-center",
             "label": "t:sections.all.layout.settings.layout_x_alignment.options__2.label"
           }, {
-            "value": "text-right justify-end flex-col items-end",
+            "value": "text-right justify-end",
             "label": "t:sections.all.layout.settings.layout_x_alignment.options__3.label"
           }
         ],
-        "default": "justify-between"
+        "default": ""
       }, {
         "type": "header",
         "content": "t:sections.all.headers.header__8.content"
@@ -246,101 +279,39 @@ Pro tips:
           }
         ],
         "default": ""
-      }, {
-        "type": "checkbox",
-        "id": "enable_collection_size_count",
-        "label": "t:sections.collection_slider.settings.enable_collection_size_count.label",
-        "default": true
       }
     ],
     "blocks": [
       {
-        "type": "collection",
-        "name": "t:sections.collection_slider.blocks.collection.name",
-        "limit": 20,
+        "name": "brand",
+        "type": "images",
         "settings": [
           {
-            "type": "collection",
-            "id": "collection",
-            "label": "t:sections.collection_slider.blocks.collection.settings.collection.label"
-          }
-        ]
-      }, {
-        "type": "card",
-        "name": "t:sections.collection_slider.blocks.card.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
             "id": "heading",
-            "label": "t:sections.collection_slider.blocks.card.settings.heading.label",
-            "default": {
-              "en": "Block heading",
-              "es": "Encabezado de bloque",
-              "it": "Intestazione del blocco",
-              "de": "Blocküberschrift",
-              "fr": "En-tête de bloc"
-            }
-          }, {
-            "type": "richtext",
-            "id": "content",
-            "label": "t:sections.collection_slider.blocks.card.settings.content.label",
-            "default": {
-              "en": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-              "es": "<p>Describa un producto, haga anuncios o informe a los clientes sobre una promoción.</p>",
-              "it": "<p>Descrivi un prodotto, fai annunci o informa i clienti su una promozione.</p>",
-              "de": "<p>Beschreiben Sie ein Produkt, machen Sie Ankündigungen oder informieren Sie Kunden über eine Werbeaktion.</p>",
-              "fr": "<p>Décrivez un produit, faites des annonces ou informez les clients d’une promotion.</p>"
-            }
-          }, {
             "type": "text",
-            "id": "button_label",
-            "label": "t:sections.collection_slider.blocks.card.settings.button_label.label",
-            "default": {
-              "en": "Button",
-              "es": "Botón",
-              "it": "Bottone",
-              "de": "Knopf",
-              "fr": "Bouton"
-            }
+            "label": "heading"
           }, {
-            "type": "url",
-            "id": "button_url",
-            "label": "t:sections.collection_slider.blocks.card.settings.button_url.label",
-            "default": "/collections/all"
+            "id": "image_featured",
+            "type": "image_picker",
+            "label": "gallery image"
           }
+
         ]
       }
     ],
     "presets": [
       {
-        "name": "t:sections.collection_slider.name",
+        "name": "Brand gallery",
         "settings": {
           "color_scheme": "color__bg-body color__text",
           "color_border": "color__border-divider-1",
           "color_button": "btn btn--secondary",
           "style_border": "border--b-width",
-          "heading": "Collection list slider",
-          "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+          "heading": "Rich text",
+          "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
           "button_label": "Button",
           "button_url": "/"
-        },
-        "blocks": [
-          {
-            "type": "collection",
-            "settings": {
-              "collection": "frontpage"
-            }
-          }, {
-            "type": "card",
-            "settings": {
-              "heading": "Block heading",
-              "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-              "button_label": "Button",
-              "button_url": "/collections/all"
-            }
-          }
-        ]
+        }
       }
     ],
     "disabled_on": {

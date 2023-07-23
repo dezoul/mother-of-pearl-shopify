@@ -67,9 +67,9 @@ Pro tips:
         </div>
 
         {% comment %} image {% endcomment %}
-        <div class="flex w-1/2 flex-shrink pt-36" style="width: calc(100% - {{ section.settings.content_width }}%)">
+        <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
           <div class="relative w-full overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                    ">
+                                                                                                                                                                                                                                                                                                                                                                                                  ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}

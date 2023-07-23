@@ -1,4 +1,6 @@
-<!-- sections/banner-alternative.liquid -->
+<!-- sections/banner-alternative-v2.liquid 
+the one with the image touching the bottom of the page
+-->
 {% comment %} 
 Background image or video with a text overlay.
 
@@ -31,7 +33,7 @@ Pro tips:
           <div class="flex w-full h-full">
             <div class="flex justify-center w-full overflow-hidden {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
               <div
-                class='max-w-prose flex flex-col gap-4 py-4 px-8
+                class='max-w-prose flex flex-col gap-12 py-4 px-8
                 {% if section.settings.image_position == 'right' %}pl-4{% endif %}
                 {% if section.settings.layout_x_alignment contains 'text-center' %}items-center{% endif %}
                 {% if section.settings.layout_x_alignment contains 'text-right' %}items-end{% endif %}'>
@@ -41,7 +43,7 @@ Pro tips:
                     {%- when 'heading' -%}
                     <h1 class="m-0 {{ section.settings.color_text }} heading-emphasis" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h1>
                     {%- when 'content' -%}
-                    <div class="m-0--clear {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                    <div class="{{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                       {{ block.settings.content }}
                     </div>
                     {%- when 'buttons' -%}
@@ -86,7 +88,7 @@ Pro tips:
         {% comment %} image {% endcomment %}
         <div class="flex w-1/2 flex-shrink pt-36" style="width: calc(100% - {{ section.settings.content_width }}%)">
           <div class="relative w-full overflow-hidden
-                                                                                                                                                                                                                                                                                  ">
+                                                                                                                                                                                                                                                                                                                            ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}

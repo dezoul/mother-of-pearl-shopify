@@ -38,8 +38,8 @@ Globals:
     {%- case block.type -%}
       {%- when 'logo' -%}
       <section class="py-6 md:hidden border--t-width
-                                                                                                                                                                                                      {{ section.settings.main_color_scheme }}
-                                                                                                                                                                                                      {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                            {{ section.settings.main_color_scheme }}
+                                                                                                                                                                                                                                                                            {{ section.settings.main_color_border }}">
         <div class="{{ settings.layout_horizontal }}">
           <div class="m-0--clear flex">
 
@@ -76,13 +76,13 @@ Globals:
       {%- when 'newsletter' -%}
       {% form 'customer' %}
         <section class="py-8 md:hidden border--t-width
-                                                                                                                                                                                                                                              {{ section.settings.main_color_scheme }}
-                                                                                                                                                                                                                                              {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                  {{ section.settings.main_color_scheme }}
+                                                                                                                                                                                                                                                                                                                                  {{ section.settings.main_color_border }}">
           <div class="{{ settings.layout_horizontal }}">
 
-            <h3 class="type__body--bold type--base block mb-4 no-underline">
+            <h4>
               {{ block.settings.heading }}
-            </h3>
+            </h4>
 
             {% if form.errors %}
               <div class="color__bg-overlay-1 type--small border--radius p-2 mt-2 mb-4">
@@ -125,13 +125,11 @@ Globals:
   {% for block in section.blocks %}
     {%- case block.type -%}
       {%- when 'content' -%}
-      <div class="py-8 md:hidden border--t-width
-                                                                                                                                                                                                      {{ section.settings.main_color_scheme }}
-                                                                                                                                                                                                      {{ section.settings.main_color_border }}">
+      <div class="py-8 md:hidden border--t-width {{ section.settings.main_color_scheme }}  {{ section.settings.main_color_border }}">
         <div class="{{ settings.layout_horizontal }}">
-          <h3 class="type__heading type__heading--bold-5 mb-2">
+          <h2 class="logo text-2xl font-wide uppercase font-medium mb-8">
             {{ block.settings.heading }}
-          </h3>
+          </h2>
           <div class="m-0--clear">
             {{ block.settings.content }}
           </div>
@@ -161,12 +159,12 @@ Globals:
             {% capture accordion_content %}
               {% for child_link in link.links %}
                 <a href="{{ child_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-8 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {{ section.settings.main_color_border }}">
                   {{ child_link.title }}
                 </a>
                 {% for grandchild_link in child_link.links %}
                   <a href="{{ grandchild_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-12 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {{ section.settings.main_color_border }}">
                     {{ grandchild_link.title }}
                   </a>
                 {% endfor %}
@@ -184,17 +182,21 @@ Globals:
              content: accordion_content %}
 
             <noscript>
-              <a class="border--t-width {{ section.settings.main_color_border }} block w-full p-4 no-underline" href="{{ link.url }}">{{ link.title }}</a>
+              <a
+                class="border--t-width {{ section.settings.main_color_border }} block w-full p-4 no-underline"
+                href="{{ link.url }}">{{ link.title }}</a>
               {% for child_link in link.links %}
                 <a class="border--t-width {{ section.settings.main_color_border }} block w-full p-4 !pl-8 no-underline" href="{{ child_link.url }}">{{ child_link.title }}</a>
                 {% for grandchild_link in child_link.links %}
-                  <a class="border--t-width {{ section.settings.main_color_border }} block w-full p-4 !pl-12 no-underline" href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                  <a
+                    class="border--t-width {{ section.settings.main_color_border }} block w-full p-4 !pl-12 no-underline"
+                    href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
                 {% endfor %}
               {% endfor %}
             </noscript>
           {% else %}
             <a href="{{ link.url }}" class="border--t-width block p-4 no-underline
-                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
               {{ link.title }}
             </a>
           {% endif %}
@@ -212,12 +214,12 @@ Globals:
             {% capture accordion_content %}
               {% for child_link in link.links %}
                 <a href="{{ child_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-8 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {{ section.settings.main_color_border }}">
                   {{ child_link.title }}
                 </a>
                 {% for grandchild_link in child_link.links %}
                   <a href="{{ grandchild_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-12 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {{ section.settings.main_color_border }}">
                     {{ grandchild_link.title }}
                   </a>
                 {% endfor %}
@@ -245,7 +247,7 @@ Globals:
             </noscript>
           {% else %}
             <a href="{{ link.url }}" class="border--t-width block p-4 no-underline
-                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
               {{ link.title }}
             </a>
           {% endif %}
@@ -260,12 +262,12 @@ Globals:
             {% capture accordion_content %}
               {% for child_link in link.links %}
                 <a href="{{ child_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-8 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {{ section.settings.main_color_border }}">
                   {{ child_link.title }}
                 </a>
                 {% for grandchild_link in child_link.links %}
                   <a href="{{ grandchild_link.url }}" class="type__body border--t-width flex items-center justify-between w-full px-4 py-4 pl-12 no-underline
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {{ section.settings.main_color_border }}">
                     {{ grandchild_link.title }}
                   </a>
                 {% endfor %}
@@ -293,7 +295,7 @@ Globals:
             </noscript>
           {% else %}
             <a href="{{ link.url }}" class="border--t-width block p-4 no-underline
-                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_border }}">
               {{ link.title }}
             </a>
           {% endif %}
@@ -377,15 +379,15 @@ Globals:
 
                 {%- when 'content' -%}
                 <div>
-                  <h3 class="type__heading type--base mb-2">
+                  <h2 class="logo text-2xl font-wide uppercase font-medium mb-8">
                     {{ block.settings.heading }}
-                  </h3>
+                  </h2>
                   <div class="m-0--clear">
                     {{ block.settings.content }}
                   </div>
                   {%- unless block.settings.button_url == blank -%}
                     <a href="{{ block.settings.button_url }}" class="btn btn--small mt-2
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.main_color_button }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {{ section.settings.main_color_button }}">
                       {{ block.settings.button_label }}
                     </a>
                   {%- endunless -%}
@@ -405,9 +407,9 @@ Globals:
 
               {%- when 'menu' -%}
               <div class="">
-                <h3>
+                <h4>
                   {{ block.settings.heading }}
-                </h3>
+                </h4>
                 {%- for link in block.settings.menu.links -%}
                   <a
                     href="{{ link.url }}"
@@ -430,9 +432,9 @@ Globals:
               </div>
               {%- when 'doublemenu' -%}
               <div class="">
-                <h3>
+                <h4>
                   {{ block.settings.heading }}
-                </h3>
+                </h4>
                 {%- for link in block.settings.menu.links -%}
                   <a
                     href="{{ link.url }}"
@@ -451,9 +453,9 @@ Globals:
                     {% endfor %}
                   {% endfor %}
                 {%- endfor -%}
-                <h3>
+                <h4>
                   {{ block.settings.heading-2 }}
-                </h3>
+                </h4>
                 {%- for link in block.settings.menu-2.links -%}
                   <a
                     href="{{ link.url }}"
@@ -485,10 +487,10 @@ Globals:
 
   {%- comment -%}sub footer{%- endcomment -%}
   <section class="py-4 border--t-width flex flex-wrap gap-4
-                                                                                                                      {{ section.settings.sub_color_scheme }}
-                                                                                                                      {{ section.settings.sub_color_border }}">
+                                                                                                                                                                {{ section.settings.sub_color_scheme }}
+                                                                                                                                                                {{ section.settings.sub_color_border }}">
     <div class="flex flex-wrap w-full items-center justify-between gap-4 
-                                                                                                                                                              {{ settings.layout_horizontal }}">
+                                                                                                                                                                                                                      {{ settings.layout_horizontal }}">
 
       <div class="md:w-auto flex w-full gap-2">
         {% unless settings.social_tiktok_link == blank %}
@@ -610,24 +612,27 @@ Globals:
 
     </div>
     <div class="flex flex-wrap w-full items-center justify-between gap-4
-                                                                                                                                                              {{ settings.layout_horizontal }}">
+                                                                                                                                                                                                                      {{ settings.layout_horizontal }}">
 
       <div class="md:w-auto flex flex-wrap w-full gap-2">
 
+        {% comment %}
 
         {%- if shop.customer_accounts_enabled -%}
-          <a
-            href="{{ routes.account_url }}"
-            rel="nofollow"
-            class="btn btn--smaller 
-                                                                                                                                                                                                                                                                                    {{ section.settings.sub_color_button }}">
-            {% if customer %}
-              {{ 'general.navigation.account' | t }}
-            {% else %}
-              {{ 'customer.account.log_in' | t }}
-            {% endif %}
-          </a>
+        <a
+        href="{{ routes.account_url }}"
+        rel="nofollow"
+        class="btn btn--smaller 
+        {{ section.settings.sub_color_button }}">
+        {% if customer %}
+        {{ 'general.navigation.account' | t }}
+        {% else %}
+        {{ 'customer.account.log_in' | t }}
         {% endif %}
+        </a>
+        {% endif %}
+        {% endcomment %}
+
         {% if settings.enable_audio %}
           <div class="md:block hidden">
             <button class="btn btn--smaller {{ section.settings.sub_color_button }}" @click="audio_popup = true;">

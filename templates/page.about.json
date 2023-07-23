@@ -93,7 +93,6 @@
           "type": "buttons",
           "disabled": true,
           "settings": {
-            "button_color": "btn",
             "button_label": "Button label",
             "button_url": "\/collections\/all",
             "secondary_button_color": "btn btn--neutral",
@@ -116,7 +115,6 @@
         "style_border": "",
         "content_width": 40,
         "image_position": "left",
-        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
         "layout_y_alignment": "items-end",
         "layout_x_alignment": "justify-start",
         "visibility": ""

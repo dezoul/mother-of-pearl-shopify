@@ -42,11 +42,11 @@
 .ticket-container{
 overflow-X: hidden;
 display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
 }
 .tickerBanner{
 display: flex;
-flex-direction: row-reverse;
+flex-direction: row;
 text-align: center;
 position: relative;
 animation: ticker 2s infinite linear;
@@ -58,6 +58,6 @@ animation-play-state: paused;
 
 
 @keyframes ticker {
-  from {left:0}
-  to   {left:var(--bannerBlockLength)}
+  from {right:0}
+  to   {right:var(--bannerBlockLength)}
 }

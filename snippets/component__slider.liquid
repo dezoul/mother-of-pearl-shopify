@@ -25,68 +25,67 @@ slides: slides %}
 Possible enhancements: 
 - Fix bug where users may have to click twice at end of slider.
 {% endcomment %}<div class="flex flex-wrap {{ outer_class }}"> <div class="relative w-full" x-data='{
-                  index: 0,
-                  index_size: {{ slider_size }},
-                  show_arrows: false,
-                  isOverflown(element) {
-                  return element.scrollWidth > element.clientWidth;
-                  },
-                  
-                  scrollToIndex(index_scroll) {
-                  let slider = this.$refs.slider;
-                  let currentSlide = slider.querySelector(`[data-slide="${index_scroll}"]`);
-                  console.log(slider.querySelector(`[data-slide="${index_scroll}"]`))
-                  if (currentSlide) {
-                  let sliderWidth = slider.offsetWidth;
-                  let currentSlidePosition = currentSlide.offsetLeft;
-                  let currentSlideWidth = currentSlide.offsetWidth;
-                  let centerPosition = currentSlidePosition + currentSlideWidth / 2 - sliderWidth / 2;
-                  
-                  slider.scrollTo({
-                  top: 0,
-                  left: centerPosition,
-                  behavior: "smooth"
-                  });
-                  }
-                  },
-                  
-                  scrollNext() {
-                  
-                  let slider = this.$refs.slider;
-                  let scrolledToEnd = (el) => {
-                  if(el.scrollLeft + el.offsetWidth == el.scrollWidth){
-                  return true;
-                  } else {
-                  return false;
-                  } 
-                  }
-                  
-                  if(this.index >= this.index_size || scrolledToEnd(slider)){
-                  this.index = 0
-                  this.scrollToIndex(0);
-                  } else {
-                  this.index++
-                  this.scrollToIndex(this.index);
-                  }
-                  },
-                  
-                  scrollBack() {
-                    let slider = this.$refs.slider;
-                    if(this.index <= 0 || slider.scrollLeft == 0){
-                      this.index = this.index_size;
-                      this.scrollToIndex(this.index);
-                      } else {
-                      this.index--
-                      this.scrollToIndex(this.index);
-                    }
-                    }
-                  }'>
+                        index: 0,
+                        index_size: {{ slider_size }},
+                        show_arrows: false,
+                        isOverflown(element) {
+                        return element.scrollWidth > element.clientWidth;
+                        },
+                        
+                        scrollToIndex(index_scroll) {
+                        let slider = this.$refs.slider;
+                        let currentSlide = slider.querySelector(`[data-slide="${index_scroll}"]`);
+                        console.log(slider.querySelector(`[data-slide="${index_scroll}"]`))
+                        if (currentSlide) {
+                        let sliderWidth = slider.offsetWidth;
+                        let currentSlidePosition = currentSlide.offsetLeft;
+                        let currentSlideWidth = currentSlide.offsetWidth;
+                        let centerPosition = currentSlidePosition + currentSlideWidth / 2 - sliderWidth / 2;
+                        
+                        slider.scrollTo({
+                        top: 0,
+                        left: centerPosition,
+                        behavior: "smooth"
+                        });
+                        }
+                        },
+                        
+                        scrollNext() {
+                        
+                        let slider = this.$refs.slider;
+                        let scrolledToEnd = (el) => {
+                        if(el.scrollLeft + el.offsetWidth == el.scrollWidth){
+                        return true;
+                        } else {
+                        return false;
+                        } 
+                        }
+                        
+                        if(this.index >= this.index_size || scrolledToEnd(slider)){
+                        this.index = 0
+                        this.scrollToIndex(0);
+                        } else {
+                        this.index++
+                        this.scrollToIndex(this.index);
+                        }
+                        },
+                        
+                        scrollBack() {
+                          let slider = this.$refs.slider;
+                          if(this.index <= 0 || slider.scrollLeft == 0){
+                            this.index = this.index_size;
+                            this.scrollToIndex(this.index);
+                            } else {
+                            this.index--
+                            this.scrollToIndex(this.index);
+                          }
+                          }
+                        }'>
 
     {%- comment -%}slides{%- endcomment -%}
     <div
       class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
-      style="
-                                                                                          row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
+      style=" row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
       x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600);"
       x-ref="slider">
       {{ slides }}
@@ -96,18 +95,22 @@ Possible enhancements:
     <div class="md:flex justify-between hidden gap-4 pt-4 {{ settings.layout_horizontal }}">
       <div {% unless show_arrows == 'true' %}x-show="show_arrows"{% endunless %}>
         <button
-          class="btn btn--plain btn--small"
+          class=""
           title="{{ 'general.media.previous_slide' | t }}"
           {% if settings.enable_animations %}x-transition:enter="animation-300"x-transition:enter-start="opacity-0"x-transition:enter-end="opacity-100"x-transition:leave="animation-300"x-transition:leave-start="opacity-100"x-transition:leave-end="opacity-0"{% endif %}@click="scrollBack();">
-          {% render 'component__icon', icon: 'arrow-left', size: '20', class: '' %}
+          <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 39 39" fill="none">
+            <path d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125" stroke="var(--svg-fill)" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+          </svg>
         </button>
       </div>
       <div {% unless show_arrows == 'true' %}x-show="show_arrows"{% endunless %}>
         <button
-          class="btn btn--plain btn--small"
+          class=""
           title="{{ 'general.media.next_slide' | t }}"
           {% if settings.enable_animations %}x-transition:enter="animation-300"x-transition:enter-start="opacity-0"x-transition:enter-end="opacity-100"x-transition:leave="animation-300"x-transition:leave-start="opacity-100"x-transition:leave-end="opacity-0"{% endif %}@click="scrollNext();console.log('test')">
-          {% render 'component__icon', icon: 'arrow-right', size: '20', class: '' %}
+          <svg class="" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 39 39" fill="none">
+            <path d="M4.875 19.5H34.125M34.125 19.5L20.3125 5.6875M34.125 19.5L20.3125 33.3125" stroke="var(--svg-fill)" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+          </svg>
         </button>
       </div>
     </div>

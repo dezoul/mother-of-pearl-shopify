@@ -35,36 +35,31 @@ Pro tips:
 {% endif %}
 {% endfor %}
 
-  <section class="sticky top-0 z-20
-                  {{ section.settings.color_border }}
-                  {{ section.settings.color_scheme }}"x-ref="destop_filter"x-data="{ 
-                    sort_by : ['{{ sort_by }}'],
-                    height: 0
-                  }"{% if settings.header_position == 'sticky' %}x-init="
-                      height = $refs.header.offsetHeight;
-                      $refs.destop_filter.style.top = height + 'px';
-                    "{% endif %}>{%- comment -%}desktop filterbar{%- endcomment -%}
+  <section class="sticky top-0 z-40
+                      {{ section.settings.color_border }}
+                      {{ section.settings.color_scheme }}"x-ref="destop_filter"x-data="{ 
+                        sort_by : ['{{ sort_by }}'],
+                        height: 0
+                      }"{% if settings.header_position == 'sticky' %}x-init="
+                          height = $refs.header.offsetHeight;
+                          $refs.destop_filter.style.top = height + 'px';
+                        "{% endif %}> {%- comment -%}desktop filterbar{%- endcomment -%}
   {% if section.settings.enable_sort or section.settings.enable_filter %}
     <form
       id="js:desktopFilter"
       class="md:block sticky top-0 hidden border--b-width color__border-divider-1
-                                      {{ section.settings.color_scheme }}
-                                      {{ settings.layout_horizontal }}"
+                                              {{ section.settings.color_scheme }}
+                                              {{ settings.layout_horizontal }}"
       @change.prevent="handleFilterChange('js:desktopFilter');">
-      <div
-        class="flex flex-row flex-wrap items-center justify-end gap-2 py-4">
+      <div class="flex flex-row flex-wrap items-center justify-end gap-2 py-4">
 
-        <div
-          class="max-w-full"
-          x-data="{
-                                                            index: 0,
-                                                            index_scroll: 0,
-                                                            index_size: {{ collection.filters.size }}
-                                                          }">
+        <div class="max-w-full" x-data="{
+                                                                        index: 0,
+                                                                        index_scroll: 0,
+                                                                        index_size: {{ collection.filters.size }}
+                                                                      }">
 
-          <div
-            class="whitespace-nowrap md:snap-x inline-flex flex-wrap w-full gap-2"
-            x-ref="slider">
+          <div class="whitespace-nowrap md:snap-x inline-flex flex-wrap w-full gap-2" x-ref="slider">
 
             {%- if active_filter_count > 0 -%}
               <div
@@ -81,12 +76,10 @@ Pro tips:
             {%- endif -%}
 
             {% if section.settings.enable_sort %}
-              <div
-                class="md:snap-center flex justify-center flex-none">
+              <div class="md:snap-center flex justify-center flex-none">
                 {% capture dropdown_content %}
                   {% for option in collection.sort_options %}
-                    <label
-                      class="type__nav color__text hover:color__bg-overlay-1 flex items-center w-full px-4 py-2">
+                    <label class="type__nav color__text hover:color__bg-overlay-1 flex items-center w-full px-4 py-2">
                       <input
                         type="radio"
                         class="form-radio"
@@ -95,8 +88,7 @@ Pro tips:
                         autocomplete="off"
                         x-model="sort_by"
                         {% if sort_by == option.value %}checked{% endif %}>
-                      <span
-                        class="type--base ml-2">{{ option.name }}</span>
+                      <span class="type--base ml-2">{{ option.name }}</span>
                     </label>
                   {% endfor %}
                 {% endcapture %}
@@ -124,8 +116,7 @@ Pro tips:
                   {% assign has_values = true %}
                 {%- endif -%}
                 {%- if has_values -%}
-                  <div
-                    class="md:snap-center flex justify-center flex-none">
+                  <div class="md:snap-center flex justify-center flex-none">
 
                     {% capture popup_class %}
                       btn btn--small btn--plain
@@ -134,8 +125,7 @@ Pro tips:
                     {% capture popup_label %}
                       <span>{{ filter.label }}</span>
                       {%- if filter.active_values.size > 0 -%}
-                        <span
-                          class="ml-1">({{ filter.active_values.size }})</span>
+                        <span class="ml-1">({{ filter.active_values.size }})</span>
                       {%- endif -%}
                       {% render 'component__icon', icon: 'chevron-down', size: '16', class: 'ml-1' %}
                     {% endcapture %}
@@ -145,9 +135,7 @@ Pro tips:
 
                         {%- when 'boolean' or 'list' -%}
                         {%- for filter_value in filter.values -%}
-                          <label
-                            class="hover:color__bg-overlay-1 flex items-center px-4 py-2"
-                            for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                          <label class="hover:color__bg-overlay-1 flex items-center px-4 py-2" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
                             <input
                               type="checkbox"
                               @click="popup = false;"
@@ -156,22 +144,16 @@ Pro tips:
                               id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
                               {% if filter_value.active -%}checked{%- endif %}
                               {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}>
-                            <span
-                              class="type--base ml-2">{{ filter_value.label }}</span>
-                            <span
-                              class="type--base ml-1 opacity-75">({{ filter_value.count }})</span>
+                            <span class="type--base ml-2">{{ filter_value.label }}</span>
+                            <span class="type--base ml-1 opacity-75">({{ filter_value.count }})</span>
                           </label>
                         {%- endfor -%}
 
                         {%- when 'price_range' -%}
-                        <div
-                          class="flex items-center justify-center p-4 py-6 min-w-[256px]">
-                          <div
-                            x-init="handleMinPriceFilter(); handleMaxPriceFilter()"
-                            class="relative w-full max-w-xl">
+                        <div class="flex items-center justify-center p-4 py-6 min-w-[256px]">
+                          <div x-init="handleMinPriceFilter(); handleMaxPriceFilter()" class="relative w-full max-w-xl">
 
-                            <div
-                              class="pb-4">
+                            <div class="pb-4">
                               <input
                                 type="range"
                                 step="1"
@@ -188,34 +170,20 @@ Pro tips:
                                 x-on:input="handleMaxPriceFilter"
                                 x-model="filter_max_price"
                                 class="absolute z-20 w-full h-2 opacity-0 appearance-none cursor-pointer pointer-events-none">
-                              <div
-                                class="relative z-10 h-2">
-                                <div
-                                  class="color__bg-overlay-1 border--radius absolute top-0 bottom-0 left-0 right-0 z-10"></div>
-                                <div
-                                  class="relative w-full h-2 overflow-hidden">
-                                  <div
-                                    class="border--radius color__bg-secondary absolute top-0 bottom-0 z-20"
-                                    x-bind:style="'right:'+filter_max_thumb+'%; left:'+filter_min_thumb+'%'"></div>
+                              <div class="relative z-10 h-2">
+                                <div class="color__bg-overlay-1 border--radius absolute top-0 bottom-0 left-0 right-0 z-10"></div>
+                                <div class="relative w-full h-2 overflow-hidden">
+                                  <div class="border--radius color__bg-secondary absolute top-0 bottom-0 z-20" x-bind:style="'right:'+filter_max_thumb+'%; left:'+filter_min_thumb+'%'"></div>
                                 </div>
-                                <div
-                                  class="color__bg-body border--width color__border-selected-1 top-1/2 absolute left-0 z-30 w-4 h-4 -ml-2 -translate-y-1/2 rounded-full"
-                                  x-bind:style="'left: '+filter_min_thumb+'%'"></div>
-                                <div
-                                  class="color__bg-body border--width color__border-selected-1 top-1/2 absolute right-0 z-30 w-4 h-4 -mr-2 -translate-y-1/2 rounded-full"
-                                  x-bind:style="'right: '+filter_max_thumb+'%'"></div>
+                                <div class="color__bg-body border--width color__border-selected-1 top-1/2 absolute left-0 z-30 w-4 h-4 -ml-2 -translate-y-1/2 rounded-full" x-bind:style="'left: '+filter_min_thumb+'%'"></div>
+                                <div class="color__bg-body border--width color__border-selected-1 top-1/2 absolute right-0 z-30 w-4 h-4 -mr-2 -translate-y-1/2 rounded-full" x-bind:style="'right: '+filter_max_thumb+'%'"></div>
                               </div>
                             </div>
 
-                            <div
-                              class="flex items-center justify-between gap-2">
-                              <div
-                                class="flex flex-row flex-wrap items-center flex-grow">
-                                <div
-                                  class="relative w-full">
-                                  <span
-                                    class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller"
-                                    aria-hidden="true">{{ cart.currency.symbol }}</span>
+                            <div class="flex items-center justify-between gap-2">
+                              <div class="flex flex-row flex-wrap items-center flex-grow">
+                                <div class="relative w-full">
+                                  <span class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller" aria-hidden="true">{{ cart.currency.symbol }}</span>
                                   <input
                                     class="!pl-8 !pr-0"
                                     x-on:input="handleMinPriceFilter"
@@ -226,17 +194,12 @@ Pro tips:
                                     {% if filter.min_value.value -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{%- endif %}type="number"placeholder="0"min="0"max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
                                 </div>
                               </div>
-                              <div
-                                class="flex flex-row flex-wrap items-center justify-center flex-shrink">
+                              <div class="flex flex-row flex-wrap items-center justify-center flex-shrink">
                                 —
                               </div>
-                              <div
-                                class="flex flex-row flex-wrap items-center flex-grow">
-                                <div
-                                  class="relative w-full">
-                                  <span
-                                    class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller"
-                                    aria-hidden="true">{{ cart.currency.symbol }}</span>
+                              <div class="flex flex-row flex-wrap items-center flex-grow">
+                                <div class="relative w-full">
+                                  <span class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller" aria-hidden="true">{{ cart.currency.symbol }}</span>
                                   <input
                                     class="!pl-8 !pr-0"
                                     x-on:input="handleMaxPriceFilter"
@@ -279,21 +242,18 @@ Pro tips:
     <form
       id="js:mobileFilter"
       class="md:hidden bottom-0 z-10 left-0 right-0 border--b-width color__border-divider-1
-                                      {{ section.settings.color_scheme }} 
-                                      {{ settings.layout_horizontal }}"
+                                              {{ section.settings.color_scheme }} 
+                                              {{ settings.layout_horizontal }}"
       @change.prevent="handleFilterChange('js:mobileFilter');">
-      <div
-        class="md:hidden flex-nowrap flex flex-row items-center justify-between py-4">
+      <div class="md:hidden flex-nowrap flex flex-row items-center justify-between py-4">
 
         {% capture popup_content %}
 
           {% if section.settings.enable_sort %}
             {% capture accordion_content %}
-              <div
-                class="py-4">
+              <div class="py-4">
                 {% for option in collection.sort_options %}
-                  <label
-                    class="flex items-center w-full mb-4">
+                  <label class="flex items-center w-full mb-4">
                     <input
                       type="radio"
                       class="form-radio"
@@ -302,8 +262,7 @@ Pro tips:
                       autocomplete="off"
                       x-model="sort_by"
                       {% if sort_by == option.value %}checked{% endif %}>
-                    <span
-                      class="type--base ml-2">{{ option.name }}</span>
+                    <span class="type--base ml-2">{{ option.name }}</span>
                   </label>
                 {% endfor %}
               </div>
@@ -337,12 +296,9 @@ Pro tips:
                     {%- case filter.type -%}
 
                       {%- when 'boolean' or 'list' -%}
-                      <div
-                        class="py-4">
+                      <div class="py-4">
                         {%- for filter_value in filter.values -%}
-                          <label
-                            class="flex items-center mb-4"
-                            for="Filter-Mob-{{ filter.param_name }}-{{ forloop.index }}">
+                          <label class="flex items-center mb-4" for="Filter-Mob-{{ filter.param_name }}-{{ forloop.index }}">
                             <input
                               type="checkbox"
                               name="{{ filter_value.param_name }}"
@@ -350,23 +306,17 @@ Pro tips:
                               id="Filter-Mob-{{ filter.param_name }}-{{ forloop.index }}"
                               {% if filter_value.active -%}checked{%- endif %}
                               {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}>
-                            <span
-                              class="type--base ml-2">{{ filter_value.label }}</span>
-                            <span
-                              class="type--base ml-1 opacity-75">({{ filter_value.count }})</span>
+                            <span class="type--base ml-2">{{ filter_value.label }}</span>
+                            <span class="type--base ml-1 opacity-75">({{ filter_value.count }})</span>
                           </label>
                         {%- endfor -%}
                       </div>
 
                       {%- when 'price_range' -%}
-                      <div
-                        class="flex items-center justify-center py-4">
-                        <div
-                          x-init="handleMinPriceFilter(); handleMaxPriceFilter()"
-                          class="relative w-full max-w-xl">
+                      <div class="flex items-center justify-center py-4">
+                        <div x-init="handleMinPriceFilter(); handleMaxPriceFilter()" class="relative w-full max-w-xl">
 
-                          <div
-                            class="pb-4">
+                          <div class="pb-4">
                             <input
                               type="range"
                               step="1"
@@ -383,34 +333,20 @@ Pro tips:
                               x-on:input="handleMaxPriceFilter"
                               x-model="filter_max_price"
                               class="absolute z-20 w-full h-2 opacity-0 appearance-none cursor-pointer pointer-events-none">
-                            <div
-                              class="relative z-10 h-2">
-                              <div
-                                class="color__bg-overlay-1 border--radius absolute top-0 bottom-0 left-0 right-0 z-10"></div>
-                              <div
-                                class="relative w-full h-2 overflow-hidden">
-                                <div
-                                  class="border--radius color__bg-secondary absolute top-0 bottom-0 z-20"
-                                  x-bind:style="'right:'+filter_max_thumb+'%; left:'+filter_min_thumb+'%'"></div>
+                            <div class="relative z-10 h-2">
+                              <div class="color__bg-overlay-1 border--radius absolute top-0 bottom-0 left-0 right-0 z-10"></div>
+                              <div class="relative w-full h-2 overflow-hidden">
+                                <div class="border--radius color__bg-secondary absolute top-0 bottom-0 z-20" x-bind:style="'right:'+filter_max_thumb+'%; left:'+filter_min_thumb+'%'"></div>
                               </div>
-                              <div
-                                class="color__bg-body border--width color__border-selected-1 top-1/2 absolute left-0 z-30 w-4 h-4 -ml-2 -translate-y-1/2 rounded-full"
-                                x-bind:style="'left: '+filter_min_thumb+'%'"></div>
-                              <div
-                                class="color__bg-body border--width color__border-selected-1 top-1/2 absolute right-0 z-30 w-4 h-4 -mr-2 -translate-y-1/2 rounded-full"
-                                x-bind:style="'right: '+filter_max_thumb+'%'"></div>
+                              <div class="color__bg-body border--width color__border-selected-1 top-1/2 absolute left-0 z-30 w-4 h-4 -ml-2 -translate-y-1/2 rounded-full" x-bind:style="'left: '+filter_min_thumb+'%'"></div>
+                              <div class="color__bg-body border--width color__border-selected-1 top-1/2 absolute right-0 z-30 w-4 h-4 -mr-2 -translate-y-1/2 rounded-full" x-bind:style="'right: '+filter_max_thumb+'%'"></div>
                             </div>
                           </div>
 
-                          <div
-                            class="flex flex-wrap items-center justify-between -mx-4">
-                            <div
-                              class="flex flex-row flex-wrap items-center w-2/5 px-4">
-                              <div
-                                class="relative w-full">
-                                <span
-                                  class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller"
-                                  aria-hidden="true">{{ cart.currency.symbol }}</span>
+                          <div class="flex flex-wrap items-center justify-between -mx-4">
+                            <div class="flex flex-row flex-wrap items-center w-2/5 px-4">
+                              <div class="relative w-full">
+                                <span class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller" aria-hidden="true">{{ cart.currency.symbol }}</span>
                                 <input
                                   class="!pl-8"
                                   maxlength="5"
@@ -422,17 +358,12 @@ Pro tips:
                                   {% if filter.min_value.value -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{%- endif %}type="number"placeholder="0"min="0"max="{{ filter.range_max | money_without_currency | replace: ',', '' }}">
                               </div>
                             </div>
-                            <div
-                              class="flex flex-row flex-wrap items-center justify-center w-1/5 px-4">
+                            <div class="flex flex-row flex-wrap items-center justify-center w-1/5 px-4">
                               —
                             </div>
-                            <div
-                              class="flex flex-row flex-wrap items-center w-2/5 px-4">
-                              <div
-                                class="relative w-full">
-                                <span
-                                  class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller"
-                                  aria-hidden="true">{{ cart.currency.symbol }}</span>
+                            <div class="flex flex-row flex-wrap items-center w-2/5 px-4">
+                              <div class="relative w-full">
+                                <span class="z-10 inline-flex absolute !flex items-center top-0 left-2 h-full type--smaller" aria-hidden="true">{{ cart.currency.symbol }}</span>
                                 <input
                                   class="!pl-8"
                                   maxlength="5"
@@ -463,8 +394,7 @@ Pro tips:
                   {%- else -%}
                     {%- if filter.active_values.size > 0 -%}
                       <strong>{{ filter.label }}</strong>
-                      <span
-                        class="ml-1">({{ filter.active_values.size }})</span>
+                      <span class="ml-1">({{ filter.active_values.size }})</span>
                     {%- else -%}
                       <span>{{ filter.label }}</span>
                     {%- endif -%}
@@ -487,19 +417,13 @@ Pro tips:
           {% endif %}
 
 
-          <div
-            class="color__bg-body border--t-width color__border-divider-1 sticky bottom-0 z-10 p-4"
-            x-show="{{ active_filter_count }} > 0">
-            <div
-              class="relative w-full"
-              x-data="{
-                                                                                index: 0,
-                                                                                index_scroll: 0,
-                                                                                index_size: {{ collection.filters.size }}
-                                                                              }">
-              <div
-                class="whitespace-nowrap md:snap-x inline-flex w-full overflow-x-auto"
-                x-ref="slider">
+          <div class="color__bg-body border--t-width color__border-divider-1 sticky bottom-0 z-10 p-4" x-show="{{ active_filter_count }} > 0">
+            <div class="relative w-full" x-data="{
+                                                                                                index: 0,
+                                                                                                index_scroll: 0,
+                                                                                                index_size: {{ collection.filters.size }}
+                                                                                              }">
+              <div class="whitespace-nowrap md:snap-x inline-flex w-full overflow-x-auto" x-ref="slider">
 
                 {%- if active_filter_count > 0 -%}
                   <div
@@ -558,16 +482,14 @@ Pro tips:
 
         {% endcapture %}
 
-        <div
-          class="w-full">
+        <div class="w-full">
 
           <button
             type="button"
             class="btn btn--small btn--plain !w-full"
             @click="filter_popup = true;">
             {{ 'collections.sorting.filter_and_sort' | t }}
-            <span
-              class="ml-1">
+            <span class="ml-1">
               {%- if active_filter_count > 0 -%}({{ active_filter_count }}){%- endif -%}
             </span>
           </button>
@@ -583,20 +505,15 @@ Pro tips:
 
   {%- comment -%}active filters{%- endcomment -%}
   {%- if active_filter_count > 0 -%}
-    <section
-      class="relative -z-10 hidden md:flex flex-wrap py-2
-                                      {{ section.settings.color_scheme }} 
-                                      {{ settings.layout_horizontal }}">
-      <div
-        class="relative flex w-full"
-        x-data="{
-                                                  index: 0,
-                                                  index_scroll: 0,
-                                                  index_size: {{ collection.filters.size }}
-                                                }">
-        <div
-          class="whitespace-nowrap md:snap-x inline-flex w-full gap-2 overflow-x-auto"
-          x-ref="slider">
+    <section class="relative -z-10 hidden md:flex flex-wrap py-2
+                                              {{ section.settings.color_scheme }} 
+                                              {{ settings.layout_horizontal }}">
+      <div class="relative flex w-full" x-data="{
+                                                            index: 0,
+                                                            index_scroll: 0,
+                                                            index_size: {{ collection.filters.size }}
+                                                          }">
+        <div class="whitespace-nowrap md:snap-x inline-flex w-full gap-2 overflow-x-auto" x-ref="slider">
 
           {%- for filter in collection.filters -%}
             {%- if filter.type == "price_range" -%}

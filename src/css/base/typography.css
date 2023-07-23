@@ -42,11 +42,12 @@
     @apply type__heading--bold-4;
     @apply leading-tight;
   }
-  h5,
-  .h5,
-  h5 > * {
-    @apply type__heading--bold-5;
-    @apply leading-tight;
+  h5, p {
+    margin-bottom: 0.5em;
+    font-family: ivyora-text, serif;
+    font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 1;
   }
   h6,
   .h6,
@@ -117,6 +118,14 @@
     @apply pl-4 list-decimal;
   }
 
+  .font-wide{
+    font-family: 'roc-grotesk-wide', 'sans-serif';
+  }
+  
+  .button {
+    @apply inline-block bg-[#20242b] uppercase font-wide text-[#fdfbf8] hover:bg-[#363c49] px-8 py-4 transition-colors leading-none;
+  }
+
   /* font weight */
   strong {
     font-weight: bold;
@@ -142,4 +151,18 @@ body .heading-emphasis{
   box-shadow: none !important;
   outline: 0px solid transparent !important;
   outline-offset: 2px;
+}
+
+footer a {
+  display: block;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 200;
+  margin:0 !important;
+}
+
+nav a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
