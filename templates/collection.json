@@ -63,44 +63,25 @@
         "products_per_page": 5
       }
     },
-    "5a29046a-f810-42aa-98fc-72dc0ded9629": {
-      "type": "collection-grid",
+    "419107ab-fc16-4f4a-b8e8-83669f562b92": {
+      "type": "brand-gallery",
       "blocks": {
-        "template--19346674057520__5a29046a-f810-42aa-98fc-72dc0ded9629-168662253554ac54b3-0": {
-          "type": "collection",
+        "a53a3499-876c-4cf9-ae21-1ab639a056bd": {
+          "type": "images",
+          "repeater": "{{ collection.metafields.custom.brand_details.value }}",
           "settings": {
-            "collection": "doorknobs"
-          }
-        },
-        "dc88d2a9-62db-4295-96bf-ffd08c405ac4": {
-          "type": "collection",
-          "settings": {
-            "collection": "cabinet-knobs-handles"
-          }
-        },
-        "0706c941-efee-4ee6-b487-b298cd022092": {
-          "type": "collection",
-          "settings": {
-            "collection": "door-hinges"
-          }
-        },
-        "fc6b1858-4b3a-4e87-b8ab-2205dc9f3824": {
-          "type": "collection",
-          "settings": {
-            "collection": "entrance-door-hardware"
+            "heading": "{{ block.repeater.heading.value }}",
+            "image_featured": "{{ block.repeater.brand_image.value }}"
           }
         }
       },
       "block_order": [
-        "template--19346674057520__5a29046a-f810-42aa-98fc-72dc0ded9629-168662253554ac54b3-0",
-        "dc88d2a9-62db-4295-96bf-ffd08c405ac4",
-        "0706c941-efee-4ee6-b487-b298cd022092",
-        "fc6b1858-4b3a-4e87-b8ab-2205dc9f3824"
+        "a53a3499-876c-4cf9-ae21-1ab639a056bd"
       ],
       "settings": {
-        "heading": "Collection list grid",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
-        "button_label": "",
+        "heading": "{{ collection.metafields.custom.details_heading.value }}",
+        "content": "{{ collection.metafields.custom.details_content | metafield_tag }}",
+        "button_label": "Button",
         "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
@@ -108,98 +89,24 @@
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
-        "row_size_desktop": "md:grid-cols-4",
-        "row_size_mobile": "grid grid-cols-2",
-        "layout_x_alignment": "justify-between",
-        "visibility": "",
-        "enable_collection_size_count": true
-      }
-    },
-    "82097c1f-9028-4b07-8d69-769596d45978": {
-      "type": "logo-list",
-      "blocks": {
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-2": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Motherofpearlsons_Trading.jpg",
-            "logo_height": "max-h-[128px]",
-            "enable_padding": true,
-            "color_scheme": "color__bg-secondary color__secondary",
-            "color_border": "color__border-divider-1",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md:col-span-1"
-          }
-        },
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-0": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Tasman_Forge.jpg",
-            "logo_height": "max-h-[128px]",
-            "enable_padding": true,
-            "color_scheme": "color__bg-secondary color__secondary",
-            "color_border": "color__border-divider-1",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md:col-span-1"
-          }
-        },
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-1": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Brionne.jpg",
-            "logo_height": "max-h-[128px]",
-            "enable_padding": true,
-            "color_scheme": "color__bg-secondary color__secondary",
-            "color_border": "color__border-divider-1",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md:col-span-1"
-          }
-        },
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-3": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Lockwood_Assa_Abloy.jpg",
-            "logo_height": "max-h-[128px]",
-            "enable_padding": true,
-            "color_scheme": "color__bg-secondary color__secondary",
-            "color_border": "color__border-divider-1",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md:col-span-1"
-          }
-        }
-      },
-      "block_order": [
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-2",
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-0",
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-1",
-        "template--19346674057520__82097c1f-9028-4b07-8d69-769596d45978-1686622688e7cc4a60-3"
-      ],
-      "settings": {
-        "heading": "Logo list",
-        "content": "<p>Talk about press mentions, notable awards, or other brand partnerships.<\/p>",
-        "button_label": "",
-        "button_url": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-tertiary color__tertiary",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "row_size_desktop": "md:grid-cols-4",
-        "row_size_mobile": "grid-cols-2",
-        "layout_x_alignment": "justify-between",
+        "layout_x_alignment": "",
         "visibility": ""
       }
     },
-    "recent": {
-      "type": "recent-slider",
+    "9b8be202-0c87-43ce-93d3-46052a067fe2": {
+      "type": "collection-final-section",
       "settings": {
-        "heading": "Recently viewed",
-        "content": "",
+        "heading": "{{ collection.metafields.custom.finale_section_heading_.value }}",
+        "content": "<p>{{ collection.metafields.custom.finale_section_column_content | metafield_tag }}<\/p>",
+        "button_label": "",
+        "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
+        "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
-        "style_border": "border--t-width",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
         "visibility": ""
       }
     }
@@ -207,8 +114,7 @@
   "order": [
     "banner",
     "grid",
-    "5a29046a-f810-42aa-98fc-72dc0ded9629",
-    "82097c1f-9028-4b07-8d69-769596d45978",
-    "recent"
+    "419107ab-fc16-4f4a-b8e8-83669f562b92",
+    "9b8be202-0c87-43ce-93d3-46052a067fe2"
   ]
 }

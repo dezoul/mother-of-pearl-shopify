@@ -8,14 +8,15 @@
         "d23af186-9cd8-42ac-a697-ea3ad5479248": {
           "type": "content",
           "settings": {
-            "heading": "Block heading",
-            "content": "<p>Remind customers of offers like free shipping and lifetime warranty<\/p>",
+            "heading": "MOTHER OF PEARL AND SONS TRADING",
+            "content": "<p>Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu. <\/p><p><\/p><p><a href=\"\/pages\/contact\" title=\"Contact Us\">CONTACT US<\/a><\/p>",
             "button_label": "Button",
-            "button_url": "shopify:\/\/collections\/all"
+            "button_url": ""
           }
         },
         "78204a1a-1009-4f50-a9c8-4a9f0b2af321": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "heading": "Newsletter",
             "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
@@ -27,24 +28,43 @@
         "6ad6b950-210d-4cf8-b231-62c67db4980e": {
           "type": "menu",
           "settings": {
+            "heading": "BRANDS WE STOCK",
             "menu": "footer"
+          }
+        },
+        "12cfa020-36fa-4fce-88a5-eca32164fd05": {
+          "type": "menu",
+          "settings": {
+            "heading": "ARCHITECTURAL HARDWARE",
+            "menu": "footer-2"
+          }
+        },
+        "efffda97-d095-45e5-b898-4c066a556e88": {
+          "type": "doublemenu",
+          "settings": {
+            "heading": "KITCHEN & JOINERY",
+            "menu": "footer-3",
+            "heading-2": "WORKING WITH US",
+            "menu-2": "footer-4"
           }
         }
       },
       "block_order": [
         "d23af186-9cd8-42ac-a697-ea3ad5479248",
         "78204a1a-1009-4f50-a9c8-4a9f0b2af321",
-        "6ad6b950-210d-4cf8-b231-62c67db4980e"
+        "6ad6b950-210d-4cf8-b231-62c67db4980e",
+        "12cfa020-36fa-4fce-88a5-eca32164fd05",
+        "efffda97-d095-45e5-b898-4c066a556e88"
       ],
       "settings": {
-        "main_color_scheme": "color__bg-overlay-1 color__text",
-        "main_color_border": "color__border-divider-1",
+        "main_color_scheme": "color__bg-body color__text",
+        "main_color_border": "!color__border-transparent",
         "main_color_button": "btn btn--secondary",
-        "sub_color_scheme": "color__bg-primary color__primary",
-        "sub_color_border": "color__border-divider-1",
+        "sub_color_scheme": "color__bg-body color__text",
+        "sub_color_border": "!color__border-transparent",
         "sub_color_button": "btn btn--secondary",
-        "sub_links": "footer",
-        "sub_enable_payment_icons": true,
+        "sub_links": "",
+        "sub_enable_payment_icons": false,
         "visibility": ""
       }
     }

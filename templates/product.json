@@ -61,7 +61,8 @@
             "color_scheme": "color__bg-body color__text",
             "style_border": "",
             "enable_quantity": false,
-            "enable_dynamic_checkout": false
+            "enable_dynamic_checkout": false,
+            "enable_gift_card_recipient": false
           }
         },
         "123fd04c-91f3-4248-a65a-614e2f64fdeb": {
@@ -143,55 +144,113 @@
         "layout_gallery_size": "w-full md:w-2\/3"
       }
     },
-    "165592515341576314": {
-      "type": "accordions",
+    "0223d397-f097-4178-91c0-0b086e81e4a8": {
+      "type": "content-grid",
       "blocks": {
-        "165592515344a810fb-0": {
+        "template--20007613825328__0223d397-f097-4178-91c0-0b086e81e4a8-content-6": {
           "type": "content",
           "settings": {
-            "title": "How do I get free shipping?",
-            "content": "<p>Free shipping will automatically be applied to all domestic orders over $75. Simply add over $75 to your cart and you will see the discount while checking out.<\/p>"
+            "heading": "Custom Finishing",
+            "content": "<p>We have redefined the proportions of this classic design derived from the Bauhaus movement and attributed to Walter Gropius. Ideally you will come and feel to get a sense of how our version – “tweeks”- have worked.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
           }
         },
-        "165592515344a810fb-1": {
+        "ef1e0537-1bfc-43df-871e-320642c2a4bb": {
           "type": "content",
           "settings": {
-            "title": "How much is shipping?",
-            "content": "<p>Shipping is free for orders over $75. For all other domestic orders shipping is $10. International shipping is $20.<\/p>"
+            "heading": "Custom Finishing",
+            "content": "<p>We have redefined the proportions of this classic design derived from the Bauhaus movement and attributed to Walter Gropius. Ideally you will come and feel to get a sense of how our version – “tweeks”- have worked.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
           }
         },
-        "165592515344a810fb-2": {
+        "94f9a281-df97-4e2b-9e9d-d6d688712759": {
           "type": "content",
           "settings": {
-            "title": "How long does shipping take?",
-            "content": "<p>We typically ship orders out within 1-2 business days of ordering. From there shipping may take 3-5 business days. For international orders shipping can take between 7-14 business days.<\/p>"
+            "heading": "Custom Finishing",
+            "content": "<p>We have redefined the proportions of this classic design derived from the Bauhaus movement and attributed to Walter Gropius. Ideally you will come and feel to get a sense of how our version – “tweeks”- have worked.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
           }
         }
       },
       "block_order": [
-        "165592515344a810fb-0",
-        "165592515344a810fb-1",
-        "165592515344a810fb-2"
+        "template--20007613825328__0223d397-f097-4178-91c0-0b086e81e4a8-content-6",
+        "ef1e0537-1bfc-43df-871e-320642c2a4bb",
+        "94f9a281-df97-4e2b-9e9d-d6d688712759"
       ],
       "settings": {
-        "heading": "FAQs",
+        "heading": "ABOUT THE MOTHER OF PEARL SIGNATURE COLLECTION",
         "content": "",
-        "button_label": "Help center",
-        "button_url": "\/",
+        "button_label": "Button label",
+        "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
-        "style_border": "border--b-width border--t-width",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-3",
+        "row_size_mobile": "grid-cols-1",
         "layout_x_alignment": "justify-between",
         "visibility": ""
       }
     },
-    "1649436645dda33170": {
-      "type": "recent-slider",
+    "e889fb0e-1882-4fd9-9d84-8aa19144cec8": {
+      "type": "recommendations-slider",
       "settings": {
-        "heading": "Recently viewed",
+        "intent": "related",
+        "products_count": 7,
+        "heading": "You may also like",
         "content": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
@@ -200,27 +259,11 @@
         "style_border": "border--b-width",
         "visibility": ""
       }
-    },
-    "1649436653425ff0fe": {
-      "type": "recommendations-slider",
-      "settings": {
-        "intent": "related",
-        "products_count": 10,
-        "heading": "You may also like",
-        "content": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "style_border": "",
-        "visibility": ""
-      }
     }
   },
   "order": [
     "1638995507af787164",
-    "165592515341576314",
-    "1649436645dda33170",
-    "1649436653425ff0fe"
+    "0223d397-f097-4178-91c0-0b086e81e4a8",
+    "e889fb0e-1882-4fd9-9d84-8aa19144cec8"
   ]
 }
