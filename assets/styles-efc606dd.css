@@ -1215,6 +1215,9 @@ img:after {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -1333,6 +1336,9 @@ img:after {
 .ml-4 {
   margin-left: 1rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1341,6 +1347,9 @@ img:after {
 }
 .mr-4 {
   margin-right: 1rem;
+}
+.mr-8 {
+  margin-right: 2rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -1414,8 +1423,17 @@ img:after {
 .aspect-\[2\\\/3\] {
   aspect-ratio: 2\/3;
 }
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+.aspect-\[3\\\/2\] {
+  aspect-ratio: 3\/2;
+}
 .aspect-\[4\/5\] {
   aspect-ratio: 4/5;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 .aspect-video {
   aspect-ratio: 16 / 9;
@@ -1866,6 +1884,12 @@ img:after {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;

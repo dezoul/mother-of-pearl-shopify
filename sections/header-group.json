@@ -48,7 +48,7 @@
         "logo_light": "shopify:\/\/shop_images\/MOP-logo-sand.svg",
         "logo_desktop_height": 30,
         "logo_mobile_height": 16,
-        "bar_color_scheme": "color__bg-tertiary color__tertiary",
+        "bar_color_scheme": "color__bg-body color__text",
         "bar_color_border": "color__border-divider-1",
         "bar_layout_desktop": "center-below",
         "bar_button_cart_type": "icon",

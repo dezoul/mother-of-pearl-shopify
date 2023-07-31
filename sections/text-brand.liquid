@@ -1,38 +1,34 @@
-<!-- sections/about_1.liquid -->
+<!-- sections/text.liquid -->
 {% comment %} 
 Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}<section
-  class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}   {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div
-    class="{{ settings.layout_horizontal }}"
-    style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+{% endcomment %}<section class="
+      {{ section.settings.visibility }}
+      {{ section.settings.color_scheme }} 
+      {{ section.settings.color_border }}
+      {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}"style="
+            padding-top:{{ section.settings.spacing_top }}px;
+            padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div
-      class="">
-
-      <div
-        class="text-center">
-        <div
-          class="max-w-[128px] mx-auto">
-          {{ 'blackSwirl.png' | asset_url | img_tag }}
-        </div>
-        <h2
-          class="text-dark-900 my-12">
-          {{ section.settings.heading }}
-        </h2>
+    <div class="flex flex-row flex-wrap items-end
+              {{ section.settings.layout_x_alignment }}">
+      <div class="max-w-prose md:w-auto w-full">
+        {%- unless section.settings.heading == blank -%}
+          <h3>{{ section.settings.heading }}</h3>
+        {%- endunless -%}
+        {%- unless section.settings.content == blank -%}
+          <div class="m-0--clear">
+            {{ section.settings.content }}
+          </div>
+        {%- endunless -%}
+        {%- unless section.settings.button_url == blank -%}
+          <a href="{{ section.settings.button_url }}" class="mt-2 {{ section.settings.color_button }}">
+            {{ section.settings.button_label }}
+          </a>
+        {%- endunless -%}
       </div>
-
-      <div
-        class="md:columns-2 gap-8">
-
-        {{ section.settings.content }}
-
-      </div>
-
-
     </div>
 
   </div>
@@ -40,7 +36,7 @@ Globals:
 
 {% schema %}
   {
-    "name": "About initial section",
+    "name": "brand text section",
     "settings": [
       {
         "type": "header",
@@ -230,7 +226,7 @@ Globals:
     ],
     "presets": [
       {
-        "name": "About inital section",
+        "name": "brand text section",
         "settings": {
           "color_scheme": "color__bg-body color__text",
           "color_border": "color__border-divider-1",

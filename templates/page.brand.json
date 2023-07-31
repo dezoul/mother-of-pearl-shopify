@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "disabled": true,
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "368de91d-ee0e-4757-86bc-8912a5b154e0": {
+      "type": "banner-alternative-brand",
+      "blocks": {
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "Brand Name",
+            "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
+          }
+        },
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+          }
+        },
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "bg-color": "#fcfaf6",
+            "border": "",
+            "button-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1",
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1",
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "left",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "971ea3e3-d203-491a-bf28-8348e7b6453b": {
+      "type": "text-brand",
+      "settings": {
+        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "content": "<p>-- John Smith,  Growth Architects<\/p>",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
+      }
+    },
+    "84df84bf-67bc-46e6-9f60-709d6aa06eaf": {
+      "type": "brand-page-gallery",
+      "blocks": {
+        "837008a5-2003-4d41-a761-eb28dd97b060": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/brand-3.jpg",
+            "aspect": "square",
+            "width": "col-span-2"
+          }
+        },
+        "a2934778-4514-4e6b-ab52-66f7287cb7f9": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/brand-2.jpg",
+            "aspect": "aspect-square",
+            "width": "col-span-2"
+          }
+        },
+        "ba1a86b5-4792-49c0-92b2-10d746087fc4": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "aspect": "aspect-square",
+            "width": "col-span-2"
+          }
+        },
+        "9267256a-d267-4764-88e3-56c318c77dc8": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "aspect": "aspect-[3\/2]",
+            "width": "col-span-3"
+          }
+        }
+      },
+      "block_order": [
+        "837008a5-2003-4d41-a761-eb28dd97b060",
+        "a2934778-4514-4e6b-ab52-66f7287cb7f9",
+        "ba1a86b5-4792-49c0-92b2-10d746087fc4",
+        "9267256a-d267-4764-88e3-56c318c77dc8"
+      ],
+      "settings": {
+        "heading": "Rich text",
+        "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "368de91d-ee0e-4757-86bc-8912a5b154e0",
+    "971ea3e3-d203-491a-bf28-8348e7b6453b",
+    "84df84bf-67bc-46e6-9f60-709d6aa06eaf"
+  ]
+}

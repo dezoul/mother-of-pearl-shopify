@@ -9,90 +9,45 @@
         "color_scheme": "color__bg-body color__text"
       }
     },
-    "93e6ad6d-af44-44f4-be89-7146aed2bd4c": {
+    "35099f65-72a3-4820-bef6-dba1bf155c03": {
+      "type": "about_1",
+      "settings": {
+        "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
+        "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p><p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "bcf3df67-60f4-4975-89ce-d53d7ba4a80d": {
       "type": "banner",
       "blocks": {
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-0": {
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-heading-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "content": "About Us"
+            "content": "Heading"
           }
         },
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-1": {
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-content-1": {
           "type": "content",
           "disabled": true,
           "settings": {
             "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-2": {
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-buttons-1": {
           "type": "buttons",
           "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_url": "\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-0",
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-1",
-        "template--16238486061224__93e6ad6d-af44-44f4-be89-7146aed2bd4c-16880907998fd1d391-2"
-      ],
-      "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/ofcuts.png",
-        "image_background_mobile": "shopify:\/\/shop_images\/ofcuts.png",
-        "show_entire_image": false,
-        "enable_lazy_loading": false,
-        "show_video_background_mobile": true,
-        "color_scheme": "color__bg-overlay-1 color__text",
-        "color_text": "",
-        "color_border": "color__border-divider-1",
-        "enable_gradient": false,
-        "style_border": "",
-        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
-        "layout_y_alignment": "items-center",
-        "layout_x_alignment": "justify-center text-center",
-        "visibility": ""
-      }
-    },
-    "6280eff5-eaff-4273-90fc-b01542a19ea2": {
-      "type": "text",
-      "settings": {
-        "heading": "",
-        "content": "<p>JUJU & CO was founded in 2014 by Susan Venables. She began creating commissioned jute shoppers and one-off leather pieces, but the demand for unadorned and timeless accessories propelled the label to where it is, 8 years later.<\/p><p><\/p><p>JUJU & CO is proud to be female owned and lead, with an all-female team. Supporting women in the business and beyond is central to our ethos.<\/p>",
-        "button_label": "Button",
-        "button_url": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "",
-        "layout_x_alignment": "text-center justify-center",
-        "visibility": ""
-      }
-    },
-    "dd0763be-3c51-45df-9cbb-dc179d21f02e": {
-      "type": "banner-alternative",
-      "blocks": {
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "content": ""
-          }
-        },
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-1": {
-          "type": "content",
-          "settings": {
-            "content": "<p>The word 'juju' is thought to stem from the french word 'joujou' meaning 'plaything'. Juju is a concept rooted in West African History, referring to traditional spiritual practices. The word itself is not specific to any one cultural group or geographic location, but describes rituals that appeal to the supernatural to exact our desires on the physical world.<\/p><p><\/p><p>So why JUJU & CO? At the time the company was founded, we were only making bags from jute. Jute is the root of our story and name, and our passion for sustainable materials continues today, 7 years on.<\/p><p><\/p><p>JUJU & CO has evolved into a global accessories brand with an organic and timeless aesthetic that withstands trends or phases. Organic and sustainable materials are at the core of our aesthetic, letting the leather speak for itself. We embrace the unique and imperfect and believe style is individual, not mass produced. Transparency about our materials, manufacturing and business relationships is central to our ethical principles.<\/p><p>We don't believe in greenwashing, we believe in action speaking louder than words.<\/p>"
-          }
-        },
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
+            "button_color": "btn",
             "button_label": "Button label",
             "button_url": "\/collections\/all",
             "secondary_button_color": "btn btn--neutral",
@@ -102,12 +57,163 @@
         }
       },
       "block_order": [
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-0",
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-1",
-        "template--16238486061224__dd0763be-3c51-45df-9cbb-dc179d21f02e-16880942073a392e35-2"
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-heading-1",
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-content-1",
+        "template--20029268787504__bcf3df67-60f4-4975-89ce-d53d7ba4a80d-buttons-1"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/leatherStrips.png",
+        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "image_background_mobile": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "show_entire_image": false,
+        "enable_lazy_loading": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "c727dbc5-f107-4dec-9d29-3c1c00f0b9c8": {
+      "type": "banner-alternative-about",
+      "blocks": {
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years."
+          }
+        },
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+          }
+        },
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_width": 5,
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-heading-1",
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-content-1",
+        "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "paddingTop": 5,
+        "paddingBottom": 0,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "left",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "042e3456-7f82-49ed-b724-55b937aa380f": {
+      "type": "banner-alternative-about",
+      "blocks": {
+        "bd8591f8-586c-4eee-a30e-1c682f072730": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "content": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years."
+          }
+        },
+        "eff6b9b3-b756-427d-8869-fa4d6182edae": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+          }
+        },
+        "7435720a-9956-45b7-aa29-9467bdac4fa9": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_width": 5,
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "bd8591f8-586c-4eee-a30e-1c682f072730",
+        "eff6b9b3-b756-427d-8869-fa4d6182edae",
+        "7435720a-9956-45b7-aa29-9467bdac4fa9"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "paddingTop": 3,
+        "paddingBottom": 5,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "right",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "6df58481-1e31-4213-ba98-37c3ab671cc2": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "Signature Collection"
+          }
+        },
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>"
+          }
+        },
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 5,
+            "button_label": "BOOK A CONSULTATION",
+            "button_url": "shopify:\/\/pages\/contact",
+            "bg-color": "rgba(0,0,0,0)",
+            "border": "1px solid",
+            "button-color": "{{ shop.brand.colors.secondary[1].background }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-heading-1",
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-content-1",
+        "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
         "color_text": "",
@@ -119,114 +225,14 @@
         "layout_x_alignment": "justify-start",
         "visibility": ""
       }
-    },
-    "be1e7e7a-cffe-47af-90ce-37b15efbfe72": {
-      "type": "content-grid",
-      "blocks": {
-        "template--16238486061224__be1e7e7a-cffe-47af-90ce-37b15efbfe72-1688090002f97a94e3-2": {
-          "type": "content",
-          "settings": {
-            "heading": "Our Materials",
-            "content": "",
-            "button_label": "READ MORE",
-            "button_url": "shopify:\/\/pages\/our-materials",
-            "image_featured": "shopify:\/\/shop_images\/leatherCloseUp.jpg",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "!color__border-transparent",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-end content-end",
-            "layout_x_alignment": "",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md: md:col-span-1"
-          }
-        },
-        "32c2588d-4a36-4d2b-94e1-90b693a0d4b8": {
-          "type": "content",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "content": "",
-            "button_label": "READ MORE",
-            "button_url": "shopify:\/\/pages\/shipping-returns",
-            "image_featured": "shopify:\/\/shop_images\/clouds.png",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "!color__border-transparent",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-end content-end",
-            "layout_x_alignment": "",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md: md:col-span-1"
-          }
-        },
-        "848b4780-1340-4348-943c-32efca1932b3": {
-          "type": "content",
-          "settings": {
-            "heading": "About JUJU",
-            "content": "",
-            "button_label": "READ MORE",
-            "button_url": "shopify:\/\/pages\/juju-who",
-            "image_featured": "shopify:\/\/shop_images\/ofcuts.png",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "!color__border-transparent",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-end content-end",
-            "layout_x_alignment": "",
-            "layout_row_span": "row-span-1",
-            "layout_col_span": "col-span-1 md: md:col-span-1"
-          }
-        }
-      },
-      "block_order": [
-        "template--16238486061224__be1e7e7a-cffe-47af-90ce-37b15efbfe72-1688090002f97a94e3-2",
-        "32c2588d-4a36-4d2b-94e1-90b693a0d4b8",
-        "848b4780-1340-4348-943c-32efca1932b3"
-      ],
-      "settings": {
-        "heading": "",
-        "content": "",
-        "button_label": "",
-        "button_url": "",
-        "spacing_top": 20,
-        "spacing_bottom": 20,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "",
-        "row_size_desktop": "md:grid-cols-3",
-        "row_size_mobile": "grid-cols-1",
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
-      }
     }
   },
   "order": [
     "main",
-    "93e6ad6d-af44-44f4-be89-7146aed2bd4c",
-    "6280eff5-eaff-4273-90fc-b01542a19ea2",
-    "dd0763be-3c51-45df-9cbb-dc179d21f02e",
-    "be1e7e7a-cffe-47af-90ce-37b15efbfe72"
+    "35099f65-72a3-4820-bef6-dba1bf155c03",
+    "bcf3df67-60f4-4975-89ce-d53d7ba4a80d",
+    "c727dbc5-f107-4dec-9d29-3c1c00f0b9c8",
+    "042e3456-7f82-49ed-b724-55b937aa380f",
+    "6df58481-1e31-4213-ba98-37c3ab671cc2"
   ]
 }
