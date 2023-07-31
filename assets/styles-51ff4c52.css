@@ -1215,9 +1215,6 @@ img:after {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -1423,17 +1420,8 @@ img:after {
 .aspect-\[2\\\/3\] {
   aspect-ratio: 2\/3;
 }
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
-}
-.aspect-\[3\\\/2\] {
-  aspect-ratio: 3\/2;
-}
 .aspect-\[4\/5\] {
   aspect-ratio: 4/5;
-}
-.aspect-square {
-  aspect-ratio: 1 / 1;
 }
 .aspect-video {
   aspect-ratio: 16 / 9;

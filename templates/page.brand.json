@@ -78,42 +78,16 @@
       "blocks": {
         "837008a5-2003-4d41-a761-eb28dd97b060": {
           "type": "images",
+          "repeater": "{{ page.metafields.custom.gallery_images.value }}",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/brand-3.jpg",
-            "aspect": "square",
-            "width": "col-span-2"
-          }
-        },
-        "a2934778-4514-4e6b-ab52-66f7287cb7f9": {
-          "type": "images",
-          "settings": {
-            "image_featured": "shopify:\/\/shop_images\/brand-2.jpg",
-            "aspect": "aspect-square",
-            "width": "col-span-2"
-          }
-        },
-        "ba1a86b5-4792-49c0-92b2-10d746087fc4": {
-          "type": "images",
-          "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
-            "aspect": "aspect-square",
-            "width": "col-span-2"
-          }
-        },
-        "9267256a-d267-4764-88e3-56c318c77dc8": {
-          "type": "images",
-          "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
-            "aspect": "aspect-[3\/2]",
-            "width": "col-span-3"
+            "image_featured": "{{ block.repeater.image.value }}",
+            "aspect": "{{ block.repeater.gallery_image_aspect.value }}",
+            "width": "{{ block.repeater.gallery_width.value }}"
           }
         }
       },
       "block_order": [
-        "837008a5-2003-4d41-a761-eb28dd97b060",
-        "a2934778-4514-4e6b-ab52-66f7287cb7f9",
-        "ba1a86b5-4792-49c0-92b2-10d746087fc4",
-        "9267256a-d267-4764-88e3-56c318c77dc8"
+        "837008a5-2003-4d41-a761-eb28dd97b060"
       ],
       "settings": {
         "heading": "Rich text",
