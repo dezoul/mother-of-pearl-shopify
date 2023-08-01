@@ -49,9 +49,9 @@ Pro tips:
                       {%- unless block.settings.button_url == blank -%}
                         <a
                           href="{{ block.settings.button_url }}"
-                          class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8"
+                          class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"
                           style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.border }};">
-                          <span class="leading-none text-right">
+                          <span class="leading-none text-right font-[inherit]">
                             {{ block.settings.button_label }}
                           </span>
 
@@ -70,7 +70,7 @@ Pro tips:
         {% comment %} image {% endcomment %}
         <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
           <div class="relative w-full overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}
@@ -96,8 +96,7 @@ Pro tips:
 
       {% comment %} content {% endcomment %}
       <div class="w-full  {{ section.settings.color_scheme }}">
-        <div
-          class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
+        <div class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
           <div
             class='max-w-prose gap-4 flex flex-col
             {% if section.settings.layout_x_alignment contains 'text-center' %}items-center{% endif %}
@@ -122,7 +121,7 @@ Pro tips:
                   {%- unless block.settings.button_url == blank -%}
                     <a
                       href="{{ block.settings.button_url }}"
-                      class="justify-center py-1 px-5 no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] "
+                      class="justify-center py-1 px-5 no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] custom-button"
                       style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.border }};">
                       <span class="text-right">
                         {{ block.settings.button_label }}

@@ -39,7 +39,7 @@ Pro tips:
                 {% for block in section.blocks %}
                   {%- case block.type -%}
                     {%- when 'heading' -%}
-                    <h3 class="m-0 {{ section.settings.color_text }} heading-emphasis" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h3>
+                    <h3 class="m-0 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h3>
                     {%- when 'content' -%}
                     <div class="m-0--clear {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                       {{ block.settings.content }}
@@ -47,7 +47,9 @@ Pro tips:
                     {%- when 'buttons' -%}
                     <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
                       {%- unless block.settings.button_url == blank -%}
-                        <a href="{{ block.settings.button_url }}" class="flex justify-end items-center no-underline">
+                        <a
+                          href="{{ block.settings.button_url }}"
+                          class="flex justify-end items-center no-underline">
                           <span class="leading-none" style="width: {{ block.settings.button_width }}rem">
                             {{ block.settings.button_label }}
                           </span>

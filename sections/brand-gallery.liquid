@@ -1,4 +1,4 @@
-<!-- sections/text.liquid -->
+<!-- sections/brand-gallery.liquid -->
 {% comment %} 
 Richtext section with options to display buttons and headings.
 
@@ -10,12 +10,13 @@ Globals:
 
     <div class="{{ section.settings.layout_x_alignment }}">
       <div class="max-w-lg mb-10p">
+
         {%- unless section.settings.heading == blank -%}
           <h2 class="italic uppercase text-3xl">
             {{ section.settings.heading }}</h2>
         {%- endunless -%}
         {%- unless section.settings.content == blank -%}
-          <div class="pl-8 mb-4">{{ section.settings.content }}</div>
+          <div class="pl-32 py-8 mb-4">{{ section.settings.content }}</div>
         {%- endunless -%}
         {%- unless section.settings.button_url == blank -%}
           <a href="{{ section.settings.button_url }}" class="mt-2 {{ section.settings.color_button }}">

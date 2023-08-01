@@ -9,9 +9,11 @@ Globals:
     <div class="">
 
       <div class="text-center">
-        <div class="max-w-[128px] mx-auto">
-          {{ 'blackSwirl.png' | asset_url | img_tag }}
-        </div>
+        {%- unless section.settings.featured_image == blank -%}
+          <div class="text-center pb-8">
+            {{ section.settings.featured_image | image_url: width: 100 | image_tag: style: 'object-fit:cover', class: 'inline-block object-cover z-10', loading: 'lazy' }}
+          </div>
+        {%- endunless -%}
         <h2 class="text-dark-900 my-12">
           {{ section.settings.heading }}
         </h2>
@@ -25,7 +27,8 @@ Globals:
       </div>
       {% if section.settings.button_url %}
 
-        <div class="text-center">
+        <div
+          class="text-center">
           <a href="#" class="button inline-block mt-4 text-sand-300">
             Book a consultation
           </a>
@@ -51,11 +54,15 @@ Globals:
         "label": "t:sections.all.content.settings.heading.label"
       },
       {
+        "type": "image_picker",
+        "id": "featured_image",
+        "label": "top image"
+      },
+      {
         "type": "richtext",
         "id": "content",
         "label": "t:sections.all.content.settings.content.label"
-      },
-      {
+      }, {
         "type": "text",
         "id": "button_label",
         "label": "t:sections.all.content.settings.button_label.label"

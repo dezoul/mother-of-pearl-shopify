@@ -45,9 +45,9 @@
   h5, p {
     margin-bottom: 0.5em;
     font-family: ivyora-text, serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.9rem;
-    line-height: 1;
+    line-height: 1.3;
   }
   h6,
   .h6,
@@ -122,9 +122,33 @@
     font-family: 'roc-grotesk-wide', 'sans-serif';
   }
   
+  .heading-emphasis{
+    @apply italic uppercase
+  }
+
   .button {
     @apply inline-block bg-[#20242b] uppercase font-wide text-[#fdfbf8] hover:bg-[#363c49] px-8 py-4 transition-colors leading-none;
   }
+  .custom-button{
+    @apply px-2 py-6 inline-block;
+    font-family: 'roc-grotesk-wide', 'sans-serif';
+    background-color: #20242b;
+    color: #F8F3EA;
+  }
+
+  /* [15:51, 16/07/2023] Tina: fontFamily: {
+    'serif': ['ivyora-text', 'serif'],
+    'wide': ['roc-grotesk-wide', 'sans-serif'],
+    'sans': ['roc-grotesk', 'sans-serif'],
+  },
+ colors: {
+      'sand-100': '#fdfbf8',
+      'sand-200': '#F8F3EA',
+      'sand-300': '#f3ebdb',
+      'dark-700': '#2b303a',
+      'dark-800': '#20242b',
+      'dark-900': '#15181c',
+    }, */
 
   /* font weight */
   strong {
@@ -140,12 +164,10 @@
 }
 
 /* custom */
-
-
-body .heading-emphasis{
-  text-transform: uppercase;
-  font-style: italic;  
+span{
+  font-family: inherit !important;
 }
+
 
 *:focus {
   box-shadow: none !important;
@@ -166,3 +188,4 @@ nav a:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+

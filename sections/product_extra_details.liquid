@@ -13,18 +13,23 @@ Globals:
         {%- endunless -%}
         <div class="grid grid-cols-5 gap-4">
           <div class="col-span-1">
-            <h4>Size</h4>
+            <h4 class="text-[15px]">Size</h4>
             <p>{{ product.metafields.custom.size_details }}</p>
           </div>
           <div class="col-span-2">
-            <h4>materials</h4>
+            <h4 class="text-[15px]">materials</h4>
             <p>{{ product.metafields.custom.materials_details }}</p>
           </div>
           <div class="col-span-2">
-            <h4>Size</h4>
+            <h4 class="text-[15px]">Size</h4>
             <p>{{ product.metafields.custom.installation_method_details }}</p>
           </div>
 
+        </div>
+        <div>
+          <h4 class="text-center pt-8 text-[20px]">
+            {{ product.metafields.custom.recommendation_text }}
+          </h4>
         </div>
       </div>
     </div>

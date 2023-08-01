@@ -24,43 +24,40 @@ Pro tips:
 - Recomendations can be updated using Search and Discovery app.
 - Can be set to either complimentary or related products.
 - This section will only work on product templates.
-{% endcomment %}<section
-  class="
-        {{ section.settings.visibility }}
-        {{ section.settings.color_scheme }} 
-        {{ section.settings.color_border }}
-        {{ section.settings.style_border }}"><div class="!px-0
-            {{ settings.layout_horizontal }}"style="
-            padding-top:{{ section.settings.spacing_top }}px;
-            padding-bottom:{{ section.settings.spacing_bottom }}px;"x-data="{
-            initialLoad: true,
-            loadingRecomendations : false,
-            recomended_products: [],
-            getRecomendations(){
-            fetch(window.Shopify.routes.root + 'recommendations/products.json?product_id={{ product.id }}&limit={{ section.settings.products_count }}&intent={{ section.settings.intent }}')
-            .then(response => response.json())
-            .then(({ products }) => {
-            if (products.length > 0) {
-            this.recomended_products = products;
-            this.loadingRecomendations = true;
-            this.initialLoad = false;
-            }
-            }
-            );
-            }
-            }"x-show="recomended_products.length > 0 || initialLoad == true"x-init="getRecomendations();">
+{% endcomment %}<section class="
+            {{ section.settings.visibility }}
+            {{ section.settings.color_scheme }} 
+            {{ section.settings.color_border }}
+            {{ section.settings.style_border }}"> <div class="!px-0
+                  {{ settings.layout_horizontal }}"style="
+                  padding-top:{{ section.settings.spacing_top }}px;
+                  padding-bottom:{{ section.settings.spacing_bottom }}px;"x-data="{
+                  initialLoad: true,
+                  loadingRecomendations : false,
+                  recomended_products: [],
+                  getRecomendations(){
+                  fetch(window.Shopify.routes.root + 'recommendations/products.json?product_id={{ product.id }}&limit={{ section.settings.products_count }}&intent={{ section.settings.intent }}')
+                  .then(response => response.json())
+                  .then(({ products }) => {
+                  if (products.length > 0) {
+                  this.recomended_products = products;
+                  this.loadingRecomendations = true;
+                  this.initialLoad = false;
+                  }
+                  }
+                  );
+                  }
+                  }"x-show="recomended_products.length > 0 || initialLoad == true"x-init="getRecomendations();">
 
     {%- comment -%}header{%- endcomment -%}
-    <div
-      class="flex flex-row flex-wrap items-end justify-between px-4 pb-4">
+    <div class="flex flex-row flex-wrap items-end justify-between px-4 pb-4">
       <div
         class="max-w-prose md:w-auto w-full">
         {%- unless section.settings.heading == blank -%}
-          <h3>{{ section.settings.heading }}</h3>
+          <h3 class="text-center">{{ section.settings.heading }}</h3>
         {%- endunless -%}
         {%- unless section.settings.content == blank -%}
-          <div
-            class="m-0--clear">
+          <div class="m-0--clear">
             {{ section.settings.content }}
           </div>
         {%- endunless -%}
@@ -70,17 +67,13 @@ Pro tips:
     {%- comment -%}skeleton loader{%- endcomment -%}
     <div
       x-show="!loadingRecomendations">
-      <div
-        class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
-        style="
-                    column-gap: {{ settings.layout_gap_size }}px;
-                    row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;">
-        <div
-          class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
+      <div class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden" style="
+                              column-gap: {{ settings.layout_gap_size }}px;
+                              row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;">
+        <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
           {% render 'component__skeleton-grid-item' %}
         </div>
-        <div
-          class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
+        <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12">
           {% render 'component__skeleton-grid-item' %}
         </div>
       </div>
@@ -90,43 +83,42 @@ Pro tips:
     <div class="relative w-full"
       x-show="recomended_products.length > 0 && loadingRecomendations"
       x-data="{
-                index_slide: 0,
-                index_size: {{ section.settings.products_count | minus: 1 }},
-                show_arrows: false,
-                isOverflown(element) {
-                return element.scrollWidth > element.clientWidth;
-                },
-                scrollNext() {
-                let slider = this.$refs.slider;
-                if(this.index_slide >= this.index_size){
-                slider.scrollLeft = 0;
-                } else {
-                this.index_slide ++;
-                slider.scrollLeft += slider.offsetWidth-300;
-                }
-                
-                },
-                scrollBack() {
-                let slider = this.$refs.slider;
-                if(this.index_slide < 0){
-                slider.scrollLeft = 999999;
-                } else {
-                this.index_slide --;
-                slider.scrollLeft -= slider.offsetWidth-300;
-                }
-                }
-                }">
+                        index_slide: 0,
+                        index_size: {{ section.settings.products_count | minus: 1 }},
+                        show_arrows: false,
+                        isOverflown(element) {
+                        return element.scrollWidth > element.clientWidth;
+                        },
+                        scrollNext() {
+                        let slider = this.$refs.slider;
+                        if(this.index_slide >= this.index_size){
+                        slider.scrollLeft = 0;
+                        } else {
+                        this.index_slide ++;
+                        slider.scrollLeft += slider.offsetWidth-300;
+                        }
+                        
+                        },
+                        scrollBack() {
+                        let slider = this.$refs.slider;
+                        if(this.index_slide < 0){
+                        slider.scrollLeft = 999999;
+                        } else {
+                        this.index_slide --;
+                        slider.scrollLeft -= slider.offsetWidth-300;
+                        }
+                        }
+                        }">
 
       {%- comment -%}slides{%- endcomment -%}
       <div
         class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
         style="
-                    column-gap: {{ settings.layout_gap_size }}px;
-                    row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
+                              column-gap: {{ settings.layout_gap_size }}px;
+                              row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
         x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 2000)"
         x-ref="slider">
-        <template
-          x-for="(item, index) in recomended_products">
+        <template x-for="(item, index) in recomended_products">
           <div
             class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12"
             x-intersect:enter.full="index_slide = index;"
@@ -139,19 +131,15 @@ Pro tips:
                 {{ settings.thumbnails_color_border }}
                 {{ settings.thumbmails_color_scheme }}
               {% endif %}"x-data="{ 
-                            option_popup: true,
-                            button_loading: false
-                            }'>
+                                          option_popup: true,
+                                          button_loading: false
+                                          }'>
 
               {%- comment -%}image{%- endcomment -%}
-              <a
-                class="hover:opacity-100 relative block mb-2"
-                :href="item.url">
-                <div
-                  class="animate w-full overflow-hidden {{ settings.thumbmails_color_scheme }}   {% if settings.thumbnails_border_style == 'image' %} border--radius  {{ settings.thumbnails_color_border }} 
-                                        {% endif %}">
-                  <div
-                    class="{{ settings.thumbnails_ratio }} object-cover overflow-hidden">
+              <a class="hover:opacity-100 relative block mb-2" :href="item.url">
+                <div class="animate w-full overflow-hidden {{ settings.thumbmails_color_scheme }}   {% if settings.thumbnails_border_style == 'image' %} border--radius  {{ settings.thumbnails_color_border }} 
+                                                            {% endif %}">
+                  <div class="{{ settings.thumbnails_ratio }} object-cover overflow-hidden">
                     {% if settings.thumbnails_object-sizing == "cover" %}
                       {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
                     {% else %}
@@ -169,9 +157,7 @@ Pro tips:
 
               {%- comment -%}quick add desktop{%- endcomment -%}
               {% if settings.enable_quick_desktop %}
-                <div
-                  x-show="item.available"
-                  class="md:block absolute hidden w-full px-4 pb-4 -mt-16 translate-y-2">
+                <div x-show="item.available" class="md:block absolute hidden w-full px-4 pb-4 -mt-16 translate-y-2">
                   <form
                     class="flex flex-wrap"
                     action="/cart/add"
@@ -179,17 +165,13 @@ Pro tips:
                     enctype="multipart/form-data"
                     x-data="{ defaultVariantId: item.variants[0].id , defaultSellingPlanId: 0, quantity: 1, }"
                     @submit.prevent="  addCartItem(defaultVariantId, defaultSellingPlanId, quantity, true);  button_loading = true;  setTimeout(function(){ button_loading = false}, 500);">
-                    <div
-                      class="!w-full"
-                      x-show="item.variants[0].option1 == 'Default Title'">
+                    <div class="!w-full" x-show="item.variants[0].option1 == 'Default Title'">
 
                       <input
                         name="id"
                         value="item.variants[0].id"
                         type="hidden">
-                      <label
-                        :for="'recommendations-' + item.id + '-quantity'"
-                        class="sr-only">{{ 'products.general.quantity' | t }}</label>
+                      <label :for="'recommendations-' + item.id + '-quantity'" class="sr-only">{{ 'products.general.quantity' | t }}</label>
                       <input
                         class="!hidden"
                         type="text"
@@ -205,10 +187,8 @@ Pro tips:
                         class="!w-full btn btn--secondary btn--small btn--load"
                         :class="{ 'btn--loading' : cart_loading && button_loading }"
                         :disabled="button_loading">
-                        <div
-                          class="btn__content">{{ 'products.general.add_to_cart' | t }}</div>
-                        <div
-                          class="btn__spinner">
+                        <div class="btn__content">{{ 'products.general.add_to_cart' | t }}</div>
+                        <div class="btn__spinner">
                           {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
                         </div>
                       </button>
@@ -219,15 +199,13 @@ Pro tips:
                       type="button"
                       class="!w-full btn btn--small btn--load btn--secondary"
                       @click="
-                                                        button_loading = true; 
-                                                        fetchAndRenderQuickAdd(item.handle, 'recent');
-                                                        setTimeout(function(){ button_loading = false}, 500);"
+                                                                                button_loading = true; 
+                                                                                fetchAndRenderQuickAdd(item.handle, 'recent');
+                                                                                setTimeout(function(){ button_loading = false}, 500);"
                       :class="{ 'btn--loading' : button_loading }"
                       :disabled="button_loading">
-                      <div
-                        class="btn__content">{{ 'products.general.add_to_cart' | t }}</div>
-                      <div
-                        class="btn__spinner">
+                      <div class="btn__content">{{ 'products.general.add_to_cart' | t }}</div>
+                      <div class="btn__spinner">
                         {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
                       </div>
                     </button>
@@ -235,9 +213,7 @@ Pro tips:
                 </div>
               {% endif %}
 
-              <div
-                x-show="!item.available"
-                class="md:block group-hover:opacity-100 group-focus-within:opacity-100 animation-300 group-hover:translate-y-0 group-focus-within:translate-y-0 absolute hidden w-full px-4 pb-4 -mt-16 translate-y-2 opacity-0">
+              <div x-show="!item.available" class="md:block group-hover:opacity-100 group-focus-within:opacity-100 animation-300 group-hover:translate-y-0 group-focus-within:translate-y-0 absolute hidden w-full px-4 pb-4 -mt-16 translate-y-2 opacity-0">
                 <button
                   type="button"
                   class="!w-full btn btn--small btn--plain"
@@ -251,21 +227,21 @@ Pro tips:
                 :href="item.url"
                 tabindex="-1"
                 class="hover:no-underline block no-underline whitespace-normal
-                                    {{ settings.thumbnail_alignment }}
-                                    {% if settings.thumbnails_border_style == "thumbnail" %}
-                                    px-4
-                                    {% if settings.enable_quick_mobile %}
-                                    pb-14 md:pb-4
-                                    {% else %}
-                                    pb-4
-                                    {% endif %}
-                                    {% else %}
-                                    {% if settings.enable_quick_mobile %}
-                                    pb-14 md:pb-0
-                                    {% else %}
-                                    pb-4
-                                    {% endif %}
-                                    {% endif %}">
+                                                      {{ settings.thumbnail_alignment }}
+                                                      {% if settings.thumbnails_border_style == "thumbnail" %}
+                                                      px-4
+                                                      {% if settings.enable_quick_mobile %}
+                                                      pb-14 md:pb-4
+                                                      {% else %}
+                                                      pb-4
+                                                      {% endif %}
+                                                      {% else %}
+                                                      {% if settings.enable_quick_mobile %}
+                                                      pb-14 md:pb-0
+                                                      {% else %}
+                                                      pb-4
+                                                      {% endif %}
+                                                      {% endif %}">
                 <h3
                   class='type--base !leading-tight mb-0.5
                   {% if settings.type_thumbnail == 'body' %}type__body{% endif %}
@@ -276,7 +252,7 @@ Pro tips:
 
                 <ul
                   class="flex flex-wrap items-center gap-x-1 gap-y-0.5 p-0 opacity-75 mb-0.5
-                                        {{ settings.thumbnail_alignment }}">
+                                                            {{ settings.thumbnail_alignment }}">
                   {% if settings.enable_thumbnails_product_type %}
                     <li
                       class='type--small inline-block last:after:hidden after:pl-1
@@ -335,35 +311,29 @@ Pro tips:
 
               {%- comment -%}quick add mobile{%- endcomment -%}
               {% if settings.enable_quick_mobile %}
-                <div
-                  class="no-js--hide md:hidden absolute bottom-0 w-full pt-4"
-                  x-show="item.available">
+                <div class="no-js--hide md:hidden absolute bottom-0 w-full pt-4" x-show="item.available">
                   <form
                     class="flex flex-wrap"
                     action="/cart/add"
                     method="post"
                     enctype="multipart/form-data"
                     x-data="{
-                                            defaultVariantId: item.variants[0].id,
-                                            defaultSellingPlanId: 0,
-                                            quantity: 1,
-                                            }"
+                                                                  defaultVariantId: item.variants[0].id,
+                                                                  defaultSellingPlanId: 0,
+                                                                  quantity: 1,
+                                                                  }"
                     @submit.prevent="
-                                            addCartItem(defaultVariantId, defaultSellingPlanId, quantity, true); 
-                                            button_loading = true; 
-                                            setTimeout(function(){ button_loading = false}, 500);
-                                            ">
-                    <div
-                      class="!w-full"
-                      x-show="item.variants[0].option1 == 'Default Title'">
+                                                                  addCartItem(defaultVariantId, defaultSellingPlanId, quantity, true); 
+                                                                  button_loading = true; 
+                                                                  setTimeout(function(){ button_loading = false}, 500);
+                                                                  ">
+                    <div class="!w-full" x-show="item.variants[0].option1 == 'Default Title'">
 
                       <input
                         name="id"
                         value="item.variants[0].id"
                         type="hidden">
-                      <label
-                        :for="'recommendations-' + item.id + '-quantity-m'"
-                        class="sr-only">{{ 'products.general.quantity' | t }}</label>
+                      <label :for="'recommendations-' + item.id + '-quantity-m'" class="sr-only">{{ 'products.general.quantity' | t }}</label>
                       <input
                         class="!hidden"
                         type="text"
@@ -379,10 +349,8 @@ Pro tips:
                         class="!w-full btn btn--secondary btn--small btn--load"
                         :class="{ 'btn--loading' : cart_loading && button_loading }"
                         :disabled="button_loading">
-                        <div
-                          class="btn__content">buy now</div>
-                        <div
-                          class="btn__spinner">
+                        <div class="btn__content">buy now</div>
+                        <div class="btn__spinner">
                           {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
                         </div>
                       </button>
@@ -393,24 +361,20 @@ Pro tips:
                       type="button"
                       class="!w-full btn btn--small btn--load btn--secondary"
                       @click="
-                                                      button_loading = true; 
-                                                      fetchAndRenderQuickAdd(item.handle, 'recent');
-                                                      setTimeout(function(){ button_loading = false}, 500);"
+                                                                              button_loading = true; 
+                                                                              fetchAndRenderQuickAdd(item.handle, 'recent');
+                                                                              setTimeout(function(){ button_loading = false}, 500);"
                       :class="{ 'btn--loading' : button_loading }"
                       :disabled="button_loading">
-                      <div
-                        class="btn__content">Add to cart</div>
-                      <div
-                        class="btn__spinner">
+                      <div class="btn__content">Add to cart</div>
+                      <div class="btn__spinner">
                         {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
                       </div>
                     </button>
                   </form>
                 </div>
 
-                <div
-                  class="md:hidden absolute bottom-0 w-full pt-4"
-                  x-show="!item.available">
+                <div class="md:hidden absolute bottom-0 w-full pt-4" x-show="!item.available">
                   <button
                     type="button"
                     class="!w-full btn btn--small btn--plain"
@@ -420,8 +384,7 @@ Pro tips:
                 </div>
               {% endif %}
 
-              <div
-                :id="'js:quickAdd-recent-' + item.handle"></div>
+              <div :id="'js:quickAdd-recent-' + item.handle"></div>
 
             </div>
 
@@ -429,10 +392,8 @@ Pro tips:
         </template>
       </div>
 
-      <div
-        class="md:flex justify-end hidden gap-4 pt-4 {{ settings.layout_horizontal }}">
-        <div
-          x-show="show_arrows">
+      <div class="md:flex justify-end hidden gap-4 pt-4 {{ settings.layout_horizontal }}">
+        <div x-show="show_arrows">
           <button
             class="btn btn--plain btn--small"
             title="{{ 'general.media.previous_slide' | t }}"
@@ -440,8 +401,7 @@ Pro tips:
             {% render 'component__icon', icon: 'arrow-left', size: '20', class: '' %}
           </button>
         </div>
-        <div
-          x-show="show_arrows">
+        <div x-show="show_arrows">
           <button
             class="btn btn--plain btn--small"
             title="{{ 'general.media.next_slide' | t }}"

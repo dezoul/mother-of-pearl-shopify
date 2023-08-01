@@ -618,9 +618,9 @@ h4,
 h5, p {
     margin-bottom: 0.5em;
     font-family: ivyora-text, serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.9rem;
-    line-height: 1;
+    line-height: 1.3;
   }
 h6,
   .h6,
@@ -760,6 +760,10 @@ ol {
 .font-wide{
     font-family: 'roc-grotesk-wide', 'sans-serif';
   }
+.heading-emphasis {
+  text-transform: uppercase;
+  font-style: italic;
+}
 .button{
     font-family: 'roc-grotesk-wide', 'sans-serif';
     display: inline-block;
@@ -783,6 +787,29 @@ ol {
     background-color: rgb(54 60 73 / var(--tw-bg-opacity));
   }
 }
+.custom-button {
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+    font-family: 'roc-grotesk-wide', 'sans-serif';
+    background-color: #20242b;
+    color: #F8F3EA;
+}
+/* [15:51, 16/07/2023] Tina: fontFamily: {
+    'serif': ['ivyora-text', 'serif'],
+    'wide': ['roc-grotesk-wide', 'sans-serif'],
+    'sans': ['roc-grotesk', 'sans-serif'],
+  },
+ colors: {
+      'sand-100': '#fdfbf8',
+      'sand-200': '#F8F3EA',
+      'sand-300': '#f3ebdb',
+      'dark-700': '#2b303a',
+      'dark-800': '#20242b',
+      'dark-900': '#15181c',
+    }, */
 /* font weight */
 strong {
     font-weight: bold;
@@ -1079,6 +1106,10 @@ img:after {
   bottom: 0px;
   left: 0px;
 }
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -1271,6 +1302,10 @@ img:after {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .my-8 {
   margin-top: 2rem;
@@ -2157,6 +2192,10 @@ img:after {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2208,6 +2247,9 @@ img:after {
 }
 .pl-2 {
   padding-left: 0.5rem;
+}
+.pl-32 {
+  padding-left: 8rem;
 }
 .pl-4 {
   padding-left: 1rem;
@@ -2263,6 +2305,9 @@ img:after {
 .align-bottom {
   vertical-align: bottom;
 }
+.font-\[inherit\] {
+  font-family: inherit;
+}
 .\!text-lg {
   font-size: 1.125rem !important;
   line-height: 1.75rem !important;
@@ -2278,8 +2323,14 @@ img:after {
 .text-\[1\.25rem\] {
   font-size: 1.25rem;
 }
+.text-\[15px\] {
+  font-size: 15px;
+}
 .text-\[1rem\] {
   font-size: 1rem;
+}
+.text-\[20px\] {
+  font-size: 20px;
 }
 .text-base {
   font-size: 1rem;
@@ -2292,6 +2343,9 @@ img:after {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-medium {
   font-weight: 500;
@@ -2316,6 +2370,10 @@ img:after {
 }
 .leading-none {
   line-height: 1;
+}
+.text-\[\#232528\] {
+  --tw-text-opacity: 1;
+  color: rgb(35 37 40 / var(--tw-text-opacity));
 }
 .text-\[\#FCFAF6\] {
   --tw-text-opacity: 1;
@@ -3342,9 +3400,8 @@ animation-play-state: paused;
 /* - apply base styles to set type */
 /* ======= */
 /* custom */
-body .heading-emphasis{
-  text-transform: uppercase;
-  font-style: italic;  
+span{
+  font-family: inherit !important;
 }
 *:focus {
   box-shadow: none !important;

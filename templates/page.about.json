@@ -225,6 +225,44 @@
         "layout_x_alignment": "justify-start",
         "visibility": ""
       }
+    },
+    "98d9c400-f183-4272-99d7-6a6753c96755": {
+      "type": "about_final",
+      "settings": {
+        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "fd4a0139-937b-472d-b784-ff87b23fbf3d": {
+      "type": "product-grid",
+      "settings": {
+        "collection": "cabinet-knobs-handles",
+        "products_count": 4,
+        "heading": "EXPLORE MOTHER OF PEARL SIGNATURE COLLECTION",
+        "content": "",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
     }
   },
   "order": [
@@ -233,6 +271,8 @@
     "bcf3df67-60f4-4975-89ce-d53d7ba4a80d",
     "c727dbc5-f107-4dec-9d29-3c1c00f0b9c8",
     "042e3456-7f82-49ed-b724-55b937aa380f",
-    "6df58481-1e31-4213-ba98-37c3ab671cc2"
+    "6df58481-1e31-4213-ba98-37c3ab671cc2",
+    "98d9c400-f183-4272-99d7-6a6753c96755",
+    "fd4a0139-937b-472d-b784-ff87b23fbf3d"
   ]
 }

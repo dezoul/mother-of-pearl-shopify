@@ -144,47 +144,16 @@
         "layout_gallery_size": "w-full md:w-2\/3"
       }
     },
-    "4c47e030-d5f8-4bf2-8fce-8418db4fd725": {
+    "1db72d45-edc2-4507-a1d8-710c5fdc2f0b": {
       "type": "product_extra_details",
-      "blocks": {
-        "59f2b2da-91da-4277-9c38-50d20ae50dfc": {
-          "type": "card",
-          "settings": {
-            "heading": "size",
-            "content": "Materials We have redefined the proportions of this classic design derived from the Bauhaus movement and attributed to Walter Gropius. Ideally you will come and feel to get a sense of how our version – “tweeks”- have worked. Of course they are solid brass and very beautifully engineered. Paired with the Jacksons range of latches, locks and privacies you can create a seamless and hard wearing result. Eminently suitable for high value architecture.",
-            "colWidth": 1
-          }
-        },
-        "d32f29d5-a803-43b1-a989-de4ab4836f8f": {
-          "type": "card",
-          "settings": {
-            "heading": "Material",
-            "content": "Materials We have redefined the proportions of this classic design derived from the Bauhaus movement and attributed to Walter Gropius. Ideally you will come and feel to get a sense of how our version – “tweeks”- have worked. Of course they are solid brass and very beautifully engineered. Paired with the Jacksons range of latches, locks and privacies you can create a seamless and hard wearing result. Eminently suitable for high value architecture.",
-            "colWidth": 2
-          }
-        },
-        "ec50d193-905b-4697-9a25-4dff6248394e": {
-          "type": "card",
-          "settings": {
-            "heading": "Block heading",
-            "content": "Block text",
-            "colWidth": 2
-          }
-        }
-      },
-      "block_order": [
-        "59f2b2da-91da-4277-9c38-50d20ae50dfc",
-        "d32f29d5-a803-43b1-a989-de4ab4836f8f",
-        "ec50d193-905b-4697-9a25-4dff6248394e"
-      ],
       "settings": {
-        "heading": "Rich text",
+        "heading": "Details",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
+        "style_border": "",
         "layout_x_alignment": "",
         "visibility": ""
       }
@@ -290,11 +259,11 @@
         "visibility": ""
       }
     },
-    "e889fb0e-1882-4fd9-9d84-8aa19144cec8": {
-      "type": "recommendations-slider",
+    "5486c604-ae9c-4f7e-a33e-7698d503cb37": {
+      "type": "recommendations-slider-no-scroll",
       "settings": {
         "intent": "related",
-        "products_count": 7,
+        "products_count": 700,
         "heading": "You may also like",
         "content": "",
         "spacing_top": 100,
@@ -308,8 +277,8 @@
   },
   "order": [
     "1638995507af787164",
-    "4c47e030-d5f8-4bf2-8fce-8418db4fd725",
+    "1db72d45-edc2-4507-a1d8-710c5fdc2f0b",
     "0223d397-f097-4178-91c0-0b086e81e4a8",
-    "e889fb0e-1882-4fd9-9d84-8aa19144cec8"
+    "5486c604-ae9c-4f7e-a33e-7698d503cb37"
   ]
 }

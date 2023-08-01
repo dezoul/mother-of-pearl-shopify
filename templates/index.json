@@ -351,10 +351,7 @@
           "settings": {
             "button_width": 5,
             "button_label": "Button label",
-            "button_url": "\/collections\/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": ""
+            "button_url": "\/collections\/all"
           }
         }
       },

@@ -9,12 +9,11 @@ Globals:
 Pro tips:
 - Use images that have a high contrast with text.
 - To display any image this section could be replaced with a banner.liquid section.
-{% endcomment %}<section
-  class="relative overflow-hidden flex items-center justify-center
-                  {{ section.settings.visibility }}
-                  {{ section.settings.color_scheme }} 
-                  {{ section.settings.color_border }}
-                  {{ section.settings.style_border }}">{%- if section.settings.enable_image -%}
+{% endcomment %}<section class="relative overflow-hidden flex items-center justify-center
+                                              {{ section.settings.visibility }}
+                                              {{ section.settings.color_scheme }} 
+                                              {{ section.settings.color_border }}
+                                              {{ section.settings.style_border }}"> {%- if section.settings.enable_image -%}
     {%- unless collection.featured_image == blank %}
       {{ collection.featured_image | image_url: width: 5760 | image_tag: style: 'object-fit:cover', class: 'w-full h-full absolute object-cover z-10', loading: 'lazy' }}
     {%- endunless -%}
@@ -23,22 +22,11 @@ Pro tips:
   <div
     class="relative z-10 w-full h-full"
     {% if section.settings.enable_gradient %}style="background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) );"{% endif %}>
-    <div
-      class="w-full flex flex-row flex-wrap py-8
-                                      {{ settings.layout_horizontal }}
-                                      {{ section.settings.layout_x_alignment }}
-                                      {{ section.settings.layout_y_alignment }}
-                                      {{ section.settings.layout_y_spacing }}
-                                      {{ section.settings.color_text }}
-                                      {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
-      <div
-        class="md:flex gap-20"
-        {% if settings.enable_animations %}data-delay="0"data-replace="{ 
-                                        'opacity-0' : 'opacity-100'
-                              }"{% endif %}>
+    <div class="w-full flex flex-row flex-wrap py-32 {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }} {{ section.settings.layout_y_spacing }} {{ section.settings.color_text }} {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
+      <div class="md:flex gap-20" {% if settings.enable_animations %}data-delay="0"data-replace="{  'opacity-0' : 'opacity-100' }"{% endif %}>
 
         {%- unless collection.title == blank %}
-          <h1>{{ collection.title }}</h1>
+          <h1 class="heading-emphasis">{{ collection.title }}</h1>
         {%- endunless -%}
 
         {%- if section.settings.enable_description -%}

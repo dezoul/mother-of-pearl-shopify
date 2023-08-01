@@ -1,4 +1,4 @@
-<!-- sections/text.liquid -->
+<!-- sections/min-gallery.liquid -->
 {% comment %} 
 Richtext section with options to display buttons and headings.
 
@@ -10,11 +10,17 @@ Globals:
       <div class="
         {% comment %}max-w-prose{% endcomment %}
         md:w-auto w-full">
+        {%- unless section.settings.featured_image == blank -%}
+          <div class="text-center pb-8">
+            {{ section.settings.featured_image | image_url: width: 100 | image_tag: style: 'object-fit:cover', class: 'inline-block object-cover z-10', loading: 'lazy' }}
+          </div>
+        {%- endunless -%}
         {%- unless section.settings.heading == blank -%}
-          <h3 class="heading-caps">{{ section.settings.heading }}</h3>
+          <h3 class="heading-caps text-center mb-8">{{ section.settings.heading }}</h3>
         {%- endunless -%}
         {%- unless section.settings.content == blank -%}
-          <div class="md:columns-2">
+          <div
+            class="md:columns-2">
             {{ section.settings.content }}
           </div>
         {%- endunless -%}
@@ -32,7 +38,7 @@ Globals:
         {%- unless section.settings.button_url == blank -%}
           <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
             <a href="{{ section.settings.button_url }}" class="flex justify-end no-underline">
-              <span class="leading-none text-[1.25rem]">
+              <span class="leading-none text-[1.25rem] font-bold">
                 {{ section.settings.button_label }}
               </span>
               <svg
@@ -73,11 +79,15 @@ Globals:
         "label": "t:sections.all.content.settings.heading.label"
       },
       {
+        "type": "image_picker",
+        "id": "featured_image",
+        "label": "top image"
+      },
+      {
         "type": "richtext",
         "id": "content",
         "label": "t:sections.all.content.settings.content.label"
-      },
-      {
+      }, {
         "type": "text",
         "id": "button_label",
         "label": "t:sections.all.content.settings.button_label.label"
