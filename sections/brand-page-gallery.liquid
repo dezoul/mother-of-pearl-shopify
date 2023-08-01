@@ -15,7 +15,11 @@
     style="
       padding-top:{{ section.settings.spacing_top }}px;
       padding-bottom:{{ section.settings.spacing_bottom }}px;">
-
+      <div>
+        <h3>
+          {{section.settings.heading}}
+        </h3>
+      </div>
       <div class="grid grid-cols-6 gap-4">
         {% for block in section.blocks %}
           <div class="{{block.settings.aspect}} relative {{block.settings.width}}">
@@ -27,7 +31,14 @@
 
 
     </div>
-    <span class=""></span>
+    {%  comment  %}
+    <span class="aspect-[3/2] col-span-1"></span>
+    <span class="aspect-[5/4] col-span-2"></span>
+    <span class="aspect-[5/4] col-span-3"></span>
+    <span class="aspect-[5/4] col-span-6"></span>
+
+   {% endcomment %}
+
   </div>
 </section>
 

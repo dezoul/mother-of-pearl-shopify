@@ -263,7 +263,7 @@
       "type": "recommendations-slider-no-scroll",
       "settings": {
         "intent": "related",
-        "products_count": 700,
+        "products_count": 4,
         "heading": "You may also like",
         "content": "",
         "spacing_top": 100,
