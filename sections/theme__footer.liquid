@@ -79,8 +79,8 @@ Globals:
       {% form 'customer' %}
         <section
           class="py-8 md:hidden border--t-width
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {{ section.settings.main_color_scheme }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {{ section.settings.main_color_border }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {{ section.settings.main_color_scheme }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          {{ section.settings.main_color_border }}">
           <div
             class="{{ settings.layout_horizontal }}">
 
@@ -460,7 +460,6 @@ Globals:
                     </a>
                   {%- endunless -%}
                 </div>
-
               {%- endcase -%}
             {% endfor %}
           </div>
@@ -568,11 +567,11 @@ Globals:
   {%- comment -%}sub footer{%- endcomment -%}
   <section
     class="py-4 border--t-width flex flex-wrap gap-4
-                                                                                                                                                                                                                                                                                                                      {{ section.settings.sub_color_scheme }}
-                                                                                                                                                                                                                                                                                                                      {{ section.settings.sub_color_border }}">
+                                                                                                                                                                                                                                                                                                                            {{ section.settings.sub_color_scheme }}
+                                                                                                                                                                                                                                                                                                                            {{ section.settings.sub_color_border }}">
     <div
       class="flex flex-wrap w-full items-center justify-between gap-4 
-                                                                                                                                                                                                                                                                                                                                                                                                                              {{ settings.layout_horizontal }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                      {{ settings.layout_horizontal }}">
 
       <div
         class="md:w-auto flex w-full gap-2">
@@ -699,7 +698,7 @@ Globals:
     </div>
     <div
       class="flex flex-wrap w-full items-center justify-between gap-4
-                                                                                                                                                                                                                                                                                                                                                                                                                              {{ settings.layout_horizontal }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                      {{ settings.layout_horizontal }}">
 
       <div class="md:w-auto flex flex-wrap w-full gap-2">
 
