@@ -134,6 +134,7 @@
 
   .font-wide{
     font-family: 'roc-grotesk-wide', 'sans-serif';
+    text-transform: uppercase;
   }
   
   .heading-emphasis{
