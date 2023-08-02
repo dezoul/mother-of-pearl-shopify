@@ -4117,6 +4117,9 @@ html {
   .md\:gap-y-4 {
     row-gap: 1rem;
   }
+  .md\:overflow-x-auto {
+    overflow-x: auto;
+  }
   .md\:border-t-0 {
     border-top-width: 0px;
   }
