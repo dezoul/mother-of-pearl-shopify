@@ -84,7 +84,7 @@ Possible enhancements:
 
     {%- comment -%}slides{%- endcomment -%}
     <div
-      class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full px-4 overflow-x-auto overflow-y-hidden"
+      class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full mx-4 overflow-x-auto overflow-y-hidden"
       style=" row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
       x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600);"
       x-ref="slider">
@@ -92,7 +92,7 @@ Possible enhancements:
     </div>
 
     {%- comment -%}arrows{%- endcomment -%}
-    <div class="md:flex justify-between hidden gap-4 pt-4 {{ settings.layout_horizontal }}">
+    <div class="flex justify-between gap-4 pt-4 {{ settings.layout_horizontal }}">
       <div {% unless show_arrows == 'true' %}x-show="show_arrows"{% endunless %}>
         <button
           class=""

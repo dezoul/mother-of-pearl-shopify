@@ -129,16 +129,11 @@ Globals:
   --color-plain-button-text-light: {{ settings.foreground_body_light }}
   ;
 
-  --sizes-border-button-radius: {{ settings.border_button_radius }}
-  px;
-  --sizes-border-input-radius: {{ settings.border_input_radius }}
-  px;
-  --sizes-border-element-radius: {{ settings.border_element_radius }}
-  px;
-  --sizes-border-width: {{ settings.border_width }}
-  px;
-  --sizes-gap-width: {{ settings.layout_gap_size }}
-  px;
+  --sizes-border-button-radius: {{ settings.border_button_radius | append: "px"}};
+  --sizes-border-input-radius: {{ settings.border_input_radius | append: "px"}};
+  --sizes-border-element-radius: {{ settings.border_element_radius | append: "px"}};
+  --sizes-border-width: {{ settings.border_width | append: "px"}};
+  --sizes-gap-width: {{ settings.layout_gap_size | append: "px"}};
 
   --type-font-body-family: 'ivyora-text', {{ settings.type_font_body.fallback_families }}
   ;

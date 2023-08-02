@@ -86,12 +86,26 @@
     @apply animation-500 underline-offset-1 underline;
 
     &:hover {
-      @apply underline opacity-50;
+      @apply opacity-50;
+      /* underline */
     }
 
     &:focus {
       @apply border--focus;
     }
+
+  }
+    header a:hover{
+      @apply no-underline
+    }
+
+    footer a {
+      text-decoration: none;
+      display: block;
+      padding-bottom: 0.25rem;
+      font-size: .875rem;
+      line-height: 1.2;
+      font-weight: 200;
   }
 
   /* spacing */
