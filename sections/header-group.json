@@ -49,7 +49,7 @@
         "logo_desktop_height": 30,
         "logo_mobile_height": 16,
         "bar_color_scheme": "color__bg-body color__text",
-        "bar_color_border": "color__border-divider-1",
+        "bar_color_border": "!color__border-transparent",
         "bar_layout_desktop": "center-below",
         "bar_button_cart_type": "icon",
         "bar_button_search_type": "icon",
@@ -58,7 +58,7 @@
         "enable_search": false,
         "dropdown_color_scheme": "color__bg-body color__text",
         "dropdown_color_border": "color__border-divider-1",
-        "search_color_scheme": "color__bg-tertiary color__tertiary",
+        "search_color_scheme": "color__bg-body color__text",
         "search_color_border": "color__border-divider-1",
         "visibility": ""
       }
