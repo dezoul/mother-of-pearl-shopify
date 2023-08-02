@@ -25,7 +25,7 @@ Globals:
         {%- endunless -%}
         </div>
 
-        <div class="sm:columns-2 gap-36 brand-grid">
+        <div class="md:columns-2 gap-36 brand-grid">
 
           {% for block in section.blocks %}
             <figure class="group break-inside-avoid mb-16 sm:mb-36">
@@ -34,9 +34,9 @@ Globals:
               </h4>
               {{ block.settings.image_featured | image_url: width: 700 | image_tag: class: 'w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
               <figcaption class="py-4 text-sm">
-                {{ block.settings.image_featured.alt }}</figcaption>
+                {{ block.settings.description }}</figcaption>
 
-              <a class="flex items-center justify-between font-wide text-xs uppercase no-underline">
+              <a href="/pages/contact" class="flex items-center justify-between font-wide text-xs uppercase no-underline">
                 <span>Request a catalog</span>
                 <!-- Arrow up right -->
                 <svg
@@ -64,22 +64,33 @@ Globals:
 </section>
 
 <style>
-  .top-of-column:not(:first-child) {
-    position: relative;
-    top: 9rem;
-    margin-bottom: 18rem;
+  @media (min-width: 768px) {
+    .top-of-column:not(:first-child) {
+      position: relative;
+      top: 9rem;
+      margin-bottom: 18rem;
+    }
   }
+
 </style>
 
 <script>
+
+  function topCheck() {
   // Get the column container element
   const columnContainer = document.querySelector('.brand-grid');
+  const oldtops = columnContainer.querySelectorAll('.top-of-column')
+
+  oldtops.forEach(tops => {
+          tops.classList.remove("top-of-column")
+  })
 
 // Calculate the threshold position (parent container's Y-position + threshold)
   const threshold = columnContainer.offsetTop + 5;
 
 // Get all the elements within the column container
   const elements = Array.from(columnContainer.children);
+
 
 // Find the elements at the top of each column
   const topColumnElements = elements.filter((element) => {
@@ -90,6 +101,13 @@ Globals:
   topColumnElements.forEach((element) => {
     element.classList.add('top-of-column');
   });
+
+  }
+
+topCheck();
+
+window.addEventListener("resize", topCheck);
+
 </script>
 
 {% schema %}
@@ -295,8 +313,12 @@ Globals:
             "id": "image_featured",
             "type": "image_picker",
             "label": "gallery image"
+          },
+          {
+            "id": "description",
+            "type": "richtext",
+            "label": "description"
           }
-
         ]
       }
     ],

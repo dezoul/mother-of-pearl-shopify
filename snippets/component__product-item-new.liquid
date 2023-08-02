@@ -52,15 +52,7 @@ Pro tips:
     {%- endunless -%}
     {% endcomment %}
 
-    <h3 class="type--base !leading-tight mb-0.5 absolute
-                                                                  top-4
-                                                                  left-4
-                                                                  z-20
-                                                                  text-black
-                                                                          {{ settings.type_thumbnail_capitilization }}
-                                                                          {% if settings.type_thumbnail == 'body' %}type__body{% endif %}
-                                                                          {% if settings.type_thumbnail == 'heading' %}type__heading{% endif %}
-                                                                          {% if settings.type_thumbnail == 'navigation' %}type__nav{% endif %}">
+    <h3 class="font-wide uppercase md:text-sm text-xs text-[#20242b] font-medium p-2">
       {{ product.title }}
     </h3>
   </a>
@@ -69,7 +61,7 @@ Pro tips:
   {% if product.available %}
     {% if settings.enable_quick_desktop %}
       <div class="no-js--hide flex justify-between animation-500 absolute w-full px-4 pb-5 bottom-0 translate-y-2">
-        <span class="text-black">
+        <span class="text-black text-sm">
           {{ product.metafields.custom.brand_name }}
         </span>
         <form
@@ -331,6 +323,8 @@ Pro tips:
   </a>
 
   {%- comment -%}quick add mobile{%- endcomment -%}
+  {% comment %}
+    
   {% if settings.enable_quick_mobile %}
     <div
       class='no-js--hide md:hidden absolute bottom-0 w-full pt-2
@@ -418,6 +412,7 @@ Pro tips:
       {% endif %}
     </div>
   {% endif %}
+  {% endcomment %}
 
   {%- comment -%}quick add popup{%- endcomment -%}
   <div id='js:quickAdd-product-{{ product.handle }}'></div>

@@ -3,11 +3,11 @@
     "banner": {
       "type": "collection__banner",
       "settings": {
-        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_scheme": "color__bg-body color__text",
         "color_text": "color__text",
         "color_border": "color__border-divider-1",
         "enable_gradient": false,
-        "style_border": "border--b-width",
+        "style_border": "",
         "layout_y_spacing": "min-h-[250px] md:min-h-[350px]",
         "layout_y_alignment": "items-end",
         "layout_x_alignment": "justify-start",
@@ -66,17 +66,18 @@
     "419107ab-fc16-4f4a-b8e8-83669f562b92": {
       "type": "brand-gallery",
       "blocks": {
-        "a53a3499-876c-4cf9-ae21-1ab639a056bd": {
+        "c2e307d3-2029-4c90-8809-b5122a421c2d": {
           "type": "images",
-          "repeater": "{{ collection.metafields.custom.brand_details.value }}",
+          "repeater": "{{ collection.metafields.custom.collection_brand_list.value }}",
           "settings": {
             "heading": "{{ block.repeater.heading.value }}",
-            "image_featured": "{{ block.repeater.brand_image.value }}"
+            "image_featured": "{{ block.repeater.brand_image.value }}",
+            "description": "<p>{{ block.repeater.brand_description | metafield_tag }}<\/p>"
           }
         }
       },
       "block_order": [
-        "a53a3499-876c-4cf9-ae21-1ab639a056bd"
+        "c2e307d3-2029-4c90-8809-b5122a421c2d"
       ],
       "settings": {
         "heading": "{{ collection.metafields.custom.details_heading.value }}",
@@ -97,12 +98,13 @@
       "type": "collection-final-section",
       "settings": {
         "heading": "{{ collection.metafields.custom.finale_section_heading_.value }}",
+        "featured_image": "shopify:\/\/shop_images\/dark_swirl.png",
         "content": "<p>{{ collection.metafields.custom.finale_section_column_content | metafield_tag }}<\/p>",
         "button_label": "",
         "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "color_scheme": "color__bg-secondary color__secondary",
+        "color_scheme": "color__bg-tertiary color__tertiary",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
