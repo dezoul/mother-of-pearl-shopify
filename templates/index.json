@@ -55,7 +55,7 @@
         "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
         "minHeight": 0,
         "enable_lazy_loading": false,
-        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_scheme": "color__bg-body color__text",
         "color_text": "",
         "color_border": "color__border-divider-1",
         "style_border": "border--b-width",
@@ -351,7 +351,10 @@
           "settings": {
             "button_width": 5,
             "button_label": "Button label",
-            "button_url": "\/collections\/all"
+            "button_url": "\/collections\/all",
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
           }
         }
       },
