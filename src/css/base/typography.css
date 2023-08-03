@@ -95,9 +95,19 @@
     }
 
   }
-    header a:hover{
-      @apply no-underline
+
+  header {
+    
+    & a{
+      @apply uppercase;
+      
+      &:hover{
+        @apply no-underline; 
+      }
+
     }
+  }
+
 
     footer a {
       text-decoration: none;
@@ -145,7 +155,7 @@
     @apply inline-block bg-[#20242b] uppercase font-wide text-[#fdfbf8] hover:bg-[#363c49] px-8 py-4 transition-colors leading-none;
   }
   .custom-button{
-    @apply px-2 py-6 inline-block;
+    @apply px-2 py-6 inline-block uppercase font-bold;
     font-family: 'roc-grotesk-wide', 'sans-serif';
     background-color: #20242b;
     color: #F8F3EA;

@@ -12,17 +12,45 @@ Pro tips:
 - Use this section to highlight different product categories.
 {% endcomment %}<section
   class="
-                          {{ section.settings.visibility }}
-                          {{ section.settings.color_scheme }} 
-                          {{ section.settings.color_border }}
-                          {{ section.settings.style_border }}"><div
-    class="!px-0 
-                                          {{ settings.layout_horizontal }}"style="
+                            {{ section.settings.visibility }}
+                            {{ section.settings.color_scheme }} 
+                            {{ section.settings.color_border }}
+                            {{ section.settings.style_border }}"><div class="!px-0 
+                            {{ settings.layout_horizontal }}" style="
                                           padding-top:{{ section.settings.spacing_top }}px;
                                           padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    {% render 'component__section-header' 
-     , container_class: 'px-4' %}
+    {%- if section.settings.heading != blank or section.settings.content != blank or section.settings.button_url != blank -%}
+      <div class="gap-2 flex flex-row flex-wrap items-end pb-8
+                                                        {{ section.settings.layout_x_alignment }}
+                                                        px-4
+                                                        {% unless request.design_mode %}
+                                                        {% if settings.enable_animations %}
+                                                        opacity-0 js:animation animation-300 
+                                                        {% endif %}
+                                                        {% endunless %}" {% if settings.enable_animations %}data-delay="100"data-replace="{ 
+                                                                      'opacity-0' : 'opacity-100'
+                                                                      }"{% endif %}>
+        <div class="max-w-prose md:w-auto w-full ">
+          {%- unless section.settings.heading == blank -%}
+            <h3 class="mb-8 heading-emphasis">{{ section.settings.heading }}</h3>
+          {%- endunless -%}
+          {%- unless section.settings.content == blank -%}
+            <div class="m-0--clear">
+              {{ section.settings.content }}
+            </div>
+          {%- endunless -%}
+        </div>
+        <div
+          class="md:w-auto w-full">
+          {%- unless section.settings.button_url == blank -%}
+            <a href="{{ section.settings.button_url }}" class="{{ section.settings.color_button }}">
+              {{ section.settings.button_label }}
+            </a>
+          {%- endunless -%}
+        </div>
+      </div>
+    {%- endif -%}
 
     {% if section.settings.promo_enable %}
       {% assign slider_size = section.blocks.size %}
@@ -34,16 +62,13 @@ Pro tips:
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'collection' -%}
-          <div
-            class="md:snap-end md:w-[25%] p-1 flex justify-center flex-none w-9/12 whitespace-normal"
-            x-bind:data-slide="{{ forloop.index0 }}">
-            {% render 'component__collection-item' 
-             , collection: block.settings.collection %}
+          <div class="md:snap-end md:w-[25%] p-1 flex justify-center flex-none w-9/12 whitespace-normal" x-bind:data-slide="{{ forloop.index0 }}">
+            {% render 'component__collection-item'
+             , collection: block.settings.collection,
+             heading-class: 'font-wide' %}
           </div>
           {%- when 'card' -%}
-          <div
-            class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal"
-            x-bind:data-slide="{{ forloop.index0 }}">
+          <div class="md:snap-center md:w-[26%] flex justify-center flex-none w-8/12 whitespace-normal" x-bind:data-slide="{{ forloop.index0 }}">
             {% render 'component__content-item' 
              , background_color: settings.thumbmails_color_scheme,
              title: block.settings.heading,

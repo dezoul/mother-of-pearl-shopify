@@ -42,7 +42,7 @@ Pro tips:
   {% endif %}"x-data="{ 
                     button_loading: false
                   }'>{%- comment -%}image{%- endcomment -%}
-  <a href="{{ product.url | within: collection }}"class="hover:opacity-100 relative block h-full bg-contain bg-center bg-no-repeat min-h-[12vw] bg-[#f8f3ea]"style="background-image: url({{ product | image_url: width: 800 }}); background-blend-mode: multiply;">
+  <a href="{{ product.url | within: collection }}"class="flex justify-between flex-col  hover:opacity-100 relative block h-full p-4 bg-contain bg-center bg-contain bg-no-repeat min-h-[12vw] bg-[#f8f3ea]"style="background-image: url({{ product | image_url: width: 800 }}); background-blend-mode: multiply; background-origin: content-box;">
     {% comment %}
 
     {%- unless product.featured_image == blank %}
@@ -52,15 +52,17 @@ Pro tips:
     {%- endunless -%}
     {% endcomment %}
 
-    <h3 class="font-wide uppercase md:text-sm text-xs text-[#20242b] font-medium p-2">
+    <h3 class="font-wide uppercase md:text-sm text-xs text-[#20242b] font-medium">
       {{ product.title }}
     </h3>
+
+
   </a>
 
   {%- comment -%}quick add desktop{%- endcomment -%}
   {% if product.available %}
     {% if settings.enable_quick_desktop %}
-      <div class="no-js--hide flex justify-between animation-500 absolute w-full px-4 pb-5 bottom-0 translate-y-2">
+      <div class="no-js--hide flex justify-between animation-500 absolute w-full py-3 px-4 bottom-0 left-0">
         <span class="text-black text-sm">
           {{ product.metafields.custom.brand_name }}
         </span>
@@ -102,7 +104,7 @@ Pro tips:
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="-rotate-45"
+                    class="-rotate-45 relative -top-[2px]"
                     width="22"
                     height="22"
                     viewBox="0 0 39 39"
@@ -138,7 +140,7 @@ Pro tips:
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="-rotate-45"
+                    class="-rotate-45 relative -top-[2px]"
                     width="22"
                     height="22"
                     viewBox="0 0 39 39"

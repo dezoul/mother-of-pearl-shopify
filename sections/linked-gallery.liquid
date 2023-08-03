@@ -6,18 +6,14 @@ Globals:
 - settings.layout_horizontal: horizontaly margin
 {% endcomment %}<section
   class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div
-    class="{{ settings.layout_horizontal }}"
-    style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+  <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div
-      class="flex flex-row flex-wrap items-end px-[5%] gap-8 {{ section.settings.layout_x_alignment }}">
+    <div class="flex flex-row flex-wrap items-end px-[5%] gap-8 {{ section.settings.layout_x_alignment }}">
       <div class="
         {% comment %}max-w-prose{% endcomment %}
         md:w-auto w-full">
         {%- unless section.settings.heading == blank -%}
-          <h2
-            class="heading-emphasis text-[3rem] mb-12">{{ section.settings.heading }}</h2>
+          <h2 class="heading-emphasis text-[3rem] mb-12">{{ section.settings.heading }}</h2>
         {%- endunless -%}
         {%- unless section.settings.content == blank -%}
           <div>
@@ -25,21 +21,16 @@ Globals:
           </div>
         {%- endunless -%}
 
-        <div
-          class="md:flex my-8 gap-y-12 md:gap-y-4 gap-x-4 grid">
+        <div class="md:flex my-8 gap-y-12 md:gap-y-4 gap-x-4 grid">
 
           {% for block in section.blocks %}
-            <a
-              href="{{block.settings.url}}"
-              class="no-underline hover:no-underline w-full flex justify-between flex-col">
+            <a href="{{block.settings.url}}" class="no-underline hover:no-underline w-full flex justify-between flex-col">
               {% if block.settings.heading != null %}
-                <h4
-                  class="!text-lg">
+                <h4 class="!text-lg font-bold font-wide">
                   {{ block.settings.heading }}
                 </h4>
               {% endif %}
-              <div
-                class="aspect-[4/5] relative w-full">
+              <div class="aspect-[4/5] relative w-full">
                 {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
               </div>
             </a>
@@ -48,14 +39,9 @@ Globals:
 
 
         {%- unless section.settings.button_url == blank -%}
-          <div
-            class="flex gap-2 justify-end "
-            style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
-            <a
-              href="{{ section.settings.button_url }}"
-              class="flex justify-end no-underline items-center">
-              <span
-                class="leading-none text-[1.25rem] font-bold">
+          <div class="flex gap-2 justify-end " style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
+            <a href="{{ section.settings.button_url }}" class="flex justify-end no-underline items-center">
+              <span class="leading-none text-[1.25rem] font-bold">
                 {{ section.settings.button_label }}
               </span>
               <svg
