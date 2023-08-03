@@ -6,27 +6,23 @@ Globals:
 - settings.layout_horizontal: horizontaly margin
 {% endcomment %}<section
   class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}   {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div
-    class="{{ settings.layout_horizontal }}"
-    style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+  <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div
-      class="">
+    <div class="">
 
       <div
         class="text-center">
-        <div
-          class="max-w-[128px] mx-auto">
-          {{ 'blackSwirl.png' | asset_url | img_tag }}
-        </div>
-        <h2
-          class="text-dark-900 my-12">
+        {%- unless section.settings.featured_image == blank -%}
+
+          {{ section.settings.featured_image | image_url: width: 200 | image_tag: style: 'object-fit:cover', class: 'inline-block object-cover z-10', loading: 'lazy' }}
+
+        {%- endunless -%}
+        <h2 class="text-dark-900 my-12">
           {{ section.settings.heading }}
         </h2>
       </div>
 
-      <div
-        class="md:columns-2 gap-8">
+      <div class="md:columns-2 gap-8">
 
         {{ section.settings.content }}
 
@@ -52,11 +48,15 @@ Globals:
         "label": "t:sections.all.content.settings.heading.label"
       },
       {
+        "type": "image_picker",
+        "id": "featured_image",
+        "label": "top image"
+      },
+      {
         "type": "richtext",
         "id": "content",
         "label": "t:sections.all.content.settings.content.label"
-      },
-      {
+      }, {
         "type": "text",
         "id": "button_label",
         "label": "t:sections.all.content.settings.button_label.label"

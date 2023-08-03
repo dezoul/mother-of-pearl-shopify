@@ -120,16 +120,20 @@ Pro tips:
                 {{ settings.thumbnails_color_border }} 
               {% endif %}">
       <div
-        class="{{ settings.thumbnails_ratio }} object-cover overflow-hidden">
+        class="{{ settings.thumbnails_ratio }} object-cover overflow-hidden bg-[#f8f3ea]">
         {%- unless product.featured_image == blank %}
           {% if settings.thumbnails_object-sizing == "cover" %}
             {% capture image_class %}w-full h-full object-cover {{ settings.thumbmails_color_scheme }}{% endcapture %}
           {% else %}
             {% capture image_class %}w-full h-full object-contain {{ settings.thumbmails_color_scheme }}{% endcapture %}
           {% endif %}
-          {{ product.featured_image 
+{% comment %}
+{{ product.featured_image 
            | image_url: width: 900
            | image_tag: class: image_class, loading: 'lazy', alt: product.featured_image.alt }}
+  
+{% endcomment %}          
+           <div class="flex justify-between flex-col hover:opacity-100 relative h-full p-4 bg-center bg-contain bg-no-repeat min-h-[12vw] bg-[#f8f3ea]"style="background-image: url({{ product | image_url: width: 800 }}); background-blend-mode: multiply; background-origin: content-box;"></div>
         {%- endunless -%}
       </div>
     </div>

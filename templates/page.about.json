@@ -13,6 +13,7 @@
       "type": "about_1",
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
+        "featured_image": "shopify:\/\/shop_images\/dark_swirl.png",
         "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p><p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>",
         "button_label": "Button",
         "button_url": "",
@@ -214,6 +215,8 @@
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
         "minHeight": 0,
+        "paddingTop": 2,
+        "paddingBottom": 2,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
         "color_text": "",

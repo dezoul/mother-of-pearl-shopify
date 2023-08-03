@@ -1317,10 +1317,6 @@ img:after {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -1766,9 +1762,6 @@ img:after {
 }
 .min-w-full {
   min-width: 100%;
-}
-.max-w-\[128px\] {
-  max-width: 128px;
 }
 .max-w-\[150px\] {
   max-width: 150px;
