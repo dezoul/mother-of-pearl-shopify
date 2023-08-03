@@ -63,6 +63,55 @@
         "products_per_page": 5
       }
     },
+    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "WE STOCK THOUSANDS OF LEVER HANDLE SETS FROM THE WORLDS TOP BRANDS"
+          }
+        },
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad possimus dolorem unde numquam quod vel laboriosam nulla? Tenetur, nihil quod consequuntur aspernatur rem doloremque omnis quas earum itaque amet expedita?<\/p><p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+          }
+        },
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 5,
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1",
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1",
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-2.jpg",
+        "minHeight": 0,
+        "paddingTop": 2,
+        "paddingBottom": 2,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 60,
+        "image_position": "left",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
     "419107ab-fc16-4f4a-b8e8-83669f562b92": {
       "type": "brand-gallery",
       "blocks": {
@@ -100,8 +149,8 @@
         "heading": "{{ collection.metafields.custom.finale_section_heading_.value }}",
         "featured_image": "shopify:\/\/shop_images\/dark_swirl.png",
         "content": "<p>{{ collection.metafields.custom.finale_section_column_content | metafield_tag }}<\/p>",
-        "button_label": "",
-        "button_url": "",
+        "button_label": "book a consultation",
+        "button_url": "shopify:\/\/pages\/contact",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-tertiary color__tertiary",
@@ -116,6 +165,7 @@
   "order": [
     "banner",
     "grid",
+    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38",
     "419107ab-fc16-4f4a-b8e8-83669f562b92",
     "9b8be202-0c87-43ce-93d3-46052a067fe2"
   ]

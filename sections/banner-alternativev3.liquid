@@ -14,9 +14,7 @@ Pro tips:
 - Use images that have a high contrast with text.
 {% endcomment %}<section
   class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div
-    class="window--wide  flex md:items-center items-stretch justify-center"
-    {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh; padding-top: {{section.settings.paddingTop}}px ;padding-bottom: {{section.settings.paddingBottom}}px ;"{% endif %}>
+  <div class="window--wide  flex md:items-center items-stretch justify-center" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh; padding-top: {{section.settings.paddingTop}}px ;padding-bottom: {{section.settings.paddingBottom}}px ;"{% endif %}>
 
 
     {% assign lazy_loading = 'eager' %}
@@ -27,18 +25,13 @@ Pro tips:
     {% endif %}
 
     {%- comment -%} desktop {%- endcomment -%}
-    <div
-      class="md:block hidden w-full">
+    <div class="md:block hidden w-full">
       <div class="z-10 flex gap-8  py-16 {% if section.settings.image_position == "left" %} flex-row-reverse {% endif %}">
 
         {% comment %} content {% endcomment %}
-        <div
-          class="flex flex-grow"
-          style="width: {{ section.settings.content_width }}%">
-          <div
-            class="flex w-full h-full">
-            <div
-              class="flex justify-center w-full overflow-hidden {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
+        <div class="flex flex-grow" style="width: {{ section.settings.content_width }}%">
+          <div class="flex w-full h-full">
+            <div class="flex justify-center w-full overflow-hidden {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
               <div
                 class='max-w-prose flex flex-col gap-4 px-8
                 {% if section.settings.image_position == 'right' %}pl-4{% endif %}
@@ -48,26 +41,19 @@ Pro tips:
                 {% for block in section.blocks %}
                   {%- case block.type -%}
                     {%- when 'heading' -%}
-                    <h2
-                      class="m-0 text-[3rem] heading-emphasis {{ section.settings.color_text }} mb-12"
-                      style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h2>
+                    <h2 class="m-0 text-[3rem] heading-emphasis {{ section.settings.color_text }} mb-12" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h2>
                     {%- when 'content' -%}
-                    <div
-                      class="m-0--clear mb-12 {{ section.settings.color_text }}"
-                      style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                    <div class="mb-12 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                       {{ block.settings.content }}
                     </div>
                     {%- when 'buttons' -%}
-                    <div
-                      class="flex gap-2 justify-end"
-                      style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
+                    <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
                       {%- unless block.settings.button_url == blank -%}
                         <a
                           href="{{ block.settings.button_url }}"
                           class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"
                           style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.border }};">
-                          <span
-                            class="leading-none text-right font-[inherit]">
+                          <span class="leading-none text-right font-[inherit]">
                             {{ block.settings.button_label }}
                           </span>
 
@@ -84,12 +70,9 @@ Pro tips:
         </div>
 
         {% comment %} image {% endcomment %}
-        <div
-          class="flex w-1/2 flex-shrink"
-          style="width: calc(100% - {{ section.settings.content_width }}%)">
-          <div
-            class="relative w-full overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ">
+        <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
+          <div class="relative w-full overflow-hidden
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}
@@ -105,8 +88,7 @@ Pro tips:
     <div class="md:hidden relative z-10 w-full gap-8 flex flex-wrap flex-col justify-end py-12">
 
       {% comment %} image {% endcomment %}
-      <div
-        class="relative flex-grow">
+      <div class="relative flex-grow">
         {%- if section.settings.image_background_desktop %}
           {{ section.settings.image_background_desktop | image_url: width: 1000 | image_tag: class: ' object-cover z-10', loading: lazy_loading }}
         {% else %}
@@ -115,10 +97,8 @@ Pro tips:
       </div>
 
       {% comment %} content {% endcomment %}
-      <div
-        class="w-full  {{ section.settings.color_scheme }}">
-        <div
-          class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
+      <div class="w-full  {{ section.settings.color_scheme }}">
+        <div class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
           <div
             class='max-w-prose gap-4 flex flex-col
             {% if section.settings.layout_x_alignment contains 'text-center' %}items-center{% endif %}
@@ -133,25 +113,19 @@ Pro tips:
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when 'heading' -%}
-                <h1
-                  class="m-0 {{ section.settings.color_text }}"
-                  style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
+                <h1 class="m-0 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
                 {%- when 'content' -%}
-                <div
-                  class="m-0--clear {{ section.settings.color_text }}"
-                  style="  padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                <div class="m-0--clear {{ section.settings.color_text }}" style="  padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {{ block.settings.content }}
                 </div>
                 {%- when 'buttons' -%}
-                <div
-                  style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                <div style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {%- unless block.settings.button_url == blank -%}
                     <a
                       href="{{ block.settings.button_url }}"
                       class="justify-center py-1 px-5 no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] custom-button"
                       style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.border }};">
-                      <span
-                        class="text-right">
+                      <span class="text-right">
                         {{ block.settings.button_label }}
                       </span>
 
