@@ -12,9 +12,7 @@ Possible enhancements:
 
 Pro tips:
 - Use images that have a high contrast with text.
-{% endcomment %}<section
-  class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div class="window--wide  flex md:items-center items-stretch justify-center" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh; padding-top: {{section.settings.paddingTop}}px ;padding-bottom: {{section.settings.paddingBottom}}px ;"{% endif %}>
+{% endcomment %}<section class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="window--wide  flex md:items-center items-stretch justify-center" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh; padding-top: {{section.settings.paddingTop}}px ;padding-bottom: {{section.settings.paddingBottom}}px ;"{% endif %}>
 
 
     {% assign lazy_loading = 'eager' %}
@@ -47,12 +45,12 @@ Pro tips:
                       {{ block.settings.content }}
                     </div>
                     {%- when 'buttons' -%}
-                    <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
+                    <div class="" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
                       {%- unless block.settings.button_url == blank -%}
                         <a
                           href="{{ block.settings.button_url }}"
                           class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"
-                          style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.border }};">
+                          style="background-color: {{ block.settings.bg-color }}; border: {{ block.settings.border }}; color: {{ block.settings.button-color }}; max-width: {{block.settings.button_width}}rem;">
                           <span class="leading-none text-right font-[inherit]">
                             {{ block.settings.button_label }}
                           </span>
@@ -72,7 +70,7 @@ Pro tips:
         {% comment %} image {% endcomment %}
         <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
           <div class="relative w-full overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}
@@ -410,10 +408,10 @@ Pro tips:
             "id": "button_width",
             "label": "button width",
             "min": 1,
-            "max": 50,
+            "max": 101,
             "step": 1,
             "unit": "rem",
-            "default": 5
+            "default": 40
           },
           {
             "type": "text",

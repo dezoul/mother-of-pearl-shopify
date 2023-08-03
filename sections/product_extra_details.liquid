@@ -9,25 +9,25 @@ Globals:
     <div class="">
       <div class="md:w-auto w-full">
         {%- unless section.settings.heading == blank -%}
-          <h3>{{ section.settings.heading }}</h3>
+          <h3 class="font-wide foont-bold">{{ section.settings.heading }}</h3>
         {%- endunless -%}
         <div class="grid grid-cols-5 gap-4">
           <div class="col-span-1">
-            <h4 class="text-[15px]">Size</h4>
+            <h4 class="text-[1.25rem]">Size</h4>
             <p>{{ product.metafields.custom.size_details }}</p>
           </div>
           <div class="col-span-2">
-            <h4 class="text-[15px]">materials</h4>
+            <h4 class="text-[1.25rem]">Materials</h4>
             <p>{{ product.metafields.custom.materials_details }}</p>
           </div>
           <div class="col-span-2">
-            <h4 class="text-[15px]">Size</h4>
+            <h4 class="text-[1.25rem]">Installation Method</h4>
             <p>{{ product.metafields.custom.installation_method_details }}</p>
           </div>
 
         </div>
         <div>
-          <h4 class="text-center pt-8 text-[20px]">
+          <h4 class=" pt-8 text-[1.4rem]">
             {{ product.metafields.custom.recommendation_text }}
           </h4>
         </div>

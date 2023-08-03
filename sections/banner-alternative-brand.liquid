@@ -40,7 +40,7 @@ Pro tips:
                   {%- case block.type -%}
                     {%- when 'heading' -%}
                     <h1 class="m-0 {{ section.settings.color_text }} heading-emphasis" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h1>
-                    <h3 class="ml-8">
+                    <h3 class="ml-8 font-wide font-bold text-[1rem] leading-normal ">
                       {{ block.settings.subHeading }}
                     </h3>
                     {%- when 'content' -%}
@@ -97,8 +97,7 @@ Pro tips:
       </div>
 
       {% comment %} content {% endcomment %}
-      <div
-        class="w-full  {{ section.settings.color_scheme }}">
+      <div class="w-full  {{ section.settings.color_scheme }}">
         <div class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
           <div
             class='max-w-prose gap-4 flex flex-col

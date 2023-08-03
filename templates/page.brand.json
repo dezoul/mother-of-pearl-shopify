@@ -201,6 +201,55 @@
         "visibility": ""
       }
     },
+    "760620ad-46fe-464e-9f37-6cf56796527f": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "WHAT YOU SHOULD KNOW ABOUT THIS AMAZING BRAND"
+          }
+        },
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+          }
+        },
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 30,
+            "button_label": "BOOK A CONSULTATION",
+            "button_url": "\/collections\/all",
+            "bg-color": "#fcfaf6",
+            "border": "",
+            "button-color": "#232528"
+          }
+        }
+      },
+      "block_order": [
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1",
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1",
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "paddingTop": 2,
+        "paddingBottom": 2,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 55,
+        "image_position": "left",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
     "971ea3e3-d203-491a-bf28-8348e7b6453b": {
       "type": "text-brand",
       "settings": {
@@ -255,6 +304,7 @@
     "368de91d-ee0e-4757-86bc-8912a5b154e0",
     "489849c8-fd9e-4734-ac6a-0e74c0f91582",
     "68942077-781f-4d53-9b23-c4788e7d7302",
+    "760620ad-46fe-464e-9f37-6cf56796527f",
     "971ea3e3-d203-491a-bf28-8348e7b6453b",
     "84df84bf-67bc-46e6-9f60-709d6aa06eaf"
   ]
