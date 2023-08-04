@@ -142,7 +142,7 @@
         "eff6b9b3-b756-427d-8869-fa4d6182edae": {
           "type": "content",
           "settings": {
-            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+            "content": "<p>Our products are more than just fixtures—they are a harmonious fusion of tradition and innovation, of design and craftsmanship. We seek out the exceptional, the unique, and the meticulously made from every corner of the world, ensuring a collection that caters to a discerning clientele with an appreciation for the exceptional. Dive into our diverse catalogue and discover how Mother of Pearl can transform the ordinary into the extraordinary.<\/p>"
           }
         },
         "7435720a-9956-45b7-aa29-9467bdac4fa9": {
@@ -192,7 +192,7 @@
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>"
+            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our rich experience and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection - where extraordinary quality meets incredible value.<\/p>"
           }
         },
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1": {
@@ -232,8 +232,8 @@
     "98d9c400-f183-4272-99d7-6a6753c96755": {
       "type": "about_final",
       "settings": {
-        "heading": "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "heading": "Your industry partner in architectural hardware",
+        "content": "<p>Catering to the nuanced needs of architects and interior designers, we are acutely aware of the critical role each detail plays in creating a cohesive, stunning design. Our mission is to simplify and enhance your design journey. From intricately designed doorknobs to seamlessly matching hinges, we can source every piece of architectural hardware in a harmonious, custom finish that will enchant your clients.<\/p><p>Moreover, we pride ourselves on our fast turnaround times - significantly quicker than purchasing directly from any of the international brands we represent, helping you adhere to project timelines without compromising on quality or design. With decades of experience in the industry, our experts are adept at guiding you to the ideal products for your projects, saving you from the time-consuming process of sifting through countless catalogs.<\/p><p>Choose Mother of Pearl as your architectural hardware partner - a decision that delivers unparalleled product selection, speed, and expert guidance tailored for your project’s success.<\/p>",
         "button_label": "Button",
         "button_url": "\/",
         "spacing_top": 100,
@@ -248,10 +248,13 @@
     },
     "fd4a0139-937b-472d-b784-ff87b23fbf3d": {
       "type": "product-grid",
+      "custom_css": [
+        "\/* Hide price on this one section *\/.type--small {display: none;}"
+      ],
       "settings": {
-        "collection": "cabinet-knobs-handles",
+        "collection": "all",
         "products_count": 4,
-        "heading": "EXPLORE MOTHER OF PEARL SIGNATURE COLLECTION",
+        "heading": "EXPLORE MOTHER OF PEARL <br>SIGNATURE COLLECTION",
         "content": "",
         "button_label": "Button",
         "button_url": "",
