@@ -14,7 +14,7 @@
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
         "featured_image": "shopify:\/\/shop_images\/dark_swirl.png",
-        "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p><p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>",
+        "content": "<p>With decades of experience in architectural hardware, we meticulously curates collections that encapsulate both timeless tradition and contemporary sophistication. <\/p><p>Our extensive portfolio, ranging from doorknobs to kitchen drawer handles and door hinges, is not just about products—it’s about crafting a unique sensory experience that transforms a mere physical space into an experience. <\/p><p>Each piece represents our unwavering commitment to quality, embodying elegance, functionality, and durability in equal measure. <\/p><p>Whether you're an architect with exacting standards, an interior designer on a quest for the perfect unique, or a homeowner planning your very own dream house, Mother of Pearl is your trusted partner. <\/p><p>We believe in a collaborative approach, combining your vision with our expertise to ensure every detail aligns with your design narrative. Step into our showroom and immerse yourself in the Mother of Pearl experience—where refinement meets imagination, and exceptional is the standard.<\/p>",
         "button_label": "Button",
         "button_url": "",
         "spacing_top": 100,
@@ -85,13 +85,13 @@
         "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years."
+            "content": "Every piece of architectural hardware we stock is handpicked for it's unparalleled craftsmanship."
           }
         },
         "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+            "content": "<p>At Mother of Pearl, we understand that the finest details can make the grandest impact, a philosophy we embody through each meticulously chosen product. Our seasoned team brings decades of expertise and a discerning eye to curate a collection that embodies the pinnacle of craftsmanship. <\/p><p><\/p><p>From hand-forged brass doorknobs to beautifully sculpted drawer handles, each piece is a testament to the extraordinary talent and passion of the artisans who create them. These master craftsmen pour their hearts and souls into every stroke, every cut, and every polish, ensuring an end product that is not merely functional, but a work of art in its own right.<\/p>"
           }
         },
         "template--20029268787504__c727dbc5-f107-4dec-9d29-3c1c00f0b9c8-buttons-1": {
@@ -198,7 +198,7 @@
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 5,
+            "button_width": 21,
             "button_label": "BOOK A CONSULTATION",
             "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "rgba(0,0,0,0)",
