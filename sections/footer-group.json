@@ -43,7 +43,7 @@
           "type": "doublemenu",
           "settings": {
             "heading": "KITCHEN & JOINERY",
-            "menu": "footer-3",
+            "menu": "footer-kitchen-joinery",
             "heading-2": "WORKING WITH US",
             "menu-2": "footer-work-with-us"
           }
