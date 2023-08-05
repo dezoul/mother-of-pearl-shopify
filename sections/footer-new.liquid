@@ -1,7 +1,39 @@
 {% schema %}
 {
-  "name": "Footer New",
-  "settings": []
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "footer-content",
+      "label": "Footer Content",
+      "default": "<p>Your default footer content</p>"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_1",
+      "label": "Brands Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_2",
+      "label": "Hardware Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_3",
+      "label": "Kitchen Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_4",
+      "label": "Working Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "sub_links",
+      "label": "Sub Links Menu"
+    }
+  ]
 }
 {% endschema %}
 
@@ -21,7 +53,7 @@
         </h2>
       </a>
       <div>
-        {{ block.settings['footer-content'] }}
+        {{ section.settings['footer-content'] }}
       </div>
     </div>
 
@@ -31,7 +63,7 @@
         we stock
       </h4>
       <nav>
-        {%- for link in block.settings['menu-1'].links -%}
+        {%- for link in linklists[section.settings.menu_1].links -%}
           <a href="{{ link.url }}" class="">
             {{ link.title }}
           </a>
@@ -45,7 +77,7 @@
         hardware
       </h4>
       <nav>
-        {%- for link in block.settings['menu-2'].links -%}
+        {%- for link in linklists[section.settings.menu_2].links -%}
           <a href="{{ link.url }}" class="">
             {{ link.title }}
           </a>
@@ -59,7 +91,7 @@
         & Joinery
       </h4>
       <nav>
-        {%- for link in block.settings['menu-3'].links -%}
+        {%- for link in linklists[section.settings.menu_3].links -%}
           <a href="{{ link.url }}" class="">
             {{ link.title }}
           </a>
@@ -70,7 +102,7 @@
         with us
       </h4>
       <nav>
-        {%- for link in block.settings['menu-4'].links -%}
+        {%- for link in linklists[section.settings.menu_4].links -%}
           <a href="{{ link.url }}" class="">
             {{ link.title }}
           </a>
@@ -83,7 +115,7 @@
   <div class="max-w-screen-xl mx-auto text-center">
     <p class="uppercase text-xs mb-8 opacity-90 text-sand-300">
       © 2023 All rights reserved
-      {%- for link in section.settings.sub_links.links -%}
+      {%- for link in linklists[section.settings.sub_links].links -%}
         <a href="{{ link.url }}">{{ link.title }}</a>
       {%- endfor -%}
     </p>
