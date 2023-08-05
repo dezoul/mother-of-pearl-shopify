@@ -41,7 +41,7 @@ Pro tips:
                     {%- when 'heading' -%}
                     <h1 class="m-0 {{ section.settings.color_text }} heading-emphasis" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h1>
                     {%- when 'content' -%}
-                    <div class="m-0--clear {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                    <div class="{{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                       {{ block.settings.content }}
                     </div>
                     {%- when 'buttons' -%}
