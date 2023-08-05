@@ -29,7 +29,7 @@
     <div class="col-span-1 p-4">
         <h4 class="font-wide text-sm uppercase mb-8"> Brands <br> we stock</h4>
         <nav> 
-            {%- for link in block.settings.menu-2.links -%}
+            {%- for link in block.settings.menu-1.links -%}
                   <a href="{{ link.url }}" class="">
                     {{ link.title }}
                   </a>
@@ -45,13 +45,13 @@
                     {{ link.title }}
                   </a>
             {%- endfor -%}
-        </nav>      
+        </nav>
     </div>
 
     <div class="col-span-1 p-4">
         <h4 class="font-wide text-sm uppercase mb-8"> Kitchen <br> & Joinery </h4>
         <nav> 
-            {%- for link in block.settings.menu-2.links -%}
+            {%- for link in block.settings.menu-3.links -%}
                   <a href="{{ link.url }}" class="">
                     {{ link.title }}
                   </a>
@@ -59,7 +59,7 @@
         </nav> 
         <h4 class="font-wide text-sm uppercase mb-8 mt-8"> Working <br> with us </h4>
         <nav> 
-           {%- for link in block.settings.menu-2.links -%}
+           {%- for link in block.settings.menu-4.links -%}
                   <a href="{{ link.url }}" class="">
                     {{ link.title }}
                   </a>
@@ -75,8 +75,8 @@
         <p class="uppercase text-xs mb-8 opacity-90 text-sand-300"> 
             © 2023 All rights reserved
              {%- for link in section.settings.sub_links.links -%}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          {%- endfor -%}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+            {%- endfor -%}
         <p class="mb-0 text-xs italic opacity-90 text-sand-300">  Website designed & built by <a href="https://www.kelapacreative.com">Kelapa Creative </a></p>
     </div>
 </div>
