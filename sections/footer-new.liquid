@@ -32,67 +32,41 @@
     <div class="col-span-1 p-4">
         <h4 class="font-wide text-sm uppercase mb-8"> Brands <br> we stock</h4>
         <nav> 
-            <a href="https://example.com">Mother of Pearl & Sons</a>
-            <a href="https://example.com">B&M</a>
-            <a href="https://example.com">Chant</a>
-            <a href="https://example.com">Sun Valley Bronze</a>
-            <a href="https://example.com">Finesse</a>
-            <a href="https://example.com">Samuel Heath</a>
-            <a href="https://example.com">Brionne</a>
-            <a href="https://example.com">Lock and door</a>
-            <a href="https://example.com">Brehat</a>
-            <a href="https://example.com">Fersa</a>
-            <a href="https://example.com">P Bisschop</a>
-            <a href="https://example.com">Tasman Forge</a>
-            <a href="https://example.com">Natures door</a>
-            <a href="https://example.com">Jacksons Locks</a>
-            <a href="https://example.com">Ivana Perkins</a>
-            <a href="https://example.com">Parisi</a>
-            <a href="https://example.com">Designer Doorware</a>
-            <a href="https://example.com">Domino Brass</a>
-            <a href="https://example.com">Mood Australia</a>
-            <a href="https://example.com">Barben</a>
-            <a href="https://example.com">Lockwood Australia</a>
+            {%- for link in block.settings.menu-2.links -%}
+                  <a href="{{ link.url }}" class="">
+                    {{ link.title }}
+                  </a>
+            {%- endfor -%}
         </nav>      
     </div>
 
     <div class="col-span-1 p-4">
         <h4 class="font-wide text-sm uppercase mb-8"> Architectural <br> hardware</h4>
         <nav> 
-            <a href="#">Lever Handle Sets</a>
-            <a href="#">Entrance Door Hardware</a>
-            <a href="#">Locks, Latches & Security</a>
-            <a href="#">Privacy Sets</a>
-            <a href="#">Hinges</a>
-            <a href="#">Escutcheons</a>
-            <a href="#">Door & Cremorne Bolts</a>
-            <a href="#">Door Stops</a>
-            <a href="#">Sliding & Pocket Door Hardware</a>
-            <a href="#">Window Hardware</a>
-            <a href="#">Curtain Fittings</a>
-            <a href="#">Postal & House Numbers</a>
-            <a href="#">Coat Hooks</a>
-            <a href="#">Lighting</a>
-            <a href="#">Restoration</a>
+            {%- for link in block.settings.menu-2.links -%}
+                  <a href="{{ link.url }}" class="">
+                    {{ link.title }}
+                  </a>
+            {%- endfor -%}
         </nav>      
     </div>
 
     <div class="col-span-1 p-4">
         <h4 class="font-wide text-sm uppercase mb-8"> Kitchen <br> & Joinery </h4>
         <nav> 
-            <a href="#">Lever Handle Sets</a>
-            <a href="#">Entrance Door Hardware</a>
-            <a href="#">Locks, Latches & Security</a>
-            <a href="#">Privacy Sets</a>
-            <a href="#">Hinges</a>
+            {%- for link in block.settings.menu-2.links -%}
+                  <a href="{{ link.url }}" class="">
+                    {{ link.title }}
+                  </a>
+            {%- endfor -%}
         </nav> 
         <h4 class="font-wide text-sm uppercase mb-8 mt-8"> Working <br> with us </h4>
         <nav> 
-            <a href="#">Lever Handle Sets</a>
-            <a href="#">Entrance Door Hardware</a>
-            <a href="#">Locks, Latches & Security</a>
-            <a href="#">Privacy Sets</a>
-            <a href="#">Hinges</a>
+           {%- for link in block.settings.menu-2.links -%}
+                  <a href="{{ link.url }}" class="">
+                    {{ link.title }}
+                  </a>
+            {%- endfor -%}
         </nav>      
     </div>
 
