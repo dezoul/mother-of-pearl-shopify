@@ -25,13 +25,13 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-0": {
           "type": "heading",
           "settings": {
-            "content": "Explore the signature collection"
+            "content": "Architectural Hardware, Kitchen & Jounery."
           }
         },
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-1": {
           "type": "content",
           "settings": {
-            "content": "<p>When it come to the overall feeling, we are looking for a mix of “old world luxury” - think Montecarlo or Paris and then weave that into his love for the ocean  (hence the name Mother of Pear), so bringing in elements of the ocean and wooden sailing boats, stainless steel rigging etc <\/p>"
+            "content": "<p>Welcome to Mother of Pearl and Sons Trading, Australia's leading provider of premier architectural hardware. With decades of experience, we curate a vast selection of luxury doorknobs, kitchen drawer handles, hinges, accessories and more. <\/p><p>Our expert team handpicks each product, ensuring top-tier craftsmanship. Whether you're an architect, interior designer, or planning your dream home, discover our exceptional range sourcing from globally renowned brands and our own exclusive Mother of Pearl Signature Collection. <\/p>"
           }
         },
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-2": {
@@ -51,6 +51,9 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-1",
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-2"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
         "minHeight": 0,
@@ -59,7 +62,7 @@
         "color_text": "",
         "color_border": "color__border-divider-1",
         "style_border": "border--b-width",
-        "content_width": 40,
+        "content_width": 60,
         "image_position": "left",
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-start",
@@ -116,7 +119,7 @@
       ],
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
-        "content": "<p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu. <\/p>",
+        "content": "<p>Since 1979, Mother of Pearl and Sons has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware. Our commitment to quality and detail is <br\/>unmatched, presenting a carefully curated selection from leading global brands. We've earned the trust and partnership of the industry's leading professionals, who appreciate our eye for quality, extensive product range, and in-depth knowledge.<\/p><p><\/p><p>At Mother of Pearl, we understand the intricate needs of each project and offer personalized, expert advice to ensure the perfect product match. With our vast and unique collection, we empower architects and designers to bring their visions to life with style and precision. And we understand the unique challenges of managing architectural projects - our fast turnaround times and priority shipping mean that you can be confident you'll meet your project deadlines. Your project deserves nothing but the best, and that's what we're here to provide.<\/p>",
         "button_label": "Button",
         "button_url": "\/",
         "spacing_top": 100,
@@ -366,6 +369,8 @@
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
         "minHeight": 11,
+        "paddingTop": 2,
+        "paddingBottom": 2,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_text": "",
