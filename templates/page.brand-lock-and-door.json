@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "main": {
+      "type": "page__main",
+      "disabled": true,
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text"
+      }
+    },
+    "368de91d-ee0e-4757-86bc-8912a5b154e0": {
+      "type": "banner-alternative-brand",
+      "blocks": {
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "Sun Valley Bronze",
+            "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
+          }
+        },
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Continuing the tradition of artisanal excellence, Sun Valley Bronze, based in Idaho, USA, has been a family-owned and operated business since 1992. Renowned for their hand-crafted solid bronze hardware, each piece echoes the company's unwavering commitment to quality and detail. Their exquisite collection ranges from stately door hardware to sophisticated kitchen, bath, and cabinet fixtures, each piece imbued with a sense of rustic elegance and timeless appeal. <\/p><p>At Mother of Pearl, we are proud to stock Sun Valley Bronze products, appreciating the brand's dedication to craftsmanship and design. We work closely with the team to ensure seamless distribution and the fastest turnaround times for you project. <\/p>"
+          }
+        },
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "bg-color": "#fcfaf6",
+            "border": "",
+            "button-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1",
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1",
+        "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "left",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "489849c8-fd9e-4734-ac6a-0e74c0f91582": {
+      "type": "about_final",
+      "settings": {
+        "heading": "Where to source Sun Valley Bronze In Australia",
+        "content": "<p>If Sun Valley Bronze is your chosen brand for your architectural or interior project, look no further than Mother of Pearl. As an exclusive distributor and partner in Australia, we provide unrivaled access to their exquisite range of hand-crafted solid bronze hardware. Our close relationship with the brand ensures not only the availability of their complete product line but also guarantees authentic and quality pieces.<\/p><p>With Mother of Pearl, you can rely on our efficient sourcing, in-depth product knowledge, and our commitment to exceptional customer service. Reach out and we can help you chose the best products from their vast catalog for your project and have them delivered within your project deadlines. And not only can we provide custom finishes on their solid brass hardware, we can also provide hinges and accessories <\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "68942077-781f-4d53-9b23-c4788e7d7302": {
+      "type": "content-grid",
+      "blocks": {
+        "template--20330326524208__68942077-781f-4d53-9b23-c4788e7d7302-content-5": {
+          "type": "content",
+          "settings": {
+            "heading": "Cabinet Pulls",
+            "content": "<p>Discover the endless possibilities of their versatile bronze pulls, available in a variety of sizes and finishes to complement any architectural style.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "378a7deb-2b74-4c19-ac49-94f2ff2334a7": {
+          "type": "content",
+          "settings": {
+            "heading": "Ring Pulls",
+            "content": "<p>Enhance the functionality of your cabinet doors and drawers with ring and flap pulls that provide easy grip - timeless and convenient.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62": {
+          "type": "content",
+          "settings": {
+            "heading": "Cup Pulls",
+            "content": "<p>Surface mount bin pulls that provide convenient grip for opening\/closing your cabinets while adding a touch of classic charm.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8": {
+          "type": "content",
+          "settings": {
+            "heading": "Entrance Door",
+            "content": "<p>From the grandeur of their entry door sets to the understated elegance of their individual knobs and levers, Sun Valley Bronze makes an impact. <\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn btn--plain",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--20330326524208__68942077-781f-4d53-9b23-c4788e7d7302-content-5",
+        "378a7deb-2b74-4c19-ac49-94f2ff2334a7",
+        "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62",
+        "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8"
+      ],
+      "settings": {
+        "heading": "Explore some of the most popular ranges OF ARCHITECTURAL HARDWARE & JOINERY from Sun Valley Bronze",
+        "content": "",
+        "button_label": "",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid-cols-1",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "760620ad-46fe-464e-9f37-6cf56796527f": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "WHAT WE LOVE ABOUT SUN VALLEY BRONZE HARDWARE"
+          }
+        },
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Sun Valley Bronze merges traditional techniques with modern design <br\/>sensibilities, resulting in architectural hardware that adds a unique character to any space. Painstakingly crafted by skilled artisans, each item carries an essence of individuality, transforming functional elements into distinctive design features. Their range not only stands the test of time in durability but also in style, growing more beautiful with age.<\/p><p>As experts in the craft, they specialise in crafting custom-made products tailored to the unique vision of each project. Nearly 40% of their production revolves around bespoke works, offering homeowners and builders the opportunity to turn their design dreams into breathtaking reality. Whether you have a sketch or a detailed drawing, we can join forces with Sun Valley Bronze to bring your original design to life with utmost precision and artistry.<\/p><p>Take the first step toward elevating your architectural vision by exploring Sun Valley Bronze's exquisite range and unlocking the potential of custom-made hardware for your projects by getting in touch with us today.<\/p>"
+          }
+        },
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 30,
+            "button_label": "BOOK A CONSULTATION",
+            "button_url": "\/collections\/all",
+            "bg-color": "#fcfaf6",
+            "border": "",
+            "button-color": "#232528"
+          }
+        }
+      },
+      "block_order": [
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1",
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1",
+        "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "minHeight": 0,
+        "paddingTop": 2,
+        "paddingBottom": 2,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 55,
+        "image_position": "left",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "971ea3e3-d203-491a-bf28-8348e7b6453b": {
+      "type": "text-brand",
+      "settings": {
+        "heading": "Sun Valley Bronze's hand-crafted hardware is an architect's dream. Their products blend aesthetics with enduring quality, infusing every design with rustic elegance. As they age, they gain even more character - a feature my clients adore. For superior architectural hardware, I consistently turn to Sun Valley Bronze.",
+        "content": "<p>-- David Reynolds, Architect<\/p>",
+        "button_label": "Button",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
+      }
+    },
+    "84df84bf-67bc-46e6-9f60-709d6aa06eaf": {
+      "type": "brand-page-gallery",
+      "blocks": {
+        "837008a5-2003-4d41-a761-eb28dd97b060": {
+          "type": "images",
+          "repeater": "{{ page.metafields.custom.gallery_images.value }}",
+          "settings": {
+            "image_featured": "{{ block.repeater.image.value }}",
+            "aspect": "{{ block.repeater.gallery_image_aspect.value }}",
+            "width": "{{ block.repeater.gallery_width.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "837008a5-2003-4d41-a761-eb28dd97b060"
+      ],
+      "settings": {
+        "heading": "{{ page.title }}  gallery",
+        "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "368de91d-ee0e-4757-86bc-8912a5b154e0",
+    "489849c8-fd9e-4734-ac6a-0e74c0f91582",
+    "68942077-781f-4d53-9b23-c4788e7d7302",
+    "760620ad-46fe-464e-9f37-6cf56796527f",
+    "971ea3e3-d203-491a-bf28-8348e7b6453b",
+    "84df84bf-67bc-46e6-9f60-709d6aa06eaf"
+  ]
+}
