@@ -2,8 +2,20 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "99a7b9b4-94d3-40e4-9b58-0b8086862de0": {
+      "type": "footer-new",
+      "settings": {
+        "footer-content": "<p>Your default footer content<\/p>",
+        "menu_1": "footer",
+        "menu_2": "footer-architectural-hardware",
+        "menu_3": "footer-kitchen-joinery",
+        "menu_4": "footer-work-with-us",
+        "sub_links": "main-menu"
+      }
+    },
     "theme_footer": {
       "type": "theme__footer",
+      "disabled": true,
       "blocks": {
         "d23af186-9cd8-42ac-a697-ea3ad5479248": {
           "type": "content",
@@ -70,6 +82,7 @@
     }
   },
   "order": [
+    "99a7b9b4-94d3-40e4-9b58-0b8086862de0",
     "theme_footer"
   ]
 }
