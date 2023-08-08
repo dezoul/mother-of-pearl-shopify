@@ -1272,6 +1272,9 @@ img:after {
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -1316,6 +1319,10 @@ img:after {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .my-12 {
   margin-top: 3rem;
@@ -1790,6 +1797,9 @@ img:after {
 .max-w-prose {
   max-width: 65ch;
 }
+.max-w-screen-xl {
+  max-width: 1280px;
+}
 .max-w-xl {
   max-width: 36rem;
 }
@@ -2109,6 +2119,9 @@ img:after {
 }
 .\!border-r-0 {
   border-right-width: 0px !important;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .\!border-rose-500 {
   --tw-border-opacity: 1 !important;
@@ -2493,6 +2506,9 @@ img:after {
 .opacity-75 {
   opacity: 0.75;
 }
+.opacity-90 {
+  opacity: 0.9;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2522,6 +2538,11 @@ img:after {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -4181,6 +4202,9 @@ html {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .lg\:flex {
     display: flex;
   }
@@ -4192,6 +4216,9 @@ html {
   }
   .lg\:w-1\/4 {
     width: 25%;
+  }
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .lg\:text-left {
     text-align: left;
@@ -4238,9 +4265,6 @@ html {
 }
 .\[\&\>\*\]\:shrink-0>* {
   flex-shrink: 0;
-}
-.\[\&\>\*\]\:text-\[1\.25rem\]>* {
-  font-size: 1.25rem;
 }
 @media not all and (min-width: 768px) {
   .max-md\:\[\&\>\*\]\:aspect-square>* {
