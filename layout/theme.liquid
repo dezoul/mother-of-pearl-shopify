@@ -4,8 +4,8 @@
   lang="{{ request.locale.iso_code }}"
   x-data="app()"
   x-init="
-            handleSharedCart(); 
-            updateCart(false);"><head>
+                handleSharedCart(); 
+                updateCart(false);"><head>
     {% render 'theme__meta' %}
     <link
       rel="preconnect"
@@ -41,31 +41,31 @@
   </head>
 
   <body class="min-h-[100vh] break-words 
-                {{ template | handle }}"@scroll.window="() => {
-                  if (window.pageYOffset > 400) {
-                    is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false; 
-                    prev_scroll_pos = window.pageYOffset;
-                    $refs.header.style.transform = 'none'
-                  } else {
-                    is_scrolled = false;
-                    prev_scroll_pos = window.pageYOffset;
-                    $refs.header.style.transform = 'none'
-                  }
-                }"x-intersect.half:enter="scroll_up = false"x-intersect.half:leave="scroll_up = true">
+                      {{ template | handle }}"@scroll.window="() => {
+                        if (window.pageYOffset > 400) {
+                          is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false; 
+                          prev_scroll_pos = window.pageYOffset;
+                          $refs.header.style.transform = 'none'
+                        } else {
+                          is_scrolled = false;
+                          prev_scroll_pos = window.pageYOffset;
+                          $refs.header.style.transform = 'none'
+                        }
+                      }"x-intersect.half:enter="scroll_up = false"x-intersect.half:leave="scroll_up = true">
 
     <a href="#root" class="top-4 left-4 color__bg-body focus:translate-y-0 border__button--radius fixed z-50 px-4 py-2 no-underline transform -translate-y-20 shadow-md">
       {{ 'general.accessibility.skip_to_content' | t }}
     </a>
 
     <header class="z-30 px-5p py-8
-                      {{ settings.header_position }}
-                      {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %} 
-                      {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}":class="{ 
-                        '!z-10' : hide_header
-                      }"x-ref="header"{% if settings.header_position == 'dynamic' %}x-bind:style="is_scrolled ? 
-                          'transform: translateY(-2rem); opacity: 0; pointer-events: none;' : 
-                          'transform: none; opacity: 1;'
-                        "{% endif %}>
+                              {{ settings.header_position }}
+                              {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %} 
+                              {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}":class="{ 
+                                '!z-10' : hide_header
+                              }"x-ref="header"{% if settings.header_position == 'dynamic' %}x-bind:style="is_scrolled ? 
+                                  'transform: translateY(-2rem); opacity: 0; pointer-events: none;' : 
+                                  'transform: none; opacity: 1;'
+                                "{% endif %}>
       {% sections 'header-group' %}
     </header>
     {% section 'theme__cart' %}
@@ -75,40 +75,41 @@
       {{ content_for_layout }}
     </main>
 
+
     {% sections 'footer-group' %}
     {% sections 'overlay-group' %}
+    {% comment %}
 
+    {% endcomment %}
     {% render 'theme__localization-popup' %}
     {% render 'theme__audio-popup' %}
     {% render 'theme__error-popup' %}
     {% render 'assets' with 'main.js' %}
     {% render 'theme__scripts' %}
 
-  <style> 
+    <style>
 
-    .button-with-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-family: roc-grotesk, sans-serif;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      margin-top: 1rem;
-      text-decoration: none;
-    }
+      .button-with-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: roc-grotesk, sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        text-decoration: none;
+      }
 
-    /* Checks if the button should be two lines, and if it is, increases the size of the arrow */
+      /* Checks if the button should be two lines, and if it is, increases the size of the arrow */
 
-    .button-with-arrow svg {
-      height: 2rem;
-      width: 2rem;
-    }
-  
-  
-  </style>
+      .button-with-arrow svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    </style>
 
 
-    
+
   </body>
 
 </html>
