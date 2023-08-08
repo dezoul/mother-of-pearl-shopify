@@ -15,14 +15,14 @@
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "Sun Valley Bronze",
+            "content": "Jacksons Locks",
             "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Continuing the tradition of artisanal excellence, Sun Valley Bronze, based in Idaho, USA, has been a family-owned and operated business since 1992. Renowned for their hand-crafted solid bronze hardware, each piece echoes the company's unwavering commitment to quality and detail. Their exquisite collection ranges from stately door hardware to sophisticated kitchen, bath, and cabinet fixtures, each piece imbued with a sense of rustic elegance and timeless appeal. <\/p><p>At Mother of Pearl, we are proud to stock Sun Valley Bronze products, appreciating the brand's dedication to craftsmanship and design. We work closely with the team to ensure seamless distribution and the fastest turnaround times for you project. <\/p>"
+            "content": "<p>Jacksons Locks in Launceston, Tasmania has been proudly producing quality Australian made locks since 1883 with a colourful history, being the padlock favoured by the prison system for many years. They cover an extensive range of residential, commercial, padlocks, and institutional locks with hardened steel case and solid brass in the movements, the seen parts and the strikers & fore-ends. <\/p>"
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
@@ -60,8 +60,8 @@
     "489849c8-fd9e-4734-ac6a-0e74c0f91582": {
       "type": "about_final",
       "settings": {
-        "heading": "Where to source Sun Valley Bronze In Australia",
-        "content": "<p>If Sun Valley Bronze is your chosen brand for your architectural or interior project, look no further than Mother of Pearl. As an exclusive distributor and partner in Australia, we provide unrivaled access to their exquisite range of hand-crafted solid bronze hardware. Our close relationship with the brand ensures not only the availability of their complete product line but also guarantees authentic and quality pieces.<\/p><p>With Mother of Pearl, you can rely on our efficient sourcing, in-depth product knowledge, and our commitment to exceptional customer service. Reach out and we can help you chose the best products from their vast catalog for your project and have them delivered within your project deadlines. And not only can we provide custom finishes on their solid brass hardware, we can also provide hinges and accessories <\/p>",
+        "heading": "Why Jacksons Locks",
+        "content": "<p>Jacksons Locks offers Australia quality at its best. Whether you're looking for privacy locks, safe locks, padlocks, cylinder locks, drawer & cabinet locks, lock boxes, or lever mortice locks, they’ve always been able to come up with something to suit our client’s need - both in renovations and new home markets.<\/p><p>We have complete confidence in their expertise, given their solid reputation in the institutional range (particularly prison system) and heavy use areas. This means you can trust their products to provide your doors with the highest level of protection.<\/p>",
         "button_label": "Button",
         "button_url": "\/",
         "spacing_top": 100,
@@ -80,8 +80,8 @@
         "template--20330326524208__68942077-781f-4d53-9b23-c4788e7d7302-content-5": {
           "type": "content",
           "settings": {
-            "heading": "Cabinet Pulls",
-            "content": "<p>Discover the endless possibilities of their versatile bronze pulls, available in a variety of sizes and finishes to complement any architectural style.<\/p>",
+            "heading": "Traditional Mortice Locks",
+            "content": "<p>Traditional key locks that comes in classic design and operate with a fixed locking mechanism.<\/p>",
             "button_label": "Button",
             "button_url": "",
             "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
@@ -105,8 +105,8 @@
         "378a7deb-2b74-4c19-ac49-94f2ff2334a7": {
           "type": "content",
           "settings": {
-            "heading": "Ring Pulls",
-            "content": "<p>Enhance the functionality of your cabinet doors and drawers with ring and flap pulls that provide easy grip - timeless and convenient.<\/p>",
+            "heading": "Euro Mortice Locks",
+            "content": "<p>Versatile mortice locks with standardised Euro profile cylinders, giving you advantage of easy customisation.<\/p>",
             "button_label": "Button",
             "button_url": "",
             "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
@@ -129,6 +129,7 @@
         },
         "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "Cup Pulls",
             "content": "<p>Surface mount bin pulls that provide convenient grip for opening\/closing your cabinets while adding a touch of classic charm.<\/p>",
@@ -154,6 +155,7 @@
         },
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "heading": "Entrance Door",
             "content": "<p>From the grandeur of their entry door sets to the understated elegance of their individual knobs and levers, Sun Valley Bronze makes an impact. <\/p>",
@@ -185,7 +187,7 @@
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8"
       ],
       "settings": {
-        "heading": "Explore some of the most popular ranges OF ARCHITECTURAL HARDWARE & JOINERY from Sun Valley Bronze",
+        "heading": "Explore Some of the Most Popular Ranges of Architectural Hardware & Joinery From Jacksons Locks",
         "content": "",
         "button_label": "",
         "button_url": "",
@@ -195,7 +197,7 @@
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "",
-        "row_size_desktop": "md:grid-cols-4",
+        "row_size_desktop": "md:grid-cols-2",
         "row_size_mobile": "grid-cols-1",
         "layout_x_alignment": "justify-between",
         "visibility": ""
@@ -207,13 +209,13 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "WHAT WE LOVE ABOUT SUN VALLEY BRONZE HARDWARE"
+            "content": "What You Should Know About This Amazing Brand"
           }
         },
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Sun Valley Bronze merges traditional techniques with modern design <br\/>sensibilities, resulting in architectural hardware that adds a unique character to any space. Painstakingly crafted by skilled artisans, each item carries an essence of individuality, transforming functional elements into distinctive design features. Their range not only stands the test of time in durability but also in style, growing more beautiful with age.<\/p><p>As experts in the craft, they specialise in crafting custom-made products tailored to the unique vision of each project. Nearly 40% of their production revolves around bespoke works, offering homeowners and builders the opportunity to turn their design dreams into breathtaking reality. Whether you have a sketch or a detailed drawing, we can join forces with Sun Valley Bronze to bring your original design to life with utmost precision and artistry.<\/p><p>Take the first step toward elevating your architectural vision by exploring Sun Valley Bronze's exquisite range and unlocking the potential of custom-made hardware for your projects by getting in touch with us today.<\/p>"
+            "content": "<p>Jacksons have been a fantastic partner in resolving solutions to the issues that come with carrying ranges that require modification, for perfect results each time. Important for us is that as security products, Jacksons locks meet all requirements for any insurance issue.<\/p><p>Talk with us today and bring the excellence of Australian security craftsmanship to your doorstep.<\/p>"
           }
         },
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
