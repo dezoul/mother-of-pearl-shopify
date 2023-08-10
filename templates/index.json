@@ -242,15 +242,15 @@
         "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1": {
           "type": "content",
           "settings": {
-            "content": "<p>We have designed and made a substantial selection of ranges incorporating copper, ebony and other fine timbers, shell and brass. We have ranges under development and of course we can realise your unique vision for a product.<\/p><h6><\/h6><p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>"
+            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>"
           }
         },
         "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2": {
           "type": "buttons",
           "settings": {
             "button_width": 11,
-            "button_label": "FIND THE PERFECT  SOLUTION",
-            "button_url": "\/collections\/all",
+            "button_label": "Explore the signature collection",
+            "button_url": "shopify:\/\/collections",
             "secondary_button_color": "btn btn--neutral",
             "secondary_button_label": "Button label",
             "secondary_button_url": ""
@@ -320,7 +320,7 @@
       ],
       "settings": {
         "heading": "Kitchen & Joinery  HARDWARE",
-        "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>",
+        "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<\/p>",
         "button_label": "Button",
         "button_url": "",
         "spacing_top": 100,
@@ -352,9 +352,9 @@
         "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2": {
           "type": "buttons",
           "settings": {
-            "button_width": 5,
-            "button_label": "Button label",
-            "button_url": "\/collections\/all",
+            "button_width": 21,
+            "button_label": "BOOK A CONSULTATION",
+            "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "",
             "border": "",
             "button-color": ""
@@ -371,7 +371,7 @@
         "minHeight": 11,
         "paddingTop": 2,
         "paddingBottom": 2,
-        "enable_lazy_loading": false,
+        "enable_lazy_loading": true,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_text": "",
         "color_border": "color__border-divider-1",

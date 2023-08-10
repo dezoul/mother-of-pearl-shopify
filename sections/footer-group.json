@@ -4,8 +4,12 @@
   "sections": {
     "99a7b9b4-94d3-40e4-9b58-0b8086862de0": {
       "type": "footer-new",
+      "custom_css": [
+        "h4 {font-size: 0.875rem; line-height: 1.25rem; font-family: roc-grotesk-wide, \"sans-serif\"; font-weight: normal; text-transform: uppercase;}",
+        "p + h4 {margin-bottom:2rem;}"
+      ],
       "settings": {
-        "footer-content": "<p>Your default footer content<\/p>",
+        "footer-content": "<p>Over the past 30 years, Mother of Pearl has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware. Our commitment to quality and detail is unmatched, presenting a carefully curated selection from leading global brands as well as our own signature collection. <\/p><p> <\/p><h4> <\/h4><h4>Visit our Sydney Showroom:<\/h4><p>Suite 5, 24 – 30 <br\/>Wellington Street, <br\/>Waterloo, NSW <\/p><p> Phone: 02 8332 6999<\/p>",
         "menu_1": "footer",
         "menu_2": "footer-architectural-hardware",
         "menu_3": "footer-kitchen-joinery",
