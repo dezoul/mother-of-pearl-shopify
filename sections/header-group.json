@@ -4,7 +4,6 @@
   "sections": {
     "theme_announcement": {
       "type": "theme__announcement",
-      "disabled": true,
       "blocks": {
         "f2232503-8685-46db-aaf1-b796c5ea14f9": {
           "type": "text",
@@ -16,6 +15,7 @@
       "block_order": [
         "f2232503-8685-46db-aaf1-b796c5ea14f9"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "color__bg-tertiary color__tertiary",
         "layout_alignment": "left",
@@ -214,6 +214,7 @@
           "type": "images",
           "settings": {
             "heading": "Tasman Forge",
+            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03.jpg",
             "description": "<p>Channeling the rugged beauty of Tasmania, Tasman Forge delivers <br\/>hand-forged hardware that stands as a testament to raw artistry and <br\/>strength.<\/p>"
           }
         }
@@ -239,6 +240,7 @@
         "d32a4bfd-4728-40ca-96d9-74fa70000db3",
         "3896487a-922b-4bbf-9b2f-ee467bfa3f34"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn--secondary {display: none;}"
       ],
