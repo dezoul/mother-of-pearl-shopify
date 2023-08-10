@@ -209,6 +209,13 @@
             "image_featured": "shopify:\/\/shop_images\/MOP-SH-07d.jpg",
             "description": "<p>A legacy brand from Britain, Samuel Heath masterfully merges time-honored craftsmanship with modern innovation.<\/p>"
           }
+        },
+        "3896487a-922b-4bbf-9b2f-ee467bfa3f34": {
+          "type": "images",
+          "settings": {
+            "heading": "Tasman Forge",
+            "description": "<p>Channeling the rugged beauty of Tasmania, Tasman Forge delivers <br\/>hand-forged hardware that stands as a testament to raw artistry and <br\/>strength.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -229,7 +236,8 @@
         "fdfa7155-1043-4bd4-a84a-09e288947e38",
         "bbe2e3be-336d-40f4-abc5-620f57578898",
         "73c5d847-d3ba-427d-ab87-4b3e5df6de65",
-        "d32a4bfd-4728-40ca-96d9-74fa70000db3"
+        "d32a4bfd-4728-40ca-96d9-74fa70000db3",
+        "3896487a-922b-4bbf-9b2f-ee467bfa3f34"
       ],
       "settings": {
         "heading": "Explore our range of renowned international brands",
