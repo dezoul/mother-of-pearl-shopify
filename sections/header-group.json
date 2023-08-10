@@ -62,10 +62,113 @@
         "search_color_border": "color__border-divider-1",
         "visibility": ""
       }
+    },
+    "ff882a1c-f3ed-4da6-8afe-67e8fa455bd2": {
+      "type": "brand-gallery",
+      "blocks": {
+        "a38acfd0-e7a4-47cf-86a9-ae30884ec528": {
+          "type": "images",
+          "settings": {
+            "heading": "Mother of Pearl Signature Range",
+            "image_featured": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
+            "description": "<p>Our very own curated selection, the Signature Range, encapsulates years of expertise, presenting architectural hardware crafted in pure brass that offers luxury quality without the luxury price tag.<\/p>"
+          }
+        },
+        "31dd3b5a-b18e-49ce-81d9-37fa55f27cec": {
+          "type": "images",
+          "settings": {
+            "heading": "Sun Valley Bronze",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13.jpg",
+            "description": "<p>Hailing from Idaho, Sun Valley Bronze is an emblem of hand-crafted, solid bronze mastery, bringing with it a legacy of family-owned passion and precision.<\/p>"
+          }
+        },
+        "c2b3edbb-4e6f-4353-b7c9-e85553a63b0f": {
+          "type": "images",
+          "settings": {
+            "heading": "B&M",
+            "image_featured": "shopify:\/\/shop_images\/MOP-BM-03-lowres.jpg",
+            "description": "<p>A beacon of traditional charm, B&M melds historical accuracy with <br\/>impeccable quality, right from the heart of Southern California.<\/p>"
+          }
+        },
+        "095577b7-b321-452b-8010-704523de61a7": {
+          "type": "images",
+          "settings": {
+            "heading": "Barben",
+            "image_featured": "shopify:\/\/shop_images\/MOP-BARBEN-08.jpg",
+            "description": "<p>Barben fuses contemporary design with innovative functionality, delivering a unique aesthetic to modern spaces.<\/p>"
+          }
+        },
+        "1512cf70-4c69-495f-8883-10acb535db68": {
+          "type": "images",
+          "settings": {
+            "heading": "Brehat",
+            "image_featured": "shopify:\/\/shop_images\/MOP-BLV-04.jpg",
+            "description": "<p>Brehat is renowned for its handcrafted glass door handles, each piece meticulously shaped in their dedicated glass studio. This brand captures the ethereal beauty of glass, blending art and function in every design.<\/p>"
+          }
+        },
+        "4a832174-2fe1-4113-aa07-64ee0326bdb8": {
+          "type": "images",
+          "settings": {
+            "heading": "Brionne",
+            "image_featured": "shopify:\/\/shop_images\/MOP-BRIONNE-03.webp",
+            "description": "<p>French artistry meets functional elegance. Brionne is celebrated for its ornate, hand-finished designs, infusing old-world charm into modern spaces.<\/p>"
+          }
+        },
+        "b654fb17-ad62-41d3-afd2-fa443f76af97": {
+          "type": "images",
+          "settings": {
+            "heading": "Chant",
+            "image_featured": "shopify:\/\/shop_images\/MOP-CH-03.png",
+            "description": "<p>Hailing from New Zealand, Chant stands out for its precision engineering, resulting in hardware that seamlessly marries form and function.<\/p>"
+          }
+        },
+        "f96f98fe-f093-45a4-9557-6d663672b434": {
+          "type": "images",
+          "settings": {
+            "heading": "Domino Brass",
+            "image_featured": "shopify:\/\/shop_images\/MOP-DOMINO-01.jpg",
+            "description": "<p>An artisan’s touch is evident in every product, with Domino Brass  renowned for its enduring, handcrafted finishes and meticulous  detailing.<\/p>"
+          }
+        },
+        "3387b7df-7b54-4306-a5b5-972ee77fadf4": {
+          "type": "images",
+          "settings": {
+            "heading": "Fersa",
+            "image_featured": "shopify:\/\/shop_images\/Fersa_group.jpg",
+            "description": "<p>Spanish elegance epitomized. Fersa crafts exquisite hardware that carries the rich legacy and aesthetic of Spanish design.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a38acfd0-e7a4-47cf-86a9-ae30884ec528",
+        "31dd3b5a-b18e-49ce-81d9-37fa55f27cec",
+        "c2b3edbb-4e6f-4353-b7c9-e85553a63b0f",
+        "095577b7-b321-452b-8010-704523de61a7",
+        "1512cf70-4c69-495f-8883-10acb535db68",
+        "4a832174-2fe1-4113-aa07-64ee0326bdb8",
+        "b654fb17-ad62-41d3-afd2-fa443f76af97",
+        "f96f98fe-f093-45a4-9557-6d663672b434",
+        "3387b7df-7b54-4306-a5b5-972ee77fadf4"
+      ],
+      "settings": {
+        "heading": "Explore our range of renowned international brands",
+        "content": "<p>We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof.<\/p>",
+        "button_label": "",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
     }
   },
   "order": [
     "theme_announcement",
-    "theme_header"
+    "theme_header",
+    "ff882a1c-f3ed-4da6-8afe-67e8fa455bd2"
   ]
 }
