@@ -37,7 +37,7 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-2": {
           "type": "buttons",
           "settings": {
-            "button_width": 9,
+            "button_width": 10,
             "button_label": "TELL US ABOUT YOUR PROJECT",
             "button_url": "\/collections\/all",
             "secondary_button_color": "btn btn--neutral",
@@ -217,9 +217,9 @@
       ],
       "settings": {
         "heading": "ARCHITECTURAL HARDWARE",
-        "content": "<p>Our world of hardware is rich with diversity. It is the detail that punctuates a design theme. Accentuate a minimalist approach with muted metal tones that blend. Organic finishes that match organic materials – wood flooring, polished concrete, stone etc. Decorative and glamorous door furniture that emphasise sumptuousness. Bauhaus, Deco, Classic English and French – our showroom showcases well-defined examples, rather than the misinterpretations that are ubiquitous in the wider market.<\/p>",
+        "content": "<p>Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service. <\/p>",
         "button_label": "SEE ALL",
-        "button_url": "\/",
+        "button_url": "shopify:\/\/collections\/all",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-body color__text",
