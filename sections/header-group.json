@@ -169,6 +169,46 @@
             "image_featured": "shopify:\/\/shop_images\/MOP-LDH-03.png",
             "description": "<p>Prioritizing both aesthetics and function, Lock and Door offers a <br\/>comprehensive range of solutions that ensure every entrance is both <br\/>beautiful and secure.<\/p>"
           }
+        },
+        "7ba60f28-262a-4320-b727-adbfa3922a69": {
+          "type": "images",
+          "settings": {
+            "heading": "Lockwood",
+            "image_featured": "shopify:\/\/shop_images\/MOP-LOCKWOOD-02.jpg",
+            "description": "<p>A household name in Australia, Lockwood epitomizes reliability, crafting locks and security solutions trusted by generations.<\/p>"
+          }
+        },
+        "fdfa7155-1043-4bd4-a84a-09e288947e38": {
+          "type": "images",
+          "settings": {
+            "heading": "Mood Australia",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Mood-06.jpg",
+            "description": "<p>Tapping into the emotional essence of design, Mood Australia crafts <br\/>pieces that evoke feelings, ensuring every touch is an experience.<\/p>"
+          }
+        },
+        "bbe2e3be-336d-40f4-abc5-620f57578898": {
+          "type": "images",
+          "settings": {
+            "heading": "P Bisschop",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
+            "description": "<p>Famed for its commitment to artisanal craftsmanship, P Bisschop offers a range of hardware that's as detailed as it is durable.<\/p>"
+          }
+        },
+        "73c5d847-d3ba-427d-ab87-4b3e5df6de65": {
+          "type": "images",
+          "settings": {
+            "heading": "Parisi",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-03.png",
+            "description": "<p>Italian elegance is manifest in every piece from Parisi, with each design embodying the chic sophistication synonymous with Italy.<\/p>"
+          }
+        },
+        "d32a4bfd-4728-40ca-96d9-74fa70000db3": {
+          "type": "images",
+          "settings": {
+            "heading": "Samuel Heath",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SH-07d.jpg",
+            "description": "<p>A legacy brand from Britain, Samuel Heath masterfully merges time-honored craftsmanship with modern innovation.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -184,7 +224,12 @@
         "600d42c0-5292-47dd-8786-d477ca7dca98",
         "1a557cfe-ef69-4316-b548-28c7c62d84d9",
         "920a9e09-9cd7-47bd-a56c-2d90b00a0c3d",
-        "744f1344-ac93-4506-9e11-a8a998f32267"
+        "744f1344-ac93-4506-9e11-a8a998f32267",
+        "7ba60f28-262a-4320-b727-adbfa3922a69",
+        "fdfa7155-1043-4bd4-a84a-09e288947e38",
+        "bbe2e3be-336d-40f4-abc5-620f57578898",
+        "73c5d847-d3ba-427d-ab87-4b3e5df6de65",
+        "d32a4bfd-4728-40ca-96d9-74fa70000db3"
       ],
       "settings": {
         "heading": "Explore our range of renowned international brands",
