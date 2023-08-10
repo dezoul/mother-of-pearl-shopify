@@ -239,6 +239,9 @@
         "d32a4bfd-4728-40ca-96d9-74fa70000db3",
         "3896487a-922b-4bbf-9b2f-ee467bfa3f34"
       ],
+      "custom_css": [
+        ".btn--secondary {display: none;}"
+      ],
       "settings": {
         "heading": "Explore our range of renowned international brands",
         "content": "<p>We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof.<\/p>",
