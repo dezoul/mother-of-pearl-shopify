@@ -27,10 +27,9 @@
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_url": "\/collections\/all",
+            "button_label": "BOOK A CONSULTATION",
+            "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "#fcfaf6",
             "border": "",
             "button-color": "#000000"
@@ -234,6 +233,7 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1",
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
         "minHeight": 0,
