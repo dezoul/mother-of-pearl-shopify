@@ -19,7 +19,6 @@
     },
     "theme_footer": {
       "type": "theme__footer",
-      "disabled": true,
       "blocks": {
         "d23af186-9cd8-42ac-a697-ea3ad5479248": {
           "type": "content",
@@ -72,6 +71,7 @@
         "12cfa020-36fa-4fce-88a5-eca32164fd05",
         "efffda97-d095-45e5-b898-4c066a556e88"
       ],
+      "disabled": true,
       "settings": {
         "main_color_scheme": "color__bg-body color__text",
         "main_color_border": "!color__border-transparent",
