@@ -43,7 +43,7 @@
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-CH-03_891a7e72-009b-47eb-92b6-77e7523b00b8.png",
         "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
@@ -184,6 +184,7 @@
         "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62",
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Explore Some of the Most Popular Ranges of Architectural Hardware & Joinery From Chant Hardware",
         "content": "",
@@ -207,7 +208,7 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "What You Should Know About This Amazing Brand"
+            "content": "What You Should Know About CHANT HARDWARE"
           }
         },
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
@@ -234,7 +235,7 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/brand-4.jpg",
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-CH-02.jpg",
         "minHeight": 0,
         "paddingTop": 2,
         "paddingBottom": 2,
@@ -252,6 +253,7 @@
     },
     "971ea3e3-d203-491a-bf28-8348e7b6453b": {
       "type": "text-brand",
+      "disabled": true,
       "settings": {
         "heading": "Sun Valley Bronze's hand-crafted hardware is an architect's dream. Their products blend aesthetics with enduring quality, infusing every design with rustic elegance. As they age, they gain even more character - a feature my clients adore. For superior architectural hardware, I consistently turn to Sun Valley Bronze.",
         "content": "<p>-- David Reynolds, Architect<\/p>",
@@ -283,6 +285,7 @@
       "block_order": [
         "837008a5-2003-4d41-a761-eb28dd97b060"
       ],
+      "disabled": true,
       "settings": {
         "heading": "{{ page.title }}  gallery",
         "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
