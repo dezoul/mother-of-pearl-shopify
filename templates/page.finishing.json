@@ -75,11 +75,63 @@
         "layout_x_alignment": "",
         "visibility": ""
       }
+    },
+    "2f06f224-73ba-4cf6-8023-9d6c77dfee65": {
+      "type": "banner",
+      "blocks": {
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "content": "Heading"
+          }
+        },
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-content-1": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_color": "btn",
+            "button_label": "Button label",
+            "button_url": "\/collections\/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": "\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-heading-1",
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-content-1",
+        "template--20588448022832__2f06f224-73ba-4cf6-8023-9d6c77dfee65-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
+        "show_entire_image": false,
+        "enable_lazy_loading": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
     }
   },
   "order": [
     "main",
     "98a304d7-9495-4c7c-b02d-434ef01d290e",
-    "33f2ad72-92d2-4672-a2a0-5e406220dce0"
+    "33f2ad72-92d2-4672-a2a0-5e406220dce0",
+    "2f06f224-73ba-4cf6-8023-9d6c77dfee65"
   ]
 }
