@@ -9,96 +9,51 @@
         "color_scheme": "color__bg-body color__text"
       }
     },
-    "945e2175-9711-43ca-a0a9-422d44d4e2ca": {
-      "type": "banner-alternativev2",
+    "98a304d7-9495-4c7c-b02d-434ef01d290e": {
+      "type": "banner-alternativev3",
       "blocks": {
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-heading-1": {
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-heading-1": {
           "type": "heading",
           "settings": {
             "content": "Custom Brass Finishing"
           }
         },
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-content-1": {
-          "type": "content",
-          "settings": {
-            "content": "<p>High-quality brass architectural hardware is more than just a functional addition—it's a statement, a piece of art that can be fine-tuned to align seamlessly with your unique aesthetic with custom finishes. <\/p><p>Each brand within our curated collection understands the transformative role that finishing plays in design. They offer a rich palette of custom finishes that breathe life into their hardware. Whether it’s a vintage patina or a modern matte touch you’re after, the world of brass finishes is at your fingertips.<\/p><p>Beyond the finishes offered by our esteemed brands, Mother of Pearl <br\/>takes customization a step further. With our in-house finishing <br\/>capabilities, we can tailor every piece to your exact specifications right down to the hinges, <br\/>ensuring a perfect match across all your hardware. <\/p><p><\/p>"
-          }
-        },
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-buttons-1": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_width": 5,
-            "button_label": "",
-            "button_url": "\/collections\/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-heading-1",
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-content-1",
-        "template--20588448022832__945e2175-9711-43ca-a0a9-422d44d4e2ca-buttons-1"
-      ],
-      "settings": {
-        "minHeight": 0,
-        "enable_lazy_loading": false,
-        "color_scheme": "color__bg-body color__text",
-        "color_text": "",
-        "color_border": "color__border-divider-1",
-        "style_border": "border--b-width",
-        "content_width": 40,
-        "image_position": "left",
-        "layout_y_alignment": "items-end",
-        "layout_x_alignment": "justify-start",
-        "visibility": ""
-      }
-    },
-    "4857789d-cefd-4daa-bdbd-a14ca5de32c8": {
-      "type": "banner",
-      "blocks": {
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-heading-1": {
-          "type": "heading",
-          "settings": {
-            "content": "Custom Brass Finishing"
-          }
-        },
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-content-1": {
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-content-1": {
           "type": "content",
           "settings": {
             "content": "<p>High-quality brass architectural hardware is more than just a functional addition—it's a statement, a piece of art that can be fine-tuned to align seamlessly with your unique aesthetic with custom finishes. <\/p><p>Each brand within our curated collection understands the transformative role that finishing plays in design. They offer a rich palette of custom finishes that breathe life into their hardware.  Whether it’s a vintage patina or a modern matte touch you’re after, the  world of brass finishes is at your fingertips.<\/p><p>Beyond the finishes offered by our esteemed brands, Mother of Pearl takes customization a step further. With our in-house finishing capabilities, we can tailor every piece to your exact specifications right down to the hinges, ensuring a perfect match across all your hardware. <\/p>"
           }
         },
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-buttons-1": {
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-buttons-1": {
           "type": "buttons",
           "disabled": true,
           "settings": {
-            "button_color": "btn",
+            "button_width": 40,
             "button_label": "Button label",
             "button_url": "\/collections\/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": "\/collections\/all"
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
           }
         }
       },
       "block_order": [
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-heading-1",
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-content-1",
-        "template--20588448022832__4857789d-cefd-4daa-bdbd-a14ca5de32c8-buttons-1"
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-heading-1",
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-content-1",
+        "template--20588448022832__98a304d7-9495-4c7c-b02d-434ef01d290e-buttons-1"
       ],
       "settings": {
-        "show_entire_image": false,
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-finishes.png",
+        "minHeight": 0,
+        "paddingTop": 1,
+        "paddingBottom": 2,
         "enable_lazy_loading": false,
-        "show_video_background_mobile": true,
-        "color_scheme": "color__bg-body color__text",
+        "color_scheme": "color__bg-secondary color__secondary",
         "color_text": "",
         "color_border": "color__border-divider-1",
-        "enable_gradient": false,
         "style_border": "border--b-width",
-        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "content_width": 50,
+        "image_position": "left",
         "layout_y_alignment": "items-end",
         "layout_x_alignment": "justify-start",
         "visibility": ""
@@ -107,7 +62,6 @@
   },
   "order": [
     "main",
-    "945e2175-9711-43ca-a0a9-422d44d4e2ca",
-    "4857789d-cefd-4daa-bdbd-a14ca5de32c8"
+    "98a304d7-9495-4c7c-b02d-434ef01d290e"
   ]
 }
