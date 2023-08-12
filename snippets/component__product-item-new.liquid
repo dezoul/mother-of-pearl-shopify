@@ -42,7 +42,7 @@ Pro tips:
   {% endif %}"x-data="{ 
                     button_loading: false
                   }'>{%- comment -%}image{%- endcomment -%}
-  <a href="{{ product.url | within: collection }}"class="flex justify-between flex-col  hover:opacity-100 relative block h-full p-4 bg-contain bg-center bg-contain bg-no-repeat min-h-[12vw] bg-[#f8f3ea]"style="background-image: url({{ product | image_url: width: 800 }}); background-blend-mode: multiply; background-origin: content-box;">
+  <a href="{{ product.url | within: collection }}"class="flex justify-between flex-col  hover:opacity-100 relative block h-full p-4 bg-contain bg-center bg-contain bg-no-repeat min-h-[12vw] bg-[#f8f3ea]" style="background-image: url({{ product | image_url: width: 800 }}); background-blend-mode: multiply; background-origin: content-box;">
     {% comment %}
 
     {%- unless product.featured_image == blank %}

@@ -6,29 +6,19 @@ Globals:
 - settings.layout_horizontal: horizontaly margin
 {% endcomment %}<section
   class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div
-    class="{{ settings.layout_horizontal }}"
-    style="  padding-top:{{ section.settings.spacing_top }}px; padding-bottom:{{ section.settings.spacing_bottom }}px;">
+  <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px; padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
-    <div
-      class="flex flex-row flex-wrap items-end {{ section.settings.layout_x_alignment }}">
-      <div
-        class="w-full px-[5%]">
+    <div class="flex flex-row flex-wrap items-end {{ section.settings.layout_x_alignment }}">
+      <div class="w-full px-[5%]">
         {%- unless section.settings.heading == blank -%}
-          <h3
-            class="text-[1.75rem] heading-emphasis">{{ section.settings.heading }}</h3>
+          <h3 class="text-[1.75rem] heading-emphasis">{{ section.settings.heading }}</h3>
         {%- endunless -%}
-        <div
-          class="ticket-container overflow-hidden">
-          <div
-            class=" tickerBanner flex flex-nowrap">
+        <div class="ticket-container overflow-hidden">
+          <div class=" tickerBanner flex flex-nowrap">
 
             {% for block in section.blocks %}
-              <a
-                href="{{block.settings.url}}"
-                class="w-40 flex-shrink-0 inline-block text-block px-8">
-                <div
-                  class="aspect-[4/5] relative">
+              <a href="{{block.settings.url}}" class="w-40 flex-shrink-0 inline-block text-block px-8">
+                <div class="aspect-[4/5] relative">
                   {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'absolute insert-0 w-full h-full object-contain object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
                 </div>
               </a>
@@ -66,7 +56,7 @@ Globals:
     .style
     .setProperty('--bannerBlockLength', `${bannerBlock}px`);
   document.documentElement.style.setProperty('--bannerBlockTime', `${
-    (bannerBlock / 50)
+    (bannerBlock / 40)
   }s`);
 
 

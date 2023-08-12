@@ -35,9 +35,9 @@ Globals:
               {{ block.settings.image_featured | image_url: width: 700 | image_tag: class: 'w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
               <figcaption class="py-4 text-sm">
                 {{ block.settings.description }}</figcaption>
-
-              <a href="/pages/contact" class="flex items-center justify-between font-wide text-xs uppercase no-underline">
-                <span>Request a catalog</span>
+              {% if block.settings.url %}
+              <a href="{{block.settings.url}}" class="button-with-arrow">
+                <span>  {{block.settings.link_text}} </span>
                 <!-- Arrow up right -->
                 <svg
                   class="h-full ml-2 -mt-1"
@@ -53,7 +53,7 @@ Globals:
                     stroke-linejoin="round" />
                 </svg>
               </a>
-
+          {% endif %}
             </figure>
           {% endfor %}
         </div>
@@ -318,7 +318,18 @@ window.addEventListener("resize", topCheck);
             "id": "description",
             "type": "richtext",
             "label": "description"
+          },
+          {
+            "id": "url",
+            "type": "url",
+            "label": "link url"
+          },
+          {
+            "id": "link_text",
+            "type": "text",
+            "label": "link text"
           }
+          
         ]
       }
     ],

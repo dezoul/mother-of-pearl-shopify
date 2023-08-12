@@ -2461,6 +2461,10 @@ img:after {
   --tw-text-opacity: 1;
   color: rgb(252 250 246 / var(--tw-text-opacity));
 }
+.text-\[\#f3ebdb\] {
+  --tw-text-opacity: 1;
+  color: rgb(243 235 219 / var(--tw-text-opacity));
+}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));

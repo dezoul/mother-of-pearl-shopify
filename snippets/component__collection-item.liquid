@@ -36,7 +36,7 @@ Globals:
     </h3>
     {% if section.settings.enable_collection_size_count %}
       <div class="flex items-center 
-                                                                                        {{ settings.thumbnail_alignment }}">
+                                                                                                            {{ settings.thumbnail_alignment }}">
         <span class="type--small !leading-tight">
           {{ collection.products_count }} {{ 'collections.general.collection_items' | t }}
         </span>
@@ -53,9 +53,14 @@ Globals:
           {% else %}
             {% capture image_class %}w-full h-full object-contain {{ settings.thumbmails_color_scheme }}{% endcapture %}
           {% endif %}
+          <div class="flex justify-between flex-col  hover:opacity-100 relative block h-full p-4 bg-contain bg-center bg-contain bg-no-repeat min-h-[12vw] bg-[#f8f3ea]" style="background-image: url({{ collection.featured_image 
+                                  | image_url: width: 900 }}); background-blend-mode: multiply; background-origin: content-box;"></div>
+          {% comment %}
           {{ collection.featured_image 
-           | image_url: width: 900
-           | image_tag: class: image_class, loading: 'lazy', alt: collection.featured_image.alt }}
+          | image_url: width: 900
+          | image_tag: class: image_class, loading: 'lazy', alt: collection.featured_image.alt }}
+
+          {% endcomment %}
         {%- endunless -%}
       </div>
     </div>

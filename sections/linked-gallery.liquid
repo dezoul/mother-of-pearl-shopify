@@ -40,7 +40,7 @@ Globals:
 
         {%- unless section.settings.button_url == blank -%}
           <div class="flex gap-2 justify-end " style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
-            <a href="{{ section.settings.button_url }}" class="flex justify-end no-underline items-center">
+            <a href="{{ section.settings.button_url }}" class="button-with-arrow">
               <span class="leading-none text-[1.25rem] font-bold">
                 {{ section.settings.button_label }}
               </span>
