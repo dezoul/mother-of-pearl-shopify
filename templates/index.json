@@ -25,7 +25,7 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-0": {
           "type": "heading",
           "settings": {
-            "content": "Architectural Hardware, Kitchen & Jounery."
+            "content": "Architectural Hardware, Kitchen & Joinery."
           }
         },
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-1": {
@@ -55,7 +55,7 @@
 
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-LOCKWOOD-02.jpg",
         "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
@@ -75,37 +75,37 @@
         "885b984c-02a9-48fe-9179-f19302f76661": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-03_1238b4ab-9e7f-462a-951b-1cc7a0fafb70.png"
           }
         },
         "416cad5c-e43c-468e-b8ab-477c6deaa304": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-IVANA-04_281a669d-c9b9-4615-8a1f-cdfcb4b9ed23.jpg"
           }
         },
         "871e2efc-5bc6-4153-821f-1e85437e124e": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-05.jpg"
           }
         },
         "101913ea-9f39-4a12-a265-f1c7e742e80f": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-08_1ea6d036-2756-4180-ba68-665523488b8e.jpg"
           }
         },
         "ddb4bace-0725-4749-8222-b2a4537c8d1d": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-DD-06.jpg"
           }
         },
         "c59b8a55-d0d8-4598-b777-9faa26054cb6": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png"
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-04.jpg"
           }
         }
       },
@@ -189,15 +189,15 @@
           "type": "images",
           "settings": {
             "heading": "ENTRANCE DOOR HARDWARE",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
+            "url": "shopify:\/\/collections\/entrance-door-hardware-1"
           }
         },
         "d9093ab7-8250-4b87-a503-8ef275d8e470": {
           "type": "images",
           "settings": {
             "heading": "LEVER HANDLE SETS",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
             "url": ""
           }
         },
@@ -205,8 +205,8 @@
           "type": "images",
           "settings": {
             "heading": "ACCESSORIES",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
+            "url": "shopify:\/\/collections\/other-hardware"
           }
         }
       },
@@ -263,7 +263,7 @@
         "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
         "minHeight": 50,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-secondary color__secondary",
@@ -367,7 +367,7 @@
         "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/marbleKitchen.png",
+        "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
         "minHeight": 11,
         "paddingTop": 2,
         "paddingBottom": 2,
