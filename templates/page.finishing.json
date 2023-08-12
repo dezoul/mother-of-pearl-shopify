@@ -48,7 +48,7 @@
         "paddingTop": 1,
         "paddingBottom": 2,
         "enable_lazy_loading": false,
-        "color_scheme": "color__bg-secondary color__secondary",
+        "color_scheme": "color__bg-tertiary color__tertiary",
         "color_text": "",
         "color_border": "color__border-divider-1",
         "style_border": "border--b-width",
@@ -58,10 +58,28 @@
         "layout_x_alignment": "justify-start",
         "visibility": ""
       }
+    },
+    "33f2ad72-92d2-4672-a2a0-5e406220dce0": {
+      "type": "about_1",
+      "settings": {
+        "heading": "Caring for your Brass & Bronze Hardware",
+        "content": "<p>At Mother of Pearl, we pride ourselves on offering hardware primarily made from brass or bronze - materials celebrated for their inherent quality and durability. <\/p><p>These are not only resilient by nature but also possess an ageless beauty that matures with time, adding character and richness to spaces. They won't rust or deteriorate and are built to last for many generations.<\/p><p><br\/>To maintain the lustrous sheen and pristine condition of your brass or bronze hardware, it's advisable to clean it periodically. Use a soft cloth dampened with a mild water-detergent solution, taking care to gently wipe away any smudges or fingerprints. After cleaning, a thorough drying with a soft cloth will ensure a consistently brilliant shine.<br\/><\/p><p>If you have chosen hardware from our collection that isn't crafted from brass or bronze, it's essential to be attuned to its specific care requirements, as materials like steel have different upkeep protocols. We advise you to refer to the care instructions provided at the time of purchase. Alternatively, our dedicated team is always available to offer personalized advice and recommendations to ensure your hardware remains impeccable for years to come.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
     }
   },
   "order": [
     "main",
-    "98a304d7-9495-4c7c-b02d-434ef01d290e"
+    "98a304d7-9495-4c7c-b02d-434ef01d290e",
+    "33f2ad72-92d2-4672-a2a0-5e406220dce0"
   ]
 }
