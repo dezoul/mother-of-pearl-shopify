@@ -190,6 +190,13 @@
             "image_featured": "shopify:\/\/shop_images\/jacksons-locks.png",
             "url": "shopify:\/\/pages\/brand-jacksons-locks"
           }
+        },
+        "ad0cce8d-e7df-40ca-b292-89665469bdae": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/finesse.png",
+            "url": "shopify:\/\/pages\/brand-finesse"
+          }
         }
       },
       "block_order": [
@@ -200,7 +207,8 @@
         "f8333066-0ca8-4c5f-b08d-997fcef8f6e8",
         "1426b1d0-401c-47bb-a393-40fee89aacc0",
         "0fbd3914-9a51-446a-8445-0677a7529535",
-        "178c2f25-3f61-4173-8d54-769b7a8123de"
+        "178c2f25-3f61-4173-8d54-769b7a8123de",
+        "ad0cce8d-e7df-40ca-b292-89665469bdae"
       ],
       "settings": {
         "heading": "BRANDS WE STOCK",
