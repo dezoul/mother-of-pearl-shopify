@@ -138,29 +138,36 @@
         "8d81d074-3400-42f9-b9ef-a6112f003017": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/Tasman_Forge.jpg",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/sun-valley-bronze.png",
+            "url": "shopify:\/\/pages\/brand-sun-valley-bronze"
           }
         },
         "49caaf98-241b-429c-923a-fe1c519d86cb": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/Finesse.jpg",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/chant.png",
+            "url": "shopify:\/\/pages\/brand-chant"
           }
         },
         "415affe9-e7ec-469f-8804-072dba61ac19": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/B_M_Hardware.jpg",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/bisschop.png",
+            "url": "shopify:\/\/pages\/brand-p-bisschop"
           }
         },
         "78ba0da2-e522-45a8-ae6d-739a98136b56": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/Lockwood_Assa_Abloy.jpg",
-            "url": ""
+            "image_featured": "shopify:\/\/shop_images\/tasman-forge.png",
+            "url": "shopify:\/\/pages\/brand-tasman-forge"
+          }
+        },
+        "f8333066-0ca8-4c5f-b08d-997fcef8f6e8": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/barben.png",
+            "url": "shopify:\/\/pages\/brand-barben"
           }
         }
       },
@@ -168,7 +175,8 @@
         "8d81d074-3400-42f9-b9ef-a6112f003017",
         "49caaf98-241b-429c-923a-fe1c519d86cb",
         "415affe9-e7ec-469f-8804-072dba61ac19",
-        "78ba0da2-e522-45a8-ae6d-739a98136b56"
+        "78ba0da2-e522-45a8-ae6d-739a98136b56",
+        "f8333066-0ca8-4c5f-b08d-997fcef8f6e8"
       ],
       "settings": {
         "heading": "BRANDS WE STOCK",
