@@ -169,6 +169,27 @@
             "image_featured": "shopify:\/\/shop_images\/barben.png",
             "url": "shopify:\/\/pages\/brand-barben"
           }
+        },
+        "1426b1d0-401c-47bb-a393-40fee89aacc0": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/domino.png",
+            "url": "shopify:\/\/pages\/brand-domino-brass"
+          }
+        },
+        "0fbd3914-9a51-446a-8445-0677a7529535": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/fersa.png",
+            "url": "shopify:\/\/pages\/brand-fersa"
+          }
+        },
+        "178c2f25-3f61-4173-8d54-769b7a8123de": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/jacksons-locks.png",
+            "url": "shopify:\/\/pages\/brand-jacksons-locks"
+          }
         }
       },
       "block_order": [
@@ -176,7 +197,10 @@
         "49caaf98-241b-429c-923a-fe1c519d86cb",
         "415affe9-e7ec-469f-8804-072dba61ac19",
         "78ba0da2-e522-45a8-ae6d-739a98136b56",
-        "f8333066-0ca8-4c5f-b08d-997fcef8f6e8"
+        "f8333066-0ca8-4c5f-b08d-997fcef8f6e8",
+        "1426b1d0-401c-47bb-a393-40fee89aacc0",
+        "0fbd3914-9a51-446a-8445-0677a7529535",
+        "178c2f25-3f61-4173-8d54-769b7a8123de"
       ],
       "settings": {
         "heading": "BRANDS WE STOCK",
