@@ -197,6 +197,20 @@
             "image_featured": "shopify:\/\/shop_images\/finesse.png",
             "url": "shopify:\/\/pages\/brand-finesse"
           }
+        },
+        "a553a290-3303-4cbf-b4fe-49c2e950e003": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/brionne.png",
+            "url": "shopify:\/\/pages\/brand-brionne"
+          }
+        },
+        "2763c422-c349-4e99-b916-3bf8b0054ea4": {
+          "type": "images",
+          "settings": {
+            "image_featured": "shopify:\/\/shop_images\/lockwood.png",
+            "url": "shopify:\/\/pages\/brand-lockwood-australia"
+          }
         }
       },
       "block_order": [
@@ -208,7 +222,9 @@
         "1426b1d0-401c-47bb-a393-40fee89aacc0",
         "0fbd3914-9a51-446a-8445-0677a7529535",
         "178c2f25-3f61-4173-8d54-769b7a8123de",
-        "ad0cce8d-e7df-40ca-b292-89665469bdae"
+        "ad0cce8d-e7df-40ca-b292-89665469bdae",
+        "a553a290-3303-4cbf-b4fe-49c2e950e003",
+        "2763c422-c349-4e99-b916-3bf8b0054ea4"
       ],
       "settings": {
         "heading": "BRANDS WE STOCK",
