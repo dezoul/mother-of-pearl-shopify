@@ -230,7 +230,7 @@
         "heading": "BRANDS WE STOCK",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
+        "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
