@@ -22,7 +22,7 @@
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets <br\/>incredible value.<\/p>"
+            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>"
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
@@ -254,8 +254,8 @@
     "971ea3e3-d203-491a-bf28-8348e7b6453b": {
       "type": "text-brand",
       "settings": {
-        "heading": "Sun Valley Bronze's hand-crafted hardware is an architect's dream. Their products blend aesthetics with enduring quality, infusing every design with rustic elegance. As they age, they gain even more character - a feature my clients adore. For superior architectural hardware, I consistently turn to Sun Valley Bronze.",
-        "content": "<p>-- David Reynolds, Architect<\/p>",
+        "heading": "The products in this collection are the result of years of refinement, and decades of experience. We're excited to bring the designers & architects we work with an option that's extraordinary quality at unparalled value.",
+        "content": "<p>-- Carl, Founder of Mother of Pearl<\/p>",
         "button_label": "Button",
         "button_url": "",
         "spacing_top": 100,
@@ -284,6 +284,7 @@
       "block_order": [
         "837008a5-2003-4d41-a761-eb28dd97b060"
       ],
+      "disabled": true,
       "settings": {
         "heading": "{{ page.title }}  gallery",
         "content": "<p>Describe a product, make announcements, or inform customers about a promotion.<\/p>",
