@@ -48,6 +48,7 @@
     "enable_quick_image": false,
     "product_variant_selection": "dropdowns",
     "product_color_selection": "swatches",
+    "show_product_button_prices": false,
     "cart_behavior": "drawer",
     "cart_icon_behavior": "open_cart_drawer",
     "pagination_type": "load",

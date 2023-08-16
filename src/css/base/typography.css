@@ -233,4 +233,5 @@ nav a:hover {
 
   .product-options select {
     max-width: 50%;
+    padding: .5rem;
   }

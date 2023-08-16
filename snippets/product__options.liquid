@@ -52,7 +52,7 @@ Possible enhancements:
       <div class="flex items-center gap-2 justify-between mb-2">
 
         {% comment %} option label {% endcomment %}
-        <label class="type--smaller flex opacity-75 max-w-1/2 grow-0" for="{{ product.id }}-{{ product_option.name | handle | remove: '-' }}">
+        <label class="type--smaller flex max-w-1/2 grow-0" for="{{ product.id }}-{{ product_option.name | handle | remove: '-' }}">
           {{ product_option.name }}
           {% comment %}
           extra label text for drop down  
@@ -79,7 +79,7 @@ Possible enhancements:
 
                 <div x-data="{ drawer: false }">
                   <button
-                    class="type--smaller flex underline opacity-75"
+                    class="type--smaller flex underline"
                     type="button"
                     @click="drawer = true; hide_header = true;">
                     {{ block.settings.title }}
@@ -112,16 +112,15 @@ Possible enhancements:
               {% endif %}
             {%- endcase -%}
           {% endfor %}
-        </div>
 
-
+          </div>
 
         {%- assign color = 'general.color.color' | t -%}
         {%- assign colorDowncase = color | downcase -%}
 
         {%- if product_option.name == color or product_option.name == colorDowncase or product_option.name == "Colour" or product_option.name == "colour" -%}
           {% if settings.product_color_selection == 'swatches' %}
-            <div class="flex flex-wrap w-full gap-2 {% if forloop.index == forloop.length %}mb-0{% else %}mb-4{% endif %}">
+            <div class="flex flex-wrap w-full gap-2 mb-4">
               {% for value in product_option.values %}
                 {% if settings.enable_unavailable_options %}
                   {%- liquid
@@ -158,7 +157,7 @@ Possible enhancements:
               {% endfor %}
             </div>
           {% elsif settings.product_color_selection == 'buttons' %}
-            <div class="flex flex-wrap w-full gap-2 {% if forloop.index == forloop.length %}mb-0{% else %}mb-4{% endif %}">
+            <div class="flex flex-wrap w-full gap-2 mb-4">
               {% for value in product_option.values %}
                 {% if settings.enable_unavailable_options %}
                   {%- liquid
@@ -194,7 +193,7 @@ Possible enhancements:
           {% else %}
             <select
               @change="handleForm()"
-              class="{% if forloop.index == forloop.length %}mb-0{% else %}mb-4{% endif %}"
+              class="mb-4"
               :class="{ '!border-rose-500': choosing }"
               id="{{ product.id }}-{{ product_option.name | handle | remove: '-' }}"
               x-model="{{ product_option.name | handle | remove: '-' }}">
@@ -238,7 +237,7 @@ Possible enhancements:
           {% if settings.product_variant_selection == 'dropdowns' %}
             <select
               @change="handleForm()"
-              class="{% if forloop.index == forloop.length %}mb-0{% else %}mb-4{% endif %}"
+              class="mb-4"
               :class="{ '!border-rose-500': choosing }"
               id="{{ product.id }}-{{ product_option.name | handle | remove: '-' }}"
               x-model="{{ product_option.name | handle | remove: '-' }}">
@@ -277,7 +276,7 @@ Possible enhancements:
               {% endfor %}
             </select>
           {% else %}
-            <div class="flex flex-wrap w-full gap-2 {% if forloop.index == forloop.length %}mb-0{% else %}mb-4{% endif %}">
+            <div class="flex flex-wrap w-full gap-2 mb-4">
               {% for value in product_option.values %}
                 {% if settings.enable_unavailable_options %}
                   {%- liquid
@@ -314,6 +313,7 @@ Possible enhancements:
         {% endif %}
 
       </div>
+      </div>
     {% endfor %}
 
     <select
@@ -330,31 +330,31 @@ Possible enhancements:
       {% endfor %}
     </select>
 
-  </div>
-  {% comment %}
+            {% comment %}
 
-  <div
-  class="flex flex-wrap px-4 no-js--block
-  {% if product.has_only_default_variant %}hidden{% endif %}">
-  <div
-  class="w-full">
-  <label class="type--smaller flex mb-1 opacity-75" for="Variants-{{ section.id }}">
-  {{ 'products.general.sold_out' | t }}
-  </label>
-  <select id="Variants-{{ section.id }}"class="w-full"name="id"x-model="defaultVariantId">
-  {%- for variant in product.variants -%}
-  <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}{% if variant.available == false %}disabled{% endif %}>
-  {{ variant.title }}
-  {%- if variant.available == false %}
-  - {{ 'products.general.sold_out' | t }}{% endif %}
-  - {{ variant.price | money | strip_html }}
-  </option>
-  {%- endfor -%}
-  </select>
-  </div>
-  </div>
-  {% endcomment %}{%- comment -%}selling plan{%- endcomment -%}
-  {% if product.selected_or_first_available_selling_plan_allocation %}
+            <div
+            class="flex flex-wrap px-4 no-js--block
+            {% if product.has_only_default_variant %}hidden{% endif %}">
+            <div
+            class="w-full">
+            <label class="type--smaller flex mb-1 opacity-75" for="Variants-{{ section.id }}">
+            {{ 'products.general.sold_out' | t }}
+            </label>
+            <select id="Variants-{{ section.id }}"class="w-full"name="id"x-model="defaultVariantId">
+            {%- for variant in product.variants -%}
+            <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}{% if variant.available == false %}disabled{% endif %}>
+            {{ variant.title }}
+            {%- if variant.available == false %}
+            - {{ 'products.general.sold_out' | t }}{% endif %}
+            - {{ variant.price | money | strip_html }}
+            </option>
+            {%- endfor -%}
+            </select>
+            </div>
+            </div>
+            {% endcomment %}
+            {%- comment -%}selling plan{%- endcomment -%}
+      {% if product.selected_or_first_available_selling_plan_allocation %}
     <div
       class="no-js--hide w-full px-4
       {% unless product.has_only_default_variant %}mt-4{% endunless %}"
@@ -378,6 +378,7 @@ Possible enhancements:
                 {{ product.price_min | money }}
               </span>
             </label>
+          </div>
           </div>
         {% endunless %}
 
@@ -442,7 +443,7 @@ Possible enhancements:
               </span>
               <span class="flex flex-col items-end text-right">
                 {{ selling_plan_price_min | money }}
-                <span class="type--smaller flex opacity-75">
+                <span class="type--smaller flex">
                   {{ 'products.general.each' | t }}
                 </span>
               </span>
@@ -471,7 +472,7 @@ Possible enhancements:
                         {% if allocation.selling_plan.id == selling_plan.id %}
                           <span class="flex flex-col items-end text-right">
                             {{ allocation.per_delivery_price | money }}
-                            <span class="type--smaller flex opacity-75">
+                            <span class="type--smaller flex">
                               {{ 'products.general.each' | t }}
                             </span>
                           </span>
@@ -501,11 +502,12 @@ Possible enhancements:
         </div>
       </div>
 
-    </div>
 
+    </div>
+    </div>
     <div class="no-js--block flex flex-wrap hidden px-4">
       <div class="w-full">
-        <label class="type--smaller flex mb-1 opacity-75" for="Variants-{{ section.id }}">
+        <label class="type--smaller flex mb-1" for="Variants-{{ section.id }}">
           {{ 'products.general.purchase_options' | t }}
         </label>
         <select name="selling_plan" x-model="defaultSellingPlanId">
@@ -523,4 +525,5 @@ Possible enhancements:
     </div>
   {% endif %}
 </div>
+
 <style></style>

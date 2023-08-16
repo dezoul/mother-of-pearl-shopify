@@ -48,15 +48,15 @@ Pro tips:
         x-show="defaultVariantComparePrice > defaultVariantPrice"
         x-cloak>{{ product.compare_at_price_max | money }}</s>
     </span>
-
-    {{ product.variantBySelectedOptions }}
-    {{ product.variantBySelectedOptions.currentlyNotInStock }}
-    {% if product.variantBySelectedOptions.availableForSale == true %}
-      availableForSale
+    {% comment %}
+    <span class="text-sm ml-4">
+    {% if product.selected_variant.available == true %}
+    In stock
     {% else %}
-      unavailable
+    Out of stock
     {% endif %}
-  </span>
+    </span>
+    {% endcomment %}</span>
 
   {%- comment -%}unit price{%- endcomment -%}
   <span

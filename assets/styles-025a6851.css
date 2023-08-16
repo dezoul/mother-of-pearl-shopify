@@ -3536,6 +3536,7 @@ body select:focus {
   }
 .product-options select {
     max-width: 50%;
+    padding: .5rem;
   }
 /* FORMS */
 /* - apply base styles to set form inputs */
@@ -4038,6 +4039,9 @@ html {
   .md\:\!w-auto {
     width: auto !important;
   }
+  .md\:w-1 {
+    width: 0.25rem;
+  }
   .md\:w-1\/12 {
     width: 8.333333%;
   }
@@ -4055,9 +4059,6 @@ html {
   }
   .md\:w-11\/12 {
     width: 91.666667%;
-  }
-  .md\:w-2 {
-    width: 0.5rem;
   }
   .md\:w-2\/12 {
     width: 16.666667%;
@@ -4182,6 +4183,10 @@ html {
   }
   .md\:border-t-0 {
     border-top-width: 0px;
+  }
+  .md\:\!px-20 {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
   .md\:\!px-4 {
     padding-left: 1rem !important;

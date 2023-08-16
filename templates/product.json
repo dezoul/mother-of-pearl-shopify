@@ -47,10 +47,21 @@
         },
         "123fd04c-91f3-4248-a65a-614e2f64fdeb": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "color_scheme": "color__bg-secondary color__secondary",
             "style_border": "",
             "enable_open": true
+          }
+        },
+        "ef434a68-5c85-48d5-91a3-248bb49c30e2": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "{{product.description}}",
+            "spacing_top": 10,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": ""
           }
         },
         "b78b560b-e1c2-428d-ad73-fb5f8aac6d58": {
@@ -66,7 +77,7 @@
           "type": "add",
           "settings": {
             "content": "",
-            "spacing_top": 20,
+            "spacing_top": 0,
             "spacing_bottom": 0,
             "color_scheme": "color__bg-secondary color__secondary",
             "style_border": "",
@@ -109,6 +120,7 @@
         },
         "848f5aea-f7ad-4974-a5fb-020776e3e523": {
           "type": "stickyadd",
+          "disabled": true,
           "settings": {
             "content": "<p>Remind customers of offers like free shipping and lifetime warranties.<\/p>",
             "color_scheme": "color__bg-overlay-1 color__text",
@@ -122,6 +134,7 @@
         "853ae7f0-85c9-45dc-8326-6e4044bcf5e5",
         "62c29cd6-a0b5-4f8b-86c0-a48660869d22",
         "123fd04c-91f3-4248-a65a-614e2f64fdeb",
+        "ef434a68-5c85-48d5-91a3-248bb49c30e2",
         "b78b560b-e1c2-428d-ad73-fb5f8aac6d58",
         "b78b560b-e1c2-428d-ad73-fb5f8aac6d53",
         "9f1692ea-ccb9-4e4c-9c83-7a6ae53392aa",
@@ -134,7 +147,7 @@
         "spacing_top": 40,
         "spacing_bottom": 40,
         "media_gallery_style": "thumbnail-slider",
-        "image_border": "color__border-divider-1",
+        "image_border": "!color__border-transparent",
         "enable_zoom": false,
         "enable_alt": false,
         "enable_variant_images": false,
@@ -145,7 +158,7 @@
         "show_product_badges": true,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "!color__border-transparent",
-        "layout_gallery_size": "w-full md:w-2\/3"
+        "layout_gallery_size": "w-full md:w-1\/2"
       }
     },
     "1db72d45-edc2-4507-a1d8-710c5fdc2f0b": {

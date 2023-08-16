@@ -37,7 +37,7 @@ Possible enhancements:
       </label>
       <div class="max-w-[50%] grow-0 !bg-[#f8f4eb] relative flex w-full overflow-hidden" x-data="{  button_loading: false }">
         <button
-          class="p-4 shrink-0 !rounded-none !bg-[#f8f4eb] text-red"
+          class="px-4 py-2 shrink-0 !rounded-none !bg-[#f8f4eb] text-red"
           title="{{ 'cart.general.decrease' | t }}"
           :disabled="button_loading"
           @click="  quantity--;  handleForm();   button_loading = true;  setTimeout(function(){ button_loading = false}, 500);">
@@ -48,14 +48,14 @@ Possible enhancements:
           {% render 'component__icon', icon: 'spinner', size: '16', class: '' %}
         </div>
         <button
-          class="p-4 shrink-0 !rounded-none !bg-[#f8f4eb] font-"
+          class="px-4 py-2 shrink-0 !rounded-none !bg-[#f8f4eb] font-"
           title="{{ 'cart.general.increase' | t }}"
           :disabled="button_loading"
           @click="
-                                                                                                                                                                                                                                                quantity++; 
-                                                                                                                                                                                                                                                handleForm();
-                                                                                                                                                                                                                                                button_loading = true; 
-                                                                                                                                                                                                                                                setTimeout(function(){ button_loading = false}, 500);">
+                                                                                                                                                                                                                                                                                                                        quantity++; 
+                                                                                                                                                                                                                                                                                                                        handleForm();
+                                                                                                                                                                                                                                                                                                                        button_loading = true; 
+                                                                                                                                                                                                                                                                                                                        setTimeout(function(){ button_loading = false}, 500);">
           {% render 'component__icon', icon: 'plus', size: '14', class: '' %}
         </button>
       </div>
@@ -80,7 +80,7 @@ Possible enhancements:
 
   <div class="flex-grow">
     <button
-      class="btn btn--load btn--plain"
+      class="btn btn--load btn--plain md:!px-20"
       :class="{ 'btn--loading' : cart_loading && button_loading }"
       type="button"
       role="button"
@@ -94,7 +94,7 @@ Possible enhancements:
       </div>
     </button>
     <button
-      class="btn btn--load btn--plain"
+      class="btn btn--load btn--plain  md:!px-20"
       :class="{ 'btn--loading' : cart_loading && button_loading }"
       type="button"
       role="button"
@@ -107,7 +107,7 @@ Possible enhancements:
       </div>
     </button>
     <button
-      class="btn btn--load btn--plain"
+      class="btn btn--load btn--plain  md:!px-20"
       :class="{ 'btn--loading' : cart_loading && button_loading }"
       type="button"
       role="button"
@@ -120,16 +120,12 @@ Possible enhancements:
       </div>
     </button>
     <button
-      class="btn btn--load"
+      class="btn btn--load  md:!px-20"
       type="submit"
       role="button"
       :class="{ 'btn--loading' : cart_loading && button_loading }"
       :disabled="button_loading || incomplete_fields"
-      @click.prevent="
-                                                                                                                                                                addCartItem(defaultVariantId, defaultSellingPlanId, quantity, true, {{ product.gift_card? }},'{{ product.handle }}'); 
-                                                                                                                                                                button_loading = true; 
-                                                                                                                                                                option_popup = false; 
-                                                                                                                                                                setTimeout(function(){ button_loading = false}, 500);"
+      @click.prevent="addCartItem(defaultVariantId, defaultSellingPlanId, quantity, true, {{ product.gift_card? }},'{{ product.handle }}'); button_loading = true;  option_popup = false;  setTimeout(function(){ button_loading = false}, 500);"
       x-show="!buttonDisabled && defaultVariantExists && defaultAvailable">
       <div class="btn__content">
         {% if product.metafields.custom.button_text %}
