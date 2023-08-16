@@ -146,10 +146,16 @@
     font-family: 'roc-grotesk-wide', 'sans-serif';
     text-transform: uppercase;
   }
+  .product-options label, .quantity-text{
+    @apply font-wide;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
   
   .heading-emphasis{
     @apply italic uppercase
   }
+
 
   .button {
     @apply inline-block bg-[#20242b] uppercase font-wide text-[#fdfbf8] hover:bg-[#363c49] px-8 py-4 transition-colors leading-none;
@@ -214,3 +220,17 @@ nav a:hover {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+
+
+  body select {
+    background-color: #f8f4eb;
+    border-width: 0;
+  }
+
+  body select:focus {
+    background-color: #f8f4eb;
+  }
+
+  .product-options select {
+    max-width: 50%;
+  }

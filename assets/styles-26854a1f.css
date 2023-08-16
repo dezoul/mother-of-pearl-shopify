@@ -775,6 +775,12 @@ ol {
     font-family: 'roc-grotesk-wide', 'sans-serif';
     text-transform: uppercase;
   }
+.product-options label, .quantity-text{
+    font-family: 'roc-grotesk-wide', 'sans-serif';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
 .heading-emphasis {
   text-transform: uppercase;
   font-style: italic;
@@ -1256,6 +1262,9 @@ img:after {
 }
 .z-\[1\] {
   z-index: 1;
+}
+.order-3 {
+  order: 3;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -2126,6 +2135,10 @@ img:after {
 .\!border-rose-500 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(244 63 94 / var(--tw-border-opacity)) !important;
+}
+.\!bg-\[\#f8f4eb\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(248 244 235 / var(--tw-bg-opacity)) !important;
 }
 .\!bg-transparent {
   background-color: transparent !important;
@@ -3514,6 +3527,16 @@ nav a:hover {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
+body select {
+    background-color: #f8f4eb;
+    border-width: 0;
+  }
+body select:focus {
+    background-color: #f8f4eb;
+  }
+.product-options select {
+    max-width: 50%;
+  }
 /* FORMS */
 /* - apply base styles to set form inputs */
 /* ======= */
@@ -3909,6 +3932,9 @@ html {
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
+  }
+  .md\:sticky {
+    position: sticky;
   }
   .md\:bottom-auto {
     bottom: auto;

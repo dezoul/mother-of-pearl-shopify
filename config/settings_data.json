@@ -46,7 +46,7 @@
     "enable_quick_mobile": true,
     "enable_quick_desktop": true,
     "enable_quick_image": false,
-    "product_variant_selection": "buttons",
+    "product_variant_selection": "dropdowns",
     "product_color_selection": "swatches",
     "cart_behavior": "drawer",
     "cart_icon_behavior": "open_cart_drawer",
