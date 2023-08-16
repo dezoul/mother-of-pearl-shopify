@@ -2228,6 +2228,10 @@ img:after {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
@@ -3537,6 +3541,10 @@ body select:focus {
 .product-options select {
     max-width: 50%;
     padding: .5rem;
+  }
+.image-mixer-parent img {
+    background-color:#f8f3ea;
+    mix-blend-mode: multiply;
   }
 /* FORMS */
 /* - apply base styles to set form inputs */

@@ -235,3 +235,8 @@ nav a:hover {
     max-width: 50%;
     padding: .5rem;
   }
+
+  .image-mixer-parent img {
+    background-color:#f8f3ea;
+    mix-blend-mode: multiply;
+  }
