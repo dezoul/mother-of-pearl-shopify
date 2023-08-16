@@ -25,30 +25,34 @@ Possible enhancements:
     style="  margin-top: {{ settings.layout_gap_size }}px;  margin-bottom: {{ settings.layout_gap_size }}px;">
 
     {% comment %} thumbnails {% endcomment %}
-    <div
-      class="hidden md:flex basis-[10%] max-h-[500px] overflow-x-hidden overflow-y-auto order-3 px-[10px]"
-      style=" gap: {{ settings.layout_gap_size }}px;"
-      x-ref="thumbnail_slider">
-      {% for media in product.media %}
-        <div class="relative md:snap-center hover:cursor-pointer w-full opacity-50 border--width border--radius overflow-hidden animation-300  {{ media | handle }}":class="{ '!opacity-100 color__border-selected-1': gallery_index === {{ forloop.index0 }} }"{% if section.settings.enable_variant_images %}x-show="'{{ media.alt | handle }}'.includes(variantHandle)"x-cloak{% endif %}
-          x-bind:data-slide="{{ forloop.index0 }}"
-          @click="gallery_index_scroll = {{ forloop.index0 }}; scrollToIndex(gallery_index_scroll);">
+    {% if product.media.size > 1 %}
 
-          {% comment %}
-          <div
-          class="bg-[#f8f3ea] bg-contain bg-center bg-no-repeat"
-          style="background-image: url('{{media | image_url: width: 192}}');background-blend-mode: multiply;"></div>
-          {% endcomment %}
-          <div
-            class="overflow-hidden object-cover aspect-[1/1] aspect-w-1 aspect-h-1 w-full">
-            {% capture image_class %}w-full h-full object-cover !bg-transparent {{ settings.thumbmails_color_scheme }}{% endcapture %}
-            {{ media 
-             | image_url: width: 192, height: 192
-             | image_tag: class: image_class, loading: 'lazy', alt: media.alt, style: 'mix-blend-mode: multiply;' }}
+      <div
+        class="hidden md:flex basis-[10%] max-h-[500px] overflow-x-hidden overflow-y-auto order-3 px-[10px]"
+        style=" gap: {{ settings.layout_gap_size }}px;"
+        x-ref="thumbnail_slider">
+        {% for media in product.media %}
+          <div class="relative md:snap-center hover:cursor-pointer w-full opacity-50 border--width border--radius overflow-hidden animation-300  {{ media | handle }}":class="{ '!opacity-100 color__border-selected-1': gallery_index === {{ forloop.index0 }} }"{% if section.settings.enable_variant_images %}x-show="'{{ media.alt | handle }}'.includes(variantHandle)"x-cloak{% endif %}
+            x-bind:data-slide="{{ forloop.index0 }}"
+            @click="gallery_index_scroll = {{ forloop.index0 }}; scrollToIndex(gallery_index_scroll);">
+
+            {% comment %}
+            <div
+            class="bg-[#f8f3ea] bg-contain bg-center bg-no-repeat"
+            style="background-image: url('{{media | image_url: width: 192}}');background-blend-mode: multiply;"></div>
+            {% endcomment %}
+            <div
+              class="overflow-hidden object-cover aspect-[1/1] aspect-w-1 aspect-h-1 w-full">
+              {% capture image_class %}w-full h-full object-cover !bg-transparent {{ settings.thumbmails_color_scheme }}{% endcapture %}
+              {{ media 
+               | image_url: width: 192, height: 192
+               | image_tag: class: image_class, loading: 'lazy', alt: media.alt, style: 'mix-blend-mode: multiply;' }}
+            </div>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
+
+    {% endif %}
 
     {% comment %} main images {% endcomment %}
     <div class="relative flex w-full md:basis-[90%]">
@@ -142,7 +146,7 @@ Possible enhancements:
       <div
         class="whitespace-nowrap md:snap-x hidescrollbar padding--l-gap padding--r-gap md:px-0 md:margin--r-gap md:margin--l-gap inline-flex w-full overflow-x-auto overflow-y-hidden text-center mb-6"
         style="
-                                                                                                                                                                                                                                                                                                            gap: {{ settings.layout_gap_size }}px;"
+                                                                                                                                                                                                                                                                                                                                                                                                                gap: {{ settings.layout_gap_size }}px;"
         x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600)"
         x-ref="slider">
 
@@ -177,8 +181,8 @@ Possible enhancements:
             {% when 'external_video' %}
             <div
               class="relative md:snap-center flex-none border--width border--radius overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
               x-bind:data-slide="{{ forloop.index0 }}">
               <div
@@ -214,8 +218,8 @@ Possible enhancements:
             {% when 'video' %}
             <div
               class="relative md:snap-center flex-none border--width border--radius overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
               x-bind:data-slide="{{ forloop.index0 }}">
               <div
@@ -244,8 +248,8 @@ Possible enhancements:
             {% when 'model' %}
             <div
               class="relative md:snap-center flex-none border--width border--radius overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.image_border }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                w-full"
               x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
               x-bind:data-slide="{{ forloop.index0 }}"
               data-media-id="{{ media.id }}">
@@ -273,8 +277,8 @@ Possible enhancements:
               </div>
               <div
                 class="overflow-hidden object-contain h-full
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {{ section.settings.media_ratio }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {{ section.settings.media_color_scheme }}">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.media_ratio }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {{ section.settings.media_color_scheme }}">
                 <div
                   class="flex items-center h-full">
                   {{ media | model_viewer_tag: class: 'w-full h-full' }}
@@ -306,11 +310,11 @@ Possible enhancements:
     <div
       class="md:hidden hidescrollbar margin--t-gap padding--l-gap padding--r-gap flex h-full overflow-x-auto"
       style="
-                                                                                                                                                                                                                                                gap: {{ settings.layout_gap_size }}px;">
+                                                                                                                                                                                                                                                                                                                                gap: {{ settings.layout_gap_size }}px;">
       {% for media in product.media %}
         <div
           class="relative md:snap-center flex-none w-16 border--width border--radius overflow-hidden
-                                                                                                                                                                                                                                                                                                                                                                      {{ media | handle }}"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {{ media | handle }}"
           {% if section.settings.enable_variant_images %}x-show="'{{ media.alt | handle }}'.includes(variantHandle)"x-cloak{% endif %}
           x-intersect:enter.half="gallery_index = {{ forloop.index0 }};"
           x-bind:data-slide="{{ forloop.index0 }}"
