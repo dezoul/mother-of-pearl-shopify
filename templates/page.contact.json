@@ -1,11 +1,76 @@
 {
   "sections": {
+    "f91764be-b6c9-4683-a32c-cbc2dadc08d7": {
+      "type": "banner-alternative-brand",
+      "blocks": {
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "VISIT OUR SYDNEY SHOWROOM",
+            "subHeading": "TALK TO aN EXPERT & SEE THE QUALITY OF OUR PRODUCTS FOR YOURSELF."
+          }
+        },
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>We’ve been supplying world class architectural hardware to Australia’s top architects and designers for over 40 years.   In our Sydney showroom you can speak to our experienced team and receive personalised advice for your project and see & feel the impeccible quality of our curated collection of products for yourself. <\/p><p>There's an unmatched confidence that comes from physically engaging with a product before making a decision, and with thousands of products to choose from our expert team can help you source the perfect fit for your project. Head into our showroom and experience the Mother of Pearl difference for yourself. <\/p>"
+          }
+        },
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_url": "\/collections\/all",
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-heading-1",
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-content-1",
+        "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-buttons-1"
+      ],
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/Showroom_Entrance.jpg",
+        "minHeight": 0,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-body color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "border--b-width",
+        "content_width": 40,
+        "image_position": "left",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "b156acd0-6b7b-4637-895b-bebffd628f89": {
+      "type": "about_final",
+      "settings": {
+        "heading": "mother of pearl showroom hours and location",
+        "content": "<p>Find our showroom, upstairs at <\/p><p>Suite 5, 24 – 30 Wellington Street,  Waterloo, NSW <\/p><p>Call us on 02 8332 6999<\/p><p>Open Monday to Friday 9am - 5pm <\/p><p><\/p><p>At our showroom we have a range of products on display from both the Mother of Pearl Signature Range as well as a selection of products form the worlds top brands of architectural hardware. And with 18 different custom brass finishing options to choose from, it makes a world of difference to see it for yourself. <\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
     "main": {
       "type": "page__contact",
       "custom_css": [
         "input[type=\"text\"],input[type=\"password\"],input[type=\"email\"],input[type=\"number\"],input[type=\"url\"],input[type=\"date\"],input[type=\"datetime-local\"],input[type=\"month\"],input[type=\"week\"],input[type=\"time\"],input[type=\"search\"],input[type=\"tel\"],select,select[multiple],textarea {background: none; border: 2px solid;}",
         ".btn {color: #faf7f1; background-color: rgb(60, 60, 60);}",
-        "::placeholder {color: black}"
+        "::placeholder {color: black;}"
       ],
       "settings": {
         "spacing_top": 60,
@@ -15,6 +80,8 @@
     }
   },
   "order": [
+    "f91764be-b6c9-4683-a32c-cbc2dadc08d7",
+    "b156acd0-6b7b-4637-895b-bebffd628f89",
     "main"
   ]
 }
