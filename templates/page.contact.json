@@ -3,13 +3,14 @@
     "main": {
       "type": "page__contact",
       "custom_css": [
-        "input[type=\"text\"],input[type=\"password\"],input[type=\"email\"],input[type=\"number\"],input[type=\"url\"],input[type=\"date\"],input[type=\"datetime-local\"],input[type=\"month\"],input[type=\"week\"],input[type=\"time\"],input[type=\"search\"],input[type=\"tel\"],select,select[multiple],textarea {background: none; border: 2px solid #faf7f1;}",
-        ".btn {background-color: #FAF7F1; color: rgb(60,60,60);}"
+        "input[type=\"text\"],input[type=\"password\"],input[type=\"email\"],input[type=\"number\"],input[type=\"url\"],input[type=\"date\"],input[type=\"datetime-local\"],input[type=\"month\"],input[type=\"week\"],input[type=\"time\"],input[type=\"search\"],input[type=\"tel\"],select,select[multiple],textarea {background: none; border: 2px solid;}",
+        ".btn {color: #faf7f1; background-color: rgb(60, 60, 60);}",
+        "::placeholder {color: black}"
       ],
       "settings": {
         "spacing_top": 60,
         "spacing_bottom": 60,
-        "color_scheme": "color__bg-body color__text"
+        "color_scheme": "color__bg-secondary color__secondary"
       }
     }
   },
