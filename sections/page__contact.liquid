@@ -1,38 +1,37 @@
 <!-- sections/page__contact.liquid -->
 {% comment %} 
-  Form for contact page.
+Form for contact page.
 
-  Globals:
-    - settings.layout_horizontal: horizontaly margin
+Globals:
+- settings.layout_horizontal: horizontaly margin
 
-  Possible enhancements:
-    - Add setting so merchant can add more fields to contact form.
+Possible enhancements:
+- Add setting so merchant can add more fields to contact form.
 
-  Pro tips:
-    - Update email address so form submissions are going to the right inbox.
-{% endcomment %}
-
-
-<section class="{{ section.settings.color_scheme }}" 
+Pro tips:
+- Update email address so form submissions are going to the right inbox.
+{% endcomment %}<section
+  class="{{ section.settings.color_scheme }}"
   style="
-    padding-top:{{ section.settings.spacing_top }}px;
-    padding-bottom:{{ section.settings.spacing_bottom }}px;">
+            padding-top:{{ section.settings.spacing_top }}px;
+            padding-bottom:{{ section.settings.spacing_bottom }}px;"><div
+    class="flex flex-wrap 2
+                {{ settings.layout_horizontal }}
+                {{ settings.layout_alignment }}">
 
-  <div class="flex flex-wrap 2
-    {{ settings.layout_horizontal }}
-    {{ settings.layout_alignment }}">
-
-    <div class="max-w-prose w-full">
+    <div
+      class="max-w-prose w-full mx-auto">
       <h1>
         {{ page.title | escape }}
       </h1>
 
-      <div class="rte mb-4">
+      <div
+        class="rte mb-4">
         {{ page.content }}
       </div>
-     
-      
-       {% form 'contact' %}
+
+
+      {% form 'contact' %}
         {% if form.posted_successfully? %}
           <p>
             {{ 'contact.form.success' | t }}
@@ -40,15 +39,19 @@
         {% endif %}
 
         {% if form.errors %}
-          <div class="color__bg-overlay-1 type--small border--radius p-2 mt-2 mb-4">
+          <div
+            class="color__bg-overlay-1 type--small border--radius p-2 mt-2 mb-4">
             {{ form.errors | default_errors }}
           </div>
         {% endif %}
 
-        <div class="mb-4">
-          <label for="ContactFormName" class="font-wide">{{ 'customer.account.name' | t }}</label>
+        <div
+          class="mb-4">
+          <label
+            for="ContactFormName"
+            class="font-wide">{{ 'customer.account.name' | t }}</label>
           <input
-          type="text"
+            type="text"
             class="form-input"
             name="contact[name]"
             id="ContactFormName"
@@ -56,8 +59,11 @@
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
         </div>
 
-        <div class="mb-4">
-          <label for="ContactFormEmail" class="font-wide">{{ 'contact.form.email' | t }}</label>
+        <div
+          class="mb-4">
+          <label
+            for="ContactFormEmail"
+            class="font-wide">{{ 'contact.form.email' | t }}</label>
           <input
             type="email"
             class="form-input"
@@ -70,106 +76,107 @@
             autocapitalize="off">
         </div>
 
-        <div class="mb-4">
-          <label for="ContactFormMessage" class="font-wide">{{ 'contact.form.message' | t }}</label>
+        <div
+          class="mb-4">
+          <label
+            for="ContactFormMessage"
+            class="font-wide">{{ 'contact.form.message' | t }}</label>
           <textarea
             rows="10"
             class="border--radius"
             name="contact[body]"
             id="ContactFormMessage"
-            placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            placeholder="{{ 'contact.form.message' | t }}">
+            {% if form.body %}
+              {{ form.body }}{% endif %}
+          </textarea>
         </div>
 
-        <button type="submit" class="btn">
+        <button
+          type="submit"
+          class="btn">
           {{ 'contact.form.send' | t }}
         </button>
 
-      {% endform %} 
+      {% endform %}
     </div>
-    
+
   </div>
 </section>
 
 {% schema %}
-{
-  "name":"t:sections.page_contact.name",
-  "settings":[
-    {
-      "type": "header",
-      "content": "t:sections.all.headers.header__22.content"
-    },
-    {
-      "type":"range",
-      "id":"spacing_top",
-      "min":0,
-      "max":300,
-      "step":20,
-      "unit":"px",
-      "label":"t:sections.all.layout.settings.spacing.label_top",
-      "default":60
-    },
-    {
-      "type":"range",
-      "id":"spacing_bottom",
-      "min":0,
-      "max":300,
-      "step":20,
-      "unit":"px",
-      "label":"t:sections.all.layout.settings.spacing.label_bottom",
-      "default":60
-    },
-    {
-      "type":"header",
-      "content":"t:sections.all.headers.header__1.content"
-    },
-    {
-      "type":"select",
-      "id":"color_scheme",
-      "label":"t:sections.all.colors.settings.color_scheme.label",
-      "options":[
-        {
-          "value":"color__bg-body color__text",
-          "label":"t:sections.all.colors.settings.color_scheme.options__1.label"
-        },
-        {
-          "value":"color__bg-neutral color__text",
-          "label":"t:sections.all.colors.settings.color_scheme.options__2.label"
-        },
-        {
-          "value":"color__bg-overlay-1 color__text",
-          "label":"t:sections.all.colors.settings.color_scheme.options__3.label"
-        },
-        {
-          "value":"color__bg-overlay-2 color__text",
-          "label":"t:sections.all.colors.settings.color_scheme.options__4.label"
-        },
-        {
-          "value":"color__bg-overlay-3 color__text",
-          "label":"t:sections.all.colors.settings.color_scheme.options__5.label"
-        },
-        {
-          "value":"color__bg-primary color__primary",
-          "label":"t:sections.all.colors.settings.color_scheme.options__6.label"
-        },
-        {
-          "value":"color__bg-secondary color__secondary",
-          "label":"t:sections.all.colors.settings.color_scheme.options__7.label"
-        },
-        {
-          "value":"color__bg-tertiary color__tertiary",
-          "label":"t:sections.all.colors.settings.color_scheme.options__8.label"
-        }
-      ],
-      "default":"color__bg-body color__text"
-    }
-  ],
-  "presets":[
-    {
-      "name":"t:sections.page_contact.name"
-    }
-  ],
-  "templates":[
-    "page"
-  ]
-}
+  {
+    "name": "t:sections.page_contact.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.all.headers.header__22.content"
+      },
+      {
+        "type": "range",
+        "id": "spacing_top",
+        "min": 0,
+        "max": 300,
+        "step": 20,
+        "unit": "px",
+        "label": "t:sections.all.layout.settings.spacing.label_top",
+        "default": 60
+      },
+      {
+        "type": "range",
+        "id": "spacing_bottom",
+        "min": 0,
+        "max": 300,
+        "step": 20,
+        "unit": "px",
+        "label": "t:sections.all.layout.settings.spacing.label_bottom",
+        "default": 60
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.headers.header__1.content"
+      }, {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.settings.color_scheme.label",
+        "options": [
+          {
+            "value": "color__bg-body color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__1.label"
+          },
+          {
+            "value": "color__bg-neutral color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__2.label"
+          },
+          {
+            "value": "color__bg-overlay-1 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__3.label"
+          },
+          {
+            "value": "color__bg-overlay-2 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__4.label"
+          }, {
+            "value": "color__bg-overlay-3 color__text",
+            "label": "t:sections.all.colors.settings.color_scheme.options__5.label"
+          }, {
+            "value": "color__bg-primary color__primary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__6.label"
+          }, {
+            "value": "color__bg-secondary color__secondary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__7.label"
+          }, {
+            "value": "color__bg-tertiary color__tertiary",
+            "label": "t:sections.all.colors.settings.color_scheme.options__8.label"
+          }
+        ],
+        "default": "color__bg-body color__text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.page_contact.name"
+      }
+    ],
+    "templates": ["page"]
+  }
 {% endschema %}
