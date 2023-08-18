@@ -24,7 +24,8 @@ slides: slides %}
 
 Possible enhancements: 
 - Fix bug where users may have to click twice at end of slider.
-{% endcomment %}<div class="flex flex-wrap {{ outer_class }}"> <div class="relative w-full" x-data='{
+{% endcomment %}<div class="flex flex-wrap {{ outer_class }}"> 
+  <div class="relative w-full  mx-4" x-data='{
                         index: 0,
                         index_size: {{ slider_size }},
                         show_arrows: false,
@@ -84,7 +85,7 @@ Possible enhancements:
 
     {%- comment -%}slides{%- endcomment -%}
     <div
-      class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full mx-4 overflow-x-auto overflow-y-hidden"
+      class="whitespace-nowrap md:snap-x scroll-smooth hidescrollbar inline-flex w-full overflow-x-auto overflow-y-hidden"
       style=" row-gap: {{ settings.layout_gap_size | times: 1.5 }}px;"
       x-init="setTimeout(function(){ if (isOverflown($el)) show_arrows = true}, 600);"
       x-ref="slider">
@@ -92,7 +93,7 @@ Possible enhancements:
     </div>
 
     {%- comment -%}arrows{%- endcomment -%}
-    <div class="flex justify-between gap-4 pt-4 {{ settings.layout_horizontal }}">
+    <div class="flex justify-between gap-4 pt-4">
       <div {% unless show_arrows == 'true' %}x-show="show_arrows"{% endunless %}>
         <button
           class=""

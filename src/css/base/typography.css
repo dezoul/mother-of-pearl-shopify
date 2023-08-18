@@ -145,11 +145,11 @@
   .font-wide{
     font-family: 'roc-grotesk-wide', 'sans-serif';
     text-transform: uppercase;
+    font-weight: 500
   }
   .product-options label, .quantity-text{
     @apply font-wide;
     font-size: 1.3rem;
-    font-weight: 700;
 }
   
   .heading-emphasis{
@@ -206,6 +206,13 @@ span{
   outline-offset: 2px;
 }
 
+.drop-link a{
+ font-size: 0.9rem;
+ margin-bottom: 0;
+ padding: 2rem 1rem;
+ font-weight: normal;
+}
+
 footer a {
   display: block;
   padding-bottom: 0.25rem;
@@ -240,3 +247,4 @@ nav a:hover {
     background-color:#f8f3ea;
     mix-blend-mode: multiply;
   }
+

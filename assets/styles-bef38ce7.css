@@ -774,12 +774,13 @@ ol {
 .font-wide{
     font-family: 'roc-grotesk-wide', 'sans-serif';
     text-transform: uppercase;
+    font-weight: 500
   }
 .product-options label, .quantity-text{
     font-family: 'roc-grotesk-wide', 'sans-serif';
     text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1.3rem
   }
 .heading-emphasis {
   text-transform: uppercase;
@@ -787,6 +788,7 @@ ol {
 }
 .button{
     font-family: 'roc-grotesk-wide', 'sans-serif';
+    font-weight: 500;
     display: inline-block;
     --tw-bg-opacity: 1;
     background-color: rgb(32 36 43 / var(--tw-bg-opacity));
@@ -800,7 +802,7 @@ ol {
     color: rgb(253 251 248 / var(--tw-text-opacity));
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+    transition-duration: 150ms
   }
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
@@ -2337,9 +2339,6 @@ img:after {
 .pr-1 {
   padding-right: 0.25rem;
 }
-.pr-12 {
-  padding-right: 3rem;
-}
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -3518,6 +3517,12 @@ span{
   box-shadow: none !important;
   outline: 0px solid transparent !important;
   outline-offset: 2px;
+}
+.drop-link a{
+ font-size: 0.9rem;
+ margin-bottom: 0;
+ padding: 2rem 1rem;
+ font-weight: normal;
 }
 footer a {
   display: block;
