@@ -3464,6 +3464,8 @@ img:after {
 /* COLORS */
 /* - utility color classes that can be re-used throughout */
 /* ======= */
+/* maps */
+.map { -webkit-filter: grayscale(100%); }
 /* BORDERS */
 /* - utility classes to add default border styles */
 /* ======= */
