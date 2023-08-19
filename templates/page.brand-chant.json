@@ -222,7 +222,7 @@
           "settings": {
             "button_width": 30,
             "button_label": "BOOK A CONSULTATION",
-            "button_url": "\/collections\/all",
+            "button_url": "https:\/\/motherofpearlandsons.myshopify.com\/pages\/contact#book-a-consultation",
             "bg-color": "#fcfaf6",
             "border": "",
             "button-color": "#232528"
