@@ -64,14 +64,14 @@
       x-show="pagination_current_page < pagination_total_pages" 
       x-cloak>
       <button role="button" 
-        class="btn btn--small btn--load btn--plain"  
+        class="btn btn--small btn--load btn--plain uppercase"  
         :class="{ 'btn--loading' : button_loading }"
         :disabled="button_loading"
         @click="
           fetchAndRenderNextPage() 
           button_loading = true;
           setTimeout(function(){ button_loading = false}, 1000);">
-        <div class="btn__content uppercase">
+        <div class="btn__content">
           {{ 'general.pagination.load_more' | t }}
         </div>
         <div class="btn__spinner">
