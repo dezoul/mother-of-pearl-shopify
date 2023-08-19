@@ -15,14 +15,14 @@
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "Barben Architectural Hardware",
+            "content": "Remy Garnier Architectural Hardware",
             "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Pushing the boundaries of innovation and design, Barben, an Australian powerhouse, takes architectural hardware to the next level. With an emphasis on ergonomic designs and modern aesthetics, they consistently set industry benchmarks for quality and style. Their diverse portfolio boasts everything from groundbreaking entrance solutions to state-of-the-art kitchen and bathroom fittings. Their dedication to creating pieces that are both functional and stylish aligns seamlessly with Mother of Pearl's ethos. We are thrilled to stock Barben products and maintain a close collaboration, ensuring prompt distribution and timely delivery for all your projects.<\/p>"
+            "content": "<p>Embodying the essence of French artistry, Remy Garnier stands as a beacon of refined elegance in the realm of architectural hardware. Marrying the finesse of age-old craftsmanship with contemporary design sensibilities, they craft hardware that speaks volumes of luxury and class. From ornate traditional designs to the sleek allure of modern fixtures, each product is a testament to Remy Garnier's impeccable attention to detail. Their dedication to creating pieces that are both functional and stylish aligns seamlessly with Mother of Pearl's ethos. We are thrilled to stock Remy Garnier products and maintain a close collaboration, ensuring prompt distribution and timely delivery for all your projects.<\/p>"
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1": {
@@ -42,7 +42,7 @@
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-buttons-1"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/MOP-BARBEN-010.jpg",
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-remy-garnier-02.jpg",
         "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
@@ -59,13 +59,13 @@
     "489849c8-fd9e-4734-ac6a-0e74c0f91582": {
       "type": "about_final",
       "settings": {
-        "heading": "Where to source Barben In Australia",
-        "content": "<p>Your search for Barben's finest ends with Mother of Pearl. As a leading distributor and strategic partner in Australia, we offer unparalleled access to Barben's innovative range. Our bond with the brand means you always get authentic, top-notch products.<\/p><p>Mother of Pearl stands by its promise of prompt sourcing, unparalleled product insights, and a commitment to top-tier customer service. Get in touch, and we'll guide you through Barben's expansive catalog, ensuring you pick the perfect products for your project. From custom finishes to essential accessories, we've got you covered, every step of the way.<\/p>",
+        "heading": "Where to source Remy Garnier In Australia",
+        "content": "<p>Your search for Remy Garnier's finest ends with Mother of Pearl. As a leading distributor and strategic partner in Australia, we offer unparalleled access to Remy Garnier's incredible range. Our bond with the brand means you always get authentic, top-notch products delivered on-time for your project. <\/p><p>Mother of Pearl stands by its promise of prompt sourcing, unparalleled product insights, and a commitment to top-tier customer service. Get in touch, and we'll guide you through Remy Garnier's expansive catalog, ensuring you pick the perfect products for your project. From custom finishes to essential accessories, we've got you covered, every step of the way.<\/p>",
         "button_label": "Button",
         "button_url": "\/",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
+        "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "",
