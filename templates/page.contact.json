@@ -33,6 +33,9 @@
         "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-content-1",
         "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-buttons-1"
       ],
+      "custom_css": [
+        ".window--wide {max-width: 70rem;}"
+      ],
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/Showroom_Entrance.jpg",
         "minHeight": 0,
