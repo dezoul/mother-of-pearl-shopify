@@ -61,7 +61,7 @@
       "type": "about_final",
       "settings": {
         "heading": "Why Finesse",
-        "content": "<p>With over 20 years of expertise, Finesse is a trusted brand renowned for crafting hardware from genuine pewter, a timeless metal known for its rustic and lustrous appeal. Their architectural ironmongery, including door handles, kitchen handles, and window hardware combines tradition with modern technology to create products of superior quality.<\/p><p>Finesse’s extensive experience with pewter, and commitment to innovative craftsmanship make them a go-to option for us to expand our offer for any architectural styles, be it traditional, modern, or contemporary while providing lasting quality and timeless beauty in your living spaces.<\/p>",
+        "content": "<p>With over 20 years of expertise, Finesse is a trusted brand renowned for crafting hardware from genuine pewter, a timeless metal known for its rustic and lustrous appeal. Their architectural ironmongery, including door handles, kitchen handles, and window hardware combines tradition with modern technology to create products of superior quality.<\/p><p>Finesse’s extensive experience with pewter, and commitment to innovative craftsmanship make them a go-to option for us at Mother of Pearl to expand our offer for any architectural styles, be it traditional, modern, or contemporary while providing lasting quality and timeless beauty in your living spaces.<\/p>",
         "button_label": "Button",
         "button_url": "\/",
         "spacing_top": 100,
@@ -222,7 +222,7 @@
           "settings": {
             "button_width": 30,
             "button_label": "BOOK A CONSULTATION",
-            "button_url": "\/collections\/all",
+            "button_url": "https:\/\/motherofpearlandsons.myshopify.com\/pages\/contact#book-a-consultation",
             "bg-color": "#fcfaf6",
             "border": "",
             "button-color": "#232528"
