@@ -59,6 +59,18 @@ Pro tips:
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
         </div>
 
+       <div class="mb-4">
+            <label for="ContactFormPhone" class="font-wide">{{ 'customer.account.phone' | t }}</label>
+            <input
+                type="tel" 
+                class="form-input"
+                name="contact[phone]"
+                id="ContactFormPhone"
+                placeholder="{{ 'customer.account.phone' | t }}"
+                value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+        </div>
+
+
         <div
           class="mb-4">
           <label
