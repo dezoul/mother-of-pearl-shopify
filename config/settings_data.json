@@ -159,6 +159,7 @@
         "blocks": {
           "dc415ec9-53ea-4c8e-aa82-79bb3e7f0b16": {
             "type": "Content",
+            "disabled": true,
             "settings": {
               "heading": "Buy 2 Get 10% Off",
               "content": "<p>Buy any two items and recieve 10% off your order until 10\/10<\/p>"
@@ -167,8 +168,8 @@
           "62364748-86ba-4235-b149-37c37c3a382f": {
             "type": "Content",
             "settings": {
-              "heading": "Free shipping",
-              "content": "<p>Spend over $35 and recieve free shipping<\/p>"
+              "heading": "Priority Service",
+              "content": "<p>Want help finding the perfect fit? Copy your cart link below, and send us an email to consultation@motherofpearl.com along with your phone number and we'll give you a call to discuss your selection, timeframes, and customization options. <\/p>"
             }
           }
         },
