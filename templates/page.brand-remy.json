@@ -29,7 +29,7 @@
           "type": "buttons",
           "settings": {
             "button_label": "BOOK A CONSULTATION",
-            "button_url": "shopify:\/\/pages\/contact",
+            "button_url": "https:\/\/motherofpearlandsons.myshopify.com\/pages\/contact#book-a-consultation",
             "bg-color": "#fcfaf6",
             "border": "",
             "button-color": "#000000"
