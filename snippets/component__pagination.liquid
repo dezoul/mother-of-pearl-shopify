@@ -51,7 +51,7 @@
     {{ section.settings.color_border }}"
     x-data="{ button_loading: false }" 
     x-init="pagination_total_pages = {{ paginate.pages }};">
-    <div class="text-center">
+    <div class="text-center no-of-pages">
       <span>{{ 'general.pagination.show' | t }}</span>
       <span x-text="pagination_current_page">1</span>
       {{ 'general.pagination.of' | t }}
