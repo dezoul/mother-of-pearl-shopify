@@ -51,6 +51,9 @@
         "e697d97e-8310-4ca0-adeb-54d7222e15c1",
         "0f716542-eff1-4b59-a9c9-c47955447221"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "spacing_top": 60,
         "spacing_bottom": 60,
@@ -69,21 +72,21 @@
         "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1": {
           "type": "heading",
           "settings": {
-            "content": "WE STOCK THOUSANDS OF LEVER HANDLE SETS FROM THE WORLDS TOP BRANDS"
+            "content": "WE STOCK THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS"
           }
         },
         "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad possimus dolorem unde numquam quod vel laboriosam nulla? Tenetur, nihil quod consequuntur aspernatur rem doloremque omnis quas earum itaque amet expedita?<\/p><p>Arcu non sodales neque sodales ut etiam sit amet. Ultricies tristique nulla aliquet enim. Enim lobortis scelerisque fermentum dui faucibus in. Elementum nibh tellus molestie nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Fringilla est ullamcorper eget nulla. Vitae suscipit tellus mauris a diam maecenas sed enim. In nisl nisi scelerisque eu.<\/p>"
+            "content": "<p>While we've curated a diverse selection of our {{ collection.title }} here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top brands, we invite you to get in touch with our team or visit our showroom. There, you'll discover a universe of design possibilities to find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery offerings. <\/p>"
           }
         },
         "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 5,
-            "button_label": "Button label",
-            "button_url": "\/collections\/all",
+            "button_width": 25,
+            "button_label": "Visit our Showroom",
+            "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "",
             "border": "",
             "button-color": ""
@@ -121,13 +124,16 @@
           "settings": {
             "heading": "{{ block.repeater.heading.value }}",
             "image_featured": "{{ block.repeater.brand_image.value }}",
-            "description": "<p>{{ block.repeater.brand_description | metafield_tag }}<\/p>"
+            "description": "<p>{{ block.repeater.brand_description | metafield_tag }}<\/p>",
+            "url": "",
+            "link_text": ""
           }
         }
       },
       "block_order": [
         "c2e307d3-2029-4c90-8809-b5122a421c2d"
       ],
+      "disabled": true,
       "settings": {
         "heading": "{{ collection.metafields.custom.details_heading.value }}",
         "content": "{{ collection.metafields.custom.details_content | metafield_tag }}",
@@ -148,9 +154,9 @@
       "settings": {
         "heading": "{{ collection.metafields.custom.finale_section_heading_.value }}",
         "featured_image": "shopify:\/\/shop_images\/dark_swirl.png",
-        "content": "<p>{{ collection.metafields.custom.finale_section_column_content | metafield_tag }}<\/p>",
+        "content": "<p>Since 1979, Mother of Pearl and Sons has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware. We not only stock the world's most prestigious brands of architectural hardware, we also used our decades of experience to create our own signature range. <\/p><p>Mother of Pearl and Sons' commitment to quality and detail is unmatched, presenting a carefully curated selection from leading global brands. We've earned the trust and partnership of the industry's leading professionals, who appreciate our eye for quality, extensive product range, and in-depth knowledge.<\/p><p>We understand the intricate needs of each project and offer personalized, expert advice to ensure the perfect product match. Our fast turnaround times and priority shipping mean that you can be confident you'll meet your project deadlines. Your project deserves nothing but the best, and that's what we're here to provide.<\/p>",
         "button_label": "book a consultation",
-        "button_url": "shopify:\/\/pages\/contact",
+        "button_url": "\/pages\/contact#book-a-consultation",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-tertiary color__tertiary",
