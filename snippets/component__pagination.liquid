@@ -52,10 +52,13 @@
     x-data="{ button_loading: false }" 
     x-init="pagination_total_pages = {{ paginate.pages }};">
     <div class="text-center no-of-pages">
+      {% comment %}
       <span>{{ 'general.pagination.show' | t }}</span>
       <span x-text="pagination_current_page">1</span>
       {{ 'general.pagination.of' | t }}
       <span x-text="pagination_total_pages">{{ paginate.pages }}</span>
+      {% endcomment %}
+  
     </div>
     <div class="mt-2 text-center" 
       x-show="pagination_current_page < pagination_total_pages" 
