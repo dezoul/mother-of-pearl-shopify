@@ -3,7 +3,9 @@
     "main": {
       "type": "cart__main",
       "custom_css": [
-        ".cart-item * {background: none!important;}"
+        ".cart-item * {background: none !important;border-color: black;}",
+        ".cart-item .item-quantity {border: none; color: black;}",
+        ".cart-item .item-quantity * {color: black;}"
       ],
       "settings": {
         "spacing_top": 100,
