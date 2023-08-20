@@ -41,14 +41,15 @@ Globals:
           <div
             class="flex gap-2 justify-end"
             style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
-            <a href="{{ block.settings.button_url }}" class="button-with-arrow">
-                <span class="leading-none" style="width: {{ block.settings.button_width }}rem">
-                  {{ block.settings.button_label }}
-                </span>
-                <svg class="arrow-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.27372 30.5267L30.9246 1.87577M30.9246 1.87577H3.86544M30.9246 1.87577V28.9349" stroke="#FAF7F1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                </svg>
-            </a>
+
+              <a href="{{ section.settings.button_url }}" class="button-with-arrow">
+                  <span class="leading-none" style="width: {{ section.settings.button_width }}rem">
+                    {{ section.settings.button_label }}
+                  </span>
+                  <svg class="arrow-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.27372 30.5267L30.9246 1.87577M30.9246 1.87577H3.86544M30.9246 1.87577V28.9349" stroke="#FAF7F1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+              </a>
           </div>
         {%- endunless -%}
       </div>
