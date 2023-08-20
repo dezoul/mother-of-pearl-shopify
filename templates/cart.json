@@ -3,7 +3,7 @@
     "main": {
       "type": "cart__main",
       "custom_css": [
-        ".cart-item .item-quantity.btn--plain {background: none;}"
+        ".cart-item * {background: none!important;}"
       ],
       "settings": {
         "spacing_top": 100,
