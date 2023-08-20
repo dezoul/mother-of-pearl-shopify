@@ -165,6 +165,7 @@
         },
         "f8333066-0ca8-4c5f-b08d-997fcef8f6e8": {
           "type": "images",
+          "disabled": true,
           "settings": {
             "image_featured": "shopify:\/\/shop_images\/barben.png",
             "url": "shopify:\/\/pages\/brand-remy-garnier"
@@ -172,6 +173,7 @@
         },
         "1426b1d0-401c-47bb-a393-40fee89aacc0": {
           "type": "images",
+          "disabled": true,
           "settings": {
             "image_featured": "shopify:\/\/shop_images\/domino.png",
             "url": "shopify:\/\/pages\/brand-domino-brass"
@@ -207,6 +209,7 @@
         },
         "2763c422-c349-4e99-b916-3bf8b0054ea4": {
           "type": "images",
+          "disabled": true,
           "settings": {
             "image_featured": "shopify:\/\/shop_images\/lockwood.png",
             "url": "shopify:\/\/pages\/brand-lockwood-australia"
