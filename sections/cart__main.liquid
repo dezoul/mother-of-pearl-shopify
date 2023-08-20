@@ -125,7 +125,7 @@
                       x-data="{ 
                         button_loading: false
                       }">
-                      <button class="btn btn--smaller btn--plain shrink-0 !rounded-none" 
+                      <button class="btn btn--smaller btn--plain shrink-0 !rounded-none item-quantity" 
                         :disabled="button_loading"
                         title="{{ 'cart.general.decrease' | t }}"
                         @click.prevent="
@@ -148,7 +148,7 @@
                         :class="{ '!visible color__bg-overlay-1 z-10' : button_loading }">
                         {% render 'component__icon', icon: 'spinner', size: '16', class: '' %}
                       </div>
-                      <button class="btn btn--smaller btn--plain shrink-0 !rounded-none" 
+                      <button class="btn btn--smaller btn--plain shrink-0 !rounded-none item-quantity" 
                         :disabled="button_loading"
                         title="{{ 'cart.general.increase' | t }}"
                         @click.prevent="
@@ -163,7 +163,7 @@
                     
                     <div x-data="{ button_loading: false }">
                       <button 
-                        class="btn btn--load btn--plain btn--small"
+                        class="btn btn--load btn--plain btn--small item-trash"
                         :class="{ 'btn--loading' : cart_loading && button_loading }"
                         :disabled="button_loading"
                         @click="changeCartItemQuantity(item.key, 0, false); button_loading = true; setTimeout(function(){ button_loading = false}, 500);" >
