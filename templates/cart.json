@@ -3,10 +3,12 @@
     "main": {
       "type": "cart__main",
       "settings": {
-        "page_color_scheme": "color__bg-body color__text",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "page_color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
-        "sidebar_color_scheme": "color__bg-overlay-1 color__text",
-        "main_disclaimer": "",
+        "sidebar_color_scheme": "color__bg-secondary color__secondary",
+        "main_disclaimer": "<p>This is a disclaimer that you can customise about the checkout. <\/p>",
         "empty_button_label": "Shop all",
         "empty_button_url": "\/collections\/all",
         "enable_cart_note": true,
