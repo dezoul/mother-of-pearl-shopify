@@ -249,14 +249,6 @@
             "url": "shopify:\/\/collections\/entrance-door-hardware"
           }
         },
-        "d9093ab7-8250-4b87-a503-8ef275d8e470": {
-          "type": "images",
-          "settings": {
-            "heading": "LEVER HANDLE SETS",
-            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
-            "url": ""
-          }
-        },
         "05d2694f-f3d6-401d-a197-883b7167fa28": {
           "type": "images",
           "settings": {
@@ -264,12 +256,20 @@
             "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
             "url": "shopify:\/\/collections\/other-hardware"
           }
+        },
+        "d9093ab7-8250-4b87-a503-8ef275d8e470": {
+          "type": "images",
+          "settings": {
+            "heading": "LEVER HANDLE SETS",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0",
-        "d9093ab7-8250-4b87-a503-8ef275d8e470",
-        "05d2694f-f3d6-401d-a197-883b7167fa28"
+        "05d2694f-f3d6-401d-a197-883b7167fa28",
+        "d9093ab7-8250-4b87-a503-8ef275d8e470"
       ],
       "settings": {
         "heading": "ARCHITECTURAL HARDWARE",
