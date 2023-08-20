@@ -148,7 +148,7 @@ Pro tips:
             {%- endunless -%}
 
             {%- unless block.settings.image_featured == blank -%}
-              <div class="relative w-full">
+              <div class="relative w-full img-container">
                 {{ block.settings.image_featured | image_url: width: 1400 | image_tag: class: 'w-full', loading: 'lazy', alt: block.settings.image_featured.alt }}
               </div>
             {%- endunless -%}
