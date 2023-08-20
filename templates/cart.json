@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "cart__main",
+      "custom_css": [
+        ".cart-item .item-quantity.btn--plain {background: none;}"
+      ],
       "settings": {
         "spacing_top": 100,
         "spacing_bottom": 100,
