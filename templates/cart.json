@@ -3,7 +3,8 @@
     "main": {
       "type": "cart__main",
       "custom_css": [
-        ".cart-item * {background: none !important; border-color: #20242b;}",
+        ".color__border-divider-1 {border-color: #e0d3b4;}",
+        ".cart-item *, input[type=\"checkbox\"] {background: none !important; border-color: #e0d3b4;}",
         ".cart-item .item-quantity {border: none; color: #20242b;}",
         ".cart-item .item-quantity *,.cart-item input,.cart-item .btn--plain * {color: #20242b; opacity: 1;}",
         "img {mix-blend-mode: multiply;}"
