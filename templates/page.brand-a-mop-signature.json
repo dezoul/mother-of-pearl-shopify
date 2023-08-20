@@ -185,7 +185,8 @@
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8"
       ],
       "custom_css": [
-        "img {mix-blend-mode: multiply;}"
+        "img {mix-blend-mode: multiply;}",
+        ".img-container {background-color: #FAF6F1;}"
       ],
       "settings": {
         "heading": "Explore some of the most popular ranges OF ARCHITECTURAL HARDWARE & JOINERY from Mother of Pearl Signature Range",
