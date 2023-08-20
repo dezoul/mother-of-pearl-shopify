@@ -80,8 +80,8 @@
         "template--20330326524208__68942077-781f-4d53-9b23-c4788e7d7302-content-5": {
           "type": "content",
           "settings": {
-            "heading": "Cabinet Pulls",
-            "content": "<p>Discover the endless possibilities of their versatile bronze pulls, available in a variety of sizes and finishes to complement any architectural style.<\/p>",
+            "heading": "Lever Handles",
+            "content": "<p>Inspired by the Bauhaus movement,  we offer an incredible variety of options through having choice of 3 handle sections, in plain, knurled or ribbed. Choose your backplates, round, square, long wide or narrow and choose from 18 unique finishes. <\/p>",
             "button_label": "Button",
             "button_url": "",
             "image_featured": "shopify:\/\/shop_images\/Gravity-bauhausknurledroundleverhandle-MH21601-PB.jpg",
@@ -105,11 +105,11 @@
         "378a7deb-2b74-4c19-ac49-94f2ff2334a7": {
           "type": "content",
           "settings": {
-            "heading": "Ring Pulls",
-            "content": "<p>Enhance the functionality of your cabinet doors and drawers with ring and flap pulls that provide easy grip - timeless and convenient.<\/p>",
+            "heading": "Brass Hinges",
+            "content": "<p>Experience unmatched craftsmanship with our Signature Series door hinges. Measuring a standard 100 x 75, they're robust at 3mm thick and come with durable solid brass screws, and a variety of finishes from polished brass to aged with a fast turnaround. <\/p>",
             "button_label": "Button",
             "button_url": "",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "image_featured": "shopify:\/\/shop_images\/Gravity-butthingewithoutscrews-MP_BR25002-MP_BR25003-PBa.jpg",
             "enable_autoplay": true,
             "enable_mute_toggle": true,
             "enable_loop": true,
@@ -130,11 +130,11 @@
         "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62": {
           "type": "content",
           "settings": {
-            "heading": "Cup Pulls",
-            "content": "<p>Surface mount bin pulls that provide convenient grip for opening\/closing your cabinets while adding a touch of classic charm.<\/p>",
+            "heading": "Kitchen Joinery",
+            "content": "<p>Our solid brass joinery range includes both the Bauhaus theme with knurled and ribbed detail, and classic designs. We carry a strong range in-stock, with a maximum delivery timeframe of 4 weeks and custom brass finishings available for every peice. <\/p>",
             "button_label": "Button",
             "button_url": "",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "image_featured": "shopify:\/\/shop_images\/Gravity-knurledroundknob-FF21201Kallfinisheda.jpg",
             "enable_autoplay": true,
             "enable_mute_toggle": true,
             "enable_loop": true,
@@ -155,11 +155,11 @@
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8": {
           "type": "content",
           "settings": {
-            "heading": "Entrance Door",
-            "content": "<p>From the grandeur of their entry door sets to the understated elegance of their individual knobs and levers, Sun Valley Bronze makes an impact. <\/p>",
+            "heading": "Design & Service",
+            "content": "<p>At Mother of Pearl, our expertise shines in the details. We meticulously ensure each product is the perfect fit, size, and operates flawlessly. Our vast selection guarantees design continuity, aligning with your vision and setting the mood just right. <\/p>",
             "button_label": "Button",
             "button_url": "",
-            "image_featured": "shopify:\/\/shop_images\/marbleKitchen.png",
+            "image_featured": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
             "enable_autoplay": true,
             "enable_mute_toggle": true,
             "enable_loop": true,
@@ -183,6 +183,9 @@
         "378a7deb-2b74-4c19-ac49-94f2ff2334a7",
         "4729b6f7-1d3b-4c8e-85b9-832ce7ddee62",
         "f505b8be-6ba8-4f41-bd3f-0d711c52b5d8"
+      ],
+      "custom_css": [
+        "img {mix-blend-mode: multiply;}"
       ],
       "settings": {
         "heading": "Explore some of the most popular ranges OF ARCHITECTURAL HARDWARE & JOINERY from Mother of Pearl Signature Range",
