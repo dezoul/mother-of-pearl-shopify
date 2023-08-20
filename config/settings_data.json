@@ -1630,5 +1630,11 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "nav a:hover {color: #f9ebc9;}",
+      "nav a {text-underline-offset: 5px;}"
+    ]
   }
 }
