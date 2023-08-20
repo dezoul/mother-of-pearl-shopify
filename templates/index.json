@@ -286,6 +286,54 @@
         "visibility": ""
       }
     },
+    "85e55522-9e5c-47a7-a15f-5bde7833652b": {
+      "type": "linked-gallery",
+      "blocks": {
+        "3b7d788e-c30c-4881-a8e5-54513fea1f37": {
+          "type": "images",
+          "settings": {
+            "heading": "Cup & Lip Pulls",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
+            "url": "shopify:\/\/collections\/cup-lip-pulls"
+          }
+        },
+        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12": {
+          "type": "images",
+          "settings": {
+            "heading": "Cabinet Knobs",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
+            "url": "shopify:\/\/collections\/cabinet-knobs-handles"
+          }
+        },
+        "2faba8b9-4812-4647-a91d-6bd753f9d4c5": {
+          "type": "images",
+          "settings": {
+            "heading": "D-Handles",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
+            "url": "shopify:\/\/collections\/d-handles"
+          }
+        }
+      },
+      "block_order": [
+        "3b7d788e-c30c-4881-a8e5-54513fea1f37",
+        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12",
+        "2faba8b9-4812-4647-a91d-6bd753f9d4c5"
+      ],
+      "settings": {
+        "heading": "Kitchen & Joinery  HARDWARE",
+        "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<\/p>",
+        "button_label": "SEE ALL",
+        "button_url": "shopify:\/\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
     "247bdb45-51ad-4b49-8988-da1256ed393d": {
       "type": "banner-alternativev2",
       "blocks": {
@@ -446,6 +494,7 @@
     "0f5c7be2-6398-41d5-8ac3-624b71690e0b",
     "9e35023e-6eba-4666-8c91-0f7ad6050287",
     "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
+    "85e55522-9e5c-47a7-a15f-5bde7833652b",
     "247bdb45-51ad-4b49-8988-da1256ed393d",
     "da3aad33-1739-4ae0-b1d4-6584bfabdb97",
     "44431261-719a-47dc-aa00-d04b36a66e3b"
