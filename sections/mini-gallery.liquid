@@ -18,11 +18,11 @@ Globals:
           </div>
         {%- endunless -%}
         {%- unless section.settings.heading == blank -%}
-          <h3 class="text-center mb-8 text-[2.2rem]">{{ section.settings.heading }}</h3>
+          <h3 class="text-center mb-12 text-[2.2rem]">{{ section.settings.heading }}</h3>
         {%- endunless -%}
         {%- unless section.settings.content == blank -%}
           <div
-            class="md:columns-2">
+            class="md:columns-2 gap-8">
             {{ section.settings.content }}
           </div>
         {%- endunless -%}
