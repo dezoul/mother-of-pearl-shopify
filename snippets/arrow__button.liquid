@@ -1,4 +1,15 @@
-<a
+<!--- snippet arrow__button --->
+{% comment %}
+to render add 
+{% render 'arrow__button' 
+, button_text_1: block.settings.button_label_1,
+button_text_2: block.settings.button_label_2,
+url: block.settings.button_url %}
+
+plus jason
+
+
+{% endcomment %}<a
   href="{{url}}"
   class="button-with-arrow gap-4">
   <span
@@ -10,8 +21,6 @@
       {{ button_text_2 }}
     {% endunless %}
   </span>
-  {% comment %}
-  {% endcomment %}<!--- snippet arrow --->
   <svg
     class="arrow-icon"
     width="{% unless button_text_2 == "" or button_text_2 == nil %} 32 {% else %} 14 {% endunless %}"

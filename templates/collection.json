@@ -86,6 +86,7 @@
           "settings": {
             "button_width": 25,
             "button_label": "Visit our Showroom",
+            "button_label_2": "Visit our Showroom",
             "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "",
             "border": "",
