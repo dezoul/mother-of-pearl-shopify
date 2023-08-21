@@ -1,0 +1,29 @@
+<a
+  href="{{url}}"
+  class="button-with-arrow gap-4">
+  <span
+    class="leading-none font-medium">
+    {{ button_text_1 }}
+
+    {% unless button_text_2 == "" %}
+      <br>
+      {{ button_text_2 }}
+    {% endunless %}
+  </span>
+  {% comment %}
+  {% endcomment %}<!--- snippet arrow --->
+  <svg
+    class="arrow-icon"
+    width="{% unless button_text_2 == "" or button_text_2 == nil %} 32 {% else %} 14 {% endunless %}"
+    height="{% unless button_text_2 == "" or button_text_2 == nil %} 32 {% else %} 14 {% endunless %}"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M2.27372 30.5267L30.9246 1.87577M30.9246 1.87577H3.86544M30.9246 1.87577V28.9349"
+      stroke="#FAF7F1"
+      stroke-width="2"
+      stroke-linecap="square"
+      stroke-linejoin="round">
+  </svg>
+</a>

@@ -12,7 +12,11 @@ Possible enhancements:
 
 Pro tips:
 - Use images that have a high contrast with text.
-{% endcomment %}<section class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="window--wide  flex md:items-center items-stretch justify-center py-[5%] md:py-32" {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh"{% endif %}>
+{% endcomment %}<section
+  class="relative overflow-hidden {{ section.settings.visibility }}  {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
+  <div
+    class="window--wide  flex md:items-center items-stretch justify-center py-[5%] md:py-32"
+    {% if section.settings.minHeight %}style=" min-height: {{section.settings.minHeight}}vh"{% endif %}>
 
 
     {% assign lazy_loading = 'eager' %}
@@ -23,13 +27,18 @@ Pro tips:
     {% endif %}
 
     {%- comment -%} desktop {%- endcomment -%}
-    <div class="md:block hidden w-full ">
+    <div
+      class="md:block hidden w-full ">
       <div class="z-10 flex gap-8 {% if section.settings.image_position == "left" %} flex-row-reverse {% endif %}">
 
         {% comment %} content {% endcomment %}
-        <div class="flex flex-grow" style="width: {{ section.settings.content_width }}%">
-          <div class="flex w-full h-full">
-            <div class="flex justify-center w-full overflow-hidden  {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
+        <div
+          class="flex flex-grow"
+          style="width: {{ section.settings.content_width }}%">
+          <div
+            class="flex w-full h-full">
+            <div
+              class="flex justify-center w-full overflow-hidden  {{ section.settings.layout_x_alignment }} {{ section.settings.layout_y_alignment }}">
               <div
                 class='max-w-prose flex flex-col gap-4 py-4 px-8
                 {% if section.settings.image_position == 'right' %}pl-4{% endif %}
@@ -39,29 +48,28 @@ Pro tips:
                 {% for block in section.blocks %}
                   {%- case block.type -%}
                     {%- when 'heading' -%}
-                    <h1 class="m-0 mb-8 {{ section.settings.color_text }} heading-emphasis" style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h1>
+                    <h1
+                      class="m-0 mb-8 {{ section.settings.color_text }} heading-emphasis"
+                      style=" padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">{{ block.settings.content }}</h1>
                     {%- when 'content' -%}
-                    <div class="{{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                    <div
+                      class="{{ section.settings.color_text }}"
+                      style=" padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                       {{ block.settings.content }}
                     </div>
                     {%- when 'buttons' -%}
-                    <div class="flex gap-2 justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
+                    <div
+                      class="flex gap-2 justify-end"
+                      style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
                       {%- unless block.settings.button_url == blank -%}
 
-                          <a href="{{ block.settings.button_url }}" class="button-with-arrow">
-                                <span class="leading-none" style="width: {{ block.settings.button_width }}rem">
-                                  {{ block.settings.button_label }}
-                                </span>
-                                <svg class="arrow-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.27372 30.5267L30.9246 1.87577M30.9246 1.87577H3.86544M30.9246 1.87577V28.9349" stroke="#FAF7F1" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        
-                      {%- endunless -%}
-                      {%- unless block.settings.secondary_button_url == blank -%}
-                        <a href="{{ block.settings.secondary_button_url }}" class="{{ block.settings.secondary_button_color }}">
-                          {{ block.settings.secondary_button_label }}
-                        </a>
+                        {% render 'arrow__button' 
+                         , button_text_1: block.settings.button_label_1,
+                         button_text_2: block.settings.button_label_2,
+                         url: block.settings.button_url %}
+
+
+
                       {%- endunless -%}
                     </div>
                   {%- endcase -%}
@@ -74,8 +82,11 @@ Pro tips:
         </div>
 
         {% comment %} image {% endcomment %}
-        <div class="flex w-1/2 flex-shrink" style="width: calc(100% - {{ section.settings.content_width }}%)">
-          <div class="relative w-full overflow-hidden">
+        <div
+          class="flex w-1/2 flex-shrink"
+          style="width: calc(100% - {{ section.settings.content_width }}%)">
+          <div
+            class="relative w-full overflow-hidden">
             {%- if section.settings.image_background_desktop %}
               {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'hidden md:block w-full h-full object-cover z-10', loading: lazy_loading }}
             {% else %}
@@ -91,7 +102,8 @@ Pro tips:
     <div class="md:hidden relative z-10 w-full gap-8 flex-wrap flex-col justify-end ">
 
       {% comment %} image {% endcomment %}
-      <div class="relative flex-grow">
+      <div
+        class="relative flex-grow">
         {%- if section.settings.image_background_desktop %}
           {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'w-full h-full object-cover z-10', loading: lazy_loading }}
         {% else %}
@@ -100,8 +112,10 @@ Pro tips:
       </div>
 
       {% comment %} content {% endcomment %}
-      <div class="w-full  {{ section.settings.color_scheme }}">
-        <div class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
+      <div
+        class="w-full  {{ section.settings.color_scheme }}">
+        <div
+          class="w-full flex flex-row flex-wrap py-4  {{ settings.layout_horizontal }}  {{ section.settings.layout_x_alignment }}  {{ section.settings.layout_y_alignment }}  {% assign colors = section.settings.color_scheme | split: " " %}{{ colors[1] }}">
           <div
             class='max-w-prose gap-4 flex flex-col
             {% if section.settings.layout_x_alignment contains 'text-center' %}items-center{% endif %}
@@ -116,17 +130,25 @@ Pro tips:
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when 'heading' -%}
-                <h1 class="m-0 {{ section.settings.color_text }}" style=" padding-top:{{ block.settings.spacing_top }}px;padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
+                <h1
+                  class="m-0 {{ section.settings.color_text }}"
+                  style=" padding-top:{{ block.settings.spacing_top }}px;padding-bottom:{{ block.settings.spacing_bottom }}px;">{{ block.settings.content }}</h1>
                 {%- when 'content' -%}
-                <div class="m-0--clear {{ section.settings.color_text }}" style="  padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                <div
+                  class="m-0--clear {{ section.settings.color_text }}"
+                  style="  padding-top:{{ block.settings.spacing_top }}px;  padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {{ block.settings.content }}
                 </div>
                 {%- when 'buttons' -%}
-                <div class="flex justify-end" style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
+                <div
+                  class="flex justify-end"
+                  style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px;">
                   {%- unless block.settings.button_url == blank -%}
-                    <a href="{{ block.settings.button_url }}" class="button-with-arrow">
-                      <span style="width: {{ block.settings.button_width }}rem">
-                        {{ block.settings.button_label }}
+                    <a
+                      href="{{ block.settings.button_url }}"
+                      class="button-with-arrow">
+                      <span>
+                        {{ block.settings.button_label_1 }}
                       </span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -143,11 +165,6 @@ Pro tips:
                           stroke-linejoin="round"
                           shape-rendering="crispEdges" />
                       </svg>
-                    </a>
-                  {%- endunless -%}
-                  {%- unless block.settings.secondary_button_url == blank -%}
-                    <a href="{{ block.settings.secondary_button_url }}" class="{{ block.settings.secondary_button_color }}">
-                      {{ block.settings.secondary_button_label }}
                     </a>
                   {%- endunless -%}
                 </div>
@@ -406,69 +423,23 @@ Pro tips:
           {
             "type": "header",
             "content": "t:sections.all.headers.header__23.content"
-          },
-          {
-            "type": "range",
-            "id": "button_width",
-            "label": "button width",
-            "min": 1,
-            "max": 50,
-            "step": 1,
-            "unit": "rem",
-            "default": 5
-          },
-          {
+          }, {
             "type": "text",
-            "id": "button_label",
-            "label": "t:sections.banner.blocks.buttons.button_label.label",
+            "id": "button_label_1",
+            "label": "Button Text first line",
             "default": {
-              "en": "Button label"
+              "en": "Button"
             }
-          },
-          {
+          }, {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Button Text second line",
+            "default": {
+              "en": "label"
+            }
+          }, {
             "type": "url",
             "id": "button_url",
-            "label": "t:sections.banner.blocks.buttons.button_url.label",
-            "default": "/collections/all"
-          }, {
-            "type": "header",
-            "content": "t:sections.all.headers.header__24.content"
-          }, {
-            "type": "select",
-            "id": "secondary_button_color",
-            "label": "t:sections.banner.blocks.buttons.button_color.label",
-            "options": [
-              {
-                "value": "btn",
-                "label": "t:sections.all.colors.settings.color_button.options__1.label"
-              },
-              {
-                "value": "btn btn--secondary",
-                "label": "t:sections.all.colors.settings.color_button.options__2.label"
-              },
-              {
-                "value": "btn btn--tertiary",
-                "label": "t:sections.all.colors.settings.color_button.options__5.label"
-              },
-              {
-                "value": "btn btn--neutral",
-                "label": "t:sections.all.colors.settings.color_button.options__3.label"
-              }, {
-                "value": "btn btn--plain",
-                "label": "t:sections.all.colors.settings.color_button.options__4.label"
-              }
-            ],
-            "default": "btn btn--neutral"
-          }, {
-            "type": "text",
-            "id": "secondary_button_label",
-            "label": "t:sections.banner.blocks.buttons.button_label.label",
-            "default": {
-              "en": "Button label"
-            }
-          }, {
-            "type": "url",
-            "id": "secondary_button_url",
             "label": "t:sections.banner.blocks.buttons.button_url.label",
             "default": "/collections/all"
           }
@@ -504,11 +475,7 @@ Pro tips:
           }, {
             "type": "buttons",
             "settings": {
-              "secondary_button_color": "btn btn--neutral",
-              "button_label": "Button label",
-              "button_url": "/collections/all",
-              "secondary_button_label": "Button label",
-              "secondary_button_url": "/collections/all"
+              "button_url": "/collections/all"
             }
           }
         ]

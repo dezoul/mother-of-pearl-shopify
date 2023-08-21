@@ -4,9 +4,7 @@ Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}<section
-  class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}">
-  <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+{% endcomment %}<section class=" {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"> <div class="{{ settings.layout_horizontal }}" style="  padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
 
     <div class="flex flex-row flex-wrap items-end px-[5%] gap-8 {{ section.settings.layout_x_alignment }}">
       <div class="
@@ -41,7 +39,7 @@ Globals:
         {%- unless section.settings.button_url == blank -%}
           <div class="flex gap-2 justify-end " style="padding-top:{{ block.settings.spacing_top }}px; padding-bottom:{{ block.settings.spacing_bottom }}px; ">
             <a href="{{ section.settings.button_url }}" class="button-with-arrow">
-              <span class="leading-none text-[1.25rem]">
+              <span class="leading-none text-[1.25rem] font-medium">
                 {{ section.settings.button_label }}
               </span>
               <svg

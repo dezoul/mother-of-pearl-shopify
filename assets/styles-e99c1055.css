@@ -1415,9 +1415,6 @@ img:after {
 .ml-4 {
   margin-left: 1rem;
 }
-.ml-8 {
-  margin-left: 2rem;
-}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -2020,6 +2017,9 @@ img:after {
 }
 .gap-12 {
   gap: 3rem;
+}
+.gap-16 {
+  gap: 4rem;
 }
 .gap-2 {
   gap: 0.5rem;
