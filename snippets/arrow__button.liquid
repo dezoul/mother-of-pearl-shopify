@@ -5,7 +5,7 @@
     class="leading-none font-medium">
     {{ button_text_1 }}
 
-    {% unless button_text_2 == "" %}
+    {% unless button_text_2 == "" or button_text_2 == nil %}
       <br>
       {{ button_text_2 }}
     {% endunless %}
