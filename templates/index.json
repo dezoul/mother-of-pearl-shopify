@@ -349,7 +349,7 @@
           "settings": {
             "heading": "Cabinet Knobs",
             "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
-            "url": "shopify:\/\/collections\/cabinet-knobs-handles"
+            "url": "shopify:\/\/collections\/cabinet-knobs"
           }
         },
         "2faba8b9-4812-4647-a91d-6bd753f9d4c5": {
@@ -399,7 +399,6 @@
         "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2": {
           "type": "buttons",
           "settings": {
-            "button_width": 21,
             "button_label": "BOOK A CONSULTATION",
             "button_label_2": "",
             "button_url": "shopify:\/\/pages\/contact",
