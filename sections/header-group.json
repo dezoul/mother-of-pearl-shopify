@@ -8,20 +8,20 @@
         "f2232503-8685-46db-aaf1-b796c5ea14f9": {
           "type": "text",
           "settings": {
-            "content": "<p>New website coming soon - contact us for the full updated catalogue<\/p>"
+            "content": "We've Moved!  Visit our new showroom in Waterloo, Sydney.",
+            "link_url": "shopify:\/\/pages\/visit-our-showroom-in-sydney"
           }
         }
       },
       "block_order": [
         "f2232503-8685-46db-aaf1-b796c5ea14f9"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "color__bg-tertiary color__tertiary",
-        "layout_alignment": "left",
+        "color_scheme": "color__bg-secondary color__secondary",
+        "layout_alignment": "center",
         "visibility": "",
         "announcement_delay": 0,
-        "show_account_link": true,
+        "show_account_link": false,
         "show_localization": false
       }
     },

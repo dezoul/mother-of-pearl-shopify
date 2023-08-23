@@ -84,7 +84,6 @@
         "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 25,
             "button_label": "Visit our Showroom",
             "button_label_2": "Visit our Showroom",
             "button_url": "shopify:\/\/pages\/contact",
