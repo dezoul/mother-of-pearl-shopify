@@ -1,121 +1,198 @@
-<!-- sections/gallery-V2.liquid -->
+<!-- sections/banner-alternative-master.liquid -->
 {% comment %} 
 Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}{% if section.settings.content %}
+{% endcomment %}{% if bob == dave %}
 {% endif %}
   <section
   class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"
-  style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap); padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
+  style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);">
   <div
-    class="{{section.settings.text_max_width}}">
-    {%- unless section.settings.featured_image == blank -%}
-      <div
-        class="text-center pb-8">
-        {{ section.settings.featured_image | image_url: width: 100 | image_tag: style: 'object-fit:cover', class: 'inline-block object-cover z-10', loading: 'lazy' }}
-      </div>
-    {%- endunless -%}
-    {%- unless section.settings.heading == blank -%}
-      <div
-        style="text-align: {{section.settings.heading_alignment}}">
-        <h2
-          class="inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}"
-          {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
-      </div>
-
-    {%- endunless -%}
-    {%- unless section.settings.content == blank -%}
-      <div
-        class="inline-grid-mobile-override mb-4 grid gap-4 mx-auto "
-        style="text-align:{{section.settings.Content_alignment}}; grid-template-columns: {% if section.settings.content != "" %} 1fr {% endif %} {% if section.settings.content2 != "" %} 1fr {% endif %} {% if section.settings.content3 != "" %} 1fr {% endif %}; {% if section.settings.content-range != 60 %} max-width: {{section.settings.content-range}}rem;{% endif %}">
-        <style></style>
-        {% if section.settings.content != "" %}
-          <p>
-            {{ section.settings.content }}
-          </p>
-        {% endif %}
-        {% if section.settings.content2 != "" %}
-          <p>
-            {{ section.settings.content2 }}
-          </p>
-        {% endif %}
-        {% if section.settings.content3 != "" %}
-          <p>
-            {{ section.settings.content3 }}
-          </p>
-        {% endif %}
-
-      </div>
-    {%- endunless -%}
-  </div>
-
-  <div
-    class="{{section.settings.img_max_width}}">
+    class="{{section.settings.max_width }} flex flex-col md:grid gap-4"
+    style='
+    grid-template-columns:
+    {% if section.settings.desk_img_position == "right" %}
+      {{ section.settings.content_width }}%
+    {% endif %}
+    1fr
+    {% if section.settings.desk_img_position == "left" %}
+      {{ section.settings.content_width }}%
+    {% endif %};
+    {% if section.settings.mobile_img_position == "bottom" %}
+      flex-direction: column-reverse;
+    {% endif %};
+    padding-top:{{ section.settings.spacing_top }}px;
+    padding-bottom:{{ section.settings.spacing_bottom }}px;
+    align-items:
+    {% case section.settings.vertivle-alignment %}
+      {% when 'top' %} flex-start
+      {% when 'middle' %} center
+      {% when 'bottom' %} flex-end
+    {% endcase %}'>
 
     <div
-      class="md:flex my-8 gap-y-12 md:gap-y-4 gap-x-4 grid {{section.settings.img_max_width}}">
+      class="img {% if section.settings.desk_img_position == "right" %} desk-img-right {%endif%}">
 
-      {% for block in section.blocks %}
-        <a
-          href="{{block.settings.url}}"
-          class="no-underline hover:no-underline w-full flex justify-between flex-col group">
-          {% if block.settings.heading != null %}
-            <h4
-              class="!text-lg font-wide">
-              {{ block.settings.heading }}
-            </h4>
-          {% endif %}
-          <div
-            class="relative w-full"
-            style="aspect-ratio: {{section.settings.img-aspect}};">
-            {{ block.settings.image_featured | image_url: width: 800 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
-          </div>
-          <p
-            class="group-hover:opacity-100 opacity-0">
-            {{ block.settings.sub-heading }}
-          </p>
-        </a>
-      {% endfor %}
+      {% if section.settings.img_aspect_ratio == "original" %}
+        {{ section.settings.image_background_desktop | image_url: width: 1700 | image_tag: class: '', loading: lazy_loading }}
+      {% else %}
+        <div
+          class="relative w-full overflow-hidden"
+          style='
+          aspect-ratio:{% case section.settings.img_aspect_ratio %}
+            {% when 'portrait' %} 4/5
+            {% when 'square' %} 1
+            {% when 'landscape' %} 5/4
+          {% endcase %}'>
+          {%- if section.settings.image_background_desktop %}
+            {{ section.settings.image_background_desktop | image_url: width: 5760 | image_tag: class: 'w-full h-full object-cover z-10', loading: lazy_loading }}
+          {% else %}
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'w-full h-full object-cover bg-white z-10' }}
+          {%- endif -%}
+        </div>
+        {% case section.settings.img_aspect_ratio %}{% endcase %}
+      {% endif %}
     </div>
-    {%- unless section.settings.button_url == blank -%}
-      <div
-        class="flex"
-        style="{{section.settings.button_position}}">
-        {% if section.settings.button_type == "arrow" %}
-          {% render 'arrow__button' 
-           , button_text_1: section.settings.button_label,
-           button_text_2: section.settings.button_label_2,
-           url: section.settings.button_url %}
-        {% else %}
-          {% render 'classic__button' 
-           , button_text_1: section.settings.button_label,
-           button_text_2: section.settings.button_label_2,
-           url: section.settings.button_url,
-           button-bg: section.settings.bg-color,
-           button-text-color: section.settings.button-color %}
-        {% endif %}
-      </div>
-    {%- endunless -%}
-  </div>
 
+
+    <div
+      class="flex">
+      <div
+        class="">
+        {%- unless section.settings.heading == blank -%}
+          <div
+            style="text-align: {{section.settings.heading_alignment}}">
+            <h2
+              class="inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}"
+              {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
+          </div>
+
+        {%- endunless -%}
+        {%- unless section.settings.sub-heading == blank -%}
+          <div
+            style="text-align: {{section.settings.sub-heading_alignment}}">
+            <h3
+              class="inline-block mb-12 {{section.settings.sub-heading_style}} {{section.settings.sub-heading_size}}"
+              {% if section.settings.sub-heading-range != 60 %}style="max-width: {{section.settings.sub-heading-range}}rem"{% endif %}>{{ section.settings.sub-heading }}</h3>
+          </div>
+        {%- endunless -%}
+        {%- unless section.settings.content == blank -%}
+          <div
+            class="m-0--clear">
+            {{ section.settings.content }}
+          </div>
+        {%- endunless -%}
+        {%- unless section.settings.button_url == blank -%}
+          <div
+            class="flex"
+            style="{{section.settings.button_position}}">
+            {% if section.settings.button_type == "arrow" %}
+              {% render 'arrow__button' 
+               , button_text_1: section.settings.button_label,
+               button_text_2: section.settings.button_label_2,
+               url: section.settings.button_url %}
+            {% else %}
+              {% render 'classic__button' 
+               , button_text_1: section.settings.button_label,
+               button_text_2: section.settings.button_label_2,
+               url: section.settings.button_url,
+               button-bg: section.settings.bg-color,
+               button-text-color: section.settings.button-color %}
+            {% endif %}
+          </div>
+        {%- endunless -%}
+      </div>
+    </div>
+
+  </div>
 </section>
 
 {% schema %}
   {
-    "name": "gallery v2",
+    "name": "Alt banner master",
     "settings": [
       {
         "type": "header",
-        "content": "Gallery heading settings"
+        "content": "Image and Alignment settings"
       },
       {
+        "type": "image_picker",
+        "id": "image_background_desktop",
+        "label": "t:sections.banner_alternative.settings.image_background_desktop.label",
+        "info": "t:sections.banner_alternative.settings.image_background_desktop.info"
+      },
+      {
+        "type": "select",
+        "id": "desk_img_position",
+        "label": "Image position on desktop",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "moblie_img_position",
+        "label": "Image position on mobile",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "img_aspect_ratio",
+        "label": "Image aspect-ratio",
+        "options": [
+          {
+            "value": "original",
+            "label": "Original"
+          }, {
+            "value": "portrait",
+            "label": "Portrait"
+          }, {
+            "value": "square",
+            "label": "Square"
+          }, {
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ]
+      }, {
+        "type": "select",
+        "id": "vertivle-alignment",
+        "label": "Verticle alignment (of both image and text)",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "middle",
+            "label": "Middle"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      }, {
+        "type": "header",
+        "content": "Header and sub-header settings"
+      }, {
         "type": "text",
         "id": "heading",
         "label": "t:sections.all.content.settings.heading.label"
-      },
-      {
+      }, {
         "type": "select",
         "id": "heading_style",
         "label": "Header style",
@@ -131,8 +208,7 @@ Globals:
             "label": "wide"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "heading_size",
         "label": "Header size",
@@ -174,36 +250,54 @@ Globals:
           }
         ]
       }, {
-        "type": "header",
-        "content": "Content Settings"
+        "type": "text",
+        "id": "sub-heading",
+        "label": "Sub-heading text"
       }, {
-        "type": "paragraph",
-        "content": "Add multiple columns of text by filling in multiple below,  leave additional columns blank for one column. "
+        "type": "select",
+        "id": "sub-heading_style",
+        "label": "sub-Header style",
+        "options": [
+          {
+            "value": "",
+            "label": "default"
+          }, {
+            "value": "heading-emphasis",
+            "label": "italic"
+          }, {
+            "value": "font-wide",
+            "label": "wide"
+          }
+        ]
       }, {
-        "type": "textarea",
-        "id": "content",
-        "label": "column 1 content"
-      }, {
-        "type": "textarea",
-        "id": "content2",
-        "label": "column 2 content"
-      }, {
-        "type": "textarea",
-        "id": "content3",
-        "label": "column 3 content"
+        "type": "select",
+        "id": "sub-heading_size",
+        "label": "Sub-Header size",
+        "options": [
+          {
+            "value": "text-[.9rem]",
+            "label": "small"
+          }, {
+            "value": "text-[1.75rem]",
+            "label": "medium"
+          }, {
+            "value": "text-[3rem]",
+            "label": "large"
+          }
+        ]
       }, {
         "type": "range",
-        "id": "content-range",
+        "id": "sub-heading-range",
         "min": 20,
         "max": 60,
         "step": 1,
         "unit": "rem",
-        "label": "Content max range (will be ignored if 60)",
+        "label": "sub-heading max range (will be ignored if 60)",
         "default": 60
       }, {
         "type": "select",
-        "id": "Content_alignment",
-        "label": "Content alignment",
+        "id": "sub-heading_alignment",
+        "label": "Sub-heading alignment",
         "options": [
           {
             "value": "left",
@@ -217,28 +311,12 @@ Globals:
           }
         ]
       }, {
-        "type": "image_picker",
-        "id": "featured_image",
-        "label": "Top image - Leave blank to remove image "
+        "type": "paragraph",
+        "content": "Content and buttons"
       }, {
-        "type": "header",
-        "content": "Image section"
-      }, {
-        "type": "select",
-        "id": "img-aspect",
-        "label": "Image aspect ratio",
-        "options": [
-          {
-            "value": "4/5",
-            "label": "Portrait"
-          }, {
-            "value": "1",
-            "label": "square "
-          }, {
-            "value": "5/4",
-            "label": "landscape"
-          }
-        ]
+        "type": "richtext",
+        "id": "content",
+        "label": "t:sections.all.content.settings.content.label"
       }, {
         "type": "text",
         "id": "button_label",
@@ -299,6 +377,9 @@ Globals:
         "type": "header",
         "content": "t:sections.all.headers.header__22.content"
       }, {
+        "type": "header",
+        "content": "t:sections.all.headers.header__22.content"
+      }, {
         "type": "range",
         "id": "spacing_top",
         "min": 0,
@@ -317,37 +398,8 @@ Globals:
         "label": "t:sections.all.layout.settings.spacing.label_bottom",
         "default": 100
       }, {
-        "type": "select",
-        "id": "text_max_width",
-        "label": "text section max-width",
-        "options": [
-          {
-            "value": "max-medium",
-            "label": "Medium"
-          }, {
-            "value": "max-lagre",
-            "label": "Large"
-          }, {
-            "value": "max-ex-large",
-            "label": "Extra large"
-          }
-        ]
-      }, {
-        "type": "select",
-        "id": "img_max_width",
-        "label": "image section max-width",
-        "options": [
-          {
-            "value": "max-medium",
-            "label": "Medium"
-          }, {
-            "value": "max-lagre",
-            "label": "Large"
-          }, {
-            "value": "max-ex-large",
-            "label": "Extra large"
-          }
-        ]
+        "type": "header",
+        "content": "t:sections.all.headers.header__1.content"
       }, {
         "type": "select",
         "id": "color_scheme",
@@ -448,26 +500,6 @@ Globals:
         "default": "border--b-width"
       }, {
         "type": "header",
-        "content": "t:sections.all.headers.header__3.content"
-      }, {
-        "type": "select",
-        "id": "layout_x_alignment",
-        "label": "t:sections.all.layout.settings.layout_x_alignment.label",
-        "options": [
-          {
-            "value": "",
-            "label": "t:sections.all.layout.settings.layout_x_alignment.options__1.label"
-          }, {
-            "value": "text-center justify-center",
-            "label": "t:sections.all.layout.settings.layout_x_alignment.options__2.label"
-          }, {
-            "value": "text-right justify-end",
-            "label": "t:sections.all.layout.settings.layout_x_alignment.options__3.label"
-          }
-        ],
-        "default": ""
-      }, {
-        "type": "header",
         "content": "t:sections.all.headers.header__8.content"
       }, {
         "type": "select",
@@ -486,36 +518,36 @@ Globals:
           }
         ],
         "default": ""
-      }
-    ],
-    "blocks": [
-      {
-        "name": "column",
-        "type": "images",
-        "settings": [
+      }, {
+        "type": "select",
+        "id": "max_width",
+        "label": "text section max-width",
+        "options": [
           {
-            "id": "heading",
-            "type": "text",
-            "label": "Column Heading"
+            "value": "max-medium",
+            "label": "Medium"
           }, {
-            "id": "image_featured",
-            "type": "image_picker",
-            "label": "gallery image"
+            "value": "max-lagre",
+            "label": "Large"
           }, {
-            "id": "url",
-            "type": "url",
-            "label": "link"
-          }, {
-            "type": "text",
-            "id": "sub-heading",
-            "label": "Sub-heading"
+            "value": "max-ex-large",
+            "label": "Extra large"
           }
         ]
+      }, {
+        "type": "range",
+        "id": "content_width",
+        "min": 10,
+        "max": 90,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.banner_alternative.settings.content_width.label",
+        "default": 50
       }
     ],
     "presets": [
       {
-        "name": "gallery v2",
+        "name": "Alt banner master",
         "settings": {
           "color_scheme": "color__bg-body color__text",
           "color_border": "color__border-divider-1",

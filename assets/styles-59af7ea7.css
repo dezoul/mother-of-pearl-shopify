@@ -3605,6 +3605,11 @@ table td {
     grid-template-columns: 1fr !important;
   }
 }
+@media(min-width: 768px) {
+  .desk-img-right {
+    order: 2;
+  }
+}
 /* - components */
 /* HEADER */
 /* ======= */

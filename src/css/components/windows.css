@@ -39,8 +39,16 @@
   --horizontal-side-gap: min(5vw, 5rem)
 }
 
+
+
 @media(max-width: 768px) {
   .inline-grid-mobile-override {
     grid-template-columns: 1fr !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .desk-img-right {
+    order: 2;
   }
 }

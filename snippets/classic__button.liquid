@@ -9,7 +9,12 @@ button-bg:  block.settings.bg-color ,
 button-text-color: block.settings.button-color
 %}
 
-plus jason {% endcomment %}<a href="{{ block.settings.button_url }}"class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"style="background-color: {{ button-bg }}; color: {{ button-text-color }};"> <span class="leading-none text-right font-[inherit]">
+plus jason {% endcomment %}<a
+  href="{{ block.settings.button_url }}"
+  class="justify-center no-underline items-center flex  bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"
+  style="background-color: {{ button-bg }}; color: {{ button-text-color }};">
+  <span
+    class="leading-none text-center font-[inherit]">
     {{ button_text_1 }}
 
     {% unless button_text_2 == "" or button_text_2 == nil %}
