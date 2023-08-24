@@ -60,18 +60,22 @@ Globals:
       {% for block in section.blocks %}
         <a
           href="{{block.settings.url}}"
-          class="no-underline hover:no-underline w-full flex justify-between flex-col group">
-          {% if block.settings.heading != null %}
-            <h4
-              class="!text-lg font-wide">
-              {{ block.settings.heading }}
-            </h4>
-          {% endif %}
+          class="no-underline hover:no-underline w-full group">
           <div
-            class="relative w-full"
-            style="aspect-ratio: {{section.settings.img-aspect}};">
-            {{ block.settings.image_featured | image_url: width: 800 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+            class="flex justify-between flex-col">
+            {% if block.settings.heading != null %}
+              <h4
+                class="!text-lg font-wide">
+                {{ block.settings.heading }}
+              </h4>
+            {% endif %}
+            <div
+              class="relative w-full"
+              style="aspect-ratio: {{section.settings.img-aspect}};">
+              {{ block.settings.image_featured | image_url: width: 800 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+            </div>
           </div>
+
           <p
             class="group-hover:opacity-100 opacity-0">
             {{ block.settings.sub-heading }}
