@@ -434,11 +434,11 @@
       "type": "banner-alternative-master",
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
-        "desk_img_position": "left",
+        "desk_img_position": "right",
         "moblie_img_position": "top",
         "img_aspect_ratio": "square",
         "vertivle-alignment": "middle",
-        "content_width": 30,
+        "content_width": 35,
         "heading": "Signature collection",
         "heading_style": "heading-emphasis",
         "heading_size": "text-[3rem]",
@@ -453,19 +453,19 @@
         "button_label": "Explore the",
         "button_label_2": "signature collection",
         "button_url": "shopify:\/\/collections",
-        "button_position": "",
+        "button_position": "justify-content:right",
         "button_type": "arrow",
         "bg-color": "",
         "Button_border": "",
         "button-color": "",
         "spacing_top": 100,
-        "spacing_bottom": 100,
+        "spacing_bottom": 0,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-medium"
+        "max_width": "max-ex-large"
       }
     },
     "247bdb45-51ad-4b49-8988-da1256ed393d": {
