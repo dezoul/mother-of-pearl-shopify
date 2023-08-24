@@ -86,6 +86,7 @@
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-1",
         "template--20007614153008__8db3e6a7-e218-40b4-950c-2693c4b4e2e3-1689314921e1f5fa60-2"
       ],
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -173,14 +174,15 @@
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
         "heading_style": "",
-        "heading_size": "text-[.9rem]",
+        "heading_size": "text-[1.75rem]",
         "heading-range": 60,
         "heading_alignment": "left",
-        "content": "<p>Since 1979, Mother of Pearl and Sons has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware. <\/p><p>Our commitment to quality and detail is unmatched, presenting a carefully curated selection from leading global brands. We've earned the trust and partnership of the industry's leading professionals, who appreciate our eye for quality, extensive product range, and in-depth knowledge.<\/p><p><\/p><p>At Mother of Pearl, we understand the intricate needs of each project and offer personalized, expert advice to ensure the perfect product match. With our vast and unique collection, we empower architects and designers to bring their visions to life with style and precision. And we understand the unique challenges of managing architectural projects - our fast turnaround times and priority shipping mean that you can be confident you'll meet your project deadlines. Your project deserves nothing but the best, and that's what we're here to provide.<\/p>",
-        "content2": "",
+        "content": "Since 1979, Mother of Pearl and Sons has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware.  Our commitment to quality and detail is unmatched, presenting a carefully curated selection from leading global brands. We've earned the trust and partnership of the industry's leading professionals, who appreciate our eye for quality, extensive product range, and in-depth knowledge.",
+        "content2": "At Mother of Pearl, we understand the intricate needs of each project and offer personalized, expert advice to ensure the perfect product match. With our vast and unique collection, we empower architects and designers to bring their visions to life with style and precision. And we understand the unique challenges of managing architectural projects - our fast turnaround times and priority shipping mean that you can be confident you'll meet your project deadlines. Your project deserves nothing but the best, and that's what we're here to provide.",
         "content3": "",
         "content-range": 60,
         "Content_alignment": "left",
+        "featured_image": "shopify:\/\/shop_images\/swirl.png",
         "img-aspect": "4\/5",
         "button_label": "ABOUT US",
         "button_label_2": "",
