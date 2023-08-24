@@ -19,6 +19,44 @@
         "visibility": ""
       }
     },
+    "c7cb7e85-b54f-4ace-b1cb-4e5e9295e535": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-LOCKWOOD-02.jpg",
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "original",
+        "vertivle-alignment": "top",
+        "heading": "Architectural Hardware, Kitchen & Joinery.",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>Welcome to Mother of Pearl and Sons Trading, Australia's leading provider of premier architectural hardware. With decades of experience, we curate a vast selection of luxury doorknobs, kitchen drawer handles, hinges, accessories and more. <\/p><p><\/p><p>Our expert team handpicks each product, ensuring top-tier craftsmanship. Whether you're an architect, interior designer, or planning your dream home, discover our exceptional range sourcing from globally renowned brands and our own exclusive Mother of Pearl Signature Collection.<\/p>",
+        "button_label": "Button",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-lagre",
+        "content_width": 50
+      }
+    },
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3": {
       "type": "banner-alternative",
       "blocks": {
@@ -72,37 +110,55 @@
         "885b984c-02a9-48fe-9179-f19302f76661": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-03_1238b4ab-9e7f-462a-951b-1cc7a0fafb70.png"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-03_1238b4ab-9e7f-462a-951b-1cc7a0fafb70.png",
+            "url": "",
+            "sub-heading": ""
           }
         },
         "416cad5c-e43c-468e-b8ab-477c6deaa304": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-IVANA-04_281a669d-c9b9-4615-8a1f-cdfcb4b9ed23.jpg"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-IVANA-04_281a669d-c9b9-4615-8a1f-cdfcb4b9ed23.jpg",
+            "url": "",
+            "sub-heading": ""
           }
         },
         "871e2efc-5bc6-4153-821f-1e85437e124e": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-05.jpg"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-05.jpg",
+            "url": "",
+            "sub-heading": ""
           }
         },
         "101913ea-9f39-4a12-a265-f1c7e742e80f": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-08_1ea6d036-2756-4180-ba68-665523488b8e.jpg"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-08_1ea6d036-2756-4180-ba68-665523488b8e.jpg",
+            "url": "",
+            "sub-heading": ""
           }
         },
         "ddb4bace-0725-4749-8222-b2a4537c8d1d": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-DD-06.jpg"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-DD-06.jpg",
+            "url": "",
+            "sub-heading": ""
           }
         },
         "c59b8a55-d0d8-4598-b777-9faa26054cb6": {
           "type": "images",
           "settings": {
-            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-04.jpg"
+            "heading": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-04.jpg",
+            "url": "",
+            "sub-heading": ""
           }
         }
       },
@@ -116,11 +172,28 @@
       ],
       "settings": {
         "heading": "Supplying world class architectural hardware to Australia’s top architects and designers for over 30 years.",
+        "heading_style": "",
+        "heading_size": "text-[.9rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
         "content": "<p>Since 1979, Mother of Pearl and Sons has been the trusted partner for Australia’s top architects and designers, supplying world-class architectural hardware. <\/p><p>Our commitment to quality and detail is unmatched, presenting a carefully curated selection from leading global brands. We've earned the trust and partnership of the industry's leading professionals, who appreciate our eye for quality, extensive product range, and in-depth knowledge.<\/p><p><\/p><p>At Mother of Pearl, we understand the intricate needs of each project and offer personalized, expert advice to ensure the perfect product match. With our vast and unique collection, we empower architects and designers to bring their visions to life with style and precision. And we understand the unique challenges of managing architectural projects - our fast turnaround times and priority shipping mean that you can be confident you'll meet your project deadlines. Your project deserves nothing but the best, and that's what we're here to provide.<\/p>",
+        "content2": "",
+        "content3": "",
+        "content-range": 60,
+        "Content_alignment": "left",
+        "img-aspect": "4\/5",
         "button_label": "ABOUT US",
+        "button_label_2": "",
         "button_url": "shopify:\/\/pages\/about-us",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
+        "text_max_width": "max-medium",
+        "img_max_width": "max-medium",
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -433,6 +506,7 @@
   },
   "order": [
     "2cf37121-3db2-489b-9610-3dcaac7dca12",
+    "c7cb7e85-b54f-4ace-b1cb-4e5e9295e535",
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3",
     "0f5c7be2-6398-41d5-8ac3-624b71690e0b",
     "9e35023e-6eba-4666-8c91-0f7ad6050287",
