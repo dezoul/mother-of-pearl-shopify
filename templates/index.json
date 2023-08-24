@@ -27,6 +27,7 @@
         "moblie_img_position": "top",
         "img_aspect_ratio": "original",
         "vertivle-alignment": "top",
+        "content_width": 55,
         "heading": "Architectural Hardware, Kitchen & Joinery.",
         "heading_style": "heading-emphasis",
         "heading_size": "text-[3rem]",
@@ -38,10 +39,10 @@
         "sub-heading-range": 60,
         "sub-heading_alignment": "left",
         "content": "<p>Welcome to Mother of Pearl and Sons Trading, Australia's leading provider of premier architectural hardware. With decades of experience, we curate a vast selection of luxury doorknobs, kitchen drawer handles, hinges, accessories and more. <\/p><p><\/p><p>Our expert team handpicks each product, ensuring top-tier craftsmanship. Whether you're an architect, interior designer, or planning your dream home, discover our exceptional range sourcing from globally renowned brands and our own exclusive Mother of Pearl Signature Collection.<\/p>",
-        "button_label": "Button",
-        "button_label_2": "",
+        "button_label": "tell us about",
+        "button_label_2": "your project",
         "button_url": "\/",
-        "button_position": "",
+        "button_position": "justify-content:right",
         "button_type": "arrow",
         "bg-color": "",
         "Button_border": "",
@@ -53,8 +54,7 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-lagre",
-        "content_width": 60
+        "max_width": "max-lagre"
       }
     },
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3": {
