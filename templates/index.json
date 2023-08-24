@@ -617,6 +617,7 @@
         "ea5a33ea-3c1d-4628-a1a8-d21b81933e12",
         "2faba8b9-4812-4647-a91d-6bd753f9d4c5"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Kitchen & Joinery  HARDWARE",
         "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<\/p>",
@@ -680,6 +681,44 @@
         "layout_x_alignment": "justify-start",
         "visibility": ""
       }
+    },
+    "f0c396f1-677c-4819-93e0-b571ba0dd32d": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "original",
+        "vertivle-alignment": "middle",
+        "content_width": 35,
+        "heading": "TELL US ABOUT YOUR PROJECT",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>At Mother of Pearl, we're more than just purveyors of architectural hardware - we're your trusted partners in design. Our team, with decades of experience in the industry, offers a full-service approach tailored to your unique needs. Whether you're an architect, interior designer, or a passionate homeowner, we’re here to provide one-on-one guidance to help you discover the perfect products to complement your aesthetic. We'll help navigate not only style and finish but also the ideal size and specifications for your project.<\/p>",
+        "button_label": "BOOK A CONSULTATION",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "justify-content:center",
+        "button_type": "traditional",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-lagre"
+      }
     }
   },
   "order": [
@@ -694,6 +733,7 @@
     "247bdb45-51ad-4b49-8988-da1256ed393d",
     "6156032f-8adc-4dcc-b623-ee910cb7e37c",
     "85e55522-9e5c-47a7-a15f-5bde7833652b",
-    "44431261-719a-47dc-aa00-d04b36a66e3b"
+    "44431261-719a-47dc-aa00-d04b36a66e3b",
+    "f0c396f1-677c-4819-93e0-b571ba0dd32d"
   ]
 }
