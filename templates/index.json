@@ -414,6 +414,7 @@
         "05d2694f-f3d6-401d-a197-883b7167fa28",
         "d9093ab7-8250-4b87-a503-8ef275d8e470"
       ],
+      "disabled": true,
       "settings": {
         "heading": "ARCHITECTURAL HARDWARE",
         "content": "<p>Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service. <\/p>",
@@ -427,6 +428,44 @@
         "style_border": "border--b-width",
         "layout_x_alignment": "",
         "visibility": ""
+      }
+    },
+    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "original",
+        "vertivle-alignment": "top",
+        "content_width": 50,
+        "heading": "Signature collection",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>",
+        "button_label": "Button",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-medium"
       }
     },
     "247bdb45-51ad-4b49-8988-da1256ed393d": {
@@ -582,6 +621,7 @@
     "9e35023e-6eba-4666-8c91-0f7ad6050287",
     "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27",
     "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
+    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c",
     "247bdb45-51ad-4b49-8988-da1256ed393d",
     "85e55522-9e5c-47a7-a15f-5bde7833652b",
     "44431261-719a-47dc-aa00-d04b36a66e3b"
