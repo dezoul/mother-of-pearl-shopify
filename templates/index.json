@@ -633,55 +633,6 @@
         "visibility": ""
       }
     },
-    "44431261-719a-47dc-aa00-d04b36a66e3b": {
-      "type": "banner-alternativev3",
-      "blocks": {
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0": {
-          "type": "heading",
-          "settings": {
-            "content": "TELL US ABOUT YOUR PROJECT"
-          }
-        },
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1": {
-          "type": "content",
-          "settings": {
-            "content": "<p>At Mother of Pearl, we're more than just purveyors of architectural hardware - we're your trusted partners in design. Our team, with decades of experience in the industry, offers a full-service approach tailored to your unique needs. Whether you're an architect, interior designer, or a passionate homeowner, we’re here to provide one-on-one guidance to help you discover the perfect products to complement your aesthetic. We'll help navigate not only style and finish but also the ideal size and specifications for your project.<\/p>"
-          }
-        },
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label": "BOOK A CONSULTATION",
-            "button_label_2": "",
-            "button_url": "shopify:\/\/pages\/contact",
-            "bg-color": "",
-            "border": "",
-            "button-color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0",
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1",
-        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2"
-      ],
-      "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
-        "minHeight": 11,
-        "paddingTop": 2,
-        "paddingBottom": 2,
-        "enable_lazy_loading": true,
-        "color_scheme": "color__bg-secondary color__secondary",
-        "color_text": "",
-        "color_border": "color__border-divider-1",
-        "style_border": "border--b-width",
-        "content_width": 40,
-        "image_position": "left",
-        "layout_y_alignment": "items-end",
-        "layout_x_alignment": "justify-start",
-        "visibility": ""
-      }
-    },
     "f0c396f1-677c-4819-93e0-b571ba0dd32d": {
       "type": "banner-alternative-master",
       "settings": {
@@ -719,6 +670,56 @@
         "visibility": "",
         "max_width": "max-lagre"
       }
+    },
+    "44431261-719a-47dc-aa00-d04b36a66e3b": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0": {
+          "type": "heading",
+          "settings": {
+            "content": "TELL US ABOUT YOUR PROJECT"
+          }
+        },
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>At Mother of Pearl, we're more than just purveyors of architectural hardware - we're your trusted partners in design. Our team, with decades of experience in the industry, offers a full-service approach tailored to your unique needs. Whether you're an architect, interior designer, or a passionate homeowner, we’re here to provide one-on-one guidance to help you discover the perfect products to complement your aesthetic. We'll help navigate not only style and finish but also the ideal size and specifications for your project.<\/p>"
+          }
+        },
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "BOOK A CONSULTATION",
+            "button_label_2": "",
+            "button_url": "shopify:\/\/pages\/contact",
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-0",
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-1",
+        "template--20007614153008__44431261-719a-47dc-aa00-d04b36a66e3b-16894991957e647180-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
+        "minHeight": 11,
+        "paddingTop": 2,
+        "paddingBottom": 2,
+        "enable_lazy_loading": true,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "border--b-width",
+        "content_width": 40,
+        "image_position": "left",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
     }
   },
   "order": [
@@ -733,7 +734,7 @@
     "247bdb45-51ad-4b49-8988-da1256ed393d",
     "6156032f-8adc-4dcc-b623-ee910cb7e37c",
     "85e55522-9e5c-47a7-a15f-5bde7833652b",
-    "44431261-719a-47dc-aa00-d04b36a66e3b",
-    "f0c396f1-677c-4819-93e0-b571ba0dd32d"
+    "f0c396f1-677c-4819-93e0-b571ba0dd32d",
+    "44431261-719a-47dc-aa00-d04b36a66e3b"
   ]
 }
