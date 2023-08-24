@@ -518,6 +518,40 @@
     },
     "6156032f-8adc-4dcc-b623-ee910cb7e37c": {
       "type": "gallery-V2",
+      "blocks": {
+        "826d300e-f2ee-4850-8c9d-457122d556b2": {
+          "type": "images",
+          "settings": {
+            "heading": "Cup & Lip Pulls",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
+            "url": "shopify:\/\/collections\/cup-lip-pulls",
+            "sub-heading": ""
+          }
+        },
+        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d": {
+          "type": "images",
+          "settings": {
+            "heading": "Cabinet Knobs",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
+            "url": "shopify:\/\/collections\/cabinet-knobs",
+            "sub-heading": ""
+          }
+        },
+        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9": {
+          "type": "images",
+          "settings": {
+            "heading": "D-Handles",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
+            "url": "shopify:\/\/collections",
+            "sub-heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "826d300e-f2ee-4850-8c9d-457122d556b2",
+        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d",
+        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9"
+      ],
       "settings": {
         "heading": "Kitchen & Joinery  HARDWARE",
         "heading_style": "heading-emphasis",
