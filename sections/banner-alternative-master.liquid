@@ -10,7 +10,7 @@ Globals:
   class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"
   style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);">
   <div
-    class="{{section.settings.max_width }} flex flex-col md:grid gap-4"
+    class="{{section.settings.max_width }} flex flex-col md:grid gap-x-16 gap-y-4"
     style='
     grid-template-columns:
     {% if section.settings.desk_img_position == "right" %}
@@ -185,6 +185,15 @@ Globals:
             "label": "Bottom"
           }
         ]
+      }, {
+        "type": "range",
+        "id": "content_width",
+        "min": 10,
+        "max": 90,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.banner_alternative.settings.content_width.label",
+        "default": 50
       }, {
         "type": "header",
         "content": "Header and sub-header settings"
@@ -534,15 +543,6 @@ Globals:
             "label": "Extra large"
           }
         ]
-      }, {
-        "type": "range",
-        "id": "content_width",
-        "min": 10,
-        "max": 90,
-        "step": 5,
-        "unit": "%",
-        "label": "t:sections.banner_alternative.settings.content_width.label",
-        "default": 50
       }
     ],
     "presets": [
