@@ -31,7 +31,7 @@ plus jason
     <path
       d="M2.27372 30.5267L30.9246 1.87577M30.9246 1.87577H3.86544M30.9246 1.87577V28.9349"
       stroke="var(--svg-fill)"
-      stroke-width="2"
+      stroke-width="{% unless button_text_2 == "" or button_text_2 == nil %}1{% else%}2{% endunless %}"
       stroke-linecap="square"
       stroke-linejoin="round">
   </svg>
