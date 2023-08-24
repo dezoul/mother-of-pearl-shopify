@@ -187,7 +187,7 @@
         "button_label": "ABOUT US",
         "button_label_2": "",
         "button_url": "shopify:\/\/pages\/about-us",
-        "button_position": "",
+        "button_position": "justify-content:right",
         "button_type": "arrow",
         "bg-color": "",
         "Button_border": "",
@@ -310,6 +310,74 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
+      }
+    },
+    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27": {
+      "type": "gallery-V2",
+      "blocks": {
+        "c710192c-c840-4bc1-a0cf-15c6658d1955": {
+          "type": "images",
+          "settings": {
+            "heading": "ENTRANCE DOOR HARDWARE",
+            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
+            "url": "shopify:\/\/collections\/entrance-door-hardware",
+            "sub-heading": ""
+          }
+        },
+        "9db50bb0-1751-44e7-a840-8c2afc18ead1": {
+          "type": "images",
+          "settings": {
+            "heading": "ACCESSORIES",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
+            "url": "shopify:\/\/collections\/escutcheons",
+            "sub-heading": ""
+          }
+        },
+        "2575f9e7-5b56-4beb-b947-6e839cd6b975": {
+          "type": "images",
+          "settings": {
+            "heading": "LEVER HANDLE SETS",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
+            "url": "",
+            "sub-heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "c710192c-c840-4bc1-a0cf-15c6658d1955",
+        "9db50bb0-1751-44e7-a840-8c2afc18ead1",
+        "2575f9e7-5b56-4beb-b947-6e839cd6b975"
+      ],
+      "settings": {
+        "heading": "ARCHITECTURAL HARDWARE",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "content": "Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service.",
+        "content2": "",
+        "content3": "",
+        "content-range": 60,
+        "Content_alignment": "left",
+        "img-aspect": "4\/5",
+        "button_label": "See All",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "justify-content:right",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "text_max_width": "max-medium",
+        "img_max_width": "max-medium",
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
         "visibility": ""
       }
     },
@@ -512,6 +580,7 @@
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3",
     "0f5c7be2-6398-41d5-8ac3-624b71690e0b",
     "9e35023e-6eba-4666-8c91-0f7ad6050287",
+    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27",
     "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
     "247bdb45-51ad-4b49-8988-da1256ed393d",
     "85e55522-9e5c-47a7-a15f-5bde7833652b",
