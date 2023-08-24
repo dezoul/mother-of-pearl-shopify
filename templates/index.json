@@ -67,7 +67,7 @@
       }
     },
     "0f5c7be2-6398-41d5-8ac3-624b71690e0b": {
-      "type": "mini-gallery",
+      "type": "gallery-V2",
       "blocks": {
         "885b984c-02a9-48fe-9179-f19302f76661": {
           "type": "images",

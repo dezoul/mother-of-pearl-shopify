@@ -16,5 +16,31 @@
   .window--full {
     @apply px-4 m-auto;
   }
+
+  .max-medium{
+    max-width: 768px;
+    margin: auto;
+  }
   
+  .max-large{
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  .max-ex-large{
+    max-width: 1280px;
+    margin: auto;
+  }
+  
+}
+
+
+:root{
+  --horizontal-side-gap: min(5vw, 5rem)
+}
+
+@media(max-width: 768px) {
+  .inline-grid-mobile-override {
+    grid-template-columns: 1fr !important;
+  }
 }

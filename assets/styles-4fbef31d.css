@@ -2393,6 +2393,9 @@ img:after {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-\[\.9rem\] {
+  font-size: .9rem;
+}
 .text-\[1\.125rem\] {
   font-size: 1.125rem;
 }
@@ -3452,6 +3455,14 @@ img:after {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.max-medium{
+    max-width: 768px;
+    margin: auto;
+  }
+.max-ex-large{
+    max-width: 1280px;
+    margin: auto;
+  }
 .header__link:hover + .header__dropdown,
   .header__link:focus + .header__dropdown,
   .header__dropdown:hover,
@@ -3586,6 +3597,14 @@ table td {
 /* ======= */
 /* CONTAINERS */
 /* ======= */
+:root{
+  --horizontal-side-gap: min(5vw, 5rem)
+}
+@media(max-width: 768px) {
+  .inline-grid-mobile-override {
+    grid-template-columns: 1fr !important;
+  }
+}
 /* - components */
 /* HEADER */
 /* ======= */

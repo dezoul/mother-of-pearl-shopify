@@ -1,7 +1,7 @@
-<!--- snippet arrow__button --->
+<!--- snippet classic__button --->
 {% comment %}
 to render add 
-{% render 'arrow__button' 
+{% render 'classic' 
 , button_text_1: block.settings.button_label_1,
 button_text_2: block.settings.button_label_2,
 url: block.settings.button_url,
@@ -9,15 +9,7 @@ button-bg:  block.settings.bg-color ,
 button-text-color: block.settings.button-color
 %}
 
-plus jason
-
-
-{% endcomment %}<a
-  href="{{ block.settings.button_url }}"
-  class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"
-  style="background-color: {{ button-bg }}; color: {{ button-text-color }};">
-  <span
-    class="leading-none text-right font-[inherit]">
+plus jason {% endcomment %}<a href="{{ block.settings.button_url }}"class="justify-center no-underline items-center flex w-full bg-[#232528] text-[#FCFAF6] py-4 px-8 custom-button"style="background-color: {{ button-bg }}; color: {{ button-text-color }};"> <span class="leading-none text-right font-[inherit]">
     {{ button_text_1 }}
 
     {% unless button_text_2 == "" or button_text_2 == nil %}
@@ -25,5 +17,4 @@ plus jason
       {{ button_text_2 }}
     {% endunless %}
   </span>
-
 </a>
