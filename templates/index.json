@@ -500,6 +500,7 @@
         "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1",
         "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2"
       ],
+      "disabled": true,
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
         "minHeight": 50,
@@ -512,6 +513,40 @@
         "image_position": "right",
         "layout_y_alignment": "items-end",
         "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "6156032f-8adc-4dcc-b623-ee910cb7e37c": {
+      "type": "gallery-V2",
+      "settings": {
+        "heading": "Kitchen & Joinery  HARDWARE",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "content": "In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.",
+        "content2": "",
+        "content3": "",
+        "content-range": 60,
+        "Content_alignment": "left",
+        "img-aspect": "4\/5",
+        "button_label": "Button",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "text_max_width": "max-lagre",
+        "img_max_width": "max-ex-large",
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
         "visibility": ""
       }
     },
@@ -623,6 +658,7 @@
     "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
     "75c76048-f7f6-4cc6-9b13-7593ed0ece8c",
     "247bdb45-51ad-4b49-8988-da1256ed393d",
+    "6156032f-8adc-4dcc-b623-ee910cb7e37c",
     "85e55522-9e5c-47a7-a15f-5bde7833652b",
     "44431261-719a-47dc-aa00-d04b36a66e3b"
   ]
