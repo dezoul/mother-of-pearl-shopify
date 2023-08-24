@@ -60,9 +60,7 @@ Globals:
       {% for block in section.blocks %}
         <a
           href="{{block.settings.url}}"
-          class="no-underline hover:no-underline w-full group">
-          <div
-            class="flex justify-between flex-col">
+          class="no-underline hover:no-underline w-full group flex justify-between flex-col">
             {% if block.settings.heading != null %}
               <h4
                 class="!text-lg font-wide">
@@ -73,13 +71,16 @@ Globals:
               class="relative w-full"
               style="aspect-ratio: {{section.settings.img-aspect}};">
               {{ block.settings.image_featured | image_url: width: 800 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+              {% if block.settings.sub-heading != null %}
+              <p
+                class="group-hover:opacity-100 opacity-0 z-20 absolute bottom-0 left-0 p-2">
+                {{ block.settings.sub-heading }}
+              </p>
+            {% endif %}
             </div>
           </div>
 
-          <p
-            class="group-hover:opacity-100 opacity-0">
-            {{ block.settings.sub-heading }}
-          </p>
+
         </a>
       {% endfor %}
     </div>
