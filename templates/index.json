@@ -1,24 +1,5 @@
 {
   "sections": {
-    "2cf37121-3db2-489b-9610-3dcaac7dca12": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "auto_play": true,
-        "heading": "Video",
-        "content": "<p>Give customers a summary of the video you want to share.<\/p>",
-        "button_label": "Button",
-        "button_url": "\/",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
-      }
-    },
     "c7cb7e85-b54f-4ace-b1cb-4e5e9295e535": {
       "type": "banner-alternative-master",
       "custom_css": [
@@ -58,6 +39,44 @@
         "style_border": "border--b-width",
         "visibility": "",
         "max_width": "max-lagre"
+      }
+    },
+    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/signature-range.png",
+        "desk_img_position": "right",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "square",
+        "vertivle-alignment": "middle",
+        "content_width": 35,
+        "heading": "Signature collection",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>",
+        "button_label": "Explore the",
+        "button_label_2": "signature collection",
+        "button_url": "shopify:\/\/collections",
+        "button_position": "justify-content:right",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 0,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-ex-large"
       }
     },
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3": {
@@ -316,133 +335,16 @@
         "visibility": ""
       }
     },
-    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27": {
-      "type": "gallery-V2",
-      "blocks": {
-        "c710192c-c840-4bc1-a0cf-15c6658d1955": {
-          "type": "images",
-          "settings": {
-            "heading": "ENTRANCE DOOR HARDWARE",
-            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
-            "url": "shopify:\/\/collections\/entrance-door-hardware",
-            "sub-heading": ""
-          }
-        },
-        "9db50bb0-1751-44e7-a840-8c2afc18ead1": {
-          "type": "images",
-          "settings": {
-            "heading": "ACCESSORIES",
-            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
-            "url": "shopify:\/\/collections\/escutcheons",
-            "sub-heading": ""
-          }
-        },
-        "2575f9e7-5b56-4beb-b947-6e839cd6b975": {
-          "type": "images",
-          "settings": {
-            "heading": "LEVER HANDLE SETS",
-            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
-            "url": "",
-            "sub-heading": ""
-          }
-        }
-      },
-      "block_order": [
-        "c710192c-c840-4bc1-a0cf-15c6658d1955",
-        "9db50bb0-1751-44e7-a840-8c2afc18ead1",
-        "2575f9e7-5b56-4beb-b947-6e839cd6b975"
-      ],
-      "settings": {
-        "heading": "ARCHITECTURAL HARDWARE",
-        "heading_style": "heading-emphasis",
-        "heading_size": "text-[3rem]",
-        "heading-range": 60,
-        "heading_alignment": "left",
-        "content": "Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service.",
-        "content2": "",
-        "content3": "",
-        "content-range": 60,
-        "Content_alignment": "left",
-        "img-aspect": "4\/5",
-        "button_label": "See All",
-        "button_label_2": "",
-        "button_url": "\/",
-        "button_position": "justify-content:right",
-        "button_type": "arrow",
-        "bg-color": "",
-        "Button_border": "",
-        "button-color": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "text_max_width": "max-medium",
-        "img_max_width": "max-lagre",
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "layout_x_alignment": "",
-        "visibility": ""
-      }
-    },
-    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f": {
-      "type": "linked-gallery",
-      "blocks": {
-        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0": {
-          "type": "images",
-          "settings": {
-            "heading": "ENTRANCE DOOR HARDWARE",
-            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
-            "url": "shopify:\/\/collections\/entrance-door-hardware"
-          }
-        },
-        "05d2694f-f3d6-401d-a197-883b7167fa28": {
-          "type": "images",
-          "settings": {
-            "heading": "ACCESSORIES",
-            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
-            "url": "shopify:\/\/collections\/other-hardware"
-          }
-        },
-        "d9093ab7-8250-4b87-a503-8ef275d8e470": {
-          "type": "images",
-          "settings": {
-            "heading": "LEVER HANDLE SETS",
-            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0",
-        "05d2694f-f3d6-401d-a197-883b7167fa28",
-        "d9093ab7-8250-4b87-a503-8ef275d8e470"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "ARCHITECTURAL HARDWARE",
-        "content": "<p>Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service. <\/p>",
-        "button_label": "SEE ALL",
-        "button_url": "shopify:\/\/collections\/all",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "layout_x_alignment": "",
-        "visibility": ""
-      }
-    },
-    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c": {
+    "3be95c5d-c8cf-4931-abd8-68046beb9d08": {
       "type": "banner-alternative-master",
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
-        "desk_img_position": "right",
+        "image_background_desktop": "shopify:\/\/shop_images\/architectural-hardware_815ee693-846e-4d0c-a7a9-138fc6c7fd5d.jpg",
+        "desk_img_position": "left",
         "moblie_img_position": "top",
-        "img_aspect_ratio": "square",
-        "vertivle-alignment": "middle",
-        "content_width": 35,
-        "heading": "Signature collection",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "bottom",
+        "content_width": 45,
+        "heading": "ARCHITECTURAL HARDWARE",
         "heading_style": "heading-emphasis",
         "heading_size": "text-[3rem]",
         "heading-range": 60,
@@ -452,198 +354,74 @@
         "sub-heading_size": "text-[.9rem]",
         "sub-heading-range": 60,
         "sub-heading_alignment": "left",
-        "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>",
-        "button_label": "Explore the",
-        "button_label_2": "signature collection",
-        "button_url": "shopify:\/\/collections",
-        "button_position": "justify-content:right",
+        "content": "<p>Our world of hardware is rich with diversity. We've sourced the world  over, curating a selection of superior hardware from top global brands  and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to  matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service.<\/p>",
+        "button_label": "EXPLORE PRODUCTS",
+        "button_label_2": "",
+        "button_url": "shopify:\/\/collections\/all",
+        "button_position": "",
         "button_type": "arrow",
         "bg-color": "",
         "Button_border": "",
         "button-color": "",
         "spacing_top": 100,
-        "spacing_bottom": 0,
-        "color_scheme": "color__bg-secondary color__secondary",
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-ex-large"
+        "max_width": "max-lagre"
       }
     },
-    "247bdb45-51ad-4b49-8988-da1256ed393d": {
-      "type": "banner-alternativev2",
-      "blocks": {
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0": {
-          "type": "heading",
-          "settings": {
-            "content": "Signature collection"
-          }
-        },
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1": {
-          "type": "content",
-          "settings": {
-            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>"
-          }
-        },
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2": {
-          "type": "buttons",
-          "settings": {
-            "button_width": 11,
-            "button_label": "Explore the signature collection",
-            "button_url": "shopify:\/\/collections",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0",
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1",
-        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2"
-      ],
-      "disabled": true,
+    "79bd0d32-8868-4e0b-912d-a355acb6d1a6": {
+      "type": "banner-alternative-master",
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
-        "minHeight": 50,
-        "enable_lazy_loading": false,
-        "color_scheme": "color__bg-secondary color__secondary",
-        "color_text": "",
-        "color_border": "color__border-divider-1",
-        "style_border": "",
-        "content_width": 40,
-        "image_position": "right",
-        "layout_y_alignment": "items-end",
-        "layout_x_alignment": "justify-start",
-        "visibility": ""
-      }
-    },
-    "6156032f-8adc-4dcc-b623-ee910cb7e37c": {
-      "type": "gallery-V2",
-      "blocks": {
-        "826d300e-f2ee-4850-8c9d-457122d556b2": {
-          "type": "images",
-          "settings": {
-            "heading": "Cup & Lip Pulls",
-            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
-            "url": "shopify:\/\/collections\/cup-lip-pulls",
-            "sub-heading": ""
-          }
-        },
-        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d": {
-          "type": "images",
-          "settings": {
-            "heading": "Cabinet Knobs",
-            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
-            "url": "shopify:\/\/collections\/cabinet-knobs",
-            "sub-heading": ""
-          }
-        },
-        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9": {
-          "type": "images",
-          "settings": {
-            "heading": "D-Handles",
-            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
-            "url": "shopify:\/\/collections",
-            "sub-heading": ""
-          }
-        }
-      },
-      "block_order": [
-        "826d300e-f2ee-4850-8c9d-457122d556b2",
-        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d",
-        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9"
-      ],
-      "settings": {
-        "heading": "Kitchen & Joinery  HARDWARE",
+        "image_background_desktop": "shopify:\/\/shop_images\/kitchen-and-joinery.jpg",
+        "desk_img_position": "right",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "bottom",
+        "content_width": 45,
+        "heading": "Kitchen & Joinery",
         "heading_style": "heading-emphasis",
         "heading_size": "text-[3rem]",
         "heading-range": 60,
         "heading_alignment": "left",
-        "content": "In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.",
-        "content2": "",
-        "content3": "",
-        "content-range": 60,
-        "Content_alignment": "left",
-        "img-aspect": "4\/5",
-        "button_label": "SEE ALL",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<br\/>          <\/p>",
+        "button_label": "EXPLORE PRODUCTS",
         "button_label_2": "",
-        "button_url": "shopify:\/\/collections",
-        "button_position": "justify-content:right",
+        "button_url": "shopify:\/\/collections\/kitchen-joinery",
+        "button_position": "",
         "button_type": "arrow",
         "bg-color": "",
         "Button_border": "",
         "button-color": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "text_max_width": "max-lagre",
-        "img_max_width": "max-ex-large",
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
-        "layout_x_alignment": "",
-        "visibility": ""
-      }
-    },
-    "85e55522-9e5c-47a7-a15f-5bde7833652b": {
-      "type": "linked-gallery",
-      "blocks": {
-        "3b7d788e-c30c-4881-a8e5-54513fea1f37": {
-          "type": "images",
-          "settings": {
-            "heading": "Cup & Lip Pulls",
-            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
-            "url": "shopify:\/\/collections\/cup-lip-pulls"
-          }
-        },
-        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12": {
-          "type": "images",
-          "settings": {
-            "heading": "Cabinet Knobs",
-            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
-            "url": "shopify:\/\/collections\/cabinet-knobs"
-          }
-        },
-        "2faba8b9-4812-4647-a91d-6bd753f9d4c5": {
-          "type": "images",
-          "settings": {
-            "heading": "D-Handles",
-            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
-            "url": "shopify:\/\/collections\/d-handles"
-          }
-        }
-      },
-      "block_order": [
-        "3b7d788e-c30c-4881-a8e5-54513fea1f37",
-        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12",
-        "2faba8b9-4812-4647-a91d-6bd753f9d4c5"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Kitchen & Joinery  HARDWARE",
-        "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<\/p>",
-        "button_label": "SEE ALL",
-        "button_url": "shopify:\/\/collections\/all",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "layout_x_alignment": "",
-        "visibility": ""
+        "visibility": "",
+        "max_width": "max-lagre"
       }
     },
     "f0c396f1-677c-4819-93e0-b571ba0dd32d": {
       "type": "banner-alternative-master",
+      "custom_css": [
+        ".custom-button {margin-top: 2rem;}"
+      ],
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
         "desk_img_position": "left",
         "moblie_img_position": "top",
-        "img_aspect_ratio": "original",
-        "vertivle-alignment": "middle",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "bottom",
         "content_width": 35,
         "heading": "TELL US ABOUT YOUR PROJECT",
         "heading_style": "heading-emphasis",
@@ -659,7 +437,7 @@
         "button_label": "BOOK A CONSULTATION",
         "button_label_2": "",
         "button_url": "\/",
-        "button_position": "justify-content:center",
+        "button_position": "",
         "button_type": "traditional",
         "bg-color": "",
         "Button_border": "",
@@ -723,21 +501,326 @@
         "layout_x_alignment": "justify-start",
         "visibility": ""
       }
+    },
+    "2cf37121-3db2-489b-9610-3dcaac7dca12": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "auto_play": true,
+        "heading": "Video",
+        "content": "<p>Give customers a summary of the video you want to share.<\/p>",
+        "button_label": "Button",
+        "button_url": "\/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "247bdb45-51ad-4b49-8988-da1256ed393d": {
+      "type": "banner-alternativev2",
+      "blocks": {
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0": {
+          "type": "heading",
+          "settings": {
+            "content": "Signature collection"
+          }
+        },
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Discover the Mother of Pearl Signature Collection - a culmination of our decades of experience in architectural hardware and dedication to exceptional design and quality. We've crafted an exclusive range of 100% brass architectural hardware that rivals the renowned international brands in quality but surpasses them in value. We've cut out the middleman to deliver luxury directly to your doorstep, offering you premium architectural hardware at an unmatched price point. The Mother of Pearl Signature Collection is where extraordinary quality meets incredible value.<\/p>"
+          }
+        },
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2": {
+          "type": "buttons",
+          "settings": {
+            "button_width": 11,
+            "button_label": "Explore the signature collection",
+            "button_url": "shopify:\/\/collections",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-0",
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-1",
+        "template--20007614153008__247bdb45-51ad-4b49-8988-da1256ed393d-1689493192c9b220c8-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/Gravity-bauhausplainroundpull-FF22300Ponsand_8e8e6b05-2ca2-4d48-980a-46346a81b967.jpg",
+        "minHeight": 50,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 40,
+        "image_position": "right",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
+    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f": {
+      "type": "linked-gallery",
+      "blocks": {
+        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0": {
+          "type": "images",
+          "settings": {
+            "heading": "ENTRANCE DOOR HARDWARE",
+            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
+            "url": "shopify:\/\/collections\/entrance-door-hardware"
+          }
+        },
+        "05d2694f-f3d6-401d-a197-883b7167fa28": {
+          "type": "images",
+          "settings": {
+            "heading": "ACCESSORIES",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
+            "url": "shopify:\/\/collections\/other-hardware"
+          }
+        },
+        "d9093ab7-8250-4b87-a503-8ef275d8e470": {
+          "type": "images",
+          "settings": {
+            "heading": "LEVER HANDLE SETS",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "0caf8dd4-d7b1-4795-98e1-5e8b77dd5ab0",
+        "05d2694f-f3d6-401d-a197-883b7167fa28",
+        "d9093ab7-8250-4b87-a503-8ef275d8e470"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "ARCHITECTURAL HARDWARE",
+        "content": "<p>Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service. <\/p>",
+        "button_label": "SEE ALL",
+        "button_url": "shopify:\/\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "85e55522-9e5c-47a7-a15f-5bde7833652b": {
+      "type": "linked-gallery",
+      "blocks": {
+        "3b7d788e-c30c-4881-a8e5-54513fea1f37": {
+          "type": "images",
+          "settings": {
+            "heading": "Cup & Lip Pulls",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
+            "url": "shopify:\/\/collections\/cup-lip-pulls"
+          }
+        },
+        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12": {
+          "type": "images",
+          "settings": {
+            "heading": "Cabinet Knobs",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
+            "url": "shopify:\/\/collections\/cabinet-knobs"
+          }
+        },
+        "2faba8b9-4812-4647-a91d-6bd753f9d4c5": {
+          "type": "images",
+          "settings": {
+            "heading": "D-Handles",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
+            "url": "shopify:\/\/collections\/d-handles"
+          }
+        }
+      },
+      "block_order": [
+        "3b7d788e-c30c-4881-a8e5-54513fea1f37",
+        "ea5a33ea-3c1d-4628-a1a8-d21b81933e12",
+        "2faba8b9-4812-4647-a91d-6bd753f9d4c5"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Kitchen & Joinery  HARDWARE",
+        "content": "<p>In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.<\/p>",
+        "button_label": "SEE ALL",
+        "button_url": "shopify:\/\/collections\/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27": {
+      "type": "gallery-V2",
+      "blocks": {
+        "c710192c-c840-4bc1-a0cf-15c6658d1955": {
+          "type": "images",
+          "settings": {
+            "heading": "ENTRANCE DOOR HARDWARE",
+            "image_featured": "shopify:\/\/shop_images\/MOP-TF-03_2cb7d067-e2d3-42c6-8475-c14403ba78d1.jpg",
+            "url": "shopify:\/\/collections\/entrance-door-hardware",
+            "sub-heading": ""
+          }
+        },
+        "9db50bb0-1751-44e7-a840-8c2afc18ead1": {
+          "type": "images",
+          "settings": {
+            "heading": "ACCESSORIES",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PBISSCHOP-03b.jpg",
+            "url": "shopify:\/\/collections\/escutcheons",
+            "sub-heading": ""
+          }
+        },
+        "2575f9e7-5b56-4beb-b947-6e839cd6b975": {
+          "type": "images",
+          "settings": {
+            "heading": "LEVER HANDLE SETS",
+            "image_featured": "shopify:\/\/shop_images\/MOP-PARISI-05.webp",
+            "url": "",
+            "sub-heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "c710192c-c840-4bc1-a0cf-15c6658d1955",
+        "9db50bb0-1751-44e7-a840-8c2afc18ead1",
+        "2575f9e7-5b56-4beb-b947-6e839cd6b975"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "ARCHITECTURAL HARDWARE",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "content": "Our world of hardware is rich with diversity. We've sourced the world over, curating a selection of superior hardware from top global brands and artisan manufacturers. From European elegance to the rustic charm of hand-forged American craftsmanship, we've brought together the best in architectural hardware, under one roof. From entrance door hardware to matching custom-finished hinges and accessories we've got everything you need, and the experience to help you source it all with fast turnarounds and personalised service.",
+        "content2": "",
+        "content3": "",
+        "content-range": 60,
+        "Content_alignment": "left",
+        "img-aspect": "4\/5",
+        "button_label": "See All",
+        "button_label_2": "",
+        "button_url": "\/",
+        "button_position": "justify-content:right",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "text_max_width": "max-medium",
+        "img_max_width": "max-lagre",
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "6156032f-8adc-4dcc-b623-ee910cb7e37c": {
+      "type": "gallery-V2",
+      "blocks": {
+        "826d300e-f2ee-4850-8c9d-457122d556b2": {
+          "type": "images",
+          "settings": {
+            "heading": "Cup & Lip Pulls",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-33.jpg",
+            "url": "shopify:\/\/collections\/cup-lip-pulls",
+            "sub-heading": ""
+          }
+        },
+        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d": {
+          "type": "images",
+          "settings": {
+            "heading": "Cabinet Knobs",
+            "image_featured": "shopify:\/\/shop_images\/MOP-SVB-13_d88b69c2-1316-4047-bc0c-c5808dfec700.jpg",
+            "url": "shopify:\/\/collections\/cabinet-knobs",
+            "sub-heading": ""
+          }
+        },
+        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9": {
+          "type": "images",
+          "settings": {
+            "heading": "D-Handles",
+            "image_featured": "shopify:\/\/shop_images\/MOP-Finesse-16.jpg",
+            "url": "shopify:\/\/collections",
+            "sub-heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "826d300e-f2ee-4850-8c9d-457122d556b2",
+        "e4a0785f-f49a-4df1-9d7b-8f592d0ff61d",
+        "b052d010-7fd5-4462-a9dc-1559a2b8c5a9"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Kitchen & Joinery  HARDWARE",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "content": "In our Kitchen & Joinery category, you'll find an exceptional range of meticulously curated products. We stock top global brands, offering quality Cabinet Knobs, D-Handles, and Cup & Lip Pulls to add a touch of elegance to your spaces. We've considered every little detail, from the cabinet accessories to the custom-finished brass hinges.",
+        "content2": "",
+        "content3": "",
+        "content-range": 60,
+        "Content_alignment": "left",
+        "img-aspect": "4\/5",
+        "button_label": "SEE ALL",
+        "button_label_2": "",
+        "button_url": "shopify:\/\/collections",
+        "button_position": "justify-content:right",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "text_max_width": "max-lagre",
+        "img_max_width": "max-ex-large",
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
     }
   },
   "order": [
-    "2cf37121-3db2-489b-9610-3dcaac7dca12",
     "c7cb7e85-b54f-4ace-b1cb-4e5e9295e535",
+    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c",
     "8db3e6a7-e218-40b4-950c-2693c4b4e2e3",
     "0f5c7be2-6398-41d5-8ac3-624b71690e0b",
     "9e35023e-6eba-4666-8c91-0f7ad6050287",
-    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27",
-    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
-    "75c76048-f7f6-4cc6-9b13-7593ed0ece8c",
-    "247bdb45-51ad-4b49-8988-da1256ed393d",
-    "6156032f-8adc-4dcc-b623-ee910cb7e37c",
-    "85e55522-9e5c-47a7-a15f-5bde7833652b",
+    "3be95c5d-c8cf-4931-abd8-68046beb9d08",
+    "79bd0d32-8868-4e0b-912d-a355acb6d1a6",
     "f0c396f1-677c-4819-93e0-b571ba0dd32d",
-    "44431261-719a-47dc-aa00-d04b36a66e3b"
+    "44431261-719a-47dc-aa00-d04b36a66e3b",
+    "2cf37121-3db2-489b-9610-3dcaac7dca12",
+    "247bdb45-51ad-4b49-8988-da1256ed393d",
+    "2ba6e93a-0290-48ad-83d8-a5faa1e46c3f",
+    "85e55522-9e5c-47a7-a15f-5bde7833652b",
+    "fc96cd28-2420-4dcf-b7b8-398bd7ec2b27",
+    "6156032f-8adc-4dcc-b623-ee910cb7e37c"
   ]
 }
