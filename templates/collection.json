@@ -85,7 +85,7 @@
           "type": "buttons",
           "settings": {
             "button_label": "Visit our Showroom",
-            "button_label_2": "Visit our Showroom",
+            "button_label_2": "",
             "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "",
             "border": "",
@@ -166,6 +166,44 @@
         "layout_x_alignment": "",
         "visibility": ""
       }
+    },
+    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-remy-garnier-01.jpg",
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "middle",
+        "content_width": 55,
+        "heading": "WE REPRESENT THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>While we've curated a diverse selection of our Architectural Hardware here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top  brands, we invite you to get in touch with our team or visit our  showroom. There, you'll discover a universe of design possibilities to  find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery  offerings. <\/p>",
+        "button_label": "VISIT OUR SHOWROOM",
+        "button_label_2": "",
+        "button_url": "shopify:\/\/pages\/contact",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-lagre"
+      }
     }
   },
   "order": [
@@ -173,6 +211,7 @@
     "grid",
     "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38",
     "419107ab-fc16-4f4a-b8e8-83669f562b92",
-    "9b8be202-0c87-43ce-93d3-46052a067fe2"
+    "9b8be202-0c87-43ce-93d3-46052a067fe2",
+    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae"
   ]
 }
