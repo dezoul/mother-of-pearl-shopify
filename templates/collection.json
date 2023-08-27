@@ -66,53 +66,42 @@
         "products_per_page": 5
       }
     },
-    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38": {
-      "type": "banner-alternativev3",
-      "blocks": {
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1": {
-          "type": "heading",
-          "settings": {
-            "content": "WE STOCK THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS"
-          }
-        },
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1": {
-          "type": "content",
-          "settings": {
-            "content": "<p>While we've curated a diverse selection of our {{ collection.title }} here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top brands, we invite you to get in touch with our team or visit our showroom. There, you'll discover a universe of design possibilities to find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery offerings. <\/p>"
-          }
-        },
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1": {
-          "type": "buttons",
-          "settings": {
-            "button_label": "Visit our Showroom",
-            "button_label_2": "",
-            "button_url": "shopify:\/\/pages\/contact",
-            "bg-color": "",
-            "border": "",
-            "button-color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1",
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1",
-        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1"
-      ],
+    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae": {
+      "type": "banner-alternative-master",
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/MOP-remy-garnier-01.jpg",
-        "minHeight": 0,
-        "paddingTop": 2,
-        "paddingBottom": 2,
-        "enable_lazy_loading": false,
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "middle",
+        "content_width": 55,
+        "heading": "WE REPRESENT THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>While we've curated a diverse selection of our Architectural Hardware here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top  brands, we invite you to get in touch with our team or visit our  showroom. There, you'll discover a universe of design possibilities to  find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery  offerings. <\/p>",
+        "button_label": "VISIT OUR SHOWROOM",
+        "button_label_2": "",
+        "button_url": "shopify:\/\/pages\/contact",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
         "color_scheme": "color__bg-secondary color__secondary",
-        "color_text": "",
         "color_border": "color__border-divider-1",
-        "style_border": "",
-        "content_width": 60,
-        "image_position": "left",
-        "layout_y_alignment": "items-center",
-        "layout_x_alignment": "justify-start",
-        "visibility": ""
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-lagre"
       }
     },
     "419107ab-fc16-4f4a-b8e8-83669f562b92": {
@@ -149,6 +138,56 @@
         "visibility": ""
       }
     },
+    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38": {
+      "type": "banner-alternativev3",
+      "blocks": {
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1": {
+          "type": "heading",
+          "settings": {
+            "content": "WE STOCK THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS"
+          }
+        },
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1": {
+          "type": "content",
+          "settings": {
+            "content": "<p>While we've curated a diverse selection of our {{ collection.title }} here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top brands, we invite you to get in touch with our team or visit our showroom. There, you'll discover a universe of design possibilities to find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery offerings. <\/p>"
+          }
+        },
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Visit our Showroom",
+            "button_label_2": "",
+            "button_url": "shopify:\/\/pages\/contact",
+            "bg-color": "",
+            "border": "",
+            "button-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-heading-1",
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-content-1",
+        "template--20007614054704__ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-remy-garnier-01.jpg",
+        "minHeight": 0,
+        "paddingTop": 2,
+        "paddingBottom": 2,
+        "enable_lazy_loading": false,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "style_border": "",
+        "content_width": 60,
+        "image_position": "left",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
+      }
+    },
     "9b8be202-0c87-43ce-93d3-46052a067fe2": {
       "type": "collection-final-section",
       "settings": {
@@ -166,52 +205,14 @@
         "layout_x_alignment": "",
         "visibility": ""
       }
-    },
-    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae": {
-      "type": "banner-alternative-master",
-      "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/MOP-remy-garnier-01.jpg",
-        "desk_img_position": "left",
-        "moblie_img_position": "top",
-        "img_aspect_ratio": "portrait",
-        "vertivle-alignment": "middle",
-        "content_width": 55,
-        "heading": "WE REPRESENT THOUSANDS OF PRODUCTS FROM THE WORLDS TOP BRANDS",
-        "heading_style": "heading-emphasis",
-        "heading_size": "text-[3rem]",
-        "heading-range": 60,
-        "heading_alignment": "left",
-        "sub-heading": "",
-        "sub-heading_style": "",
-        "sub-heading_size": "text-[.9rem]",
-        "sub-heading-range": 60,
-        "sub-heading_alignment": "left",
-        "content": "<p>While we've curated a diverse selection of our Architectural Hardware here for you to explore, remember that this represents only a small fraction of the thousands of exquisite items we offer. To fully appreciate the depth and breadth of our collections from the world's top  brands, we invite you to get in touch with our team or visit our  showroom. There, you'll discover a universe of design possibilities to  find the perfect architectural hardware that speaks to your unique taste and design aspirations. Reach out today or visit us to experience the full extent of our extraordinary architectural hardware and joinery  offerings. <\/p>",
-        "button_label": "VISIT OUR SHOWROOM",
-        "button_label_2": "",
-        "button_url": "shopify:\/\/pages\/contact",
-        "button_position": "",
-        "button_type": "arrow",
-        "bg-color": "",
-        "Button_border": "",
-        "button-color": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "visibility": "",
-        "max_width": "max-lagre"
-      }
     }
   },
   "order": [
     "banner",
     "grid",
-    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38",
+    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae",
     "419107ab-fc16-4f4a-b8e8-83669f562b92",
-    "9b8be202-0c87-43ce-93d3-46052a067fe2",
-    "b34adf46-fe97-4a73-a6be-8fa8585ef9ae"
+    "ed51ec1d-d3d5-4413-8ad9-fd6ccf5dbc38",
+    "9b8be202-0c87-43ce-93d3-46052a067fe2"
   ]
 }
