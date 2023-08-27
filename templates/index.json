@@ -21,6 +21,9 @@
     },
     "c7cb7e85-b54f-4ace-b1cb-4e5e9295e535": {
       "type": "banner-alternative-master",
+      "custom_css": [
+        "p a {font-size: inherit;}"
+      ],
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/mop-home.gif",
         "desk_img_position": "left",
@@ -38,7 +41,7 @@
         "sub-heading_size": "text-[.9rem]",
         "sub-heading-range": 60,
         "sub-heading_alignment": "left",
-        "content": "<p>Welcome to Mother of Pearl and Sons Trading, Australia's leading provider of premier architectural hardware. With decades of experience, we have curated a vast selection of luxury doorknobs, kitchen drawer handles, hinges, accessories and more. <\/p><p>Our expert team handpicks each product, ensuring top-tier craftsmanship. Whether you're an architect, interior designer, or planning your dream home, discover our exceptional range sourcing from globally renowned brands and our own exclusive Mother of Pearl Signature Collection.<\/p>",
+        "content": "<p>Welcome to Mother of Pearl and Sons Trading, Australia's leading provider of premier architectural hardware. With decades of experience, we have curated a vast selection of luxury doorknobs, kitchen drawer handles, hinges, accessories and more. <\/p><p>Our expert team handpicks each product, ensuring top-tier craftsmanship. Whether you're an architect, interior designer, or planning your dream home, discover our exceptional range sourcing from globally renowned brands and our own exclusive <a href=\"\/pages\/our-signature-range\" title=\"Our Signature Range\">Mother of Pearl Signature Collection<\/a>.<\/p>",
         "button_label": "tell us about",
         "button_label_2": "your project",
         "button_url": "shopify:\/\/pages\/contact",
