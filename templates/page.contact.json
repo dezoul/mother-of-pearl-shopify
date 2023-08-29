@@ -37,7 +37,7 @@
         ".window--wide {max-width: 70rem;}"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/Showroom_Entrance.jpg",
+        "image_background_desktop": "shopify:\/\/shop_images\/MOP-location.gif",
         "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
