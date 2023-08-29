@@ -222,7 +222,7 @@
           "settings": {
             "button_label": "BOOK A CONSULTATION",
             "button_label_2": "",
-            "button_url": "\/collections\/all",
+            "button_url": "shopify:\/\/pages\/contact",
             "bg-color": "#fcfaf6",
             "border": "",
             "button-color": "#232528"
