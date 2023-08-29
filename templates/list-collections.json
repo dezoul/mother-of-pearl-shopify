@@ -74,16 +74,55 @@
         "spacing_top": 60,
         "spacing_bottom": 60,
         "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
+        "color_border": "!color__border-transparent",
         "row_size_desktop": "md:grid-cols-4",
         "row_size_mobile": "grid-cols-2",
         "enable_collection_size_count": true,
-        "items_per_page": 12
+        "items_per_page": 20
+      }
+    },
+    "8df66ad2-7087-43b5-a3d5-03d71753f844": {
+      "type": "banner-alternative-master",
+      "settings": {
+        "image_background_desktop": "shopify:\/\/shop_images\/stock-kitchen-1-square.jpg",
+        "desk_img_position": "left",
+        "moblie_img_position": "top",
+        "img_aspect_ratio": "portrait",
+        "vertivle-alignment": "middle",
+        "content_width": 50,
+        "heading": "TELL US ABOUT YOUR PROJECT",
+        "heading_style": "heading-emphasis",
+        "heading_size": "text-[3rem]",
+        "heading-range": 60,
+        "heading_alignment": "left",
+        "sub-heading": "",
+        "sub-heading_style": "",
+        "sub-heading_size": "text-[.9rem]",
+        "sub-heading-range": 60,
+        "sub-heading_alignment": "left",
+        "content": "<p>At Mother of Pearl, we're more than just purveyors of architectural hardware - we're your trusted partners in design. Our team, with decades of experience in the industry, offers a full-service approach tailored to your unique needs. Whether you're an architect, interior designer, or a passionate homeowner, we’re here to provide one-on-one guidance to help you discover the perfect products to complement your aesthetic. We'll help navigate not only style and finish but also the ideal size and specifications for your project.<\/p>",
+        "button_label": "BOOK A CONSULTATION",
+        "button_label_2": "",
+        "button_url": "shopify:\/\/pages\/contact",
+        "button_position": "",
+        "button_type": "arrow",
+        "bg-color": "",
+        "Button_border": "",
+        "button-color": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "visibility": "",
+        "max_width": "max-lagre"
       }
     }
   },
   "order": [
     "165583830739141e89",
-    "main"
+    "main",
+    "8df66ad2-7087-43b5-a3d5-03d71753f844"
   ]
 }
