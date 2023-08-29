@@ -6,12 +6,19 @@
         "82dc43ff-a8dd-484c-a794-1064d07c5d26": {
           "type": "heading",
           "settings": {
-            "content": "Collections"
+            "content": "Explore Product Categories"
+          }
+        },
+        "853b48fc-0b7f-4fc7-9f9e-5a730eaa8cfa": {
+          "type": "content",
+          "settings": {
+            "content": "<p>We represent thousands of products from the worlds top architectural hardware brands, and it wouldn't be possible to showcase them all here on our website. Below you'll find a selection of our most popular products, including our own solid brass signature range and if you would like to explore our full range, get in touch or come in-store to our showroom to speak to our experienced team. <\/p>"
           }
         }
       },
       "block_order": [
-        "82dc43ff-a8dd-484c-a794-1064d07c5d26"
+        "82dc43ff-a8dd-484c-a794-1064d07c5d26",
+        "853b48fc-0b7f-4fc7-9f9e-5a730eaa8cfa"
       ],
       "settings": {
         "show_entire_image": false,
