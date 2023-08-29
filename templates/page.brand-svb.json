@@ -223,9 +223,9 @@
             "button_label": "BOOK A CONSULTATION",
             "button_label_2": "",
             "button_url": "shopify:\/\/pages\/contact",
-            "bg-color": "#fcfaf6",
+            "bg-color": "#000000",
             "border": "",
-            "button-color": "#232528"
+            "button-color": "#f9ebc9"
           }
         }
       },
@@ -240,7 +240,7 @@
         "paddingTop": 2,
         "paddingBottom": 2,
         "enable_lazy_loading": false,
-        "color_scheme": "color__bg-body color__text",
+        "color_scheme": "color__bg-tertiary color__tertiary",
         "color_text": "",
         "color_border": "color__border-divider-1",
         "style_border": "",
