@@ -16,15 +16,16 @@
       "settings": {
         "show_entire_image": false,
         "enable_lazy_loading": false,
-        "show_video_background_mobile": true,
-        "color_scheme": "color__bg-overlay-1",
+        "show_video_background_mobile": false,
+        "color_scheme": "color__bg-body color__text",
         "color_text": "color__text",
         "color_border": "color__border-divider-1",
         "enable_gradient": false,
         "style_border": "",
         "layout_y_spacing": "min-h-[250px] md:min-h-[350px]",
         "layout_y_alignment": "items-end",
-        "layout_x_alignment": "justify-start"
+        "layout_x_alignment": "justify-start",
+        "visibility": ""
       }
     },
     "main": {
@@ -32,6 +33,7 @@
       "blocks": {
         "90f1e492-34c2-4553-ab3f-9cae552e2351": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "heading": "Block heading",
             "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
@@ -45,6 +47,7 @@
         },
         "7f05c199-5ad2-42c8-a0b7-42497df71be0": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "url": "",
             "heading": "Block heading",
@@ -61,6 +64,8 @@
         "7f05c199-5ad2-42c8-a0b7-42497df71be0"
       ],
       "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "row_size_desktop": "md:grid-cols-4",
