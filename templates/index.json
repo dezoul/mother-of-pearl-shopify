@@ -38,7 +38,7 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-lagre"
+        "max_width": "max-large"
       }
     },
     "75c76048-f7f6-4cc6-9b13-7593ed0ece8c": {
@@ -217,7 +217,7 @@
         "spacing_top": 100,
         "spacing_bottom": 100,
         "text_max_width": "max-ex-large",
-        "img_max_width": "max-lagre",
+        "img_max_width": "max-large",
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -370,7 +370,7 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-lagre"
+        "max_width": "max-large"
       }
     },
     "79bd0d32-8868-4e0b-912d-a355acb6d1a6": {
@@ -408,7 +408,7 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-lagre"
+        "max_width": "max-large"
       }
     },
     "f0c396f1-677c-4819-93e0-b571ba0dd32d": {
@@ -449,7 +449,7 @@
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
         "visibility": "",
-        "max_width": "max-lagre"
+        "max_width": "max-large"
       }
     },
     "44431261-719a-47dc-aa00-d04b36a66e3b": {
@@ -727,7 +727,7 @@
         "spacing_top": 100,
         "spacing_bottom": 100,
         "text_max_width": "max-medium",
-        "img_max_width": "max-lagre",
+        "img_max_width": "max-large",
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -795,7 +795,7 @@
         "button-color": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
-        "text_max_width": "max-lagre",
+        "text_max_width": "max-large",
         "img_max_width": "max-ex-large",
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",

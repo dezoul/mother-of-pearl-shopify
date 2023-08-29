@@ -3462,6 +3462,10 @@ img:after {
     max-width: 768px;
     margin: auto;
   }
+.max-large{
+    max-width: 1024px;
+    margin: auto;
+  }
 .max-ex-large{
     max-width: 1280px;
     margin: auto;

@@ -6,30 +6,21 @@ Globals:
 - settings.layout_horizontal: horizontaly margin
 {% endcomment %}{% if section.settings.content %}
 {% endif %}
-  <section
-  class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}"
-  style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap); padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;">
-  <div
+  <section class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}" style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap); padding-top:{{ section.settings.spacing_top }}px;  padding-bottom:{{ section.settings.spacing_bottom }}px;"> <div
     class="{{section.settings.text_max_width}}">
     {%- unless section.settings.featured_image == blank -%}
-      <div
-        class="text-center pb-8">
+      <div class="text-center pb-8">
         {{ section.settings.featured_image | image_url: width: 100 | image_tag: style: 'object-fit:cover', class: 'inline-block object-cover z-10', loading: 'lazy' }}
       </div>
     {%- endunless -%}
     {%- unless section.settings.heading == blank -%}
-      <div
-        style="text-align: {{section.settings.heading_alignment}}">
-        <h2
-          class="inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}"
-          {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
+      <div style="text-align: {{section.settings.heading_alignment}}">
+        <h2 class="inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}" {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
       </div>
 
     {%- endunless -%}
     {%- unless section.settings.content == blank -%}
-      <div
-        class="inline-grid-mobile-override mb-4 grid gap-4 mx-auto "
-        style="text-align:{{section.settings.Content_alignment}}; grid-template-columns: {% if section.settings.content != "" %} 1fr {% endif %} {% if section.settings.content2 != "" %} 1fr {% endif %} {% if section.settings.content3 != "" %} 1fr {% endif %}; {% if section.settings.content-range != 60 %} max-width: {{section.settings.content-range}}rem;{% endif %}">
+      <div class="inline-grid-mobile-override mb-4 grid gap-4 mx-auto " style="text-align:{{section.settings.Content_alignment}}; grid-template-columns: {% if section.settings.content != "" %} 1fr {% endif %} {% if section.settings.content2 != "" %} 1fr {% endif %} {% if section.settings.content3 != "" %} 1fr {% endif %}; {% if section.settings.content-range != 60 %} max-width: {{section.settings.content-range}}rem;{% endif %}">
         <style></style>
         {% if section.settings.content != "" %}
           <p>
@@ -51,29 +42,21 @@ Globals:
     {%- endunless -%}
   </div>
 
-  <div
-    class="{{section.settings.img_max_width}}">
+  <div class="{{section.settings.img_max_width}}">
 
-    <div
-      class="md:flex my-8 gap-y-12 md:gap-y-4 gap-x-4 grid {{section.settings.img_max_width}}">
+    <div class="md:flex my-8 gap-y-12 md:gap-y-4 gap-x-4 grid {{section.settings.img_max_width}}">
 
       {% for block in section.blocks %}
-        <a
-          href="{{block.settings.url}}"
-          class="no-underline hover:no-underline w-full group flex justify-between flex-col">
+        <a href="{{block.settings.url}}" class="no-underline hover:no-underline w-full group flex justify-between flex-col">
           {% if block.settings.heading != "" %}
-            <h4
-              class="!text-lg font-wide">
+            <h4 class="!text-lg font-wide">
               {{ block.settings.heading }}
             </h4>
           {% endif %}
-          <div
-            class="relative w-full"
-            style="aspect-ratio: {{section.settings.img-aspect}};">
+          <div class="relative w-full" style="aspect-ratio: {{section.settings.img-aspect}};">
             {{ block.settings.image_featured | image_url: width: 800 | image_tag: class: 'absolute insert-0 w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
             {% if block.settings.sub-heading != "" %}
-              <p
-                class="group-hover:opacity-100 opacity-0 z-20 absolute bottom-0 left-0 p-2">
+              <p class="group-hover:opacity-100 opacity-0 z-20 absolute bottom-0 left-0 p-2">
                 {{ block.settings.sub-heading }}
               </p>
             {% endif %}
@@ -84,9 +67,7 @@ Globals:
       {% endfor %}
     </div>
     {%- unless section.settings.button_url == blank -%}
-      <div
-        class="flex"
-        style="{{section.settings.button_position}}">
+      <div class="flex" style="{{section.settings.button_position}}">
         {% if section.settings.button_type == "arrow" %}
           {% render 'arrow__button' 
            , button_text_1: section.settings.button_label,
@@ -329,7 +310,7 @@ Globals:
             "value": "max-medium",
             "label": "Medium"
           }, {
-            "value": "max-lagre",
+            "value": "max-large",
             "label": "Large"
           }, {
             "value": "max-ex-large",
@@ -345,7 +326,7 @@ Globals:
             "value": "max-medium",
             "label": "Medium"
           }, {
-            "value": "max-lagre",
+            "value": "max-large",
             "label": "Large"
           }, {
             "value": "max-ex-large",
