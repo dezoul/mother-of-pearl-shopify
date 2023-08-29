@@ -45,9 +45,9 @@
       "settings": {
         "dropdown_links": "main-menu",
         "search_links": "",
-        "logo_light": "shopify:\/\/shop_images\/MOP-logo-sand.svg",
-        "logo_desktop_height": 30,
-        "logo_mobile_height": 16,
+        "logo_light": "shopify:\/\/shop_images\/MOP-logo-2.svg",
+        "logo_desktop_height": 70,
+        "logo_mobile_height": 50,
         "bar_color_scheme": "color__bg-body color__text",
         "bar_color_border": "!color__border-transparent",
         "bar_layout_desktop": "center-below",
