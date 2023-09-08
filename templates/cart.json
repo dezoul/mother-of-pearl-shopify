@@ -16,7 +16,7 @@
         "page_color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "sidebar_color_scheme": "color__bg-secondary color__secondary",
-        "main_disclaimer": "<p>This is a disclaimer that you can customise about the checkout. <\/p>",
+        "main_disclaimer": "<p>We'll review your order and personally get in touch to confirm stock availabilty, custom finishes and project timelines. <\/p>",
         "empty_button_label": "Shop all",
         "empty_button_url": "\/collections\/all",
         "enable_cart_note": true,

@@ -260,8 +260,9 @@
         "ef1e0537-1bfc-43df-871e-320642c2a4bb",
         "94f9a281-df97-4e2b-9e9d-d6d688712759"
       ],
+      "disabled": true,
       "settings": {
-        "heading": "ABOUT THE MOTHER OF PEARL SIGNATURE COLLECTION",
+        "heading": "ABOUT OUR RANGE",
         "content": "",
         "button_label": "Button label",
         "button_url": "",
