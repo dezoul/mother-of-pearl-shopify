@@ -1,0 +1,302 @@
+{
+  "sections": {
+    "1638995507af787164": {
+      "type": "product__main",
+      "blocks": {
+        "6963d72e-056b-4a9f-879f-6bc3c1f25bb5": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "spacing_top": 10,
+            "spacing_bottom": 0,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": ""
+          }
+        },
+        "bef9bd40-2a8e-45c2-ae54-59c9ef6f0e26": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "spacing_top": 10,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "border--b-width"
+          }
+        },
+        "853ae7f0-85c9-45dc-8326-6e4044bcf5e5": {
+          "type": "title",
+          "settings": {
+            "content": "",
+            "spacing_top": 20,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": "",
+            "enable_thumbnails_product_type": false,
+            "enable_thumbnails_vendor": false,
+            "enable_sku": false
+          }
+        },
+        "62c29cd6-a0b5-4f8b-86c0-a48660869d22": {
+          "type": "price",
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 20,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": ""
+          }
+        },
+        "123fd04c-91f3-4248-a65a-614e2f64fdeb": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": "",
+            "enable_open": true
+          }
+        },
+        "ef434a68-5c85-48d5-91a3-248bb49c30e2": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "{{product.description}}",
+            "spacing_top": 10,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": ""
+          }
+        },
+        "b78b560b-e1c2-428d-ad73-fb5f8aac6d58": {
+          "type": "options",
+          "settings": {
+            "spacing_top": 20,
+            "spacing_bottom": 0,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": ""
+          }
+        },
+        "b78b560b-e1c2-428d-ad73-fb5f8aac6d53": {
+          "type": "add",
+          "settings": {
+            "content": "",
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "style_border": "",
+            "enable_quantity": true,
+            "enable_dynamic_checkout": false,
+            "enable_gift_card_recipient": false
+          }
+        },
+        "9f1692ea-ccb9-4e4c-9c83-7a6ae53392aa": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "spacing_top": 20,
+            "spacing_bottom": 10,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "",
+            "threshold": 20
+          }
+        },
+        "c18a6be5-7074-4b70-a8e1-d4f845a9e665": {
+          "type": "pickup",
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 20,
+            "color_scheme": "color__bg-body color__text",
+            "style_border": ""
+          }
+        },
+        "76f2c051-662d-4c42-b036-d6658cf9616f": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "title": "You may also like",
+            "products_count": 3,
+            "intent": "related",
+            "color_scheme": "color__bg-body color__text",
+            "style_border": "border--t-width",
+            "enable_open": true
+          }
+        },
+        "848f5aea-f7ad-4974-a5fb-020776e3e523": {
+          "type": "stickyadd",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Remind customers of offers like free shipping and lifetime warranties.<\/p>",
+            "color_scheme": "color__bg-overlay-1 color__text",
+            "on_scroll": true
+          }
+        }
+      },
+      "block_order": [
+        "6963d72e-056b-4a9f-879f-6bc3c1f25bb5",
+        "bef9bd40-2a8e-45c2-ae54-59c9ef6f0e26",
+        "853ae7f0-85c9-45dc-8326-6e4044bcf5e5",
+        "62c29cd6-a0b5-4f8b-86c0-a48660869d22",
+        "123fd04c-91f3-4248-a65a-614e2f64fdeb",
+        "ef434a68-5c85-48d5-91a3-248bb49c30e2",
+        "b78b560b-e1c2-428d-ad73-fb5f8aac6d58",
+        "b78b560b-e1c2-428d-ad73-fb5f8aac6d53",
+        "9f1692ea-ccb9-4e4c-9c83-7a6ae53392aa",
+        "c18a6be5-7074-4b70-a8e1-d4f845a9e665",
+        "76f2c051-662d-4c42-b036-d6658cf9616f",
+        "848f5aea-f7ad-4974-a5fb-020776e3e523"
+      ],
+      "settings": {
+        "enable_default_variant": true,
+        "spacing_top": 40,
+        "spacing_bottom": 40,
+        "media_gallery_style": "thumbnail-slider",
+        "image_border": "!color__border-transparent",
+        "enable_zoom": false,
+        "enable_alt": false,
+        "enable_variant_images": false,
+        "media_color_scheme": "color__bg-tertiary color__tertiary",
+        "media_ratio": "aspect-[1\/1] aspect-w-1 aspect-h-1",
+        "media_object-sizing": "contain",
+        "enable_ratio": true,
+        "show_product_badges": true,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "!color__border-transparent",
+        "layout_gallery_size": "w-full md:w-1\/2"
+      }
+    },
+    "1db72d45-edc2-4507-a1d8-710c5fdc2f0b": {
+      "type": "product_extra_details",
+      "disabled": true,
+      "settings": {
+        "heading": "Details",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "",
+        "layout_x_alignment": "",
+        "visibility": ""
+      }
+    },
+    "0223d397-f097-4178-91c0-0b086e81e4a8": {
+      "type": "content-grid",
+      "blocks": {
+        "template--20007613825328__0223d397-f097-4178-91c0-0b086e81e4a8-content-6": {
+          "type": "content",
+          "settings": {
+            "heading": "Precision Craftsmanship",
+            "content": "<p>The Mother of Pearl Signature Collection is a testament to our unparalleled dedication to artistry and precision. We harness decades of expertise to craft architectural hardware that stands apart, with each piece reflecting our unwavering commitment to quality.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/MOP-signature-1.png",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "ef1e0537-1bfc-43df-871e-320642c2a4bb": {
+          "type": "content",
+          "settings": {
+            "heading": "Timeless Elegance",
+            "content": "<p>Marrying timeless elegance with contemporary design, our Signature Collection captures the essence of both worlds. Whether you seek the charm of classic aesthetics or the clean lines of modernity, there's a piece in this collection tailored just for you.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/Product-2.jpg",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        },
+        "94f9a281-df97-4e2b-9e9d-d6d688712759": {
+          "type": "content",
+          "settings": {
+            "heading": "Solid Brass, Solid Value",
+            "content": "<p>Every item in our Signature Collection is carved from 100% solid brass, ensuring durability that lasts generations. But beyond its robustness, the collection offers unmatched value. By eliminating intermediaries, we bring luxury straight to your home without the premium price tag.<\/p>",
+            "button_label": "Button",
+            "button_url": "",
+            "image_featured": "shopify:\/\/shop_images\/Product.jpg",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "!color__border-transparent",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md: md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--20007613825328__0223d397-f097-4178-91c0-0b086e81e4a8-content-6",
+        "ef1e0537-1bfc-43df-871e-320642c2a4bb",
+        "94f9a281-df97-4e2b-9e9d-d6d688712759"
+      ],
+      "settings": {
+        "heading": "ABOUT THE MOTHER OF PEARL SIGNATURE COLLECTION",
+        "content": "",
+        "button_label": "Button label",
+        "button_url": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-3",
+        "row_size_mobile": "grid-cols-1",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "5486c604-ae9c-4f7e-a33e-7698d503cb37": {
+      "type": "recommendations-slider-no-scroll",
+      "settings": {
+        "intent": "related",
+        "products_count": 4,
+        "heading": "You may also like",
+        "content": "",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "style_border": "border--b-width",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "1638995507af787164",
+    "1db72d45-edc2-4507-a1d8-710c5fdc2f0b",
+    "0223d397-f097-4178-91c0-0b086e81e4a8",
+    "5486c604-ae9c-4f7e-a33e-7698d503cb37"
+  ]
+}
