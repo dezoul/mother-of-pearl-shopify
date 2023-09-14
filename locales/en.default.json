@@ -94,7 +94,7 @@
       "out_of_stock": "Out of stock",
       "available": "Available",
       "unavailable": "Unavailable",
-      "add_to_cart": "Add to Cart",
+      "add_to_cart": "Add to Quote",
       "short_add_label": "Add",
       "options": "options",
       "variants": "Variants",
@@ -130,7 +130,7 @@
     "general": {
       "title": "Cart",
       "cart_heading": "Your cart",
-      "checkout": "Checkout",
+      "checkout": "Get a quote",
       "decrease": "Decrease quantity",
       "increase": "Increase quantity",
       "subtotal": "Subtotal",
