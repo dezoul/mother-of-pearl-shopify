@@ -4,8 +4,12 @@ Richtext section with options to display buttons and headings.
 
 Globals:
 - settings.layout_horizontal: horizontaly margin
-{% endcomment %}{% if bob == dave %}
-{% endif %}
+{% endcomment %}
+<style> 
+  @media(min-width:900px)
+  .mobile-size-overide {
+  font-size:1.8rem
+} </style>
   <section class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}" style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);"> <div
     class="{{section.settings.max_width }} flex flex-col md:grid gap-x-16 gap-y-4"
     style='
