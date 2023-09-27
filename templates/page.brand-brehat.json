@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "content": "Verreries de Brehat",
-            "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
+            "subHeading": "Distributed in Australia by Mother of Pearl & Sons TRADING."
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
@@ -216,14 +216,14 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Les Verreries de Brehat truly represents the zenith of glass hardware craftsmanship. Each piece, meticulously crafted in their factory in Brittany, France, ensures a unique yet consistent aesthetic, coupled with a quality that truly pushes the boundaries of imagination.<\/p><p>As the exclusive partner in Australia, we are honoured to present a curated range of their exquisite glass products, where tradition seamlessly intertwines with innovation. We invite you to explore this collection and make a distinctive statement of your artistic expression with Les Verreries de Brehat's creations.<\/p>"
+            "content": "<p>Les Verreries de Brehat truly represents the zenith of glass hardware craftsmanship. Each piece, meticulously crafted in their factory in Brittany, France, ensures a unique yet consistent aesthetic, coupled with a quality that truly pushes the boundaries of imagination.<\/p><p>As the distributed partner in Australia, we are honoured to present a curated range of their exquisite glass products, where tradition seamlessly intertwines with innovation. We invite you to explore this collection and make a distinctive statement of your artistic expression with Les Verreries de Brehat's creations.<\/p>"
           }
         },
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 30,
             "button_label": "BOOK A CONSULTATION",
+            "button_label_2": "",
             "button_url": "https:\/\/motherofpearlandsons.myshopify.com\/pages\/contact#book-a-consultation",
             "bg-color": "#fcfaf6",
             "border": "",
