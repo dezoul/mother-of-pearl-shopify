@@ -7,7 +7,7 @@ Globals:
 {% endcomment %}
 <style> 
   @media(min-width:900px)
-  .mobile-size-overide {
+  .mobile-size-overide-font {
   font-size:1.8rem !important
 }
   .mobile-y-padding-overide{
@@ -15,7 +15,7 @@ Globals:
     padding-bottom:5% !important;
   }
 </style>
-  <section class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}" style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);"> <div
+  <section class="mobile-y-padding-overide {{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}" style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);"> <div
     class="{{section.settings.max_width }} flex flex-col md:grid gap-x-16 gap-y-4"
     style='
     grid-template-columns:
@@ -66,7 +66,7 @@ Globals:
       <div class="">
         {%- unless section.settings.heading == blank -%}
           <div style="text-align: {{section.settings.heading_alignment}}">
-            <h2 class="mobile-size-overide inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}" {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
+            <h2 class="mobile-size-overide-font inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}" {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
           </div>
 
         {%- endunless -%}
