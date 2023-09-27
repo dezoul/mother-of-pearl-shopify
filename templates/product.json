@@ -99,6 +99,7 @@
         },
         "c18a6be5-7074-4b70-a8e1-d4f845a9e665": {
           "type": "pickup",
+          "disabled": true,
           "settings": {
             "spacing_top": 0,
             "spacing_bottom": 20,
@@ -143,7 +144,7 @@
         "848f5aea-f7ad-4974-a5fb-020776e3e523"
       ],
       "custom_css": [
-        ".component-badge {color: inherit; background-color:#f8f4eb; margin-left: -4px;}"
+        ".component-badge {color: inherit; background-color: #f8f4eb; margin-left: -4px;}"
       ],
       "settings": {
         "enable_default_variant": true,

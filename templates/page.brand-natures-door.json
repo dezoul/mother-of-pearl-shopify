@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "content": "Nature’s Door Handles",
-            "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
+            "subHeading": "Distributed in Australia by Mother of Pearl & Sons TRADING."
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
@@ -223,8 +223,8 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 30,
             "button_label": "BOOK A CONSULTATION",
+            "button_label_2": "",
             "button_url": "\/collections\/all",
             "bg-color": "#fcfaf6",
             "border": "",
