@@ -198,12 +198,12 @@
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 21,
             "button_label": "BOOK A CONSULTATION",
-            "button_url": "shopify:\/\/pages\/contact",
-            "bg-color": "rgba(0,0,0,0)",
-            "border": "1px solid",
-            "button-color": "{{ shop.brand.colors.secondary[1].background }}"
+            "button_label_2": "",
+            "button_url": "\/pages\/contact#book-a-consultation",
+            "bg-color": "#faf7f1",
+            "border": "1px solid white",
+            "button-color": "#232528"
           }
         }
       },
