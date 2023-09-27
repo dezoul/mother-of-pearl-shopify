@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "content": "Samuel Heath",
-            "subHeading": "Exclusively distributed in Australia by Mother of Pearl & Sons TRADING."
+            "subHeading": "Distributed in Australia by Mother of Pearl & Sons TRADING."
           }
         },
         "template--20330326524208__368de91d-ee0e-4757-86bc-8912a5b154e0-content-1": {
@@ -214,14 +214,14 @@
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-content-1": {
           "type": "content",
           "settings": {
-            "content": "<p>Samuel Heath's products have been used in the renovation of significant properties, such as a Victorian townhouse in Fulham and a Grade II listed Georgian townhouse near London’s Hyde Park. These case studies demonstrate the versatility and elegance of their products, providing ample inspiration for transforming your own property.<\/p><p>As the exclusive partner in Australia, we take pride in presenting you with an exquisite range of Samuel Heath's highly desirable products. From elegant window casement fasteners to sophisticated door knockers, each piece exudes an artistic charm that will undoubtedly stand the test of time. Take the first step towards enhancing your home's beauty and functionality with Samuel Heath's prestigious range of hardware by talking with our experts today.<\/p>"
+            "content": "<p>Samuel Heath's products have been used in the renovation of significant properties, such as a Victorian townhouse in Fulham and a Grade II listed Georgian townhouse near London’s Hyde Park. These case studies demonstrate the versatility and elegance of their products, providing ample inspiration for transforming your own property.<\/p><p>As an established partner in Australia, we take pride in presenting you with an exquisite range of Samuel Heath's highly desirable products. From elegant window casement fasteners to sophisticated door knockers, each piece exudes an artistic charm that will undoubtedly stand the test of time. Take the first step towards enhancing your home's beauty and functionality with Samuel Heath's prestigious range of hardware by talking with our experts today.<\/p>"
           }
         },
         "template--20330326524208__760620ad-46fe-464e-9f37-6cf56796527f-buttons-1": {
           "type": "buttons",
           "settings": {
-            "button_width": 30,
             "button_label": "BOOK A CONSULTATION",
+            "button_label_2": "",
             "button_url": "\/collections\/all",
             "bg-color": "#fcfaf6",
             "border": "",
