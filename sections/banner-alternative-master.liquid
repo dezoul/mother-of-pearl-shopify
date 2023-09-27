@@ -8,8 +8,13 @@ Globals:
 <style> 
   @media(min-width:900px)
   .mobile-size-overide {
-  font-size:1.8rem
-} </style>
+  font-size:1.8rem !important
+}
+  .mobile-y-padding-overide{
+    padding-top:5% !important;
+    padding-bottom:5% !important;
+  }
+</style>
   <section class="{{ section.settings.visibility }} {{ section.settings.color_scheme }}  {{ section.settings.color_border }} {{ section.settings.style_border }}" style="padding-left:var(--horizontal-side-gap); padding-right:var(--horizontal-side-gap);"> <div
     class="{{section.settings.max_width }} flex flex-col md:grid gap-x-16 gap-y-4"
     style='
