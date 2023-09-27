@@ -8,7 +8,7 @@
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/mop-home.gif",
         "desk_img_position": "left",
-        "moblie_img_position": "top",
+        "moblie_img_position": "bottom",
         "img_aspect_ratio": "original",
         "vertivle-alignment": "middle",
         "content_width": 45,
