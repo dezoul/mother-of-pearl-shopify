@@ -144,7 +144,8 @@
         "848f5aea-f7ad-4974-a5fb-020776e3e523"
       ],
       "custom_css": [
-        ".component-badge {color: inherit; background-color: #f8f4eb; margin-left: -4px;}"
+        ".component-badge {color: inherit; background-color: #f8f4eb; margin-left: -4px;}",
+        ".shopify-product-form {padding: 1rem;}"
       ],
       "settings": {
         "enable_default_variant": true,
