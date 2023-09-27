@@ -57,7 +57,7 @@ Globals:
       <div class="">
         {%- unless section.settings.heading == blank -%}
           <div style="text-align: {{section.settings.heading_alignment}}">
-            <h2 class="inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}" {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
+            <h2 class="mobile-size-overide inline-block mb-12 {{section.settings.heading_style}} {{section.settings.heading_size}}" {% if section.settings.heading-range != 60 %}style="max-width: {{section.settings.heading-range}}rem"{% endif %}>{{ section.settings.heading }}</h2>
           </div>
 
         {%- endunless -%}
