@@ -4,8 +4,8 @@
   lang="{{ request.locale.iso_code }}"
   x-data="app()"
   x-init="
-                        handleSharedCart(); 
-                        updateCart(false);"><head>
+                            handleSharedCart(); 
+                            updateCart(false);"><head>
     {% render 'theme__meta' %}
     <link
       rel="preconnect"
@@ -42,18 +42,18 @@
 
   <body
     class="min-h-[100vh] break-words 
-                                  {{ template | handle }}"
+                                        {{ template | handle }}"
     @scroll.window="() => {
-                                    if (window.pageYOffset > 400) {
-                                      is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false; 
-                                      prev_scroll_pos = window.pageYOffset;
-                                      $refs.header.style.transform = 'none'
-                                    } else {
-                                      is_scrolled = false;
-                                      prev_scroll_pos = window.pageYOffset;
-                                      $refs.header.style.transform = 'none'
-                                    }
-                                  }"
+                                          if (window.pageYOffset > 400) {
+                                            is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false; 
+                                            prev_scroll_pos = window.pageYOffset;
+                                            $refs.header.style.transform = 'none'
+                                          } else {
+                                            is_scrolled = false;
+                                            prev_scroll_pos = window.pageYOffset;
+                                            $refs.header.style.transform = 'none'
+                                          }
+                                        }"
     x-intersect.half:enter="scroll_up = false"
     x-intersect.half:leave="scroll_up = true">
 
@@ -63,19 +63,31 @@
 
     <header
       class="z-30 px-5p
-                                              {{ settings.header_position }}
-                                              {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %} 
-                                              {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}"
+                                                      {{ settings.header_position }}
+                                                      {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %} 
+                                                      {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}"
       :class="{ 
-                                                '!z-10' : hide_header
-                                              }"
+                                                        '!z-10' : hide_header
+                                                      }"
       x-ref="header"
       {% if settings.header_position == 'dynamic' %}x-bind:style="is_scrolled ? 
-                                                  'transform: translateY(-2rem); opacity: 0; pointer-events: none;' : 
-                                                  'transform: none; opacity: 1;'
-                                                "{% endif %}>
+                                                          'transform: translateY(-2rem); opacity: 0; pointer-events: none;' : 
+                                                          'transform: none; opacity: 1;'
+                                                        "{% endif %}>
       {% sections 'header-group' %}
     </header>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11171761729"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11171761729');
+    </script>
+
     {% section 'theme__cart' %}
     {% section 'theme__menu' %}
 
