@@ -31,7 +31,7 @@
     "layout_gap_size": 10,
     "enable_audio": false,
     "enable_animations": true,
-    "thumbmails_color_scheme": "color__bg-overlay-1 after:color__bg-overlay-1 color__text after:color__text",
+    "thumbmails_color_scheme": "color__bg-overlay-2 after:color__bg-overlay-2 color__text after:color__text",
     "thumbnails_color_border": "",
     "thumbnails_ratio": "aspect-[1\/1] aspect-w-1 aspect-h-1",
     "thumbnails_object-sizing": "cover",

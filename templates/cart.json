@@ -8,7 +8,8 @@
         ".cart-item .item-quantity {border: none; color: #20242b;}",
         ".cart-item .item-quantity *,.cart-item input,.cart-item .btn--plain * {color: #20242b; opacity: 1;}",
         "img {mix-blend-mode: multiply;}",
-        ".aspect-w-1 {background-color: #faf6f1;}"
+        ".aspect-w-1 {background-color: #faf6f1;}",
+        "..component-badge{color: inherit;background-color: #f8f4eb; }"
       ],
       "settings": {
         "spacing_top": 100,
