@@ -212,6 +212,7 @@
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-content-1",
         "template--20029268787504__6df58481-1e31-4213-ba98-37c3ab671cc2-buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "image_background_desktop": "shopify:\/\/shop_images\/MOP-signature-1.png",
         "minHeight": 0,
