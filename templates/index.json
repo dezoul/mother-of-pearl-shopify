@@ -6,7 +6,7 @@
         "p a {font-size: inherit;}"
       ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/mop-home.gif",
+        "image_background_desktop": "shopify:\/\/shop_images\/mop-home.jpg",
         "desk_img_position": "left",
         "moblie_img_position": "bottom",
         "img_aspect_ratio": "original",
