@@ -52,7 +52,7 @@
     "show_product_button_prices": false,
     "cart_behavior": "redirect",
     "cart_icon_behavior": "go_to_cart",
-    "pagination_type": "load",
+    "pagination_type": "scroll",
     "enable_region": false,
     "enable_language": false,
     "search_tag": true,
