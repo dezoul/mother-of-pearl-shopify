@@ -33,11 +33,8 @@
         "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-content-1",
         "template--20045948453168__f91764be-b6c9-4683-a32c-cbc2dadc08d7-buttons-1"
       ],
-      "custom_css": [
-        ".window--wide {max-width: 70rem;}"
-      ],
       "settings": {
-        "image_background_desktop": "shopify:\/\/shop_images\/MOP-location.gif",
+        "image_background_desktop": "shopify:\/\/shop_images\/PXL_20231213_234740095.jpg",
         "minHeight": 0,
         "enable_lazy_loading": false,
         "color_scheme": "color__bg-body color__text",
