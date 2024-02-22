@@ -32,7 +32,7 @@ Globals:
               <h4 class="text-base font-medium font-wide uppercase">
                 {{ block.settings.heading }}
               </h4>
-              {{ block.settings.image_featured | image_url: width: 700 | image_tag: class: 'w-full h-full object-cover object-center', loading: 'lazy', alt: block.settings.image_featured.alt }}
+
               <figcaption class="py-4 text-sm">
                 {{ block.settings.description }}</figcaption>
               {% if block.settings.url %}
