@@ -1,4 +1,4 @@
-<!-- sections/brand-page-gallery.liquid -->
+<!-- sections/text.liquid -->
 {% comment %} 
   Richtext section with options to display buttons and headings.
 
@@ -15,11 +15,7 @@
     style="
       padding-top:{{ section.settings.spacing_top }}px;
       padding-bottom:{{ section.settings.spacing_bottom }}px;">
-      <div>
-        <h3 class="font-wide font-bold text-[1.125rem]">
-          {{section.settings.heading}}
-        </h3>
-      </div>
+
       <div class="grid grid-cols-6 gap-4">
         {% for block in section.blocks %}
           <div class="{{block.settings.aspect}} relative {{block.settings.width}}">
@@ -31,14 +27,7 @@
 
 
     </div>
-    {%  comment  %}
-    <span class="aspect-[3/2] col-span-1"></span>
-    <span class="aspect-[5/4] col-span-2"></span>
-    <span class="aspect-[5/4] col-span-3"></span>
-    <span class="aspect-[5/4] col-span-6"></span>
-
-   {% endcomment %}
-
+    <span class=""></span>
   </div>
 </section>
 
@@ -271,13 +260,41 @@
           },
           {
             "id": "aspect",
-            "type": "text",
-            "label": "image aspect"
+            "type": "select",
+            "label": "image aspect",
+            "options": [
+              {
+            "value": "aspect-square",
+            "label": "square"
+          }, {
+            "value": "aspect-[4/5]",
+            "label": "portrait"
+          }, {
+            "value": "aspect-[3/2]",
+            "label": "landscape"
+          }
+            ]
           },
           {
             "id": "width",
-            "type": "text",
-            "label": "image width"
+            "type": "select",
+            "label": "image width",
+            "options": [
+              {
+            "value": "col-span-2",
+            "label": "One third"
+          }, {
+            "value": "col-span-3",
+            "label": "One half"
+          }, {
+            "value": "col-span-6",
+            "label": "full width"
+          },{
+            "value": "col-span-1",
+            "label": "One sixth"
+          }
+            ]
+
           }
         ]
       }
