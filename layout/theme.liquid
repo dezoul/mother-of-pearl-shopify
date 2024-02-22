@@ -32,13 +32,7 @@
       >
     {%- endunless -%}
     {%- unless settings.type_font_heading.system? -%}
-      <link
-        rel="preload"
-        as="font"
-        href="{{ settings.type_font_heading | font_url }}"
-        type="font/woff2"
-        crossorigin
-      >
+      rel="preload" as="font" href="{{ settings.type_font_heading | font_url }}" type="font/woff2" crossorigin >
     {%- endunless -%}
     {% render 'theme__structured-data' %}
     {% render 'theme__styles' %}
@@ -46,11 +40,11 @@
     {{ content_for_header }}
     <link rel="stylesheet" href="https://use.typekit.net/rmw7myl.css">
   </head>
-<style>
-.header-bar__module.header-bar__message {
-    font-size: 20px;
-}
-</style>
+  <style>
+    .header-bar__module.header-bar__message {
+        font-size: 20px;
+    }
+  </style>
   <body
     class="
       min-h-[100vh] break-words
