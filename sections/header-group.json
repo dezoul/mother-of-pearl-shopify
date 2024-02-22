@@ -4,6 +4,7 @@
   "sections": {
     "theme_announcement": {
       "type": "theme__announcement",
+      "disabled": true,
       "settings": {
         "color_scheme": "color__bg-tertiary color__tertiary",
         "layout_alignment": "center",
