@@ -118,9 +118,18 @@
           "type": "images",
           "settings": {
             "heading": "Ivana Perkins",
-            "image_featured": "shopify:\/\/shop_images\/MOP-IVANA-04_2dd6a0d5-67bf-483d-a531-c7b880f1207e.jpg",
+            "image_featured": "shopify:\/\/shop_images\/Instagram_Images_10.png",
             "description": "<p>A meld of creativity and luxury, Ivana Perkins brings a collection that's both avant-garde and rooted in top-notch craftsmanship.<\/p>",
             "url": "shopify:\/\/pages\/brand-ivana-perkins",
+            "link_text": ""
+          }
+        },
+        "images_rUMAJT": {
+          "type": "images",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "url": "",
             "link_text": ""
           }
         },
@@ -218,6 +227,7 @@
         "3387b7df-7b54-4306-a5b5-972ee77fadf4",
         "600d42c0-5292-47dd-8786-d477ca7dca98",
         "1a557cfe-ef69-4316-b548-28c7c62d84d9",
+        "images_rUMAJT",
         "920a9e09-9cd7-47bd-a56c-2d90b00a0c3d",
         "744f1344-ac93-4506-9e11-a8a998f32267",
         "7ba60f28-262a-4320-b727-adbfa3922a69",
