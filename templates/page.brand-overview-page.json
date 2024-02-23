@@ -126,6 +126,7 @@
         },
         "images_rUMAJT": {
           "type": "images",
+          "disabled": true,
           "settings": {
             "heading": "",
             "description": "",
