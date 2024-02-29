@@ -1,65 +1,105 @@
-<!DOCTYPE html>
-<html 
+<!doctype html>
+<html
   class="min-h-[100vh]"
   lang="{{ request.locale.iso_code }}"
-  x-data="app()" 
+  x-data="app()"
   x-init="
-    handleSharedCart(); 
-    updateCart(false);">
-
+    handleSharedCart();
+    updateCart(false);
+  "
+>
   <head>
     {% render 'theme__meta' %}
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link
+      rel="preconnect"
+      href="https://cdn.shopify.com"
+      crossorigin
+    >
     {%- unless settings.type_font_heading.system? and settings.type_font_body.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link
+        rel="preconnect"
+        href="https://fonts.shopifycdn.com"
+        crossorigin
+      >
     {%- endunless -%}
     {%- unless settings.type_font_body.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_font_body | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_font_body | font_url }}"
+        type="font/woff2"
+        crossorigin
+      >
     {%- endunless -%}
     {%- unless settings.type_font_heading.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_font_heading | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_font_heading | font_url }}"
+        type="font/woff2"
+        crossorigin
+      >
     {%- endunless -%}
     {% render 'theme__structured-data' %}
     {% render 'theme__styles' %}
     {% render 'assets' with 'styles.css', preload_stylesheet: true %}
     {{ content_for_header }}
+    <link rel="stylesheet" href="https://use.typekit.net/rmw7myl.css">
   </head>
-  
-  <body class="min-h-[100vh] break-words 
-    {{ template | handle }}"
-    @scroll.window="() => {
-      if (window.pageYOffset > 400) {
-        is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false; 
-        prev_scroll_pos = window.pageYOffset;
-        $refs.header.style.transform = 'none'
-      } else {
-        is_scrolled = false;
-        prev_scroll_pos = window.pageYOffset;
-        $refs.header.style.transform = 'none'
+<style>
+.header-bar__module.header-bar__message {
+    font-size: 20px;
+}
+</style>
+  <body
+    class="
+      min-h-[100vh] break-words
+      {{ template | handle }}
+    "
+    @scroll.window="
+      () => {
+        if (window.pageYOffset > 400) {
+          is_scrolled = window.pageYOffset > prev_scroll_pos ? true : false;
+          prev_scroll_pos = window.pageYOffset;
+          $refs.header.style.transform = 'none'
+        } else {
+          is_scrolled = false;
+          prev_scroll_pos = window.pageYOffset;
+          $refs.header.style.transform = 'none'
+        }
       }
-    }"
+    "
     x-intersect.half:enter="scroll_up = false"
-    x-intersect.half:leave="scroll_up = true">
-
-    <a href="#root"
-      class="top-4 left-4 color__bg-body focus:translate-y-0 border__button--radius fixed z-50 px-4 py-2 no-underline transform -translate-y-20 shadow-md">
+    x-intersect.half:leave="scroll_up = true"
+  >
+    <a
+      href="#root"
+      class="top-4 left-4 color__bg-body focus:translate-y-0 border__button--radius fixed z-50 px-4 py-2 no-underline transform -translate-y-20 shadow-md"
+    >
       {{ 'general.accessibility.skip_to_content' | t }}
     </a>
 
-    <header class="z-30
-      {{ settings.header_position }}
-      {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %} 
-      {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}"
-      :class="{ 
-        '!z-10' : hide_header
-      }"
+    <header
+      class="
+        z-30 px-5p
+        {{ settings.header_position }}
+        {% if settings.header_position == 'dynamic' %}sticky top-0 left-0 right-0 animation-300{% endif %}
+        {% if settings.header_position == 'sticky' %}sticky top-0{% endif %}
+      "
+      :class="
+        {
+          '!z-10' : hide_header
+        }
+      "
       x-ref="header"
       {% if settings.header_position == 'dynamic' %}
-        x-bind:style="is_scrolled ? 
-          'transform: translateY(-2rem); opacity: 0; pointer-events: none;' : 
+        x-bind:style="
+          is_scrolled ?
+          'transform: translateY(-2rem); opacity: 0; pointer-events: none;' :
           'transform: none; opacity: 1;'
         "
-      {% endif %}>
+      {% endif %}
+    >
       {% sections 'header-group' %}
     </header>
     {% section 'theme__cart' %}
@@ -71,12 +111,40 @@
 
     {% sections 'footer-group' %}
     {% sections 'overlay-group' %}
-
+    {% comment %}
+    {% endcomment %}
     {% render 'theme__localization-popup' %}
     {% render 'theme__audio-popup' %}
     {% render 'theme__error-popup' %}
     {% render 'assets' with 'main.js' %}
     {% render 'theme__scripts' %}
-  </body>
 
+    `
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KLW2G72X');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+      .button-with-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: roc-grotesk, sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        text-decoration: none;
+      }
+
+      /* Checks if the button should be two lines, and if it is, increases the size of the arrow */
+    </style>
+
+    {% include 'swymSnippet' %}
+  </body>
 </html>
