@@ -44,7 +44,7 @@
         "bar_button_search_type": "icon",
         "bar_button_login_type": "none",
         "bar_button_menu_type": "icon",
-        "enable_search": true,
+        "enable_search": false,
         "dropdown_color_scheme": "color__bg-body color__text",
         "dropdown_color_border": "color__border-divider-1",
         "search_color_scheme": "color__bg-body color__text",

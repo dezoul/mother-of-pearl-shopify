@@ -33,7 +33,7 @@
             "style_border": "",
             "enable_thumbnails_product_type": false,
             "enable_thumbnails_vendor": false,
-            "enable_sku": false
+            "enable_sku": true
           }
         },
         "62c29cd6-a0b5-4f8b-86c0-a48660869d22": {
